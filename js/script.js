@@ -28,7 +28,7 @@ $(document).ready(function() {
 
     $(".img-btn").mouseenter(function() {
     	my_img = img_src(this);
-    	this.src = my_img + '/hover/' + my_btn;
+    	this.src = my_img + 'hover/' + my_btn;
     });
 
     $(".img-btn").mouseleave(function() {

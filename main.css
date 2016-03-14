@@ -20,6 +20,16 @@ img.bg {
     position: fixed;
     top: 0;
     left: 0; } 
+
+
+.large { display: inline-block; }
+.small { display: none; }
+
+@media (max-width: 420px) { 
+  .large { display: none; }
+  .small { display: inline-block; }
+}
+
 @media screen and (max-width: 1024px){
     img.bg {
         left: 50%;
@@ -55,6 +65,7 @@ h1 {
 h2 {
     font: 0.85em 'Arvo', Times, serif;
     color: #eee;
+    margin:0;
 }
 
 #btn {

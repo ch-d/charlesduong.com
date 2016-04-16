@@ -1,0 +1,148 @@
+body {
+    background-color: #F2F2F0
+}
+
+.flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.flex-auto {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-width: 0;
+    min-height: 0
+}
+
+.navbar {
+    background: rgba(255, 255, 255, .95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    z-index: 200;
+    padding: 10px;
+    height: 40px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center
+
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+    color: #48A9BD;
+}
+
+a:active,
+a:hover {
+    outline-width: 0
+}
+
+h2{
+    margin:0 0 0 10px;
+    font-family: 'Raleway', "Helvetica Neue", Helvetica, sans-serif
+}
+
+.hero {
+    background-image: url("http://joeyabanks.me/portfolio/scoot/img/cover.png");
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height:500px;
+    margin-top:60px;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero{
+    height: 300px;
+    }
+  .case-study {
+    min-width:96%;
+    }
+}
+
+.case-study {
+    max-width:72%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+.btn {
+    margin: 0;
+    padding: 0 1rem;
+    font-size: .6rem;    
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+    height: auto;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    color: inherit;
+    background-color: transparent
+}
+
+.btn:hover {
+    text-decoration: none;
+}
+
+.social {
+    display: block;
+    padding: 0;
+    position: relative;
+    fill:#3E92A3;
+}
+
+.navbar svg {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+.navbar svg:hover {
+    /*-webkit-filter: drop-shadow( 0px 4px 4px #999);
+    filter: drop-shadow( 0px 4px 4px #CCC );*/
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+    -webkit-transition: all .2s;
+    transition: all .2s
+}

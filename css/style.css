@@ -33,6 +33,17 @@ body {
     justify-content: center;
 }
 
+.flex-start {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    -ms-grid-row-align: flex-start;
+    align-items: flex-start
+}
+
+.flex-vert {
+}
+
 /* ------- NAVBAR CONTACT --------- */
 h2 {
     font-family: 'Raleway', "Helvetica Neue", Helvetica, sans-serif;
@@ -113,8 +124,7 @@ svg:hover {
 /* -------- GRID ------- */
 .container {
     position: relative;
-    width: 100%;
-    max-width: 960px;
+    width: 960px;
     margin: 1em auto;
     padding: 0 20px;
 }
@@ -136,6 +146,7 @@ svg:hover {
 @media (min-width: 550px) {
   .container {
     width: 80%;
+    padding: 0 2%;
     }
 }
 
@@ -164,10 +175,12 @@ svg:hover {
 
 .left {
     float: left;
+    min-width:400px;
 }
 
 .right {
     float: right;
+    min-width:200px;
 }
 
 /* ------- CARDS ------- */
@@ -210,7 +223,7 @@ svg:hover {
     font-size:0.9em;
     font-weight: 700;
     line-height:1.5em;
-    margin-left:1em;
+    margin:0 1em;
     list-style:none;
     text-align:left;
 }
@@ -287,29 +300,29 @@ svg:hover {
     letter-spacing: 0.15em;
 }
 
-@media (max-width:40em) {
+/*@media (max-width:40em) {
     .flex-grid-item {
-        -webkit-flex-basis: calc(50% - 2rem);
-        -ms-flex-preferred-size: calc(50% - 2rem);
-        flex-basis: calc(50% - 2rem);
-        max-width: calc(50% - 2rem)
+        -webkit-flex-basis: calc(50% - 10rem);
+        -ms-flex-preferred-size: calc(50% - 10rem);
+        flex-basis: calc(50% - 10rem);
+        max-width: calc(50% - 10rem)
     }
-}
-@media (max-width:30em) {
+}*/
+@media (max-width:70em) {
     .flex-grid-item {
         -webkit-flex-basis: calc(100% - 2rem);
         -ms-flex-preferred-size: calc(100% - 2rem);
-        flex-basis: calc(100% - 2rem);
-        max-width: calc(100% - 2rem)
+        flex-basis: 50%;
+        max-width: 50%
     }
 }
 
-@media (min-width:40em) {
+@media (min-width:70em) {
     .flex-grid-item {
         -webkit-flex-basis: calc(50% - 2rem);
         -ms-flex-preferred-size: calc(50% - 2rem);
-        flex-basis: calc(100% - 2rem);
-        max-width: calc(100% - 2rem)
+        flex-basis: 33%;
+        max-width: 33%
     }
 }
 

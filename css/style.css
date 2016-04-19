@@ -300,14 +300,6 @@ svg:hover {
     letter-spacing: 0.15em;
 }
 
-/*@media (max-width:40em) {
-    .flex-grid-item {
-        -webkit-flex-basis: calc(50% - 10rem);
-        -ms-flex-preferred-size: calc(50% - 10rem);
-        flex-basis: calc(50% - 10rem);
-        max-width: calc(50% - 10rem)
-    }
-}*/
 @media (max-width:70em) {
     .flex-grid-item {
         -webkit-flex-basis: calc(100% - 2rem);
@@ -326,23 +318,6 @@ svg:hover {
     }
 }
 
-/*@media (min-width:52em) {
-    .flex-grid-item {
-        -webkit-flex-basis: calc(33% - 2rem);
-        -ms-flex-preferred-size: calc(33% - 2rem);
-        flex-basis: calc(33% - 2rem);
-        max-width: calc(33% - 2rem)
-    }
-}*/
-
-/*@media (min-width:64em) {
-    .flex-grid-item {
-        -webkit-flex-basis: calc(25% - 2rem);
-        -ms-flex-preferred-size: calc(25% - 2rem);
-        flex-basis: calc(25% - 2rem);
-        max-width: calc(25% - 2rem)
-    }
-}*/
 /* 
     background-image - lighter-gradient darker-gradient
     border - darker gradient
@@ -379,18 +354,3 @@ svg:hover {
                 inset 0px -1px 1px 0px #FCAD58, 
                 inset 0px 1px 0px 0px #FFD782;
 }
-
-/* Larger than mobile */
-@media (min-width: 400px) {}
-
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
-
-/* Larger than tablet */
-@media (min-width: 750px) {}
-
-/* Larger than desktop */
-@media (min-width: 1000px) {}
-
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {}

@@ -52,30 +52,6 @@ h3 {
     margin: 1em
 }
 
-h4{
-    font-family: 'Raleway', "Helvetica Neue", Helvetica, sans-serif
-    margin:0 0 0 10px;
-}
-
-h5 {
-    font-family: 'Open Sans', "Helvetica Neue", Helvetica, sans-serif;
-    font-weight:700;
-    font-size: 1em;
-    letter-spacing: 0.05em;
-    color: #3E92A3;
-    text-align: center;
-    margin: 1em;
-    text-transform:uppercase;
-}
-
-h6 {
-    color:#6B7986;
-    font-weight: 700;
-    padding-left:2em;
-    margin-bottom:0;
-    line-height:1.5em;
-}
-
 .name {
     padding-top:24px;
     width:100%;
@@ -156,38 +132,6 @@ svg:hover {
     font-size:12px;
 }
 
-.card p {
-    padding: 0 2em 0 2em;
-    line-height:1.5em;
-}
-
-.card p:first-of-type {
-    padding: 1em 2em 0.5em 2em;
-}
-
-.card p:last-of-type {
-    padding: 0 2em 2em 2em;
-    line-height:1.5em;
-}
-
-.card ul:first-of-type {
-    margin-top: 1em
-}
-
-.card ul {
-    margin-bottom: 1em
-}
-
-.card li {
-    color:#6B7986;
-    font-size:0.9em;
-    font-weight: 700;
-    line-height:1.5em;
-    margin:0 1em;
-    list-style:none;
-    text-align:left;
-}
-
 .card-title {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -217,6 +161,41 @@ svg:hover {
                 0 2px 4px rgba(0, 0, 0, .1), 
                 inset 0px -1px 1px 0px #48A9BD, 
                 inset 0px 1px 0px 0px #7AD1DE;
+}
+
+h5 {
+    font-family: 'Open Sans', "Helvetica Neue", Helvetica, sans-serif;
+    font-weight:700;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: #3E92A3;
+    text-align: center;
+    margin: 1em;
+    text-transform:uppercase;
+}
+
+h6 {
+    font-size:16px;
+    color:#6B7986;
+    font-weight: 700;
+    padding-left:2em;
+    margin-bottom:0;
+    line-height:1.5em;
+}
+
+.card p {
+    font-size:16px;
+    padding: 0 2em 0 2em;
+    line-height:1.5em;
+}
+
+.card p:first-of-type {
+    padding: 1em 2em 1em 2em;
+}
+
+.card p:last-of-type {
+    padding: 0 2em 1em 2em;
+    line-height:1.5em;
 }
 /* -------- END CARDS ------- */
 
@@ -426,6 +405,24 @@ svg:hover {
     inset2 (top) - lighter-gradient+5s
 */
 
+.card ul:first-of-type {
+    margin-top: 1em
+}
+
+.card ul {
+    margin-bottom: 1em
+}
+
+.card li {
+    color:#6B7986;
+    font-size:0.9em;
+    font-weight: 700;
+    line-height:1.5em;
+    margin:0 1em;
+    list-style:none;
+    text-align:left;
+}
+
 .development {
     background-image: linear-gradient(-180deg, #F48477 0%, #E54D42 100%);
     border: 1px solid #E54D42;
@@ -455,3 +452,14 @@ svg:hover {
                 inset 0px -1px 1px 0px #FCAD58, 
                 inset 0px 1px 0px 0px #FFD782;
 }
+
+/*.footer {
+    position:absolute;
+    bottom:0px;
+    width:100%;
+    text-align:center;
+    font-size:0.8em;
+    font-weight:100;
+    font-family: 'Open Sans', "Helvetica Neue", Helvetica, sans-serif;
+    padding:1em 0;
+}*/

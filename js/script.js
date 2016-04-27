@@ -9,7 +9,7 @@ var lastScrollTop = 0;
 $(window).scroll(function(){
 	// stick after header
 	if($(window).scrollTop() > (headerHeight-60)){
-		$(".right").addClass('sticky');
+		$(".right-container").addClass('sticky');
 
 		// show after scroll past header
 		if($(window).scrollTop() > (headerHeight)){
@@ -32,7 +32,7 @@ $(window).scroll(function(){
 	}
 
 	else {
-		$(".right").removeClass('sticky');
+		$(".right-container").removeClass('sticky');
 	}
 });
 

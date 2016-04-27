@@ -135,10 +135,6 @@ svg:hover {
     float: left;
 }
 
-.right {
-    float: right;
-}
-
 /* ------- CARDS ------- */
 .card {
     width:100%;
@@ -223,6 +219,9 @@ h6 {
 }
 /* -------- END CARDS ------- */
 
+.right {
+    position:absolute;
+}
 
 .skills {
     -webkit-box-pack: center;
@@ -278,11 +277,17 @@ h6 {
         flex-basis: 33%;
         max-width: 33%
     }
-    .sticky {
+    .sticky .right{
         position:fixed;
         top:60px;
-        left:52%;
-        width:480px;
+        max-width:28em;
+    }
+    .right-container {
+        width: 50% !important;
+        max-width:28em !important;
+        position: absolute !important;
+        top: 0 !important;
+        left: 30em !important;
     }
 }
 
@@ -299,8 +304,10 @@ h6 {
     .left {
         width:60%;
     }
-    .right {
-        width:40%;
+    .sticky .right{
+        position:fixed;
+        top:60px;
+        max-width:20em;
     }
 }
 
@@ -317,9 +324,6 @@ h6 {
     .left {
         width:60%;
     }
-    .right {
-        width:40%;
-    }
 }
 
 @media (max-width:60em){
@@ -335,8 +339,30 @@ h6 {
     .left {
         width:60%;
     }
+}
+
+@media (min-width:50em) {
+    .right-container {
+        width: 40%;
+        max-width: 20em;
+        position: absolute;
+        top: 0 ;
+        left: 60%;
+    }
+}
+
+@media (max-width:50em) {
+    .sticky .right {
+        padding:2em 4em;
+        max-width: 200em !important;
+        position: relative;
+        top:0;
+    }
     .right {
-        width:40%;
+        padding:2em 4em;
+        max-width: 200em !important;
+        position: relative;
+        top:0;
     }
 }
 
@@ -347,9 +373,6 @@ h6 {
     }
     .column {
         width:100% !important;
-    }
-    .right {
-        padding:0 4em;
     }
     .flex-grid-item {
         -webkit-flex-basis: calc(50% - 2rem);
@@ -367,6 +390,7 @@ h6 {
         width:100% !important;
     }
     .right {
+        width:100% !important;
         padding:0 3em;
     }
     .flex-grid-item {
@@ -400,6 +424,7 @@ h6 {
         width:100% !important;
     }
     .right {
+        width:100% !important;
         padding:0 5em;
     }
     .flex-grid-item {
@@ -412,12 +437,14 @@ h6 {
 
 @media (max-width:30em) {
     .right {
+        width:100% !important;
         padding:0 3em;
     }
 }
 
 @media (max-width:25em) {
     .right {
+        width:100% !important;
         padding:0 2em;
     }
 }

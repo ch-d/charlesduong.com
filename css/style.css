@@ -33,7 +33,38 @@ body {
     justify-content: center;
 }
 
-/* ------- NAVBAR CONTACT --------- */
+/* -------- NAVBAR CONTACT ------ */
+.navbar {
+    background: rgba(255, 255, 255, .95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    z-index: 200;
+    padding: 10px;
+    height: 40px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center
+
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+/* ------- SOCIAL CONTACT --------- */
 h2 {
     font-family: 'Raleway', "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 100;
@@ -98,17 +129,6 @@ svg:hover {
     box-sizing: border-box;
     width:48%;
     padding:0.5em;
-
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    -ms-grid-row-align: center;
-    align-items: center;
 }
 
 .left {
@@ -149,6 +169,10 @@ svg:hover {
     color:#FFF;
     text-align:center;
     text-transform: none;
+}
+
+.summary p{
+    padding:1em 2em !important;
 }
 
 .about {
@@ -246,12 +270,19 @@ h6 {
     letter-spacing: 0.15em;
 }
 
+/* ------ STICKY ------- */
 @media (min-width:70em) {
     .flex-grid-item {
         -webkit-flex-basis: calc(50% - 2rem);
         -ms-flex-preferred-size: calc(50% - 2rem);
         flex-basis: 33%;
         max-width: 33%
+    }
+    .sticky {
+        position:fixed;
+        top:60px;
+        left:52%;
+        width:480px;
     }
 }
 
@@ -271,22 +302,6 @@ h6 {
     .right {
         width:40%;
     }
-/*    .skill-cards {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
-    height:400px;
-    }
-    .dev {
-        order:1;
-    }
-    .des {
-        order:3;
-    }
-    .mark {
-        order:2;
-    }*/
 }
 
 @media (max-width:65em){
@@ -325,55 +340,47 @@ h6 {
     }
 }
 
+/* ------ ONE COLUMN ------- */
 @media (max-width:50em) and (min-width:45em) {
-    .flex-grid-item {
-        -webkit-flex-basis: calc(100% - 2rem);
-        -ms-flex-preferred-size: calc(100% - 2rem);
-        flex-basis: 75%;
-        max-width: 75%
+    .container {
+        width:80%;
     }
-    .left {
-        width:70%;
+    .column {
+        width:100% !important;
     }
     .right {
-        width:30%;
+        padding:0 4em;
+    }
+    .flex-grid-item {
+        -webkit-flex-basis: calc(50% - 2rem);
+        -ms-flex-preferred-size: calc(50% - 2rem);
+        flex-basis: 33%;
+        max-width: 33%
     }
 }
 
 @media (max-width:45em) and (min-width:40em) {
-    .flex-grid-item {
-        -webkit-flex-basis: calc(100% - 2rem);
-        -ms-flex-preferred-size: calc(100% - 2rem);
-        flex-basis: 75%;
-        max-width: 75%
+    .container {
+        width:80%;
     }
-    .left {
-        width:65%;
+    .column {
+        width:100% !important;
     }
     .right {
-        width:35%;
+        padding:0 3em;
+    }
+    .flex-grid-item {
+        -webkit-flex-basis: calc(50% - 2rem);
+        -ms-flex-preferred-size: calc(50% - 2rem);
+        flex-basis: 33%;
+        max-width: 33%
     }
 }
 
 @media (max-width:40em) and (min-width:35em) {
-    .flex-grid-item {
-        -webkit-flex-basis: calc(100% - 2rem);
-        -ms-flex-preferred-size: calc(100% - 2rem);
-        flex-basis: 75%;
-        max-width: 75%
+    .container {
+        width:90%;
     }
-    .column {
-        padding:0.5em;
-    }
-    .left {
-        width:60%;
-    }
-    .right {
-        width:40%;
-    }
-}
-
-@media (max-width:35em) and (min-width:30em) {
     .column {
         width:100% !important;
     }
@@ -385,9 +392,15 @@ h6 {
     }
 }
 
-@media (max-width:30em) {
+@media (max-width:35em) {
+    .container {
+        width:95%;
+    }
     .column {
         width:100% !important;
+    }
+    .right {
+        padding:0 5em;
     }
     .flex-grid-item {
         -webkit-flex-basis: calc(100% - 2rem);
@@ -397,6 +410,17 @@ h6 {
     }
 }
 
+@media (max-width:30em) {
+    .right {
+        padding:0 3em;
+    }
+}
+
+@media (max-width:25em) {
+    .right {
+        padding:0 2em;
+    }
+}
 
 /* 
     background-image - lighter-gradient darker-gradient

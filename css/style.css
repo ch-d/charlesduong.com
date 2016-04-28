@@ -148,6 +148,10 @@ svg:hover {
     font-size:12px;
 }
 
+.left .card {
+    margin-bottom:2em;
+}
+
 .card-title {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -287,7 +291,7 @@ h6 {
         max-width:28em !important;
         position: absolute !important;
         top: 0 !important;
-        left: 30em !important;
+        left: 32em !important;
     }
 }
 
@@ -353,13 +357,11 @@ h6 {
 
 @media (max-width:50em) {
     .sticky .right {
-        padding:2em 4em;
         max-width: 200em !important;
         position: relative;
         top:0;
     }
     .right {
-        padding:2em 4em;
         max-width: 200em !important;
         position: relative;
         top:0;
@@ -373,6 +375,9 @@ h6 {
     }
     .column {
         width:100% !important;
+    }
+    .right {
+        padding: 0 4em;
     }
     .flex-grid-item {
         -webkit-flex-basis: calc(50% - 2rem);
@@ -390,8 +395,7 @@ h6 {
         width:100% !important;
     }
     .right {
-        width:100% !important;
-        padding:0 3em;
+        padding: 0 2em;
     }
     .flex-grid-item {
         -webkit-flex-basis: calc(50% - 2rem);
@@ -407,6 +411,9 @@ h6 {
     }
     .column {
         width:100% !important;
+    }
+    .right {
+        padding: 0 1em;
     }
     .flex-grid-item {
         -webkit-flex-basis: calc(50% - 2rem);
@@ -424,8 +431,7 @@ h6 {
         width:100% !important;
     }
     .right {
-        width:100% !important;
-        padding:0 5em;
+        padding:0 4em;
     }
     .flex-grid-item {
         -webkit-flex-basis: calc(100% - 2rem);
@@ -437,15 +443,13 @@ h6 {
 
 @media (max-width:30em) {
     .right {
-        width:100% !important;
-        padding:0 3em;
+        padding:0 2em;
     }
 }
 
 @media (max-width:25em) {
     .right {
-        width:100% !important;
-        padding:0 2em;
+        padding:0 1em;
     }
 }
 

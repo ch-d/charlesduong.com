@@ -34,6 +34,8 @@ body {
 }
 
 /* -------- NAVBAR CONTACT ------ */
+
+
 .navbar {
     background: rgba(255, 255, 255, .95);
     box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
@@ -45,13 +47,6 @@ body {
     top: 0;
     left: 0;
     right: 0;
-
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    -webkit-animation-duration: .5s;
-    animation-duration: .5s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
 
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -71,6 +66,21 @@ h2 {
     font-size: 2.5em;
     color: #3E92A3;
     text-align: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.15em;
+    margin-left:0.25em;
+}
+
+.navbar a:link, a:visited, a:hover, a:active {
+    color: #3E92A3;
+    text-decoration: none;
+}
+
+.navbar .btn {
+    padding: 0 0.5rem;
 }
 
 h3 {
@@ -108,8 +118,6 @@ svg {
 }
 
 svg:hover {
-    -webkit-filter: drop-shadow( 0px 4px 8px #CCC);
-    filter: drop-shadow( 0px 4px 8px #CCC );
     -webkit-transform: translateY(-2px);
     transform: translateY(-2px);
     -webkit-transition: all .2s;
@@ -121,6 +129,7 @@ svg:hover {
 .container {
     position: relative;
     width: 100%;
+    height:100%;
     max-width: 960px;
     margin: 1em auto;
 }
@@ -256,15 +265,8 @@ h6 {
     width:80%;
 }
 
-/*.skill-cards {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}*/
-
 .skill {
-    margin:0.5em;
+    margin:0.5em !important;
 }
 
 .skills-text {
@@ -460,6 +462,10 @@ h6 {
     inset2 (top) - lighter-gradient+5s
 */
 
+.skills:last-of-type {
+    margin-bottom: 1em;
+}
+
 .card ul:first-of-type {
     margin-top: 1em
 }
@@ -508,13 +514,11 @@ h6 {
                 inset 0px 1px 0px 0px #FFD782;
 }
 
-/*.footer {
-    position:absolute;
-    bottom:0px;
+footer {
     width:100%;
     text-align:center;
     font-size:0.8em;
     font-weight:100;
     font-family: 'Open Sans', "Helvetica Neue", Helvetica, sans-serif;
-    padding:1em 0;
-}*/
+    margin-bottom:1em;
+}

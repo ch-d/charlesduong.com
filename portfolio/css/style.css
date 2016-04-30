@@ -147,7 +147,7 @@ svg:hover {
 
 .switch-label {
     font-family: 'Open Sans', "Helvetica Neue", Helvetica, sans-serif;
-    font-color:#BFBFBD;
+    color:#BFBFBD;
     position: relative;
     z-index: 2;
     float: left;

@@ -196,24 +196,26 @@ svg:hover {
                 inset 0px 1px 0px 0px #7AD1DE;
 }
 
-h5 {
-    font-family: 'Open Sans', "Helvetica Neue", Helvetica, sans-serif;
-    font-weight:700;
-    font-size: 16px;
-    letter-spacing: 0.05em;
-    color: #3E92A3;
-    text-align: center;
-    margin: 1em;
-    text-transform:uppercase;
+.btn-link {
+    border-radius:4px;
+    margin-bottom:1em;
+    background-color:#5CB7DC;
+    border:none;
+    -webkit-transition: all .2s;
+    transition: all .2s;
 }
 
-h6 {
-    font-size:16px;
-    color:#6B7986;
-    font-weight: 700;
-    padding-left:2em;
-    margin-bottom:0;
-    line-height:1.5em;
+.btn-link:link, .btn-link:visited, .btn-link:hover, .btn-link:active {
+    color:#fff;
+    font-size:0.75rem;
+    text-decoration: none;
+    padding:1em 2em;
+}
+
+.btn-link:hover {
+    box-shadow: 0 4px 24px rgba(0, 0, 0, .2);
+    -webkit-transition: all .2s;
+    transition: all .2s;
 }
 
 .card p {
@@ -232,50 +234,42 @@ h6 {
 }
 /* -------- END CARDS ------- */
 
-.right {
-    position:absolute;
-}
-
 .skills {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    -ms-grid-row-align: center;
-    align-items: center;
-
     width: 100%;
-    background-color: #F2F2F0;
-    position: relative;
-    top: 0px;
-
     font-family: 'Open Sans', "Helvetica Neue", Helvetica, sans-serif;
     font-weight:100;
-    font-size: 4vh;
+    font-size: 1em;
     color: #B5B5B3;
-    text-align:center;
 } 
 
-.top {
-    padding:0 10%;
-    width:80%;
+.dots {
+    display:block;
+    width:90%;
+    padding:0;
+    margin:1px auto;
+    height: 1px;
+    border: 1px dotted #BFBFBD;
+}
+
+.skills-text {
+    display:block;
+    font-size:1em;
+    padding:1px 0.5em;
+    background-color:#F2F2F0;
+    letter-spacing: 0.15em;
+    text-align:center;
+    transform: translateY(-50%);
+}
+
+/* ------ STICKY ------- */
+.right {
+    position:absolute;
 }
 
 .skill {
     margin:0.5em !important;
 }
 
-.skills-text {
-    display:inline;
-    margin:0.5em;
-    letter-spacing: 0.15em;
-}
-
-/* ------ STICKY ------- */
 @media (min-width:70em) {
     .flex-grid-item {
         -webkit-flex-basis: calc(50% - 2rem);

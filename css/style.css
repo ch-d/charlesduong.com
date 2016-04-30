@@ -455,6 +455,12 @@ h6 {
     }
 }
 
+@media (max-width:20em) {
+    .right {
+        padding:0;
+    }
+}
+
 /* 
     background-image - lighter-gradient darker-gradient
     border - darker gradient

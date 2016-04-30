@@ -140,10 +140,6 @@ svg:hover {
     padding:0.5em;
 }
 
-.left {
-    float: left;
-}
-
 /* ------- CARDS ------- */
 .card {
     width:100%;
@@ -212,9 +208,21 @@ svg:hover {
 }
 /* -------- END CARDS ------- */
 
+.values {
+    color:#6B7986;
+    background: #F2F2F0;
+    box-shadow: none;
+    font-size:0.5em;
+    text-align:center;
+}
+
+.values p {
+    padding: 0 0 1em 0 !important;
+}
+
 .btn-link {
     border-radius:4px;
-    margin-bottom:1em;
+    margin-bottom:2em;
     background-color:#5CB7DC;
     border:none;
     -webkit-transition: all .2s;
@@ -236,6 +244,7 @@ svg:hover {
 }
 
 .skills {
+    margin-top:2em;
     width: 100%;
     font-family: 'Open Sans', "Helvetica Neue", Helvetica, sans-serif;
     font-weight:100;
@@ -244,7 +253,7 @@ svg:hover {
 } 
 
 .top {
-    margin-top:2em;
+    margin-top:1em;
 }
 
 .dots {
@@ -279,6 +288,7 @@ svg:hover {
         max-width: 33%
     }
     .sticky .right{
+        margin-top:1em;
         position:fixed;
         top:60px;
         max-width:28em;
@@ -307,6 +317,7 @@ svg:hover {
         width:60%;
     }
     .sticky .right{
+        margin-top:1em;
         position:fixed;
         top:60px;
         max-width:20em;

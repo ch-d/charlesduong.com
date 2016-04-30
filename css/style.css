@@ -196,28 +196,6 @@ svg:hover {
                 inset 0px 1px 0px 0px #7AD1DE;
 }
 
-.btn-link {
-    border-radius:4px;
-    margin-bottom:1em;
-    background-color:#5CB7DC;
-    border:none;
-    -webkit-transition: all .2s;
-    transition: all .2s;
-}
-
-.btn-link:link, .btn-link:visited, .btn-link:hover, .btn-link:active {
-    color:#fff;
-    font-size:0.75rem;
-    text-decoration: none;
-    padding:1em 2em;
-}
-
-.btn-link:hover {
-    box-shadow: 0 4px 24px rgba(0, 0, 0, .2);
-    -webkit-transition: all .2s;
-    transition: all .2s;
-}
-
 .card p {
     font-size:16px;
     padding: 0 2em 0 2em;
@@ -234,6 +212,29 @@ svg:hover {
 }
 /* -------- END CARDS ------- */
 
+.btn-link {
+    border-radius:4px;
+    margin-bottom:1em;
+    background-color:#5CB7DC;
+    border:none;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+.btn-link:link, .btn-link:visited, .btn-link:hover, .btn-link:active {
+    font-family: 'Open Sans', "Helvetica Neue", Helvetica, sans-serif;
+    color:#fff;
+    font-size:0.75rem;
+    text-decoration: none;
+    padding:1em 2em;
+}
+
+.btn-link:hover {
+    box-shadow: 0 4px 24px rgba(0, 0, 0, .2);
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
 .skills {
     width: 100%;
     font-family: 'Open Sans', "Helvetica Neue", Helvetica, sans-serif;
@@ -243,8 +244,7 @@ svg:hover {
 } 
 
 .top {
-    padding:0 10%;
-    width: 80%;
+    margin-top:2em;
 }
 
 .dots {
@@ -258,19 +258,15 @@ svg:hover {
 
 .skills-text {
     display:block;
-    font-size:1em;
+    font-size:1.25em;
     padding:1px 0.5em;
     background-color:#F2F2F0;
     letter-spacing: 0.15em;
     text-align:center;
-    transform: translateY(-50%);
+    transform: translateY(-1rem);
 }
 
 /* ------ STICKY ------- */
-.right {
-    position:absolute;
-}
-
 .skill {
     margin:0.5em !important;
 }
@@ -286,11 +282,12 @@ svg:hover {
         position:fixed;
         top:60px;
         max-width:28em;
+        width:100%;
     }
+
     .right-container {
         width: 50% !important;
         max-width:28em !important;
-        position: absolute !important;
         top: 0 !important;
         left: 32em !important;
     }

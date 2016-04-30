@@ -242,6 +242,11 @@ svg:hover {
     color: #B5B5B3;
 } 
 
+.top {
+    padding:0 10%;
+    width: 80%;
+}
+
 .dots {
     display:block;
     width:90%;

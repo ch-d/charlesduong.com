@@ -193,7 +193,7 @@ svg:hover {
 }
 
 .card p {
-    font-size:16px;
+    font-size:1rem;
     padding: 0 2em 0 2em;
     line-height:1.5em;
 }
@@ -218,6 +218,7 @@ svg:hover {
 
 .values p {
     padding: 0 0 1em 0 !important;
+    font-family: 'Merriweather', serif;
 }
 
 .btn-link {
@@ -225,6 +226,7 @@ svg:hover {
     margin-bottom:2em;
     background-color:#5CB7DC;
     border:none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
     -webkit-transition: all .2s;
     transition: all .2s;
 }
@@ -251,10 +253,6 @@ svg:hover {
     font-size: 1em;
     color: #B5B5B3;
 } 
-
-.top {
-    margin-top:1em;
-}
 
 .dots {
     display:block;
@@ -294,7 +292,6 @@ svg:hover {
         max-width:28em;
         width:100%;
     }
-
     .right-container {
         width: 50% !important;
         max-width:28em !important;
@@ -362,6 +359,9 @@ svg:hover {
         top: 0 ;
         left: 60%;
     }
+    .top {
+    margin-top:1em;
+}
 }
 
 @media (max-width:50em) {
@@ -460,11 +460,17 @@ svg:hover {
     .right {
         padding:0 1em;
     }
+    .card p {
+        font-size:0.9375rem;
+    }
 }
 
 @media (max-width:20em) {
     .right {
         padding:0;
+    }
+    .card p {
+        font-size:0.875rem;
     }
 }
 

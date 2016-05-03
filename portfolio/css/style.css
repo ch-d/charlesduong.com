@@ -1,5 +1,18 @@
 body {
-    background-color: #F2F2F0
+    background-color: #F2F2F0;
+    font-size: 16px;    
+}
+
+@media (min-width: 30rem) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 45rem) {
+    body {
+        font-size: 20px;
+    }
 }
 
 .flex {
@@ -33,9 +46,31 @@ body {
     justify-content: center;
 }
 
+
+/* ------- 1.33 modular scale ------- */
+h1 {
+    font-family: 'Open Sans', "Helvetica Neue", Helvetica, sans-serif;
+    font-size:3.157rem;
+}
+h2 {
+    font-family: 'Open Sans', "Helvetica Neue", Helvetica, sans-serif;
+    font-size:2.369rem;
+}
+h3 {
+    font-family: 'Open Sans', "Helvetica Neue", Helvetica, sans-serif;
+    font-size:1.777rem;
+}
+h4 {
+    font-size:1.333rem;
+}
+h5 {
+    font-size:1rem;
+}
+h6 {
+    font-size:0.75rem;
+}
+
 /* -------- NAVBAR CONTACT ------ */
-
-
 .navbar {
     background: rgba(255, 255, 255, .95);
     box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
@@ -59,19 +94,12 @@ body {
     flex-wrap: wrap
 }
 
-/* ------- SOCIAL CONTACT --------- */
-h2 {
+.logo {
     font-family: 'Raleway', "Helvetica Neue", Helvetica, sans-serif;
-    font-weight: 100;
-    font-size: 2.5em;
+    font-weight: 700;
+    margin-left:0.25rem;
     color: #3E92A3;
     text-align: center;
-}
-
-.logo {
-    font-weight: 700;
-    font-size: 1.15em;
-    margin-left:0.25em;
 }
 
 .navbar a:link, a:visited, a:hover, a:active {
@@ -81,23 +109,6 @@ h2 {
 
 .navbar .btn {
     padding: 0 0.5rem;
-}
-
-h3 {
-    font-family: 'Open Sans', "Helvetica Neue", Helvetica, sans-serif;
-    font-weight:700;
-    font-size: 0.875em;
-    letter-spacing: 0.25em;
-    color: #3E92A3;
-    text-align: center;
-    margin: 1em
-}
-
-.name {
-    padding-top:24px;
-    width:100%;
-    background-color: #F2F2F0;
-    text-align:center;
 }
 
 .btn {
@@ -125,14 +136,44 @@ svg:hover {
 }
 /* -------- END NAVBAR CONTACT --------- */
 
-.container {
-    position: relative;
-    width: 100%;
-    height:100%;
-    max-width: 640px;
-    margin: 1em auto;
-    padding:60px 2em 0 2em;
+@media (min-width:20rem) {
+    .container {
+        position: relative;
+        width: 90%;
+        margin: 1em auto;
+        padding-top:60px;
+    }
+    p {
+        font-family: 'Lora', serif;
+        line-height: 1.5;
+    }
 }
+
+@media (min-width:30rem) {
+    .container {
+        width: 80%;
+    }
+    p {
+        line-height: 1.675;
+    }
+}
+
+@media (min-width:45rem) {
+    .container {
+        width: 90%;
+    }
+    p {
+        line-height: 1.75 ;
+    }
+}
+
+@media (min-width:50rem) {
+    .container {
+        width: 100%;
+        max-width: 720px;
+    }
+}
+
 
 .switch {
     position: relative;
@@ -199,6 +240,36 @@ svg:hover {
 .content {
     margin-top:2em;
 }
+
+.title {
+    margin-top:2rem;
+    width: 100%;
+    font-family: 'Open Sans', "Helvetica Neue", Helvetica, sans-serif;
+    font-weight:100;
+    font-size: 1rem;
+    color: #B5B5B3;
+} 
+
+.dots {
+    display:block;
+    width:90%;
+    padding:0;
+    margin:1px auto;
+    height: 1px;
+    border: 1px dotted #BFBFBD;
+}
+
+.title-text {
+    display:block;
+    font-size:1.25rem;
+    padding:1px 0.5rem;
+    background-color:#F2F2F0;
+    letter-spacing: 0.15rem;
+    text-align:center;
+    transform: translateY(-1rem);
+}
+
+
 
 
 

@@ -23,6 +23,7 @@ setInterval(function() {
 }, 250);
 
 function hasScrolled() {
+
     var st = $(this).scrollTop();
     // Make sure they scroll more than delta
     if(Math.abs(lastScrollTop - st) <= delta)
@@ -32,7 +33,8 @@ function hasScrolled() {
     if (st > lastScrollTop){
         // Scroll Down
         $('.navbar').slideUp(200);
-    } else {
+    } 
+    else {
         // Scroll Up
         if(st + $(window).height() < $(document).height()) {
             $('.navbar').slideDown(200);
@@ -40,5 +42,14 @@ function hasScrolled() {
     }
     lastScrollTop = st;
 }
+
+$(".case-study-container").hover(function(){
+    $(this).toggleClass('hover-effect');
+});
+
+$(".switch").on('click', '.off', function() {
+    $(".on").removeClass('on').toggleClass('off');
+    $(this).toggleClass('on').removeClass('off');
+});
 
 })

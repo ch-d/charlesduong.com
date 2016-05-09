@@ -218,7 +218,7 @@ svg:hover {
 
 .values p {
     padding: 0 0 1em 0 !important;
-    font-family: 'Lora', serif;
+    font-family: 'Merriweather', serif;
 }
 
 .btn-link {
@@ -292,6 +292,10 @@ svg:hover {
         max-width:28em;
         width:100%;
     }
+    .stay .right {
+        position:absolute !important;
+        top:1000px !important;
+    }
     .right-container {
         width: 50% !important;
         max-width:28em !important;
@@ -313,11 +317,15 @@ svg:hover {
     .left {
         width:60%;
     }
-    .sticky .right{
+    .sticky .right {
         margin-top:1em;
         position:fixed;
         top:60px;
         max-width:20em;
+    }
+    .stay .right {
+        position:absolute !important;
+        top:1000px !important;
     }
 }
 
@@ -362,6 +370,10 @@ svg:hover {
     .top {
     margin-top:1em;
 }
+    .stay .right{
+        position:absolute !important;
+        top:1000px !important;
+    }
 }
 
 @media (max-width:50em) {
@@ -369,6 +381,10 @@ svg:hover {
         max-width: 200em !important;
         position: relative;
         top:0;
+    }
+    .stay .right{
+        position:absolute !important;
+        top:100px !important;
     }
     .right {
         max-width: 200em !important;
@@ -531,6 +547,54 @@ svg:hover {
                 0px 2px 4px 0px rgba(0, 0, 0, 0.1), 
                 inset 0px -1px 1px 0px #FCAD58, 
                 inset 0px 1px 0px 0px #FFD782;
+}
+
+.card-container {
+    width:100%;
+}
+
+.case-study-container {
+    width:18rem;
+    height:8rem;
+    margin:auto;
+    background-color:#fff;
+    border-radius:8px;
+    padding:1rem 1rem 2em 1rem;
+    margin:1rem;
+    border:none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+.case-study-card {
+    width:100%;
+    height:100%;
+    background:url(../portfolio/img/luna-lights/card.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-radius: 4px 4px 0 0;
+    border-bottom: 4px solid #2F81B7;
+}
+
+.case-study-name {
+    width:75%;
+    height:2rem;
+    margin:auto;
+    background-image: linear-gradient(-180deg, #5CB7DC 0%, #2F81B7 100%);
+    border: 4px solid #fff;
+    border-radius:4px;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+    font-family: 'Raleway', "Helvetica Neue", Helvetica, sans-serif;
+    color:#fff;
+}
+
+.hover-effect {
+    box-shadow: 0 4px 24px rgba(0, 0, 0, .2);
+    cursor:pointer
 }
 
 footer {

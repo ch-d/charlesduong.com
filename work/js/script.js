@@ -47,9 +47,4 @@ $(".case-study-container").hover(function(){
     $(this).toggleClass('hover-effect');
 });
 
-$(".switch").on('click', '.off', function() {
-    $(".on").removeClass('on').toggleClass('off');
-    $(this).toggleClass('on').removeClass('off');
-});
-
 })

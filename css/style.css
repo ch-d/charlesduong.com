@@ -571,13 +571,16 @@ svg:hover {
 .case-study-card {
     width:100%;
     height:100%;
-    background:url(../portfolio/img/luna-lights/card.png) no-repeat center center;
+    border-radius: 4px 4px 0 0;
+    border-bottom: 4px solid #2F81B7;
+}
+
+.luna-lights {
+    background:url(../work/luna-lights/img/card.png) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    border-radius: 4px 4px 0 0;
-    border-bottom: 4px solid #2F81B7;
 }
 
 .case-study-name {
@@ -605,4 +608,24 @@ footer {
     font-weight:100;
     font-family: 'Open Sans', "Helvetica Neue", Helvetica, sans-serif;
     margin-bottom:1em;
+}
+
+
+@media (min-width:20em) {
+    .contact {
+        width:90%;
+        margin:auto;
+    }
+}
+
+@media (min-width:35em) {
+    .contact {
+        width:70%;
+    }
+}
+
+@media (min-width:50em) {
+    .contact {
+        width:50%;
+    }
 }

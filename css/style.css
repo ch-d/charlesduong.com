@@ -293,6 +293,7 @@ svg:hover {
         width:100%;
     }
     .stay {
+        top:auto;
         bottom:0px;
     }
     .stay .right {
@@ -303,7 +304,6 @@ svg:hover {
     .right-container {
         width: 50% !important;
         max-width:28em !important;
-        top: 0 !important;
         left: 32em !important;
     }
 }
@@ -326,10 +326,6 @@ svg:hover {
         position:fixed;
         top:60px;
         max-width:20em;
-    }
-    .stay .right {
-        position:absolute !important;
-        top: 1000px !important;
     }
 }
 
@@ -375,6 +371,7 @@ svg:hover {
     margin-top:1em;
 }
     .stay {
+        top:auto;
         bottom:0px;
     }
     .stay .right {

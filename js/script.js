@@ -2,15 +2,23 @@ $( document ).ready(function() {
 
 $(".navbar").hide(); // hide the fixed navbar initially
 
-var headerHeight = $(".name").outerHeight();  // gets height of header
+var headerHeight = $(".name").outerHeight(true);
+var containerHeightOne = $(".container:first").outerHeight(true);
+var rightHeight = $(".right-container").outerHeight(true);
+var stickyHeight = containerHeightOne-rightHeight;
 
 $(window).scroll(function(){
 	// stick after header
 	if($(window).scrollTop() > (headerHeight-45)){
 		$(".right-container").addClass('sticky');
 		$(".navbar").slideDown(200);
-
 		
+		if($(window).scrollTop() > (stickyHeight)){
+			$(".right-container").addClass('stay');
+		}
+		else {
+			$(".right-container").removeClass('stay');
+		}
 	}
 
 	else {

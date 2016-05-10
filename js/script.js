@@ -10,12 +10,7 @@ $(window).scroll(function(){
 		$(".right-container").addClass('sticky');
 		$(".navbar").slideDown(200);
 
-		if($(window).scrollTop() > (1200)){
-			$(".right-container").addClass('stay');
-		}
-		else {
-			$(".right-container").removeClass('stay');
-		}
+		
 	}
 
 	else {

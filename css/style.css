@@ -292,9 +292,13 @@ svg:hover {
         max-width:28em;
         width:100%;
     }
+    .stay {
+        bottom:0px;
+    }
     .stay .right {
-        position:absolute !important;
-        top:1000px !important;
+        position:relative !important;
+        top:0px !important;
+        margin-bottom:1em;
     }
     .right-container {
         width: 50% !important;
@@ -325,7 +329,7 @@ svg:hover {
     }
     .stay .right {
         position:absolute !important;
-        top:1000px !important;
+        top: 1000px !important;
     }
 }
 
@@ -370,9 +374,13 @@ svg:hover {
     .top {
     margin-top:1em;
 }
-    .stay .right{
-        position:absolute !important;
-        top:1000px !important;
+    .stay {
+        bottom:0px;
+    }
+    .stay .right {
+        position:relative !important;
+        top:0px !important;
+        margin-bottom:1em;
     }
 }
 
@@ -381,10 +389,6 @@ svg:hover {
         max-width: 200em !important;
         position: relative;
         top:0;
-    }
-    .stay .right{
-        position:absolute !important;
-        top:100px !important;
     }
     .right {
         max-width: 200em !important;

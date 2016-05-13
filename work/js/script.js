@@ -47,4 +47,17 @@ $(".case-study-container").hover(function(){
     $(this).toggleClass('hover-effect');
 });
 
+$(".gif").hover( function() {
+      var src = $(this).attr("src");
+      $(this).attr("src", src.replace(/\.png$/i, ".gif"));
+    },
+    function() {
+      var src = $(this).attr("src");
+      $(this).attr("src", src.replace(/\.gif$/i, ".png"));
+    });
+
+$("#ph-container-1").twentytwenty();
+$("#ph-container-2").twentytwenty();
+$("#ph-container-3").twentytwenty();
+
 })

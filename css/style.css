@@ -299,7 +299,7 @@ svg:hover {
     .stay .right {
         position:relative !important;
         top:0px !important;
-        margin-bottom:1em;
+        margin-bottom:1.5em;
     }
     .right-container {
         width: 50% !important;
@@ -377,7 +377,7 @@ svg:hover {
     .stay .right {
         position:relative !important;
         top:0px !important;
-        margin-bottom:1em;
+        margin-bottom:1.5em;
     }
 }
 
@@ -572,7 +572,18 @@ svg:hover {
     width:100%;
     height:100%;
     border-radius: 4px 4px 0 0;
-    border-bottom: 4px solid #2F81B7;
+}
+
+.case-study-name {
+    width:75%;
+    height:2rem;
+    margin:auto;
+    border: 4px solid #fff;
+    border-radius:4px;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+    font-family: 'Raleway', "Helvetica Neue", Helvetica, sans-serif;
+    color:#fff;
 }
 
 .luna-lights {
@@ -581,19 +592,37 @@ svg:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    border-bottom: 4px solid #2F81B7;
 }
 
-.case-study-name {
-    width:75%;
-    height:2rem;
-    margin:auto;
+.luna-lights-cs {
     background-image: linear-gradient(-180deg, #5CB7DC 0%, #2F81B7 100%);
-    border: 4px solid #fff;
-    border-radius:4px;
-    transform: translateY(-50%);
-    font-size: 0.8rem;
-    font-family: 'Raleway', "Helvetica Neue", Helvetica, sans-serif;
-    color:#fff;
+}
+
+.rydr {
+    background:url(../work/rydr/img/card.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-bottom: 4px solid #E54D42;
+}
+
+.rydr-cs {
+    background-image: linear-gradient(-180deg, #F48477 0%, #E54D42 100%);
+}
+
+.past-media {
+    background:url(../work/past-media/img/card.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-bottom: 4px solid #3E92A3;
+}
+
+.past-media-cs {
+    background-image: linear-gradient(-180deg, #72C4D0 0%, #3E92A3 100%);
 }
 
 .hover-effect {

@@ -1,17 +1,17 @@
 html {
     background-color: #F2F2F0;
-    font-size: 16px;    
+    font-size: 14px;    
 }
 
 @media (min-width: 30rem) {
     html {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
 @media (min-width: 45rem) {
     html {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
@@ -82,18 +82,17 @@ p {
     font-size:1rem;
     font-family: 'Merriweather', serif;
     font-weight:300;
-    line-height: 1.75rem;
+    line-height: 2rem;
     margin-bottom:1rem;
 }
 
 blockquote {
     text-align:left; 
-    border-left:2px solid #6B7986; 
     color: #6B7986; 
     font-family: 'Merriweather', serif;
     font-size:0.75rem;
     padding:0 1rem;
-    margin:0 1rem 1rem 1rem;
+    margin:0.5rem 1rem 1rem 1rem;
     line-height:1.5;
 }
 
@@ -102,7 +101,7 @@ blockquote {
     background: rgba(255, 255, 255, .95);
     box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
     z-index: 200;
-    padding: 10px;
+    padding: 0.55555556rem;
     height: 2rem;
 
     position: fixed;
@@ -156,8 +155,8 @@ svg {
 }
 
 svg:hover {
-    -webkit-transform: translateY(-2px);
-    transform: translateY(-2px);
+    -webkit-transform: translateY(-0.11111111rem);
+    transform: translateY(-0.111111111rem);
     -webkit-transition: all .2s;
     transition: all .2s
 }

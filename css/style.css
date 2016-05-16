@@ -74,7 +74,7 @@ h2 {
     margin-left:0.25em;
 }
 
-.navbar a:link, a:visited, a:hover, a:active {
+a:link, a:visited, a:hover, a:active {
     color: #3E92A3;
     text-decoration: none;
 }
@@ -538,7 +538,7 @@ svg:hover {
                 inset 0px 1px 0px 0px #61C2E8;
 }
 
-/*.marketing {
+.marketing {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -548,18 +548,6 @@ svg:hover {
                 0px 2px 4px 0px rgba(0, 0, 0, 0.1), 
                 inset 0px -1px 1px 0px #FCAD58, 
                 inset 0px 1px 0px 0px #FFD782;
-}*/
-
-.marketing {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    background-image: linear-gradient(-180deg, #F3B55E 0%, #E47E30 100%);
-    border: 1px solid #E47E30;
-    box-shadow: 0px -1px 4px 0px rgba(0, 0, 0, 0.1), 
-                0px 2px 4px 0px rgba(0, 0, 0, 0.1), 
-                inset 0px -1px 1px 0px #FF9645, 
-                inset 0px 1px 0px 0px #F2C88D;
 }
 
 .card-container {
@@ -669,4 +657,8 @@ footer {
     .contact {
         width:50%;
     }
+}
+
+footer a:link, a:visited, a:hover, a:active {
+    text-decoration: underline;
 }

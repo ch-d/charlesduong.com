@@ -23,25 +23,35 @@ setInterval(function() {
 }, 250);
 
 function hasScrolled() {
-
     var st = $(this).scrollTop();
     // Make sure they scroll more than delta
+        
+if (st == 0) {
+        $('.navbar').addClass('slideDown');
+        $('.navbar').removeClass('slideUp');
+}
+
+if(st > 0) {
     if(Math.abs(lastScrollTop - st) <= delta)
         return;
     // If they scrolled down and are past the navbar, add class .nav-up.
     // This is necessary so you never see what is "behind" the navbar.
     if (st > lastScrollTop){
         // Scroll Down
-        $('.navbar').slideUp(200);
+        $('.navbar').addClass('slideUp');
+        $('.navbar').removeClass('slideDown');
     } 
     else {
         // Scroll Up
         if(st + $(window).height() < $(document).height()) {
-            $('.navbar').slideDown(200);
+        $('.navbar').addClass('slideDown');
+        $('.navbar').removeClass('slideUp');
         }
     }
     lastScrollTop = st;
 }
+}
+
 
 $(".case-study-container").hover(function(){
     $(this).toggleClass('hover-effect');

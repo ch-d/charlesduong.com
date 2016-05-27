@@ -101,8 +101,9 @@ blockquote {
     background: rgba(255, 255, 255, .95);
     box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
     z-index: 200;
-    padding: 0.55555556rem;
-    height: 2rem;
+    padding: 0.5em;
+    height: 2.5em;
+    font-size:16px;
 
     position: fixed;
     top: 0;
@@ -122,8 +123,9 @@ blockquote {
 
 .logo {
     font-family: 'Raleway', "Helvetica Neue", Helvetica, sans-serif;
+    font-size:1em;
     font-weight: 700;
-    margin-left:0.25rem;
+    margin-left:0.25em;
     color: #3E92A3;
     text-align: center;
 }
@@ -134,11 +136,11 @@ blockquote {
 }
 
 .navbar .btn {
-    padding: 0 0.5rem;
+    padding: 0 0.5em;
 }
 
 .btn {
-    padding: 0 1rem;
+    padding: 0 1em;
 }
 
 .social {
@@ -155,10 +157,67 @@ svg {
 }
 
 svg:hover {
-    -webkit-transform: translateY(-0.11111111rem);
-    transform: translateY(-0.111111111rem);
+    -webkit-transform: translateY(-0.11111111em);
+    transform: translateY(-0.111111111em);
     -webkit-transition: all .2s;
     transition: all .2s
+}
+
+.animated {
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+@-webkit-keyframes slideDown {
+    0% {
+        -webkit-transform: translateY(-100%)
+    }
+    100% {
+        -webkit-transform: translateY(0)
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%)
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+.animated.slideDown {
+    -webkit-animation-name: slideDown;
+    animation-name: slideDown
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        -webkit-transform: translateY(0)
+    }
+    100% {
+        -webkit-transform: translateY(-100%)
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    100% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%)
+    }
+}
+
+.animated.slideUp {
+    -webkit-animation-name: slideUp;
+    animation-name: slideUp
 }
 /* -------- END NAVBAR CONTACT --------- */
 
@@ -171,12 +230,37 @@ svg:hover {
         width: 90%;
         margin: 1rem auto;
     }
-    .hero {
+/*    .hero {
         background-size:100% !important;
-    }
+    }*/
     .half-col-img {
         width:100%;
-        margin:1rem 0 0 0;
+        margin:0 0 1.75rem 0;
+    }
+    .ll-3 {
+        order:4;
+    }
+    .ll-4 {
+        order:3;
+    }
+    .col-80 {
+        width:100%
+    }
+    .custom-wistia {
+        width:100%
+    }
+    .custom-wistia-padding {
+        padding:0 0 6% 0
+    }
+    .custom-wistia-padding-2 {
+        padding:0 0 6% 0
+    }
+}
+
+@media (max-width:30rem) {
+    .title-text-2 {
+        transform: translateY(-33.75%) !important;
+        width:10rem;
     }
 }
 
@@ -184,8 +268,25 @@ svg:hover {
     .container {
         width: 80%;
     }
-    .hero {
+/*    .hero {
         background-size:75% !important;
+    }*/
+    .col-80 {
+        width:80%
+    }
+    .custom-wistia {
+        width:80%;
+        left:0;
+        top:0;
+        right:0;
+        margin:0 auto;
+        position:absolute;
+    }
+    .custom-wistia-padding {
+        padding:49% 0 0 0
+    }
+    .custom-wistia-padding-2 {
+        padding:55% 0 0 0
     }
 }
 
@@ -193,12 +294,21 @@ svg:hover {
     .container {
         width: 90%;
     }
-    .hero {
+/*    .hero {
         background-size:50% !important;
-    }
+    }*/
     .half-col-img {
         width:45%;
-        margin:0.5rem;
+        margin:-0.5rem 0.5rem 1.5rem 0.5rem;
+    }
+    .col-80 {
+        width:calc(80% + 2.5rem)
+    }
+    .ll-3 {
+        order:3;
+    }
+    .ll-4 {
+        order:4;
     }
 }
 
@@ -207,12 +317,14 @@ svg:hover {
         width: 100%;
         max-width: 720px;
     }
+
 }
 
 .hero {
     width:100%;
     height:15rem;
-    margin-top:3rem;
+    font-size:16px;
+    margin-top:3.5em;
 }
 
 .switch {
@@ -283,7 +395,7 @@ svg:hover {
 
 .title {
     display:inline-block;
-    margin-top:2rem;
+    margin-top:1rem;
     width: 100%;
     font-family: 'Open Sans', "Helvetica Neue", Helvetica, sans-serif;
     font-weight:100;
@@ -320,7 +432,7 @@ svg:hover {
     margin:auto;
     background-color:#fff;
     border-radius:8px;
-    padding:1rem 1rem 2em 1rem;
+    padding:0.5rem 0.5rem 2em 0.5rem;
     margin:1rem;
     border:none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
@@ -385,6 +497,28 @@ svg:hover {
 
 .past-media-cs {
     background-image: linear-gradient(-180deg, #72C4D0 0%, #3E92A3 100%);
+}
+
+.prototype-hourly-ll {
+    background:url(../luna-lights/img/hourly-prototype.png) no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-bottom: 4px solid #8A9199;
+}
+
+.prototype-daily-ll {
+    background:url(../luna-lights/img/daily-prototype.png) no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-bottom: 4px solid #8A9199;
+}
+
+.prototype-cs {
+    background-color: #B8C2CC
 }
 
 .hover-effect {

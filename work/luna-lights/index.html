@@ -94,23 +94,21 @@
 <h6>Luna Lights is an automated lighting system that utilizes cloud based data analytics to prevent and detect falls in the older adult population.</h6>
 
 <h4>Opportunity</h4>
-<p>As part of the Startup Institute, I partnered up with Ida Duott, John Gramilia, and Jiha Hwang to help Luna Lights design an analytics reporting tool. At the time, they were recording data on their personal backend system, but the only method of report was through screen­shots of a third party extension. Our goal for this project was to provide a streamline way for users to interact with data about their residents and further inform better care for older adults.</p>
-
-<h4>Discovery</h4>
-<p>At the time, Luna Lights had a pretty extensive understanding of the users and their qualities, so it was a matter of us catching up to speed. After a couple of brainstorming sessions, we determined we could provide the most value by designing for the interaction between the night time staff and the day time staff. There was strong communication between the staff members throughout the day, but communication seemed to break down during shift changes. We began ideating on this use case of passing on information from the night staff to the day staff in a digestible, efficient manner.</p>
+<p>As part of the <a href='https://www.startupinstitute.com/'>Startup Institute</a>, I partnered up with <a href='https://www.linkedin.com/in/idadoutt'>Ida Doutt</a>, <a href='https://www.linkedin.com/in/jgramila'>John Gramilia</a>, and <a href='https://www.linkedin.com/in/jiha-hwang'>Jiha Hwang</a> to help <a href='http://lunalights.org/'>Luna Lights</a> design an analytics reporting tool. At the time, they were recording data on their personal backend system, but the only method of reporting was through screen­shots of a third party extension. Our goal for this project was to provide a streamlined way for care providers to interact with data about their residents and further inform better care for older adults.</p>
 
 <h4>Ideation</h4>
-<p>With the use case and persona established, the next step was to form a hierarchy with the way we displayed the data to users. We knew the residents were the hero of the story so we always wanted a way to find them quickly. As for the data, we followed an urgency hierarchy with the visualizations. The top section would include any urgent information upfront. The next section would have more interaction. The last section would be individual data.</p>
+<p>After several brainstorming sessions, we decided to design for the interaction between the night time staff and the day time staff. Strong communication was present between the staff members throughout the day, but it seemed to break down during shift changes. With this in mind, we explored ways to help day time staff members to easily observe any anomalies when they first come into work.</p>
 <div class ='flex flex-center flex-wrap'>
     <img src="../luna-lights/img/luna-lights-wb.png" alt="Binoculars" class='half-col-img'>
-    <img src="../luna-lights/img/luna-lights-residents.png" alt="Luna Lights 01" class='half-col-img'>
-    <img src="../luna-lights/img/luna-lights-admin.png" alt="Luna Lights 02" class='half-col-img ll-3'>
-    <img src="../luna-lights/img/luna-lights-notes.png" alt="Binoculars" class='half-col-img ll-4'>
+    <img src="../luna-lights/img/luna-lights-notes.png" alt="Binoculars" class='half-col-img'>
 </div>
 
-<h4>Daily View</h4>
-<p>In determining the way to show the data sets in a digestible way, we went through several iterations of sketches and prototypes. Keeping with the idea of showing the time spent out of bed and supplementing that with number of alerts and trips and time spent out of bed for each individual. We came up with an idea to display it as something similiar to a gannt chart.</p>
+<h4>Structure</h4>
+<p>We were all new to data visualization, so we wanted to spend time understanding how to structure graphs and information. The most useful insights came from <a href='https://medium.com/truth-labs/designing-data-driven-interfaces-a75d62997631'>an article by Truth Labs</a>, which helped us create a hierarchy where urgent hourly data was at the top, a daily view of all residents came next, and any individual resident data would be presented at the bottom.
+</p>
 
+<h4>Hourly View</h4>
+<p>Their current API gave us the option to make GET requests for timestamps of when residents got in and out of bed, as well as any alerts sent to caregivers the night before. (Alerts are sent when residents are out of bed for a predetermined amount of time.) After several iterations, we determined the best way to display this data was in the form of something similiar to a gannt chart.</p>
 <div class ='flex flex-center flex-wrap'>
 <div class='case-study-container' style='width:100%; margin-top:0' onclick="window.open('https://invis.io/AE7FSGHYS#/161047204_Last12hours-00','mywindow');">
     <div class='case-study-card prototype-hourly-ll'></div>
@@ -118,16 +116,13 @@
 </div>
 </div>
 
-<h4>Weekly View</h4>
-<p>As part of the Startup Institute, I partnered up with Luna Lights to build out an analytics reporting tool. At the time, they were recording data on their personal backend system, but the only method of report was through screen­shots of a third party extension. Our goal for this project was to provide a streamline way for users to interact with data about their residents and further inform better care for older adults.</p>
+<h4>Daily View</h4>
+<p>While iterating on the daily view, I saw myself repeating processes and looked for ways to design a better flow for creating prototypes. Using Sketch's new nested symbols feature, I worked on a system of symbols and styles that represented each state the view <i>could</i> be. I then exported it out to a Dropbox folder and synced it up with an Invision prototype to see if the interactions made sense. This gave us more time to test any assumptions we had and iterate further.</p>
 <div class ='flex flex-center flex-wrap'>
     <div class ='flex flex-center flex-wrap col-80'>
     <img src="../luna-lights/img/sketch-process.gif" alt="Binoculars" class='half-col-img' style='width:100%'>
     </div>
 </div>
-
-<p>As part of the Startup Institute, I partnered up with Luna Lights to build out an analytics reporting tool. At the time, they were recording data on their personal backend system, but the only method of report was through screen­shots of a third party extension. Our goal for this project was to provide a streamline way for users to interact with data about their residents and further inform better care for older adults.</p>
-
 <div class ='flex flex-center flex-wrap'>
 <div class='case-study-container' style='width:100%; height:12rem; margin-top:0' onclick="window.open('https://invis.io/K87FSGOWY#/161818578_All-Residents-01-01','mywindow');">
     <div class='case-study-card prototype-daily-ll'></div>
@@ -136,7 +131,7 @@
 </div>
 
 <h4>Resident View</h4>
-<p>As part of the Startup Institute, I partnered up with Luna Lights to build out an analytics reporting tool. At the time, they were recording data on their personal backend system, but the only method of report was through screen­shots of a third party extension. Our goal for this project was to provide a streamline way for users to interact with data about their residents and further inform better care for older adults.</p>
+<p>After a user found a resident they wanted to investigate further, they could navigate to a card with individual hourly, daily, and numbers. The resident view placed precendent in the line graph and hard numbers over the urgent hourly view. This gave the day time staff a means for more thoughtful interactions of long-term trends for individual residents.</p>
 <div class ='flex flex-center flex-wrap'>
     <div class ='flex flex-center flex-wrap col-80'>
     <img src="../luna-lights/img/resident-view.png" alt="Binoculars" class='half-col-img' style='width:100%'>
@@ -144,9 +139,7 @@
 </div>
 
 <h4>Final Mockup</h4>
-<p>After several iterations of processes and designs, we came up with this final mockup. Data Visualization is a tricky UI challenge I never thought I would be interested in tackling. At first, it did feel overwhelming not knowing where to start, but as time went on, each challenge became a little more clear. </p>
-
-
+<p>After a month of experimenting with processes and designs, we came up with this final mockup. At first, data visualization was a tricky UI challenge that seemed too overwhelming to tackle and we did not know where to start. But as time went on, each challenge became a little more clear. We did not have time to implement the designs as code, but it was a strong exercise in understanding design tools and workflows.</p>
 <a href='../luna-lights/img/luna-lights-final.png'>
 <img src="../luna-lights/img/luna-lights-final.png" alt="Binoculars" style='width:100%;  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);'>
 </a>
@@ -156,6 +149,8 @@
 
 </div>
 
+<div class ='flex flex-center flex-wrap'>
+    <div class ='flex flex-center flex-wrap col-80'>
     <div class='title' style=''>
         <div class='dots'></div>
         <div class='dots'></div>
@@ -163,9 +158,10 @@
             <div class="title-text">OTHER PROJECTS</div>
         </div>
     </div>
+</div>
 
-<div class='flex flex-center flex-wrap card-container' style='margin-bottom:1.5rem'>
-        <div class='case-study-container' onclick="window.open('../luna-lights','mywindow');">
+<div class='flex flex-center flex-wrap card-container' style='margin-bottom:1.5rem;'>
+        <div class='case-study-container' onclick="window.open('../past-media','mywindow');">
             <div class='case-study-card past-media'></div>
             <div class='flex flex-center case-study-name past-media-cs'>Past Media Projects</div>
         </div>

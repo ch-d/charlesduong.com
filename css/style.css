@@ -68,21 +68,6 @@ h2 {
     text-align: center;
 }
 
-.logo {
-    font-weight: 700;
-    font-size: 1.15rem;
-    margin-left:0.25em;
-}
-
-a:link, a:visited, a:hover, a:active {
-    color: #3E92A3;
-    text-decoration: none;
-}
-
-.navbar .btn {
-    padding: 0 0.5rem;
-}
-
 h3 {
     font-family: 'Open Sans', "Helvetica Neue", Helvetica, sans-serif;
     font-weight:700;
@@ -93,6 +78,10 @@ h3 {
     margin: 1em
 }
 
+h5 {
+    font-size:1rem;
+}
+
 .name {
     padding-top:24px;
     width:100%;
@@ -100,8 +89,50 @@ h3 {
     text-align:center;
 }
 
+.navbar {
+    background: rgba(255, 255, 255, .95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    z-index: 200;
+    padding: 0.5em;
+    height: 2.5em;
+    font-size:16px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center
+
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.logo {
+    font-family: 'Raleway', "Helvetica Neue", Helvetica, sans-serif;
+    font-size:1em;
+    font-weight: 700;
+    margin-left:0.25em;
+    color: #3E92A3;
+    text-align: center;
+}
+
+.navbar a:link, a:visited, a:hover, a:active {
+    color: #3E92A3;
+    text-decoration: none;
+}
+
+.navbar .btn {
+    padding: 0 0.5em;
+}
+
 .btn {
-    padding: 0 1rem;
+    padding: 0 1em;
 }
 
 .social {
@@ -118,10 +149,67 @@ svg {
 }
 
 svg:hover {
-    -webkit-transform: translateY(-2px);
-    transform: translateY(-2px);
+    -webkit-transform: translateY(-0.11111111em);
+    transform: translateY(-0.111111111em);
     -webkit-transition: all .2s;
     transition: all .2s
+}
+
+.animated {
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+@-webkit-keyframes slideDown {
+    0% {
+        -webkit-transform: translateY(-100%)
+    }
+    100% {
+        -webkit-transform: translateY(0)
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%)
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+.animated.slideDown {
+    -webkit-animation-name: slideDown;
+    animation-name: slideDown
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        -webkit-transform: translateY(0)
+    }
+    100% {
+        -webkit-transform: translateY(-100%)
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    100% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%)
+    }
+}
+
+.animated.slideUp {
+    -webkit-animation-name: slideUp;
+    animation-name: slideUp
 }
 /* -------- END NAVBAR CONTACT --------- */
 
@@ -560,7 +648,7 @@ svg:hover {
     margin:auto;
     background-color:#fff;
     border-radius:8px;
-    padding:1rem 1rem 2em 1rem;
+    padding:0.5rem 0.5rem 2em 0.5rem;
     margin:1rem;
     border:none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
@@ -587,7 +675,7 @@ svg:hover {
 }
 
 .luna-lights {
-    background:url(../work/luna-lights/img/card.png) no-repeat center center;
+    background:url(http://portfolio.charlesduong.com/luna-lights/img/card.png) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -600,7 +688,7 @@ svg:hover {
 }
 
 .rydr {
-    background:url(../work/rydr/img/card.png) no-repeat center center;
+    background:url(http://portfolio.charlesduong.com/rydr/img/card.png) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -613,7 +701,7 @@ svg:hover {
 }
 
 .past-media {
-    background:url(../work/past-media/img/card.png) no-repeat center center;
+    background:url(http://portfolio.charlesduong.com/past-media/img/card.png) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -661,4 +749,22 @@ footer {
 
 footer a:link, a:visited, a:hover, a:active {
     text-decoration: underline;
+}
+
+@media (min-width:20rem) {
+    .col-80 {
+        width:100% !important
+    }
+}
+
+@media (min-width:30rem) {
+    .col-80 {
+        width:80% !important
+    }
+}
+
+@media (min-width:45rem) {
+    .col-80 {
+        width:calc(80% + 2.5rem) !important
+    }
 }

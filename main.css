@@ -20,6 +20,16 @@ img.bg {
     position: fixed;
     top: 0;
     left: 0; } 
+
+
+.large { display: inline-block; }
+.small { display: none; }
+
+@media (max-width: 420px) { 
+  .large { display: none; }
+  .small { display: inline-block; }
+}
+
 @media screen and (max-width: 1024px){
     img.bg {
         left: 50%;
@@ -38,6 +48,8 @@ img.bg {
 }
 
 .sub {
+    padding: 0 30% 0 30%;
+    margin-bottom:125px;
 }
 
 .backdrop {
@@ -48,12 +60,12 @@ h1 {
     font: 100 3.5em 'Raleway', Times, serif;
     color: #eee;
     line-height: 0%;
-    margin-bottom:0.8em;
 }
 
 h2 {
-    font: 1em 'Arvo', Times, serif;
+    font: 0.85em 'Arvo', Times, serif;
     color: #eee;
+    margin:0;
 }
 
 @media (max-width: 700px) {

@@ -1,0 +1,105 @@
+html, body {
+    background-color: #242020;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* background image */
+img.bg {
+	/* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: 100%;
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0; } 
+
+
+.large { display: inline-block; }
+.small { display: none; }
+
+@media (max-width: 420px) { 
+  .large { display: none; }
+  .small { display: inline-block; }
+}
+
+@media screen and (max-width: 1024px){
+    img.bg {
+        left: 50%;
+        margin-left: -512px; 
+    }}
+
+/* content */
+#content {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 80%;
+    padding: 0;
+    padding-top: 100px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.sub {
+    padding: 0 30% 0 30%;
+    margin-bottom:125px;
+}
+
+.backdrop {
+    background-color:#000;
+}
+
+h1 {
+    font: 100 3.5em 'Raleway', Times, serif;
+    color: #eee;
+    line-height: 0%;
+}
+
+h2 {
+    font: 0.85em 'Arvo', Times, serif;
+    color: #eee;
+    margin:0;
+}
+
+@media (max-width: 700px) {
+h1 {
+    font: 100 2.5em 'Raleway', Times, serif;
+    margin:0;
+}
+}
+
+#btn {
+    width:240px;
+    padding:10px;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    font: 400 16px 'Raleway', Times, serif;
+    color:#fff;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#my_popup {
+    color:#fff;
+    font: 12px 'Arvo', Times, serif;
+    margin:0 25% 0 25%;
+}
+
+#footer {
+    letter-spacing:2em;
+    width:100%;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+#footer img {
+    max-width:3em;
+    max-height:auto;
+}

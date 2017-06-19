@@ -8,6 +8,7 @@
   "dependencies": {
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
+    "react-simple-icons": "^1.0.0-beta.5",
     "tachyons": "^4.5.6",
     "tachyons-cli": "^1.0.10"
   },

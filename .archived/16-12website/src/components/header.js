@@ -4,7 +4,7 @@ import styled from 'styled-components/';
 
 const Box = styled.div`
 	background-color:#FAFAFA;
-	border: 1px solid #F5F5F5;
+	border: 3px double #F8F8F8;
 `;
 
 export default () => (
@@ -13,7 +13,7 @@ export default () => (
 			<h1 className='f2 fw1 ma0 tracked'>charles duong</h1>
 			<h2 className='f6 fw6 ttu measure pb2 ma0 tracked-mega'>product designer</h2>
 			<Social
-				url='https://twitter.com/hicarlesd'
+				url='https://twitter.com/hicharlesd'
 				site='twitter'
 				color='1DA1F2'
 			/>
@@ -23,7 +23,7 @@ export default () => (
 				color='0077B5'
 			/>
 			<Social
-				url='https://instagram.com/charlesduong'
+				url='https://github.com/ch-d'
 				site='github'
 				color='181717'
 			/>

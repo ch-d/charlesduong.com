@@ -4,8 +4,7 @@
   "dependencies": {
     "grid-styled": "^2.0.0-8",
     "next": "^2.4.4",
-    "styled-components": "^2.1.0",
-    "styled-system": "^1.0.0-8"
+    "styled-components": "^2.1.0"
   },
   "scripts": {
     "dev": "next",

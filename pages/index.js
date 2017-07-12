@@ -1,6 +1,7 @@
 import { injectGlobal, ThemeProvider } from 'styled-components';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
+import Social from '../components/social';
 
 injectGlobal`
   body {
@@ -56,6 +57,26 @@ export default () => (
         <Paragraph>
           Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
         </Paragraph>
+        <Social
+          url='https://twitter.com/hicharlesd'
+          site='twitter'
+          color='1DA1F2'
+        />
+        <Social
+          url='https://linkedin.com/in/charlesduong'
+          site='linkedin'
+          color='0077B5'
+        />
+        <Social
+          url='https://github.com/ch-d'
+          site='github'
+          color='181717'
+        />
+        <Social
+          url='mailto:charles@charlesduong.com'
+          site='gmail'
+          color='D14836'
+        />
       </Box>
   	</Flex>
   </ThemeProvider>

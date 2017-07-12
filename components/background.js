@@ -4,15 +4,18 @@ import { Flex, Box } from 'grid-styled';
 const Grey = styled.div`
   background-color: ${props => props.theme.colors.grey};
   width:100%;
-  height: 700px;
+  height:1200px;
 `;
 
 const Gradient = styled.div`
   width:100%;
   height: 100%;
-  transform: translate(2.75rem, -6.5rem);
+  transform: translate(4rem, -4rem);
+  z-index:-100;
   // gradient
   position: relative;
+  // HACK ==> REMOVE HEIGHT & MARGIN 700px TO-DO -------
+  margin-bottom:-1200px;
   &:before, &:after {
     content: "";
     position: absolute;
@@ -36,18 +39,18 @@ const Work = styled.h1`
   letter-spacing: .1em;
   font-weight: 100;
   margin: 0;
-  padding-left:2rem;
   transform: translateY(-50%);
 `;
 
-export default () => (
+export default ({children}) => (
   <Flex wrap>
     <Box width={3/4} ml={'4.165%'} mt={4}>
       <Grey>
-        <Work>Some of my work</Work>
-        <Gradient>
-
-        </Gradient>
+        <Gradient></Gradient>
+        <Box px={4}>
+          <Work>Some of my work</Work>
+          {children}
+        </Box>
       </Grey>
     </Box>
   </Flex>

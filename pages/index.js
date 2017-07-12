@@ -2,6 +2,7 @@ import { injectGlobal, ThemeProvider } from 'styled-components';
 import Head from 'next/head';
 import Hero from '../components/hero';
 import Background from '../components/background';
+import Card from '../components/card'
 
 injectGlobal`
   body {
@@ -37,7 +38,9 @@ export default () => (
       <div>
         <Hero></Hero>
         <Background>
-
+          <Card></Card>
+          <Card></Card>
+          <Card></Card>
         </Background>
       </div>
     </ThemeProvider>

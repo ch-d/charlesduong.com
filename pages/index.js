@@ -17,9 +17,12 @@ injectGlobal`
 
 const theme = {
   colors: {
-    black: 'black',
-    blue: 'blue',
-    grey: '#FAFAFA'
+    black: '#1D3239',
+    grey: '#FAFAFA',
+    gradient: {
+      green: '#74EBD5',
+      purple: '#ACB6E5'
+    }
   }
 }
 

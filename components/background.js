@@ -10,9 +10,25 @@ const Grey = styled.div`
 const Gradient = styled.div`
   width:100%;
   height: 100%;
-  border-top: 8px solid ${props => props.theme.colors.grey};
-  border-right: 8px solid ${props => props.theme.colors.grey};
-  transform: translate(4rem, -8rem);
+  transform: translate(2.75rem, -6.5rem);
+  // gradient
+  position: relative;
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    right: -4px;
+	}
+  &:before {
+    bottom: -4px;
+    width: 4px;
+    background-image: linear-gradient(${props => props.theme.colors.gradient.green}, ${props => props.theme.colors.gradient.purple});
+  }
+  &:after {
+    left: -4px;
+    height: 4px;
+    background-image: linear-gradient(to right, ${props => props.theme.colors.gradient.purple}, ${props => props.theme.colors.gradient.green});
+  }
 `
 
 const Work = styled.h1`
@@ -26,7 +42,7 @@ const Work = styled.h1`
 
 export default () => (
   <Flex wrap>
-    <Box width={5/6} ml={'4.165%'} mt={4}>
+    <Box width={3/4} ml={'4.165%'} mt={4}>
       <Grey>
         <Work>Some of my work</Work>
         <Gradient>

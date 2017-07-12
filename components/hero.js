@@ -26,12 +26,12 @@ const Paragraph = styled.p`
 `;
 
 export default () => (
-	<Flex>
-    <Box width={1/3} ml='16.7%' py={4} my={4}>
+	<Flex wrap mx={[2,2,0]}>
+    <Box width={[1, 1/2, 1/3]} ml={['0','0','16.7%']} py={[1,2,4]} my={[1,2,4]}>
       <Title>charles duong</Title>
       <SubTitle>PRODUCT DESIGNER</SubTitle>
     </Box>
-    <Box width={1/3} ml='' py={3} my={4}>
+    <Box width={[1, 1/2, 1/3]} py={[0,2,3]} my={[0,2,4]}>
       <Paragraph>
         Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
       </Paragraph>

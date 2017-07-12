@@ -1,4 +1,5 @@
 import { injectGlobal, ThemeProvider } from 'styled-components';
+import Head from 'next/head';
 import Hero from '../components/hero';
 
 injectGlobal`
@@ -22,7 +23,14 @@ const theme = {
 }
 
 export default () => (
-  <ThemeProvider theme={theme}>
-    <Hero></Hero>
-  </ThemeProvider>
+  <div>
+    <Head>
+      <title>Charles Duong</title>
+      <meta charSet='utf-8' />
+      <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+    </Head>
+    <ThemeProvider theme={theme}>
+      <Hero></Hero>
+    </ThemeProvider>
+  </div>
 )

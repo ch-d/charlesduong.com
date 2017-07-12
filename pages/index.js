@@ -1,6 +1,7 @@
 import { injectGlobal, ThemeProvider } from 'styled-components';
 import Head from 'next/head';
 import Hero from '../components/hero';
+import Background from '../components/background';
 
 injectGlobal`
   body {
@@ -18,7 +19,7 @@ const theme = {
   colors: {
     black: 'black',
     blue: 'blue',
-    grey: "grey"
+    grey: '#FAFAFA'
   }
 }
 
@@ -30,7 +31,12 @@ export default () => (
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
     </Head>
     <ThemeProvider theme={theme}>
-      <Hero></Hero>
+      <div>
+        <Hero></Hero>
+        <Background>
+
+        </Background>
+      </div>
     </ThemeProvider>
   </div>
 )

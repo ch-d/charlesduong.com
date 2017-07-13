@@ -48,12 +48,14 @@ export default () => (
             sub2 = "User Research"
             sub3 = "Design System"
             img = "../static/lawyer-exchange.jpg"
+            url = "/lawyer-exchange"
           />
           <Card info_num="2" img_num="1"
             title = "User Interface Design"
             sub1 = "Occasion"
             sub2 = "Luna Lights"
             img = "../static/user-interface.jpg"
+            url = "/user-interface"
           />
           <Card
             title = "Marketing Design"
@@ -61,6 +63,7 @@ export default () => (
             sub2 = "Conduit Labs"
             sub3 = "Women Tech Founders"
             img = "../static/marketing.jpg"
+            url = "/marketing"
           />
         </Background>
       </div>

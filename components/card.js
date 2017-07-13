@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
+import Link from 'next/link';
 
 const Main = styled.div`
   width:125%;
@@ -48,20 +49,22 @@ const Image = styled.div`
 `
 
 // CHANGE SUB COMPONENT (DRY) TO LIST & KEYS TO-DO ---------------
-export default ({ title, sub1, sub2, sub3, img, info_num, img_num }) => (
-  <Main>
-    <Fill wrap p={2}>
-      <Box width={1/3} order={info_num}>
-        <Info pl={2}>
-          <Title>{title}</Title>
-          <Sub>{sub1}</Sub>
-          <Sub>{sub2}</Sub>
-          <Sub>{sub3}</Sub>
-        </Info>
-      </Box>
-      <Box width={2/3} order={img_num}>
-        <Image img={img} />
-      </Box>
-    </Fill>
-  </Main>
+export default ({ url, title, sub1, sub2, sub3, img, info_num, img_num }) => (
+  <Link href={url}>
+    <Main>
+      <Fill wrap p={2}>
+        <Box width={1/3} order={info_num}>
+          <Info pl={2}>
+            <Title>{title}</Title>
+            <Sub>{sub1}</Sub>
+            <Sub>{sub2}</Sub>
+            <Sub>{sub3}</Sub>
+          </Info>
+        </Box>
+        <Box width={2/3} order={img_num}>
+          <Image img={img} />
+        </Box>
+      </Fill>
+    </Main>
+  </Link>
 )

@@ -43,7 +43,7 @@ const Work = styled.h1`
 `;
 
 export default ({children}) => (
-  <Flex wrap>
+  <Flex wrap mt={4}>
     <Box width={3/4} ml={'4.165%'} mt={4}>
       <Grey>
         <Gradient></Gradient>

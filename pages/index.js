@@ -14,12 +14,16 @@ injectGlobal`
                'segoe ui', arial,
                sans-serif;
   }
+  * {
+    transition: all .2s ease-in-out;
+  }
 `;
 
 const theme = {
   colors: {
     black: '#1D3239',
     grey: '#FAFAFA',
+    blue: '#B6CFF0',
     gradient: {
       green: '#74EBD5',
       purple: '#ACB6E5'
@@ -36,11 +40,28 @@ export default () => (
     </Head>
     <ThemeProvider theme={theme}>
       <div>
-        <Hero></Hero>
+        <Hero />
         <Background>
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
+          <Card
+            title = "Lawyer Exchange"
+            sub1 = "Marketing & Development"
+            sub2 = "User Research"
+            sub3 = "Design System"
+            img = "../static/lawyer-exchange.jpg"
+          />
+          <Card info_num="2" img_num="1"
+            title = "User Interface Design"
+            sub1 = "Occasion"
+            sub2 = "Luna Lights"
+            img = "../static/user-interface.jpg"
+          />
+          <Card
+            title = "Marketing Design"
+            sub1 = "BallotReady"
+            sub2 = "Conduit Labs"
+            sub3 = "Women Tech Founders"
+            img = "../static/marketing.jpg"
+          />
         </Background>
       </div>
     </ThemeProvider>

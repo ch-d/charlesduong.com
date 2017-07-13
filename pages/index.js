@@ -1,36 +1,12 @@
-import { injectGlobal, ThemeProvider } from 'styled-components';
+import baseStyles from '../constants/baseStyles';
+import colors from '../constants/colors';
+import { ThemeProvider } from 'styled-components';
 import Head from 'next/head';
 import Hero from '../components/hero';
 import Background from '../components/background';
 import Card from '../components/card'
 
-injectGlobal`
-  body {
-    font-family: -apple-system, BlinkMacSystemFont,
-               'avenir next', avenir,
-               helvetica, 'helvetica neue',
-               ubuntu,
-               roboto, noto,
-               'segoe ui', arial,
-               sans-serif;
-    margin:0;
-  }
-  * {
-    transition: all .2s ease-in-out;
-  }
-`;
-
-const theme = {
-  colors: {
-    black: '#1D3239',
-    grey: '#FAFAFA',
-    blue: '#5C8A99',
-    gradient: {
-      green: '#74EBD5',
-      purple: '#ACB6E5'
-    }
-  }
-}
+baseStyles();
 
 export default () => (
   <div>
@@ -38,8 +14,11 @@ export default () => (
       <title>Charles Duong</title>
       <meta charSet='utf-8' />
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+      <style>
+        @import url('https://fonts.googleapis.com/css?family=Quicksand');
+      </style>
     </Head>
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={colors}>
       <div>
         <Hero />
         <Background>

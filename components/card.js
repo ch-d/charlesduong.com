@@ -47,9 +47,8 @@ const Title = styled.h3`
   font-size: 1.5rem;
   letter-spacing: .1em;
   font-weight: 100;
-  line-height:2;
+  line-height:1;
   text-transform:uppercase;
-  margin:0
 `
 
 const Sub = styled.h4`
@@ -77,7 +76,7 @@ export default ({ url, title, sub1, sub2, sub3, img, info_num, img_num }) => (
     <Main>
       <Fill wrap p={2}>
         <Box width={1/3} order={info_num}>
-          <Info pl={2}>
+          <Info px={2}>
             <Title>{title}</Title>
             <Sub>{sub1}</Sub>
             <Sub>{sub2}</Sub>

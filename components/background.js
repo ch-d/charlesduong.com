@@ -40,6 +40,8 @@ const Work = styled.h1`
   font-weight: 100;
   margin: 0;
   transform: translate(1rem,-50%);
+  color: ${props => props.theme.colors.blue};
+  opacity:0.6;
 `;
 
 export default ({children}) => (

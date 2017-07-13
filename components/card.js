@@ -2,8 +2,24 @@ import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
 import Link from 'next/link';
 
-const Main = styled.div`
+const Main = styled.button`
+  //remove default button style
+  margin      : 0;
+  padding     : 0;
+  border      : 0;
+  background  : transparent;
+  font-family : inherit;
+  font-size   : 1em;
+  cursor      : pointer;
+  &:-moz-focus-inner{
+    padding : 0;
+    border  : 0;
+  }
+  ////
   width:125%;
+  @media (max-width: 40rem) {
+      width:100%;
+  };
   height: 320px;
   background-color:#fff;
   box-shadow: 0 2px 4px 2px #CDCDCD;
@@ -23,6 +39,7 @@ const Fill = Flex.extend`
 const Info = Box.extend`
   position:absolute;
   bottom:2rem;
+  text-align:left;
 `
 
 const Title = styled.h3`
@@ -30,13 +47,18 @@ const Title = styled.h3`
   font-size: 1.5rem;
   letter-spacing: .1em;
   font-weight: 100;
+  line-height:2;
+  text-transform:uppercase;
+  margin:0
 `
 
 const Sub = styled.h4`
-  color: ${props => props.theme.colors.black};
+  color: ${props => props.theme.colors.blue};
   font-size: 0.875rem;
   letter-spacing: .1em;
   font-weight: 600;
+  line-height:1.5;
+  margin:0
 `
 
 const Image = styled.div`
@@ -44,6 +66,7 @@ const Image = styled.div`
   height:100%;
   background-image:url(${props => props.img});
   background-size:100%;
+  filter:grayscale(70%);
   background-color: ${props => props.theme.colors.blue};
   background-blend-mode: multiply;
 `

@@ -13,6 +13,7 @@ injectGlobal`
                roboto, noto,
                'segoe ui', arial,
                sans-serif;
+    margin:0;
   }
   * {
     transition: all .2s ease-in-out;
@@ -23,7 +24,7 @@ const theme = {
   colors: {
     black: '#1D3239',
     grey: '#FAFAFA',
-    blue: '#B6CFF0',
+    blue: '#5C8A99',
     gradient: {
       green: '#74EBD5',
       purple: '#ACB6E5'

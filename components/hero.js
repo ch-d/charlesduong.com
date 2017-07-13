@@ -27,7 +27,7 @@ const Paragraph = styled.p`
 
 export default () => (
 	<Flex wrap mx={[2,2,0]}>
-    <Box width={[1, 1/2, 1/3]} ml={['0','0','16.7%']} py={[1,2,4]} my={[1,2,4]}>
+    <Box width={[1, 1/2, 1/3]} ml={['0','0','16.7%']} py={[1,3,4]} my={[4,2,4]} pl={[0,3,0]}>
       <Title>charles duong</Title>
       <SubTitle>PRODUCT DESIGNER</SubTitle>
     </Box>

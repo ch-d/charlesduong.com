@@ -14,7 +14,7 @@ const Gradient = styled.div`
   z-index:-100;
   // gradient
   position: relative;
-  // HACK ==> REMOVE HEIGHT & MARGIN 700px TO-DO -------
+  // HACK ==> REMOVE HARDCODED HEIGHT & MARGIN 1200px TO-DO -------
   margin-bottom:-1200px;
   &:before, &:after {
     content: "";
@@ -39,16 +39,16 @@ const Work = styled.h1`
   letter-spacing: .1em;
   font-weight: 100;
   margin: 0;
-  transform: translateY(-50%);
+  transform: translate(1rem,-50%);
 `;
 
 export default ({children}) => (
-  <Flex wrap mt={4}>
-    <Box width={3/4} ml={'4.165%'} mt={4}>
+  <Flex mt={4}>
+    <Box width={[1,3/4]} ml={[0,2,'4.165%']} mt={4}>
       <Grey>
-        <Gradient></Gradient>
-        <Box px={4}>
-          <Work>Some of my work</Work>
+        <Gradient />
+        <Box px={[2,3,4]}>
+          <Work>design work</Work>
           {children}
         </Box>
       </Grey>

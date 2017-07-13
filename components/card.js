@@ -72,7 +72,7 @@ const Image = styled.div`
 
 // CHANGE SUB COMPONENT (DRY) TO LIST & KEYS TO-DO ---------------
 export default ({ url, title, sub1, sub2, sub3, img, info_num, img_num }) => (
-  <Link href={url}>
+  <Link prefetch href={url}>
     <Main>
       <Fill wrap p={2}>
         <Box width={1/3} order={info_num}>

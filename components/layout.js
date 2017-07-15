@@ -36,7 +36,7 @@ const Logo = styled.a`
 
 const Gradient = Box.extend`
   width:100%;
-  height:2px;
+  height:1px;
   background: linear-gradient(to right, ${props => props.theme.colors.gradient.purple}, ${props => props.theme.colors.gradient.green})
 `
 
@@ -83,5 +83,6 @@ export default ({ children, title = 'charles duong | product designer', img_url 
         </Container>
       </div>
     </ThemeProvider>
+
   </div>
 )

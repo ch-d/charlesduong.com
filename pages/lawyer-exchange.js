@@ -12,7 +12,7 @@ import colors from '../constants/colors';
 import {H1, H2, Para } from '../constants/typography';
 
 export default () => (
-  <Layout title='Lawyer Exchange' img_url='../static/lawyer-exchange.jpg'>
+  <Layout title='Lawyer Exchange' img_url='../static/lawyer-exchange/hero.png'>
     <Textbox>
       <Para>Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.</Para>
     </Textbox>

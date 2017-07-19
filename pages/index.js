@@ -27,7 +27,7 @@ export default () => (
             sub1 = "Marketing & Development"
             sub2 = "User Research"
             sub3 = "Design System"
-            img = "../static/lawyer-exchange.jpg"
+            img = "../static/lawyer-exchange/hero.png"
             url = "/lawyer-exchange"
           />
           <Card info_num="2" img_num="1"

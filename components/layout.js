@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { ThemeProvider } from 'styled-components';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
+import { space } from 'styled-system';
 
 // Layout Components
 import Social from './social';
@@ -36,8 +37,9 @@ const Logo = styled.a`
 
 const Gradient = Box.extend`
   width:100%;
-  height:1px;
-  background: linear-gradient(to right, ${props => props.theme.colors.gradient.purple}, ${props => props.theme.colors.gradient.green})
+  height:${props => props.h}px;
+  background: linear-gradient(to right, ${props => props.theme.colors.gradient.purple}, ${props => props.theme.colors.gradient.green});
+  ${space}
 `
 
 export default ({ children, title = 'charles duong | product designer', img_url }) => (
@@ -74,10 +76,11 @@ export default ({ children, title = 'charles duong | product designer', img_url 
               color='D14836'
             />
           </Navbar>
+          <Gradient h="1" mb={3}/>
           <Image img ={img_url} />
           <Flex wrap pt={2} mx={[0,4]} px={[0,4]}>
             <H1>{title}</H1>
-            <Gradient />
+            <Gradient h="1"/>
           </Flex>
           { children }
         </Container>

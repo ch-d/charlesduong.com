@@ -29,6 +29,9 @@ const Main = styled.button`
     box-shadow: 0 8px 16px 8px #CDCDCD;
     cursor: pointer;
   }
+  // &:hover ${Image} {
+  //   background-blend-mode: normal
+  // }
 `;
 
 const Fill = Flex.extend`
@@ -65,9 +68,8 @@ const Image = styled.div`
   height:100%;
   background-image:url(${props => props.img});
   background-size:100%;
-  filter:grayscale(70%);
-  background-color: ${props => props.theme.colors.blue};
-  background-blend-mode: multiply;
+  // background-color: ${props => props.theme.colors.blue};
+  // background-blend-mode: screen
 `
 
 // CHANGE SUB COMPONENT (DRY) TO LIST & KEYS TO-DO ---------------

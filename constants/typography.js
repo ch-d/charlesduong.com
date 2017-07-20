@@ -15,6 +15,13 @@ const H2 = styled.h2`
 	margin-bottom:0
 `;
 
+const Caption = styled.h6`
+	color: ${props => props.theme.colors.blue};
+	font-size: 0.75rem;
+	text-align:right;
+	font-weight:100;
+`;
+
 const Para = styled.p`
 	color: ${props => props.theme.colors.black};
   font-size: 1rem;
@@ -24,5 +31,6 @@ const Para = styled.p`
 module.exports = {
   H1,
   H2,
+	Caption,
   Para
 }

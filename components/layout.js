@@ -8,6 +8,7 @@ import { space } from 'styled-system';
 // Layout Components
 import Social from './social';
 import Image from './image';
+import Card from './card';
 
 // Layout constants
 import baseStyles from '../constants/baseStyles';
@@ -42,7 +43,17 @@ const Gradient = Box.extend`
   ${space}
 `
 
-export default ({ children, title = 'charles duong | product designer', img_url }) => (
+const Work = styled.h1`
+  font-size:3rem;
+  letter-spacing: .1em;
+  font-weight: 100;
+  margin: 0;
+  transform: translate(1rem,-50%);
+  color: ${props => props.theme.colors.blue};
+  opacity:0.6;
+`;
+
+export default ({ children, title = 'charles duong | product designer', img_url, disp1, disp2, disp3 }) => (
   <div>
     <Head>
       <title>{ title }</title>
@@ -76,13 +87,36 @@ export default ({ children, title = 'charles duong | product designer', img_url 
               color='D14836'
             />
           </Navbar>
-          <Gradient h="1" mb={3}/>
-          <Image img ={img_url} />
           <Flex wrap pt={2} mx={[0,4]} px={[0,4]}>
             <H1>{title}</H1>
             <Gradient h="1"/>
           </Flex>
           { children }
+          <Gradient h="4" my={[2,4]}/>
+          <Work>other work</Work>
+          <Card cs={1} disp={disp1}
+            title = "Lawyer Exchange"
+            sub1 = "Marketing & Development"
+            sub2 = "User Research"
+            sub3 = "Design System"
+            img = "../static/lawyer-exchange/hero.png"
+            url = "/lawyer-exchange"
+          />
+          <Card cs={1} disp={disp2}
+            title = "User Interface Design"
+            sub1 = "Occasion"
+            sub2 = "Luna Lights"
+            img = "../static/user-interface.jpg"
+            url = "/user-interface"
+          />
+          <Card cs={1} disp={disp3}
+            title = "Marketing Design"
+            sub1 = "BallotReady"
+            sub2 = "Conduit Labs"
+            sub3 = "Women Tech Founders"
+            img = "../static/marketing.jpg"
+            url = "/marketing"
+          />
         </Container>
       </div>
     </ThemeProvider>

@@ -1,21 +1,37 @@
 import styled from 'styled-components';
 import { space } from 'styled-system';
 import { Flex, Box } from 'grid-styled';
+import { Caption } from '../constants/typography';
 
 const Image = styled.img`
   max-width:100%;
   width:100%;
 	border:0;
-  ${space}
+  @media (max-width: 40rem) {
+    max-width:none;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  };
+  ${space};
 `;
 
-export default ({ img1, alt1, img2, alt2 }) => (
-  <Flex wrap mx={[2,2,0]}>
-    <Box width={[1, 1/2]}>
+const Cap = Caption.extend`
+  ${space};
+`
+
+export default ({ img1, alt1, cap1, img2, alt2, cap2 }) => (
+  <Flex wrap mx={[2,2,0]} align="flex-end">
+    <Box width={[1, 1/2]} pr={[0,2]} mb={[2,2,0]}>
       <Image src={img1} alt={alt1}/>
+      <Cap mt={[1,0]} mb={2}>{cap1}</Cap>
     </Box>
-    <Box width={[1, 1/2]}>
+    <Box width={[1, 1/2]} pl={[0,2]}>
       <Image src={img2} alt={alt2}/>
+      <Cap mt={[1,0]} mb={2}>{cap2}</Cap>
     </Box>
   </Flex>
 )

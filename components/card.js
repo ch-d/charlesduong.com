@@ -23,10 +23,12 @@ const Main = styled.button`
   };
   height: 100%;
   background-color:#fff;
-  box-shadow: 0 2px 4px 2px #CDCDCD;
+  // box-shadow: 0 1px 2px 1px #CDCDCD;
+  border: 1px solid ${props => props.theme.colors.wash};
   border-radius: 2px;
   &:hover {
     box-shadow: 0 8px 16px 8px #CDCDCD;
+    border-color:#fff;
     cursor: pointer;
   };
   display:${props => props.disp};
@@ -68,6 +70,7 @@ const Image = styled.div`
   };
   background-image:url(${props => props.img});
   background-size:cover;
+  background-position:0% 50%;
   // background-color: ${props => props.theme.colors.blue};
   // background-blend-mode: screen
 `

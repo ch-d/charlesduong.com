@@ -106,7 +106,7 @@ export default ({ children, title = 'charles duong | product designer', disp1, d
             title = "BallotReady"
             sub1 = "Marketing Design"
             sub2 = "Data Visualizations"
-            img = "../static/ballot-ready/hero.jpg"
+            img = "../static/ballot-ready/hero.png"
             url = "/ballot-ready"
           />
           <Card cs={1} disp={disp2}

@@ -34,7 +34,7 @@ export default () => (
             title = "BallotReady"
             sub1 = "Marketing Design"
             sub2 = "Data Visualizations"
-            img = "../static/ballot-ready/hero.jpg"
+            img = "../static/ballot-ready/hero.png"
             url = "/ballot-ready"
           />
           <Card

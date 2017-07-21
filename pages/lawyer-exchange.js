@@ -31,6 +31,7 @@ export default () => (
       <Para>Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.</Para>
     </Textbox>
     <Image img = "../static/lawyer-exchange/006.png" cap="Early Whiteboard Brainstorm"/>
+    <Imagegrid img1 = "../static/lawyer-exchange/018.png" cap1="Wireframe Exploration (1 of 2)" img2="../static/lawyer-exchange/019.png" cap2="Wireframe Exploration (2 of 2)"/>
 
     <Textbox>
       <H2>User Research</H2>

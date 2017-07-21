@@ -67,7 +67,7 @@ const Image = styled.div`
     height:10rem;
   };
   background-image:url(${props => props.img});
-  background-size:100%;
+  background-size:cover;
   // background-color: ${props => props.theme.colors.blue};
   // background-blend-mode: screen
 `

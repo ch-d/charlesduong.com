@@ -22,9 +22,9 @@ const Cap = Caption.extend`
   ${space};
 `
 
-export default ({ img, alt, cap }) => (
+export default ({ img, cap }) => (
   <div>
-    <Image src={img} alt={alt}/>
-    <Cap mt={[1,0]} mb={2}>{cap}</Cap>
+    <Image src={img} alt={cap + " image not found 😵 "} title={cap}/>
+    <Cap mt={[1,0]} mb={[2,3]}>{cap}</Cap>
   </div>
 )

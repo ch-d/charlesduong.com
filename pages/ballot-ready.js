@@ -13,33 +13,27 @@ import colors from '../constants/colors';
 import {H1, H2, Para } from '../constants/typography';
 
 export default () => (
-  <Layout title='Marketing Design' img_url='../static/lawyer-exchange/hero.png' disp3="none">
+  <Layout title='Ballot Ready' disp3="none">
     <Textbox>
       <Para>Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.</Para>
+    </Textbox>
+      <Image img = "../static/ballot-ready/hero.jpg"/>
+
+    <Textbox>
       <H2>BallotReady</H2>
       <Para>Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.</Para>
     </Textbox>
 
-    <Imagegrid img1 = "../static/marketing/dont-guess.png" img2="../static/marketing/map.png"/>
-    <Image img = "../static/marketing/blue-bar.png"/>
-    <Imagegrid img1 = "../static/marketing/water.png" img2="../static/marketing/pink-bar.png"/>
-    <Imagegrid img1 = "../static/marketing/did-you.png" img2="../static/marketing/elected-officials.png"/>
+    <Imagegrid img1 = "../static/ballot-ready/001.png" cap1="Facebook Ad" img2="../static/ballot-ready/002.gif" cap2="Twitter Graphic"/>
+
+    <Imagegrid img1 = "../static/ballot-ready/008.png" cap1="Election Week Facebook Ad (1 of 2)" img2="../static/ballot-ready/009.png" cap2="Election Week Facebook Ad (2 of 2)"/>
 
     <Textbox>
-      <H2>Women Tech Founders</H2>
       <Para>Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.</Para>
     </Textbox>
-
-    <Imagegrid img1 = "../static/marketing/dont-guess.png" img2="../static/marketing/map.png"/>
-    <Image img = "../static/marketing.jpg"/>
-
-    <Textbox>
-      <H2>Conduit Labs</H2>
-      <Para>Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.</Para>
-    </Textbox>
-
-    <Imagegrid img1 = "../static/marketing/dont-guess.png" img2="../static/marketing/map.png"/>
-    <Image img = "../static/marketing.jpg"/>
+    <Image img = "../static/ballot-ready/006.png" cap="Newsletter Graphic"/>
+    <Imagegrid img1 = "../static/ballot-ready/005.png" cap1="Blog Post Graphic" img2="../static/ballot-ready/004.png" cap2="Blog Post Pie Chart"/>
+    <Image img = "../static/ballot-ready/003.png" cap="Blog Post Bar Graph"/>
 
   </Layout>
 )

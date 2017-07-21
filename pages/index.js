@@ -30,20 +30,19 @@ export default () => (
             img = "../static/lawyer-exchange/hero.png"
             url = "/lawyer-exchange"
           />
-          <Card info_num="2" img_num="1"
-            title = "User Interface Design"
-            sub1 = "Occasion"
-            sub2 = "Luna Lights"
-            img = "../static/user-interface.jpg"
-            url = "/user-interface"
+          <Card
+            title = "BallotReady"
+            sub1 = "Marketing Design"
+            sub2 = "Data Visualizations"
+            img = "../static/ballot-ready/hero.jpg"
+            url = "/ballot-ready"
           />
           <Card
-            title = "Marketing Design"
-            sub1 = "BallotReady"
-            sub2 = "Conduit Labs"
-            sub3 = "Women Tech Founders"
-            img = "../static/marketing.jpg"
-            url = "/marketing"
+            title = "Luna Lights"
+            sub1 = "User Interface Design"
+            sub2 = "Data Visualization"
+            img = "../static/luna-lights/hero.png"
+            url = "/luna-lights"
           />
         </Background>
       </div>

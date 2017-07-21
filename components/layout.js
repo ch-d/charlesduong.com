@@ -53,7 +53,7 @@ const Work = styled.h1`
   opacity:0.6;
 `;
 
-export default ({ children, title = 'charles duong | product designer', img_url, disp1, disp2, disp3 }) => (
+export default ({ children, title = 'charles duong | product designer', disp1, disp2, disp3 }) => (
   <div>
     <Head>
       <title>{ title }</title>
@@ -102,20 +102,19 @@ export default ({ children, title = 'charles duong | product designer', img_url,
             img = "../static/lawyer-exchange/hero.png"
             url = "/lawyer-exchange"
           />
-          <Card cs={1} disp={disp2}
-            title = "User Interface Design"
-            sub1 = "Occasion"
-            sub2 = "Luna Lights"
-            img = "../static/user-interface.jpg"
-            url = "/user-interface"
-          />
           <Card cs={1} disp={disp3}
-            title = "Marketing Design"
-            sub1 = "BallotReady"
-            sub2 = "Conduit Labs"
-            sub3 = "Women Tech Founders"
-            img = "../static/marketing.jpg"
-            url = "/marketing"
+            title = "BallotReady"
+            sub1 = "Marketing Design"
+            sub2 = "Data Visualizations"
+            img = "../static/ballot-ready/hero.jpg"
+            url = "/ballot-ready"
+          />
+          <Card cs={1} disp={disp2}
+            title = "Luna Lights"
+            sub1 = "User Interface Design"
+            sub2 = "Data Visualization"
+            img = "../static/luna-lights/hero.png"
+            url = "/luna-lights"
           />
         </Container>
       </div>

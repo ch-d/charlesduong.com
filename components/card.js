@@ -72,8 +72,6 @@ const Image = styled.div`
   // background-blend-mode: screen
 `
 
-
-
 // CHANGE SUB COMPONENT (DRY) TO LIST & KEYS TO-DO ---------------
 export default ({ url, title, sub1, sub2, sub3, img, cs, disp }) => (
   <Link prefetch href={url}>

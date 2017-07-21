@@ -36,19 +36,18 @@ const Logo = styled.a`
   text-decoration: none;
 `
 
-const Gradient = Box.extend`
+const Divider = Box.extend`
   width:100%;
   height:${props => props.h}px;
   background: linear-gradient(to right, ${props => props.theme.colors.gradient.purple}, ${props => props.theme.colors.gradient.green});
-  ${space}
+  margin-left: ${props => props.offset ? '20%' : ''};
+  width: ${props => props.offset ? '80%' : ''};
 `
 
 const Work = styled.h1`
   font-size:3rem;
   letter-spacing: .1em;
   font-weight: 100;
-  margin: 0;
-  transform: translate(1rem,-50%);
   color: ${props => props.theme.colors.blue};
   opacity:0.6;
 `;
@@ -89,10 +88,11 @@ export default ({ children, title = 'charles duong | product designer', disp1, d
           </Navbar>
           <Flex wrap pt={2} mx={[0,4]} px={[0,4]}>
             <H1>{title}</H1>
-            <Gradient h="1"/>
+            <Divider h="1"/>
           </Flex>
           { children }
-          <Gradient h="4" my={[2,4]}/>
+          <Divider offset h="1" mt={[2,4]}/>
+          <Divider offset h="4" mt={1} mb={[2,4]}/>
           <Work>other work</Work>
           <Card cs={1} disp={disp1}
             title = "Lawyer Exchange"

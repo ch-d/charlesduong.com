@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
 import Social from './social';
+import { space } from 'styled-system';
 
 const Title = styled.h1`
 	color: ${props => props.theme.colors.black};
@@ -23,6 +24,7 @@ const Paragraph = styled.p`
   color: ${props => props.theme.colors.black};
   font-size: 1rem;
   line-height: 1.5;
+	${space}
 `;
 
 export default () => (
@@ -32,7 +34,7 @@ export default () => (
       <SubTitle>PRODUCT DESIGNER</SubTitle>
     </Box>
     <Box width={[1, 1/2, 1/3]} py={[0,2,3]} my={[0,2,4]}>
-      <Paragraph>
+      <Paragraph mb={[4,2]}>
         Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
       </Paragraph>
       <Social

@@ -4,40 +4,28 @@ import Link from 'next/link';
 import { space } from 'styled-system';
 
 const Main = styled.button`
-  //remove default button style
-  margin      : 0;
-  padding     : 0;
-  border      : 0;
-  background  : transparent;
+  // remove default button styles
   font-family : inherit;
-  font-size   : 1em;
-  cursor      : pointer;
-  &:-moz-focus-inner{
-    padding : 0;
-    border  : 0;
-  }
-  ////
+  border:0;
+  padding:0;
+  cursor: pointer;
+
+  // Case Study Button vs. Index Button
   width: ${props => props.cs ? '100%' : '125%'};
   @media (max-width: 40rem) {
       width:100%;
   };
-  height: 100%;
-  background-color:#fff;
-  // box-shadow: 0 1px 2px 1px #CDCDCD;
-  border: 1px solid ${props => props.theme.colors.wash};
-  border-radius: 2px;
-  &:hover {
-    box-shadow: 0 8px 16px 8px #CDCDCD;
-    border-color:#fff;
-    cursor: pointer;
-  };
   display:${props => props.disp};
-  ${space};
-  // &:hover ${Image} {
-  //   background-blend-mode: normal
-  // }
-`;
 
+  // Main styles
+  background-color:#fff;
+  border-radius: 2px;
+  box-shadow: 0px 1px 4px 0px ${props => props.theme.colors.wash};
+  &:hover {
+    box-shadow: 0 2px 8px 2px ${props => props.theme.colors.wash};
+  };
+  ${space};
+`;
 
 const Info = Box.extend`
   text-align:left;
@@ -46,10 +34,10 @@ const Info = Box.extend`
 const Title = styled.h3`
   color: ${props => props.theme.colors.black};
   font-size: 1.75rem;
-  letter-spacing: .1em;
   font-weight: 200;
   line-height:1;
   text-transform:lowercase;
+  margin-top:0px;
   ${space}
 `
 
@@ -65,26 +53,26 @@ const Sub = styled.h4`
 const Image = styled.div`
   width:100%;
   height:18rem;
+  @media (max-width: 50rem) {
+    height:14rem;
+  };
   @media (max-width: 40rem) {
     height:10rem;
   };
   background-image:url(${props => props.img});
   background-size:cover;
-  background-position:0% 50%;
-  // background-color: ${props => props.theme.colors.blue};
-  // background-blend-mode: screen
+  background-position:center;
 `
 
 // CHANGE SUB COMPONENT (DRY) TO LIST & KEYS TO-DO ---------------
 export default ({ url, title, sub1, sub2, sub3, img, cs, disp }) => (
   <Link prefetch href={url}>
     <Main cs={cs} mb={[2,4]} disp={disp}>
-      <Flex wrap p={2}>
+      <Flex wrap p={[0,2]}>
         <Box width={[1,2/3]}>
           <Image img={img} />
         </Box>
-
-        <Info width={[1,1/3]} pl={[0,3]}>
+        <Info width={[1,1/3]} pl={[2,3]} pt={[2,3]} pb={[2,0]}>
           <Title mb={[1,2]}>{title}</Title>
           <Sub>{sub1}</Sub>
           <Sub>{sub2}</Sub>

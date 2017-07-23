@@ -24,7 +24,6 @@ const Container = Box.extend`
 `
 
 const Navbar = Flex.extend`
-  background: rgba(255, 255, 255, .95);
   align-items: center
 `
 

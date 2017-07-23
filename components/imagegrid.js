@@ -24,7 +24,7 @@ const Cap = Caption.extend`
 `
 
 export default ({ img1, cap1, img2, cap2 }) => (
-  <Flex wrap mx={[2,2,0]} align="flex-end">
+  <Flex wrap align="flex-end" mb={[2,0]}>
     <Box width={[1, 1/2]} pr={[0,2]} mb={[2,2,0]}>
       <Image src={img1} alt={cap1 + " image not found 😵 " } title={cap1}/>
       <Cap mt={[1,0]} mb={[2,3]}>{cap1}</Cap>

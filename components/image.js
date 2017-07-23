@@ -25,6 +25,6 @@ const Cap = Caption.extend`
 export default ({ img, cap }) => (
   <div>
     <Image src={img} alt={cap + " image not found 😵 "} title={cap}/>
-    <Cap mt={[1,0]} mb={[2,3]}>{cap}</Cap>
+    <Cap mt={[1,0]} mb={3}>{cap}</Cap>
   </div>
 )

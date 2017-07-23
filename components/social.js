@@ -6,7 +6,7 @@ const Icolink= styled.a`
 `
 
 export default ({ url, site, color }) => (
-	<Icolink href={ url } target='_blank' mx={[2,1]}>
+	<Icolink href={ url } target='_blank' mx={1}>
     <img src={'https://icon.now.sh/' + site + '/24/' + color } alt={ site } title={ site } />
   </Icolink>
 )

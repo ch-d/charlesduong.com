@@ -9,6 +9,7 @@ import { space } from 'styled-system';
 import Social from './social';
 import Image from './image';
 import Card from './card';
+import Footer from './footer';
 
 // Layout constants
 import baseStyles from '../constants/baseStyles';
@@ -115,6 +116,7 @@ export default ({ children, title = 'charles duong | product designer', disp1, d
             img = "../static/luna-lights/hero.png"
             url = "/luna-lights"
           />
+          <Footer />
         </Container>
       </div>
     </ThemeProvider>

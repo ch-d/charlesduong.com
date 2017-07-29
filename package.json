@@ -2,14 +2,17 @@
   "name": "",
   "version": "",
   "dependencies": {
-    "grid-styled": "^2.0.0-8",
-    "next": "^2.4.4",
-    "styled-components": "^2.1.0",
-    "styled-system": "^1.0.0-8"
+    "grid-styled": "^2.0.0-10",
+    "next": "^3.0.1-beta.20",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "styled-components": "^2.1.1",
+    "styled-system": "^1.0.0-11"
   },
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "export": "next export",
     "start": "next start"
   }
 }

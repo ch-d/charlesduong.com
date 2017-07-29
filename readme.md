@@ -57,3 +57,9 @@ Then you've a static version of your app in the “out" directory.
 > You can also customize the output directory. For that run `next export -h` for the help.
 
 Now you can deploy that directory to any static hosting service. Note that there is an additional step for deploying to GitHub Pages, [documented here](https://github.com/zeit/next.js/wiki/Deploying-a-Next.js-app-into-GitHub-Pages).
+
+### Deploy to S3
+
+```sh
+aws s3 sync out/. s3://work.charlesduong.com
+```

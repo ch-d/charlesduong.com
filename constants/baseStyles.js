@@ -30,7 +30,7 @@ const baseStyles = () =>
       transition: all .2s ease-in-out;
     }
     ::selection {
-      background: #F2E2C2;
+      background: #FFFBCC;
     }
   `
 

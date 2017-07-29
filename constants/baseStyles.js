@@ -4,7 +4,7 @@ import colors from '../constants/colors';
 const baseStyles = () =>
   injectGlobal`
     body {
-      font-family: 'Quicksand', -apple-system, BlinkMacSystemFont,
+      font-family: 'Open Sans', -apple-system, BlinkMacSystemFont,
                  'avenir next', avenir,
                  helvetica, 'helvetica neue',
                  ubuntu,
@@ -16,6 +16,8 @@ const baseStyles = () =>
     p a:link {
       border-bottom:2px solid #0000EE;
       text-decoration:none;
+      display:inline-block;
+      line-height:1rem;
     }
     p a:hover, p a:focus {
       padding-bottom:2px;

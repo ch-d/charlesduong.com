@@ -6,6 +6,7 @@ import { Flex, Box } from 'grid-styled';
 import { space } from 'styled-system';
 
 // Layout Components
+import Heading from './heading';
 import Social from './social';
 import Image from './image';
 import Card from './card';
@@ -34,6 +35,15 @@ const Logo = styled.a`
   margin-left: 0.25rem;
   color: ${props => props.theme.colors.blue};
   text-decoration: none;
+  cursor: pointer;
+  opacity: 1;
+  &:hover,
+  &:focus {
+    opacity: .5;
+  };
+  &:active {
+    opacity: .8;
+  }
 `
 
 const Divider = Box.extend`
@@ -54,16 +64,14 @@ const Work = styled.h1`
 
 export default ({ children, title = 'charles duong | product designer', disp1, disp2, disp3 }) => (
   <div>
-    <Head>
-      <title>{ title }</title>
-      <meta charSet='utf-8' />
-      <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-    </Head>
+    <Heading />
     <ThemeProvider theme={colors}>
       <div>
         <Container px={2}>
           <Navbar align-items='center' py={2}>
-            <Logo href='/'>charles duong</Logo>
+            <Link prefetch href='/'>
+              <Logo>charles duong</Logo>
+            </Link>
             <Box flex='1 1 auto' />
             <Social
               url='https://twitter.com/hicharlesd'
@@ -102,19 +110,19 @@ export default ({ children, title = 'charles duong | product designer', disp1, d
             img = "../static/lawyer-exchange/hero.png"
             url = "/lawyer-exchange"
           />
-          <Card cs={1} disp={disp3}
-            title = "BallotReady"
-            sub1 = "Marketing Design"
-            sub2 = "Data Visualizations"
-            img = "../static/ballot-ready/hero.png"
-            url = "/ballot-ready"
-          />
           <Card cs={1} disp={disp2}
             title = "Luna Lights"
             sub1 = "User Interface Design"
             sub2 = "Data Visualization"
             img = "../static/luna-lights/hero.png"
             url = "/luna-lights"
+          />
+          <Card cs={1} disp={disp3}
+            title = "BallotReady"
+            sub1 = "Marketing Design"
+            sub2 = "Data Visualizations"
+            img = "../static/ballot-ready/hero.png"
+            url = "/ballot-ready"
           />
           <Footer />
         </Container>

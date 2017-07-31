@@ -13,7 +13,12 @@ import colors from '../constants/colors';
 import {H1, H2, Para } from '../constants/typography';
 
 export default () => (
-  <Layout title='Luna Lights' disp2="none">
+  <Layout
+    title='Luna Lights'
+    disp2="none"
+    titleCase="/luna-lights"
+    desc="Luna Lights is an automated lighting system that utilizes cloud based data analytics to prevent and detect falls in the older adult population. They recorded data on their personal backend system, but the only method of report was through screen­shots from a third party extension. The goal for this project was to provide a streamlined way for care providers to interact with data about their residents and further inform better care for older adults."
+  >
     <Textbox>
       <Para>Luna Lights is an automated lighting system that utilizes cloud based data analytics to prevent and detect falls in the older adult population. They recorded data on their personal backend system, but the only method of report was through screen­shots from a third party extension. The goal for this project was to provide a streamlined way for care providers to interact with data about their residents and further inform better care for older adults.</Para>
     </Textbox>

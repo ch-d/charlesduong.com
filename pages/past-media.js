@@ -13,7 +13,12 @@ import colors from '../constants/colors';
 import {H1, H2, Para } from '../constants/typography';
 
 export default () => (
-  <Layout title='Past Media'>
+  <Layout
+    title='Past Media'
+    titleCase="/past-media"
+    desc="Prior to 2015, while taking Mechanical Engineering courses, I was missing an outlet for my creativity. I ended up teaching myself VFX techniques, film post-production, and graphic design, while working on several side projects. These projects satisfied my need to build things and tell stories, before I began settling down with a more agile medium of web design."
+  >
+
     <Textbox>
       <Para>Prior to 2015, while taking Mechanical Engineering courses, I was missing an outlet for my creativity. I ended up teaching myself VFX techniques, film post-production, and graphic design, while working on several side projects. These projects satisfied my need to build things and tell stories, before I began settling down with a more agile medium of web design.</Para>
     </Textbox>

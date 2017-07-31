@@ -62,9 +62,9 @@ const Work = styled.h1`
   opacity:0.6;
 `;
 
-export default ({ children, title = 'charles duong | product designer', disp1, disp2, disp3 }) => (
+export default ({ children, title = 'charles duong | product designer', titleCase, desc, disp1, disp2, disp3 }) => (
   <div>
-    <Heading />
+    <Heading meta={title} titleCase={titleCase} desc={desc}/>
     <ThemeProvider theme={colors}>
       <div>
         <Container px={2}>

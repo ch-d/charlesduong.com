@@ -10,7 +10,7 @@ baseStyles();
 
 export default () => (
   <div>
-    <Heading />
+    <Heading titleCase=""/>
     <ThemeProvider theme={colors}>
       <div>
         <Hero />

@@ -35,7 +35,7 @@ export default () => (
     </Box>
     <Box width={[1, 1/2, 1/3]} py={[0,2,3]} my={[0,2,4]}>
       <Paragraph mb={[4,2]}>
-        Hi, I’m Charles and I’m a product designer working on the world wide web. My designer side enjoys design systems, processes, tooling, and accessibility. My human side enjoys curiously tinkering, a just society, and spreading kindness in the world. But really, I’m more interesting if we get to kick it in person—let’s get to know each other, internet stranger!
+        Hi, I’m Charles and I’m a product designer working on the world wide web. My designer side enjoys design systems, research, tooling, and accessibility. My human side enjoys tinkering, social justice, and just trying to be kind. Really though, I’m more human when we get to kick it IRL—hit me up, internet stranger!
       </Paragraph>
       <Social
         url='https://twitter.com/hicharlesd'

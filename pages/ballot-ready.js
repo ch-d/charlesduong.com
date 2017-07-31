@@ -13,9 +13,15 @@ import colors from '../constants/colors';
 import {H1, H2, Para } from '../constants/typography';
 
 export default () => (
-  <Layout title='Ballot Ready' disp3="none">
+  <Layout
+    title='Ballot Ready'
+    disp3="none"
+    titleCase="/ballot-ready"
+    desc="Ballotready is an online voter guide that explains every candidate and referendum on your ballot. Although there was already massive press around the 2016 presidential election, it was difficult to guage candidates for local and sometimes obscure positions. In preparation for this election cycle, BallotReady helped American citizens research every name and issue on their local ballot, which would often otherwise be left blank. To extend the reach of the application, I helped the BallotReady team with marketing and visual design needs."
+  >
+
     <Textbox>
-      <Para> Ballotready is an online voter guide that explains every candidate and referendum on your ballot. Although there was already massive press around the 2016 presidential election, it was difficult to guage candidates for local and sometimes obscure positions. In preparation for this election cycle, BallotReady helped American citizens research every name and issue on their local ballot, which would often otherwise be left blank. To extend the reach of the application, I helped the BallotReady team with marketing and visual design needs.</Para>
+      <Para>Ballotready is an online voter guide that explains every candidate and referendum on your ballot. Although there was already massive press around the 2016 presidential election, it was difficult to guage candidates for local and sometimes obscure positions. In preparation for this election cycle, BallotReady helped American citizens research every name and issue on their local ballot, which would often otherwise be left blank. To extend the reach of the application, I helped the BallotReady team with marketing and visual design needs.</Para>
     </Textbox>
       <Image hero img = "../static/ballot-ready/hero.png"/>
 

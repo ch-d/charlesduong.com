@@ -3,8 +3,9 @@ import colors from '../constants/colors';
 
 const baseStyles = () =>
   injectGlobal`
+    // @import url(//fonts.googleapis.com/css?family=Open+Sans);
     body {
-      font-family: 'Open Sans', -apple-system, BlinkMacSystemFont,
+      font-family: -apple-system, BlinkMacSystemFont,
                  'avenir next', avenir,
                  helvetica, 'helvetica neue',
                  ubuntu,
@@ -31,6 +32,9 @@ const baseStyles = () =>
     }
     ::selection {
       background: #FFFBCC;
+    }
+    strong {
+      font-weight:700
     }
   `
 

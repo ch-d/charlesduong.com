@@ -20,7 +20,7 @@ const Main = styled.button`
   // Main styles
   background-color:#fff;
   border-radius: 2px;
-  box-shadow: 0px 1px 4px 0px ${props => props.theme.colors.wash};
+  box-shadow: 0px 1px 2px 0px ${props => props.theme.colors.wash};
   &:hover {
     box-shadow: 0 2px 8px 2px ${props => props.theme.colors.wash};
   };
@@ -33,6 +33,7 @@ const Info = Box.extend`
 
 const Title = styled.h3`
   color: ${props => props.theme.colors.black};
+  letter-spacing: .1em;
   font-size: 1.75rem;
   font-weight: 200;
   line-height:1;
@@ -72,7 +73,7 @@ export default ({ url, title, sub1, sub2, sub3, img, cs, disp }) => (
         <Box width={[1,2/3]}>
           <Image img={img} />
         </Box>
-        <Info width={[1,1/3]} pl={[2,3]} pt={[2,3]} pb={[2,0]}>
+        <Info width={[1,1/3]} pl={[2,3]} pt={3} pb={[3,0]}>
           <Title mb={[1,2]}>{title}</Title>
           <Sub>{sub1}</Sub>
           <Sub>{sub2}</Sub>

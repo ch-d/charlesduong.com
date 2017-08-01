@@ -36,11 +36,12 @@ export default () => (
 
     <Textbox>
       <H2>Data Visualization & Revisions</H2>
-      <Para>As the deadline of the election neared closer, we decided to address a younger market with data visualizations and blog articles. To reach them, I changed the color palette to include a more modern look with playful colors and tried to recreate simple "trendy" graphics. Our goal with these ads were to reach those less politically engaged, and could portray the image of voting informed in a more positive light.</Para>
+      <Para>As the deadline of the election neared closer, we decided to reach out to the millenial market with data visualizations and blog articles. To address this younger crowd, I changed the color palette to include a more modern look with playful colors and tried to recreate simple "trendy" graphics with BallotReady’s database of over 13,000 candidates. Our goal with these ads were to reach those less politically engaged, and could portray the image of voting informed in a more positive light.</Para>
     </Textbox>
     <Image img = "../static/ballot-ready/006.png" cap="Newsletter Graphic"/>
-    <Imagegrid img1 = "../static/ballot-ready/005.png" cap1="Blog Post Graphic" img2="../static/ballot-ready/004.png" cap2="Blog Post Pie Chart"/>
+    <Imagegrid img1 = "../static/ballot-ready/004.png" cap1="Blog Post Pie Chart" img2="../static/ballot-ready/005.png" cap2="Blog Post Graphic"/>
     <Image img = "../static/ballot-ready/003.png" cap="Blog Post Bar Graph"/>
+    <Imagegrid img1 = "../static/ballot-ready/014.png" cap1="Another Bar Graph" img2="../static/ballot-ready/015.png" cap2="And Another Bar Graph"/>
     <Imagegrid img1 = "../static/ballot-ready/008.png" cap1="Election Week Facebook Ad (1 of 2)" img2="../static/ballot-ready/009.png" cap2="Election Week Facebook Ad (2 of 2)"/>
 
   </Layout>

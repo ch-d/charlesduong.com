@@ -21,7 +21,7 @@ export default () => (
   >
 
     <Textbox>
-      <Para>The Lawyer Exchange is a new venture from the founder of VisaNow set out to answer the question: <strong>why are most people who need legal work not able to access affordable services?</strong> Through his own research, he determined that the first step to correct this would be a community to connect lawyers to other lawyers with contract project opportunities. It became our goal to increase efficiency between established attorneys looking to grow their practice and emerging lawyers looking for meaningful legal experiences, which would in turn decrease the cost to access legal services for consumers.</Para>
+      <Para>The Lawyer Exchange is a new venture from the founder of VisaNow set out to answer the question: <strong>why are most people who need legal work not able to access affordable services?</strong> Through his own research, he determined that the first step to answer this would be a community to connect lawyers to other lawyers with contract project opportunities. It became our goal to increase efficiency between established attorneys looking to grow their practice and emerging lawyers looking for meaningful legal experiences, which would in turn decrease the cost to access legal services for consumers.</Para>
     </Textbox>
     <Image img = "../static/lawyer-exchange/hero.png"/>
 

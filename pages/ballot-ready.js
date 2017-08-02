@@ -41,8 +41,8 @@ export default () => (
     <Image img = "../static/ballot-ready/006.png" cap="Newsletter Graphic"/>
     <Imagegrid img1 = "../static/ballot-ready/004.png" cap1="Blog Post Pie Chart" img2="../static/ballot-ready/005.png" cap2="Blog Post Graphic"/>
     <Image img = "../static/ballot-ready/003.png" cap="Blog Post Bar Graph"/>
-    <Imagegrid img1 = "../static/ballot-ready/014.png" cap1="Another Bar Graph" img2="../static/ballot-ready/015.png" cap2="And Another Bar Graph"/>
-    <Imagegrid img1 = "../static/ballot-ready/008.png" cap1="Election Week Facebook Ad (1 of 2)" img2="../static/ballot-ready/009.png" cap2="Election Week Facebook Ad (2 of 2)"/>
+    <Imagegrid img1 = "../static/ballot-ready/014.png" cap1="Another Bar Graph (1 of 2)" img2="../static/ballot-ready/015.png" cap2="Another Bar Graph (2 of 2)"/>
+    <Imagegrid img1 = "../static/ballot-ready/008.png" cap1="Election Week Graphic (1 of 2)" img2="../static/ballot-ready/009.png" cap2="Election Week Graphic (2 of 2)"/>
 
   </Layout>
 )

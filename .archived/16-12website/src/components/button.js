@@ -3,25 +3,58 @@ import Social from './social'
 import styled from 'styled-components/';
 
 const Main = styled.a`
-  // remove default button styles
-  cursor: pointer;
-  text-decoration:none;
-  color:black;
+  // GRADIENT BORDER
+  // border-image: linear-gradient(to left, #74EBD5, #ACB6E5) 100% 1;
+  // border-width: 0 0 2px 0px;
+  // border-style: solid;
 
-  // Main styles
+  // LINE ANIMATION
+  // position:relative;
+  // &:before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 2px;
+  //   bottom: 0;
+  //   left: 0;
+  //   margin-bottom:-4px;
+  //   background: linear-gradient(to left, #74EBD5, #ACB6E5);
+  //   visibility: hidden;
+  //   transform: translateY(2px);
+  //   transition: all 0.3s ease-in-out 0s;
+  // }
+  //
+  // &:hover:before {
+  //   visibility: visible;
+  //   transform: translateX(0);
+  // }
+
+  border-bottom: 2px solid #0000EE;
+  text-decoration:none;
   display:inline-block;
-  padding: 1rem 2rem;
+  line-height:1rem;
   margin-top:1rem;
-  background-color:#fff;
-  border-radius: 2px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  &:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  padding-bottom:4px;
+
+  &:hover, &:focus {
+    padding-bottom:6px;
+    margin-bottom:-2px;
   };
+  &:visited, &:active {
+    border-bottom:2px solid #551A8B
+    text-decoration:none;
+  }
+`
+
+const Moji = styled.span`
+  margin-left:0.5rem;
 `
 
 export default () => (
-	<Main href="http://work.charlesduong.com">
-    design work 👀
-	</Main>
+  <div>
+  	<Main href="http://work.charlesduong.com">
+      view design work
+  	</Main>
+    <Moji>👀</Moji>
+  </div>
 )

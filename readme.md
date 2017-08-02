@@ -61,5 +61,7 @@ Now you can deploy that directory to any static hosting service. Note that there
 ### Deploy to S3
 
 ```sh
+yarn build &&
+yarn export &&
 aws s3 sync out/. s3://work.charlesduong.com
 ```

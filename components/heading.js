@@ -3,7 +3,7 @@ import Head from 'next/head';
 export default ({
   meta = 'product designer',
   titleCase,
-  desc = "Hi, I'm Charles, a product designer based in Chicago, IL interested in web accessibility and social justice. Currently working on design systems, research, and tooling."
+  desc = "Hi, I'm Charles, a product designer based in Chicago, IL interested in web accessibility and inclusive design. Currently working on design systems, research, and tooling."
   }) => (
   <Head>
     <meta charSet='utf-8' />

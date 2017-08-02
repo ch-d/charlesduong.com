@@ -1,5 +1,6 @@
 import React from 'react'
 import Social from './social'
+import Button from './button'
 import styled from 'styled-components/';
 
 const Box = styled.div`
@@ -32,6 +33,10 @@ export default () => (
 				site='gmail'
 				color='D14836'
 			/>
+		<div>
+			<Button />
+		</div>
+
 		</Box>
 	</header>
 )

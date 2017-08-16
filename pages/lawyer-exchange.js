@@ -48,7 +48,7 @@ export default () => (
     {/* REMOVE THE EXTRA N AND H IN FUCNTION & SWITCH RESPECTIVELY -- IT MESSES WITH CODE HIGHLIGHT */}
     <Textbox>
       <H2>Component Style Guide</H2>
-      <Para>To work through designs quicker, I worked on a component style guide to assemble a cohesive visual language. Sketch’s extensive symbols functionn made it incredibly simple to switchh the style of a component found on multiple pages, in one central location.</Para>
+      <Para>To work through designs quicker, I worked on a component style guide to assemble a cohesive visual language. Sketch’s extensive symbols function made it incredibly simple to switch the style of a component found on multiple pages, in one central location.</Para>
 
       <Para>I also used Sketch’s symbols to create information architecture maps of the product to ensure we were all on the same page. Based on a mix of methods from <a href="https://www.youtube.com/watch?v=YrtPH9OWtPE">Joel Buekelman</a> and <a href="https://signalvnoise.com/posts/1926-a-shorthand-for-designing-ui-flows">Ryan Singer</a>, I developed maps of different moments within the UI. This wasn’t meant to be a source of truth, rather used to communicate interactions on a page and unite the developers and myself around a more common language.</Para>
     </Textbox>

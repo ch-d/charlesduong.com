@@ -42,7 +42,7 @@ export default () => (
 
     <Textbox>
       <H2>Daily View</H2>
-      <Para>While iterating on the daily view, I saw myself repeating processes and looked for ways to design a better flow for creating prototypes. Using new nested symbols Sketch feature, I worked on a system of symbols and styles that represented each state the view could be. I then exported it out to a Dropbox folder and synced it up with an <a href="https://projects.invisionapp.com/share/AE7FSGHYS#/161047204_Last12hours-00">Invision prototype</a> to see if the interactions made sense. This gave us more time to test any assumptions we had and iterate further.</Para>
+      <Para>While iterating on the daily view, I saw myself repeating processes and looked for ways to design a better flow for creating prototypes. Using new nested symbols Sketch feature, I worked on a system of symbols and styles that represented each state the view could be. I then exported it out to a Dropbox folder and synced it up with an <a href="https://projects.invisionapp.com/share/K87FSGOWY#/screens/161818578_All-Residents-01-01">Invision prototype</a> to see if the interactions made sense. This gave us more time to test any assumptions we had and iterate further.</Para>
       <H2>Resident View</H2>
       <Para>After a user found a resident they wanted to investigate further, they could navigate to a card with individual hourly, daily, and numbers. The resident view placed precendent in the line graph and hard numbers over the urgent hourly view. This gave the day time staff a means for more thoughtful interactions of long-term trends for individual residents.</Para>
     </Textbox>

@@ -2,6 +2,7 @@ import React from 'react'
 import Social from './social'
 import Button from './button'
 import styled from 'styled-components/';
+import { Camera } from 'react-feather';
 
 const Box = styled.div`
 	background-color:#FAFAFA;
@@ -33,9 +34,7 @@ export default () => (
 				site='gmail'
 				color='D14836'
 			/>
-		<div>
-			<Button />
-		</div>
+		<Camera />
 
 		</Box>
 	</header>

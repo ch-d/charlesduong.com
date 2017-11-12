@@ -51,6 +51,12 @@ const Logo = styled.a`
   &:active {
     opacity: .8;
   }
+  @media (max-width: 40rem) {
+      margin: 0 1rem;
+  };
+  @media (max-width: 20rem) {
+      margin: 0 0.5rem;
+  };
 `
 
 export default () => (

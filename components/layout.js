@@ -52,6 +52,7 @@ const Divider = Box.extend`
   background: linear-gradient(to right, ${props => props.theme.colors.gradient.purple}, ${props => props.theme.colors.gradient.green});
   margin-left: ${props => props.offset ? '20%' : ''};
   width: ${props => props.offset ? '80%' : ''};
+  display: ${props => props.hideDivider ? 'none' : ''}
 `
 
 const Work = styled.h1`
@@ -62,7 +63,7 @@ const Work = styled.h1`
   opacity:0.6;
 `;
 
-export default ({ children, title = 'charles duong | product designer', titleCase, desc, disp1, disp2, disp3 }) => (
+export default ({ children, title = 'charles duong | product designer', titleCase, desc, disp1, disp2, disp3, hideDivider }) => (
   <div>
     <Heading meta={title} titleCase={titleCase} desc={desc}/>
     <ThemeProvider theme={colors}>
@@ -96,7 +97,7 @@ export default ({ children, title = 'charles duong | product designer', titleCas
           </Navbar>
           <Flex wrap pt={2} mx={[0,4]} px={[0,4]}>
             <H1>{title}</H1>
-            <Divider h="1"/>
+            <Divider h="1" hideDivider={hideDivider}/>
           </Flex>
           { children }
           <Divider offset h="1" mt={[2,4]}/>

@@ -15,6 +15,7 @@ import {H1, H2, Para } from '../constants/typography';
 export default () => (
   <Layout
     title='Ballot Ready'
+    date='Late 2016'
     disp3="none"
     titleCase="/ballot-ready"
     desc="Ballotready is an online voter guide that explains every candidate and referendum on your ballot. Although there was already massive press around the 2016 presidential election, it was difficult to guage candidates for local and sometimes obscure positions. In preparation for this election cycle, BallotReady helped American citizens research every name and issue on their local ballot, which would often otherwise be left blank. To extend the reach of the application, I helped the BallotReady team with marketing and visual design needs."
@@ -41,8 +42,8 @@ export default () => (
     <Image img = "../static/ballot-ready/006.png" cap="Newsletter Graphic"/>
     <Imagegrid img1 = "../static/ballot-ready/004.png" cap1="Blog Post Pie Chart" img2="../static/ballot-ready/005.png" cap2="Blog Post Graphic"/>
     <Image img = "../static/ballot-ready/003.png" cap="Blog Post Bar Graph"/>
-    <Imagegrid img1 = "../static/ballot-ready/014.png" cap1="Another Bar Graph (1 of 2)" img2="../static/ballot-ready/015.png" cap2="Another Bar Graph (2 of 2)"/>
-    <Imagegrid img1 = "../static/ballot-ready/008.png" cap1="Election Week Graphic (1 of 2)" img2="../static/ballot-ready/009.png" cap2="Election Week Graphic (2 of 2)"/>
 
   </Layout>
 )
+// <Imagegrid img1 = "../static/ballot-ready/014.png" cap1="Another Bar Graph (1 of 2)" img2="../static/ballot-ready/015.png" cap2="Another Bar Graph (2 of 2)"/>
+// <Imagegrid img1 = "../static/ballot-ready/008.png" cap1="Election Week Graphic (1 of 2)" img2="../static/ballot-ready/009.png" cap2="Election Week Graphic (2 of 2)"/>

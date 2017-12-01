@@ -69,7 +69,7 @@ export default ({ children, title = 'charles duong | product designer', titleCas
     <ThemeProvider theme={colors}>
       <div>
         <Container px={2}>
-          <Navbar align-items='center' py={2}>
+          <Navbar py={2}>
             <Link prefetch href='/'>
               <Logo>charles duong</Logo>
             </Link>

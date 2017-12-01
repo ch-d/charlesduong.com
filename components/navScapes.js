@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
 import { space } from 'styled-system';
+import Scrollchor from 'react-scrollchor';
 
 // Layout Components
 import Heading from './heading';
@@ -63,18 +64,18 @@ export default () => (
   <ThemeProvider theme={colors}>
     <Navigation>
       <Container px={2} py={2}>
-        <Link prefetch href=''>
+        <Scrollchor to="2017">
           <Logo>2017</Logo>
-        </Link>
-        <Link prefetch href=''>
+        </Scrollchor>
+        <Scrollchor to="2016">
           <Logo>2016</Logo>
-        </Link>
-        <Link prefetch href=''>
+        </Scrollchor>
+        <Scrollchor to="2015">
           <Logo>2015</Logo>
-        </Link>
-        <Link prefetch href=''>
+        </Scrollchor>
+        <Scrollchor to="2014">
           <Logo>2014</Logo>
-        </Link>
+        </Scrollchor>
         <Link prefetch href=''>
           <Logo>2013</Logo>
         </Link>

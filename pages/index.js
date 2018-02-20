@@ -15,6 +15,16 @@ export default () => (
       <div>
         <Hero />
         <Background>
+          <a href="https://talentsonar.com/">
+            <Card
+              title = "Talent Sonar"
+              sub1 = "User Interface Design"
+              sub2 = "Design System"
+              sub3 = "Marketing Design"
+              img = "../static/talent-sonar/hero.png"
+              url = "/talent-sonar"
+            />
+          </a>
           <Card
             title = "Lawyer Exchange"
             sub1 = "Marketing & Development"

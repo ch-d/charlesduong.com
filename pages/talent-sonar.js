@@ -20,6 +20,43 @@ const Framer = styled.iframe`
   margin-bottom: 2rem;
 `;
 
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  height: 36rem;
+  @media (max-width: 40rem) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    height: 48rem;
+  };
+  @media (max-width: 30rem) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+  };
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 2rem;
+`
+
+const GridImage = styled.div `
+  border-radius: 0.25rem;
+  background-image: ${props => props.image};
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  grid-column: ${props => props.column_l};
+  grid-row: ${props => props.row_l};
+  @media (max-width: 40rem) {
+    grid-column: ${props => props.column_m};
+    grid-row: ${props => props.row_m};
+  };
+  @media (max-width: 30rem) {
+    grid-column: ${props => props.column};
+    grid-row: ${props => props.row};
+  };
+`
+
 export default () => (
   <Layout
     title='Talent Sonar'
@@ -69,8 +106,70 @@ export default () => (
       <H2>Marketing / Sales</H2>
       <Para>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</Para>
     </Textbox>
-    <Imagegrid img1 = "../static/lawyer-exchange/012.png" cap1="Profile Wizard" img2="../static/lawyer-exchange/011.png" cap2="Profile Editor"/>
-    <Image img = "../static/lawyer-exchange/013.gif" cap="Project Lawyer Profile"/>
+
+    <Grid>
+      <GridImage
+        column_l="1 / 2" row_l="1 / 2"
+        column_m="3 / 4" row_m="1 / 2"
+        column="2 / 3" row="1 / 2"
+        image="url('../static/talent-sonar/008.png')"
+      />
+      <GridImage
+        column_l="2 / 3" row_l="2 / 3"
+        column_m="2 / 3" row_m="2 / 3"
+        column="1 / 2" row="2 / 3"
+        image="url('../static/talent-sonar/009.png')"
+      />
+      <GridImage
+        column_l="3 / 4" row_l="1 / 2"
+        column_m="3 / 4" row_m="3 / 4"
+        column="2 / 3" row="2 / 3"
+        image="url('../static/talent-sonar/010.png')"
+      />
+      <GridImage
+        column_l="3 / 4" row_l="3 / 4"
+        column_m="1 / 2" row_m="3 / 4"
+        column="1 / 2" row="3 / 4"
+        image="url('../static/talent-sonar/011.png')"
+      />
+      <GridImage
+        column_l="4 / 5" row_l="2 / 3"
+        column_m="2 / 3" row_m="4 / 5"
+        column="2 / 3" row="3 / 4"
+        image="url('../static/talent-sonar/012.png')"
+      />
+      <GridImage
+        column_l="2 / 3" row_l="1 / 2"
+        column_m="3 / 4" row_m="2 / 3"
+        column="1 / 2" row="1 / 2"
+        image="url('../static/talent-sonar/017.png')"
+      />
+      <GridImage
+        column_l="4 / 5" row_l="3 / 4"
+        column_m="1 / 2" row_m="4 / 5"
+        column="2 / 3" row="5 / 6"
+        image="url('../static/talent-sonar/018.png')"
+      />
+      <GridImage
+        column_l="1 / 2" row_l="2 / 3"
+        column_m="2 / 3" row_m="1 / 2"
+        column="1 / 2" row="4 / 5"
+        image="url('../static/talent-sonar/013.png')"
+      />
+      <GridImage
+        column_l="2 / 3" row_l="3 / 4"
+        column_m="1 / 2" row_m="2 / 3"
+        column="2 / 3" row="4 / 5"
+        image="url('../static/talent-sonar/014.png')"
+      />
+      <GridImage
+        column_l="3 / 4" row_l="2 / 3"
+        column_m="2 / 3" row_m="3 / 4"
+        column="1 / 2" row="5 / 6"
+        image="url('../static/talent-sonar/015.png')"
+      />
+    </Grid>
+    <Image img = "../static/talent-sonar/016.png" cap="Talent Sonar Platform Overview"/>
 
   </Layout>
 )

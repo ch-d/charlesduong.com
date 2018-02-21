@@ -18,13 +18,21 @@ const Image = styled.img`
   ${space};
 `;
 
+const ImageBorder = styled.div`
+  border: ${props => props.showBorder ? '1px solid rgba(78, 211, 202, 0.25)' : ''};
+  padding: ${props => props.showBorder ? '0.5rem' : ''};
+  border-radius: 0.5rem;
+`
+
 const Cap = Caption.extend`
   ${space};
 `
 
-export default ({ img, cap }) => (
+export default ({ img, cap, showBorder }) => (
   <div>
-    <Image src={img} alt={cap + " image not found 😵 "} title={cap}/>
+    <ImageBorder showBorder={showBorder}>
+      <Image src={img} alt={cap + " image not found 😵 "} title={cap}/>
+    </ImageBorder>
     <Cap mt={[1,0]} mb={3}>{cap}</Cap>
   </div>
 )

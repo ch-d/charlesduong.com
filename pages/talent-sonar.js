@@ -63,35 +63,37 @@ export default () => (
     date='Late 2017'
     disp1="none"
     titleCase="/talent-sonar"
-    desc="Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus."
+    desc='Talent Sonar is a SaaS platform that addresses unconscious bias in the hiring process and provides a model for hiring teams to source and select the right fit for job requisitions. The platform provides identity-blind resume review to reduce bias when scanning resumes and structured interviews to reduce the tendency to make "Day One" Hires. Overall, the application promotes quantifiable decision making to find a long-term fit for companies. I worked with various stakeholders—product managers, developers,  and marketing/sales team. We worked together to ship features on their mobile app, web platform, and marketing collateral.'
   >
 
     <Textbox>
-      <Para>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</Para>
+      <Para>Talent Sonar is a SaaS platform that addresses unconscious bias in the hiring process and provides a model for hiring teams to source and select the right fit for job requisitions. The platform provides identity-blind resume review to reduce bias when scanning resumes and structured interviews to reduce the tendency to make <a href="https://www.linkedin.com/pulse/theory-hiring-part-1-lou-adler/">"Day One" Hires</a>. Overall, the application promotes quantifiable decision making to find a long-term fit for companies. I worked with various stakeholders—product managers, developers, and marketing/sales team. We worked together to ship features on their mobile app, web platform, and marketing collateral.</Para>
     </Textbox>
     <Image img = "../static/talent-sonar/hero.png"/>
 
     <Textbox>
       <H2>Mobile Resume Review</H2>
-      <Para>Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit.</Para>
+      <Para>When I first came onboard, the mobile app was in its early stages and only gave interviewers the ability to reference, take notes during, and score interviews. A missing function recruiters and hiring managers sought was the ability to review resumes on the app. The resume redaction flow for web did not involve too many steps, so we decided to explore what this feature would look like in a mobile context.</Para>
     </Textbox>
 
     <Image img = "../static/talent-sonar/001.png" cap="Mobile Interview Planning Flow (1 of 2)"/>
 
     <Textbox>
-      <Para>Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit.</Para>
+      <Para>Since resumes are commonly used in context of 8.5 x 11 piece of paper, we knew it would be a design challenge to fit everything into the context of a mobile device. We explored ideas like tinder-like card swiping, floating action buttons, and counting taps. We landed on a prototype with a toolbar that slid halfway over a resume so users could have both the survey and resume to reference when reviewing.</Para>
+      <Para>After testing our prototype, we found users needed proper affordances presented and swiping or tapping interactions were confusing for them. Ultimately, we decided the value proposition was not strong enough, especially with the amount of engineering needed to be implemented. We moved the feature to icebox and would take a look at it again another date.</Para>
     </Textbox>
 
     <Framer src="https://framer.cloud/gRnDc/" frameborder="0"/>
 
     <Textbox>
       <H2>Mobile Interview Planning</H2>
-      <Para>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna.</Para>
+      <Para>A more important flow we wanted to push out was the interview planning flow. Through research, Talent Sonar found most interviewer and hiring manager personas often felt intimidated by the hiring process. They had very few interview experiences (at least from the hiring side) and mostly took advice from past experiences being interviewed. To help, we wanted to provide job templates (with pre-filled job criteria). From there, we could provide a structured path to create and maintain a job requisition.</Para>
+      <Para>The flow consisted of a job that had candidates, interviewers, criteria (which had questions), and rounds (which included its own set of candidates, interviewers, criteria, and questions).</Para>
     </Textbox>
     <Image img = "../static/talent-sonar/002.png" cap="Mobile Interview Planning Flow (1 of 2)"/>
     <Image img = "../static/talent-sonar/003.png" cap="Mobile Interview Planning Flow (2 of 2)"/>
     <Textbox>
-      <Para>Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit.</Para>
+      <Para>With the visual design of the flow, we wanted to keep simple iOS components. It was more important to keep things simple so we could ship the feature first, and iterate from there. Down the road, we want to explore a more dashboard-like view for jobs and tab bar navigation for candidates, criteria, and team member sections. We also hope to explore other interactions for lists like: swipe interactions for editing, drag and drop, and horizontal scrolling.</Para>
     </Textbox>
     <Image img = "../static/talent-sonar/004-1.png" cap="Add New Job + Job Criteria Flow"/>
     <Image img = "../static/talent-sonar/004-2.png" cap="Job Candidates + Job Team Members"/>
@@ -99,14 +101,14 @@ export default () => (
 
     <Textbox>
       <H2>Component System</H2>
-      <Para>Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Para>
+      <Para>While we worked on mobile features, opportunities to work on desktop designs also came up. Since they already had common components in their code, I created a design system within Sketch and collaborated with the Product Manager using Abstract. With a component system and version control for designs, we turned around mockups quicker and had a more efficient feedback loop when a feature story came in. This ensured more time focused on business goals and usability rather than fiddle with aesthetics.</Para>
     </Textbox>
     <Image img = "../static/talent-sonar/005.png" cap="Sketch Component System"/>
     <Imagegrid img1 = "../static/talent-sonar/006.png" cap1="Abstract Version Control (1 of 2)" img2="../static/talent-sonar/007.png" cap2="Abstract Version Control (2 of 2)"/>
 
     <Textbox>
       <H2>Marketing / Sales</H2>
-      <Para>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</Para>
+      <Para>I also had a chance to update some of their graphic collateral. Working on product gave me enough context to understand business goals and create informative illustrations for their marketing & sales teams. Blockframes became the main hero in the graphics and showcased certain features in development and within the current app. We also worked on other directions to feel more human, but also provide context to the technology that powered it.</Para>
     </Textbox>
 
     <Grid>

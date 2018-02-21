@@ -15,7 +15,7 @@ import {H1, H2, Para } from '../constants/typography';
 export default () => (
   <Layout
     title='Lawyer Exchange'
-    date='Late 2016 - Early 2017'
+    date='Late 2016 &ndash; Early 2017'
     disp2="none"
     titleCase="/lawyer-exchange"
     desc="The Lawyer Exchange is a new venture from the founder of VisaNow set out to answer the question: why are most people who need legal work not able to access affordable services? Through his own research, he determined that the first step to correct this would be a community to connect lawyers to other lawyers with contract project opportunities. It became our goal to increase efficiency between established attorneys looking to grow their practice and emerging lawyers looking for meaningful legal experiences, which would in turn decrease the cost to access legal services for consumers."

@@ -60,9 +60,9 @@ const GridImage = styled.div `
 export default () => (
   <Layout
     title='Talent Sonar'
-    date='2017'
+    date='Late 2017'
     disp1="none"
-    titleCase="/lawyer-exchange"
+    titleCase="/talent-sonar"
     desc="Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus."
   >
 
@@ -89,11 +89,13 @@ export default () => (
       <Para>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo. Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam eget risus varius blandit sit amet non magna.</Para>
     </Textbox>
     <Image img = "../static/talent-sonar/002.png" cap="Mobile Interview Planning Flow (1 of 2)"/>
-    <Image img = "../static/talent-sonar/002.png" cap="Mobile Interview Planning Flow (2 of 2)"/>
+    <Image img = "../static/talent-sonar/003.png" cap="Mobile Interview Planning Flow (2 of 2)"/>
     <Textbox>
       <Para>Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit.</Para>
     </Textbox>
-    <Image img = "../static/talent-sonar/001.png" cap="Mobile Interview Planning Flow (1 of 2)"/>
+    <Image img = "../static/talent-sonar/004-1.png" cap="Add New Job + Job Criteria Flow"/>
+    <Image img = "../static/talent-sonar/004-2.png" cap="Job Candidates + Job Team Members"/>
+    <Image img = "../static/talent-sonar/004-3.png" cap="Round Candidates + Round Team Members"/>
 
     <Textbox>
       <H2>Component System</H2>

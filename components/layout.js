@@ -63,7 +63,7 @@ const Work = styled.h1`
   opacity:0.6;
 `;
 
-export default ({ children, title = 'charles duong | product designer', date, titleCase, desc, disp1, disp2, disp3, hideDivider }) => (
+export default ({ children, title = 'charles duong | product designer', date, titleCase, desc, disp1, disp2, disp3, disp4, disp5, hideDivider }) => (
   <div>
     <Heading meta={title} titleCase={titleCase} desc={desc}/>
     <ThemeProvider theme={colors}>
@@ -105,6 +105,14 @@ export default ({ children, title = 'charles duong | product designer', date, ti
           <Divider offset h="4" mt={1} mb={[2,4]}/>
           <Work>other work</Work>
           <Card cs={1} disp={disp1}
+            title = "Talent Sonar"
+            sub1 = "User Interface Design"
+            sub2 = "Design System"
+            sub3 = "Marketing Design"
+            img = "../static/talent-sonar/hero.png"
+            url = "/talent-sonar"
+          />
+          <Card cs={1} disp={disp2}
             title = "Lawyer Exchange"
             sub1 = "Marketing & Development"
             sub2 = "User Research"
@@ -112,14 +120,21 @@ export default ({ children, title = 'charles duong | product designer', date, ti
             img = "../static/lawyer-exchange/hero.png"
             url = "/lawyer-exchange"
           />
-          <Card cs={1} disp={disp2}
+          <Card cs={1} disp={disp3}
+            title = "Koeo Travel"
+            sub1 = "Front-End Development"
+            sub2 = "User Research"
+            img = "../static/koeo/hero.png"
+            url = "/koeo"
+          />
+          <Card cs={1} disp={disp4}
             title = "Luna Lights"
             sub1 = "User Interface Design"
             sub2 = "Data Visualization"
             img = "../static/luna-lights/hero.png"
             url = "/luna-lights"
           />
-          <Card cs={1} disp={disp3}
+          <Card cs={1} disp={disp5}
             title = "BallotReady"
             sub1 = "Marketing Design"
             sub2 = "Data Visualizations"

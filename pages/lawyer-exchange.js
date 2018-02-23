@@ -34,14 +34,14 @@ export default () => (
 
     <Textbox>
       <H2>Discovery Phase</H2>
-      <Para>Once we found proficient need for the product, we worked through a high level flow of what the app would look like. We defined our users as established Solo / Small Firm Lawyers and emerging Recent Law School Grads. It became our main priority to provide as much of a frictionless experience for the established lawyers who are pressed for time, and an extensive toolkit for the emerging lawyers looking to grow their career. With a high-level flow established, I then focused on wireframing key moments in the flow before diving into <a href="https://www.sketchapp.com/">Sketch</a> for higher fidelity mockups.</Para>
+      <Para>Once we found proficient need for the product, we worked through a high level flow of what the app would look like. We defined our users as established Solo / Small Firm Lawyers and emerging Recent Law School Grads. It became our main priority to provide as much of a frictionless experience for the established lawyers who are pressed for time, and an extensive toolkit for the emerging lawyers looking to grow their career. With a high-level flow established, I then focused on wireframing key moments in the flow before diving into <strong>Sketch</strong> for higher fidelity mockups.</Para>
     </Textbox>
     <Image img = "../static/lawyer-exchange/006.png" cap="Early Whiteboard Brainstorm"/>
     <Imagegrid img1 = "../static/lawyer-exchange/018.png" cap1="Wireframe Exploration (1 of 2)" img2="../static/lawyer-exchange/019.png" cap2="Wireframe Exploration (2 of 2)"/>
 
     <Textbox>
       <H2>User Research</H2>
-      <Para>Before we fully jumped into development, I hacked a prototype using <a href="https://facebook.github.io/react/">React</a> and <a href="https://www.invisionapp.com/">InVision</a>. I wanted to ensure we tested our assumptions to identify important or unnecessary features before spending precious time developing them. I facilitated both remote user studies and in-person user studies with several legal professionals using <a href="https://lookback.io/">Lookback</a>. The exercise not only helped me understand some potential roadblocks with the UI, but also gave me some insight into the mental models lawyers use.</Para>
+      <Para>Before we fully jumped into development, I hacked a prototype using <strong>React</strong> and <strong>InVision</strong>. I wanted to ensure we tested our assumptions to identify important or unnecessary features before spending precious time developing them. I facilitated both remote user studies and in-person user studies with several legal professionals using <strong>Lookback</strong>. The exercise not only helped me understand some potential roadblocks with the UI, but also gave me some insight into the mental models lawyers use.</Para>
     </Textbox>
     <Imagegrid img1 = "../static/lawyer-exchange/007.png" cap1="Proposal Screen v1" img2="../static/lawyer-exchange/008.png" cap2="Profile Wizard Screen v1"/>
     <Imagegrid img1 = "../static/lawyer-exchange/009.png" cap1="In-Person User Testing" img2="../static/lawyer-exchange/010.png" cap2="Remote User Testing"/>

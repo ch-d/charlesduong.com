@@ -18,7 +18,7 @@ export default () => (
     date='Late 2016 &ndash; Early 2017'
     disp2="none"
     titleCase="/lawyer-exchange"
-    desc="The Lawyer Exchange is a new venture from the founder of VisaNow set out to answer the question: why are most people who need legal work not able to access affordable services? Through his own research, he determined that the first step to correct this would be a community to connect lawyers to other lawyers with contract project opportunities. It became our goal to increase efficiency between established attorneys looking to grow their practice and emerging lawyers looking for meaningful legal experiences, which would in turn decrease the cost to access legal services for consumers."
+    desc="The Lawyer Exchange is a new venture from the founder of VisaNow set out to answer the question: why are most people who need legal work not able to access affordable services?"
   >
 
     <Textbox>
@@ -28,7 +28,7 @@ export default () => (
 
     <Textbox>
       <H2>Marketing Page</H2>
-      <Para>Although the idea of contract work has made its rounds in other industries, this concept was not widely adopted in the legal profession. This even goes against formal opinions that state <strong>“...by reducing the cost of legal services, outsourcing can improve access to justice by making legal services more affordable.”</strong> To test if there was actually demand for a platform like this we developed a marketing site that captured emails from potential lawyers. We hoped to engage professional attorneys with resources to help them understand how this could be a feasible and ethical model to work together.</Para>
+      <Para>Although the idea of contract work has made its rounds in other industries, this concept was not widely adopted in the legal profession. Even though there were formal opinions and <a href="https://www.americanbar.org/content/dam/aba/administrative/ethics_2020/20120508_ethics_20_20_final_resolution_and_report_outsourcing_posting.authcheckdam.pdf">resolutions</a>, not many lawyers knew: <strong>“...by reducing the cost of legal services, outsourcing can improve access to justice by making legal services more affordable.”</strong> To test if there was actually demand for a platform like this we developed a marketing site that captured emails from potential lawyers. We hoped to engage professional attorneys with resources to help them understand how this could be a feasible and ethical model to work together.</Para>
     </Textbox>
     <Image img = "../static/lawyer-exchange/001.gif" cap="Responsive Website Development"/>
 
@@ -73,4 +73,3 @@ export default () => (
 
   </Layout>
 )
-// <a href="https://www.americanbar.org/content/dam/aba/administrative/ethics_2020/20120508_ethics_20_20_final_resolution_and_report_outsourcing_posting.authcheckdam.pdf"></a>

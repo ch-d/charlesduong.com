@@ -63,11 +63,11 @@ export default () => (
     date='Late 2017'
     disp1="none"
     titleCase="/talent-sonar"
-    desc='Talent Sonar is a SaaS platform that addresses unconscious bias in the hiring process and provides a model for hiring teams to source and select the right fit for job requisitions. The platform provides identity-blind resume review to reduce bias when scanning resumes and structured interviews to reduce the tendency to make "Day One" Hires. Overall, the application promotes quantifiable decision making to find a long-term fit for companies. I worked with various stakeholders—product managers, developers,  and marketing/sales team. We worked together to ship features on their mobile app, web platform, and marketing collateral.'
+    desc='Talent Sonar is a SaaS platform that addresses unconscious bias in the hiring process and provides a model for hiring teams to source and select the right fit for job requisitions.'
   >
 
     <Textbox>
-      <Para>Talent Sonar is a SaaS platform that addresses unconscious bias in the hiring process and provides a model for hiring teams to source and select the right fit for job requisitions. The platform provides identity-blind resume review to reduce bias when scanning resumes and structured interviews to reduce the tendency to make <a href="https://www.linkedin.com/pulse/theory-hiring-part-1-lou-adler/">"Day One" Hires</a>. Overall, the application promotes quantifiable decision making to find a long-term fit for companies. I worked with various stakeholders—product managers, developers, and marketing/sales team. We worked together to ship features on their mobile app, web platform, and marketing collateral.</Para>
+      <Para>Talent Sonar is a SaaS platform that addresses unconscious bias in the hiring process and provides a model for hiring teams to source and select the right fit for job requisitions. The platform facilitates identity-blind resume reviews to reduce bias when scanning resumes and structured interviews to reduce the tendency to screen candidates on   <a href="https://www.linkedin.com/pulse/theory-hiring-part-1-lou-adler/">short-term positive</a> criteria. Overall, the application promotes quantifiable decision-making to find a long-term fit between companies and candidates. I worked with various stakeholders: product managers, developers, and marketing/sales team. We worked together to ship features on their mobile app, web platform, and marketing/sales collateral.</Para>
     </Textbox>
     <Image img = "../static/talent-sonar/hero.png"/>
 
@@ -80,7 +80,7 @@ export default () => (
 
     <Textbox>
       <Para>Since resumes are commonly used in context of 8.5 x 11 piece of paper, we knew it would be a design challenge to fit everything into the context of a mobile device. We explored ideas like tinder-like card swiping, floating action buttons, and counting taps. We landed on a prototype with a toolbar that slid halfway over a resume so users could have both the survey and resume to reference when reviewing.</Para>
-      <Para>After testing our prototype, we found users needed proper affordances presented and swiping or tapping interactions were confusing for them. Ultimately, we decided the value proposition was not strong enough, especially with the amount of engineering needed to be implemented. We moved the feature to icebox and would take a look at it again another date.</Para>
+      <Para>After testing our prototype, we found users needed proper affordances presented and swiping or tapping interactions were confusing for them. Ultimately, we decided the value proposition was not strong enough, especially with the amount of engineering needed to be implemented. We icebox-ed the feature and would take a look at it again another date.</Para>
     </Textbox>
 
     <Framer src="https://framer.cloud/gRnDc/" frameborder="0"/>
@@ -108,7 +108,7 @@ export default () => (
 
     <Textbox>
       <H2>Marketing / Sales</H2>
-      <Para>I also had a chance to update some of their graphic collateral. Working on product gave me enough context to understand business goals and create informative illustrations for their marketing & sales teams. Blockframes became the main hero in the graphics and showcased certain features in development and within the current app. We also worked on other directions to feel more human, but also provide context to the technology that powered it.</Para>
+      <Para>Because I worked on the product, I had enough context to understand business goals and create informative illustrations for their marketing & sales teams. Blockframes became the main hero in the graphics and showcased certain features in development and within the current app. Other illustrations addressed a need to humanize the hiring process, and also retain context to the technology that powered it.</Para>
     </Textbox>
 
     <Grid>

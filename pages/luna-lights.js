@@ -18,7 +18,7 @@ export default () => (
     date='Early 2016'
     disp4="none"
     titleCase="/luna-lights"
-    desc="Luna Lights is an automated lighting system that utilizes cloud based data analytics to prevent and detect falls in the older adult population. They recorded data on their personal backend system, but the only method of report was through screen­shots from a third party extension. The goal for this project was to provide a streamlined way for care providers to interact with data about their residents and further inform better care for older adults."
+    desc="Luna Lights is an automated lighting system that utilizes cloud based data analytics to prevent and detect falls in the older adult population."
   >
     <Textbox>
       <Para>Luna Lights is an automated lighting system that utilizes cloud based data analytics to prevent and detect falls in the older adult population. In March 2016, they recorded data on their personal backend system, but the only method of report was through screen­shots from a third party extension, Mixpanel. The goal for this project was to design a streamlined way for care providers to interact with data about their residents and further inform better care for older adults.</Para>

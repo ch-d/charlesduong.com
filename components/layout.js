@@ -56,6 +56,7 @@ const Divider = Box.extend`
 `
 
 const Work = styled.h1`
+  font-family: quicksand;
   font-size:3rem;
   letter-spacing: .1em;
   font-weight: 100;
@@ -111,6 +112,7 @@ export default ({ children, title = 'charles duong | product designer', date, ti
             sub3 = "Marketing Design"
             img = "../static/talent-sonar/hero.png"
             url = "/talent-sonar"
+            date = "Late 2017"
           />
           <Card cs={1} disp={disp2}
             title = "Lawyer Exchange"
@@ -119,6 +121,7 @@ export default ({ children, title = 'charles duong | product designer', date, ti
             sub3 = "Design System"
             img = "../static/lawyer-exchange/hero.png"
             url = "/lawyer-exchange"
+            date = "Late 2016 &ndash; Early 2017"
           />
           <Card cs={1} disp={disp3}
             title = "Koeo Travel"
@@ -126,6 +129,7 @@ export default ({ children, title = 'charles duong | product designer', date, ti
             sub2 = "User Research"
             img = "../static/koeo/hero.png"
             url = "/koeo"
+            date = "Late 2017 &ndash;"
           />
           <Card cs={1} disp={disp4}
             title = "Luna Lights"
@@ -133,6 +137,7 @@ export default ({ children, title = 'charles duong | product designer', date, ti
             sub2 = "Data Visualization"
             img = "../static/luna-lights/hero.png"
             url = "/luna-lights"
+            date = "Early 2016"
           />
           <Card cs={1} disp={disp5}
             title = "BallotReady"
@@ -140,6 +145,7 @@ export default ({ children, title = 'charles duong | product designer', date, ti
             sub2 = "Data Visualizations"
             img = "../static/ballot-ready/hero.png"
             url = "/ballot-ready"
+            date = "Late 2016"
           />
           <Footer />
         </Container>

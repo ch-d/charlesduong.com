@@ -3,9 +3,10 @@ import colors from '../constants/colors';
 
 const baseStyles = () =>
   injectGlobal`
-    // @import url(//fonts.googleapis.com/css?family=Open+Sans);
+    @import url(//fonts.googleapis.com/css?family=Open+Sans);
+    @import url(//fonts.googleapis.com/css?family=Quicksand:300,400,500,700);
     body {
-      font-family: -apple-system, BlinkMacSystemFont,
+      font-family: Open Sans, -apple-system, BlinkMacSystemFont,
                  'avenir next', avenir,
                  helvetica, 'helvetica neue',
                  ubuntu,

@@ -22,6 +22,7 @@ export default () => (
             sub3 = "Marketing Design"
             img = "../static/talent-sonar/hero.png"
             url = "/talent-sonar"
+            date = "Late 2017"
           />
           <Card
             title = "Lawyer Exchange"
@@ -30,6 +31,7 @@ export default () => (
             sub3 = "Design System"
             img = "../static/lawyer-exchange/hero.png"
             url = "/lawyer-exchange"
+            date = "Late 2016 &ndash; Early 2017"
           />
           <Card
             title = "Koeo Travel"
@@ -37,6 +39,7 @@ export default () => (
             sub2 = "User Research"
             img = "../static/koeo/hero.png"
             url = "/koeo"
+            date = "Late 2017 &ndash;"
           />
           <Card
             title = "Luna Lights"
@@ -44,6 +47,7 @@ export default () => (
             sub2 = "Data Visualization"
             img = "../static/luna-lights/hero.png"
             url = "/luna-lights"
+            date = "Early 2016"
           />
           <Card
             title = "BallotReady"
@@ -51,6 +55,7 @@ export default () => (
             sub2 = "Data Visualizations"
             img = "../static/ballot-ready/hero.png"
             url = "/ballot-ready"
+            date = "Late 2016"
           />
         </Background>
       </div>

@@ -67,7 +67,8 @@ export default () => (
   >
 
     <Textbox>
-      <Para>Talent Sonar is a SaaS platform that addresses unconscious bias in the hiring process and provides a model for hiring teams to source and select the right fit for job requisitions. The platform facilitates identity-blind resume reviews to reduce bias when scanning resumes and structured interviews to reduce the tendency to screen candidates on   <a href="https://www.linkedin.com/pulse/theory-hiring-part-1-lou-adler/">short-term positive</a> criteria. Overall, the application promotes quantifiable decision-making to find a long-term fit between companies and candidates. I worked with various stakeholders: product managers, developers, and marketing/sales team. We worked together to ship features on their mobile app, web platform, and marketing/sales collateral.</Para>
+      <Para>Talent Sonar is a SaaS platform that addresses unconscious bias in the hiring process and provides a model for hiring teams to source and select the right fit for job requisitions. The platform facilitates identity-blind resume reviews to reduce bias when scanning resumes and structured interviews to reduce the tendency to screen candidates on   <a href="https://www.linkedin.com/pulse/theory-hiring-part-1-lou-adler/">short-term positive</a> criteria. Overall, the application promotes quantifiable decision-making to find a long-term fit between companies and candidates.</Para>
+      {/* <Para>I worked with various stakeholders: product managers, developers, and marketing/sales team. We worked together to ship features on their mobile app, web platform, and marketing/sales collateral.</Para> */}
     </Textbox>
     <Image img = "../static/talent-sonar/hero.png"/>
 

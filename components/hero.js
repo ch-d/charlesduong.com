@@ -4,6 +4,7 @@ import Social from './social';
 import { space } from 'styled-system';
 
 const Title = styled.h1`
+	font-family: quicksand;
 	color: ${props => props.theme.colors.black};
   font-size: 2.25rem;
   letter-spacing: .1em;

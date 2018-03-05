@@ -80,8 +80,11 @@ const CsLink = Flex.extend`
   @media (max-width: 40rem) {
     align-items:center;
     justify-content:center;
+    border-top: 1px solid rgba(0,0,0,0.12);
+    padding-bottom: 0.25rem;
   };
-  opacity: 0.75
+  opacity: 0.75;
+  margin-top: 1.5rem;
 `
 
 const Sub2 = styled.h4`
@@ -95,7 +98,7 @@ const Sub2 = styled.h4`
     padding-bottom: 0.5rem
   };
   @media (max-width: 40rem) {
-    padding-top:1.5rem;
+    padding-top:1rem;
     padding-bottom:0rem;
   };
 `
@@ -142,7 +145,7 @@ export default ({ url, title, sub1, sub2, sub3, img, cs, disp, date }) => (
         <Box width={[1,2/3]}>
           <Image img={img} />
         </Box>
-        <Info width={[1,1/3]} pl={[2,3]} pt={[3,2,2]} pb={[3,0]}>
+        <Info width={[1,1/3]} pl={[0,2,3]} pt={[3,2,2]} pb={[2,0]}>
           <Date>{date}</Date>
           <Title mb={[2,2,3]}>{title}</Title>
           <Sub>{sub1}</Sub>

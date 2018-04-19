@@ -1,5 +1,6 @@
 import { Flex, Box } from 'grid-styled';
 import styled from 'styled-components';
+import { space } from 'styled-system';
 
 // Layout Components
 import Layout from '../components/layout';
@@ -10,7 +11,7 @@ import Imagegrid from '../components/imagegrid';
 // Layout constants
 import baseStyles from '../constants/baseStyles';
 import colors from '../constants/colors';
-import {H1, H2, Para } from '../constants/typography';
+import {H1, H2, Para, Caption } from '../constants/typography';
 
 const Framer = styled.iframe`
   max-width:100%;
@@ -57,6 +58,13 @@ const GridImage = styled.div `
   };
 `
 
+const Cap = Caption.extend `
+@media (max-width: 40rem) {
+  display: none
+}
+${space}
+`
+
 export default () => (
   <Layout
     title='Talent Sonar'
@@ -81,10 +89,11 @@ export default () => (
 
     <Textbox>
       <Para>Since resumes are commonly used in context of 8.5 x 11 piece of paper, we knew it would be a design challenge to fit everything into the context of a mobile device. We explored ideas like tinder-like card swiping, floating action buttons, and counting taps. We landed on a prototype with a toolbar that slid halfway over a resume so users could have both the survey and resume to reference when reviewing.</Para>
-      <Para>After testing our prototype, we found users needed proper affordances presented and swiping or tapping interactions were confusing for them. Ultimately, we decided the value proposition was not strong enough, especially with the amount of engineering needed to be implemented. We icebox-ed the feature and would take a look at it again another date.</Para>
+      <Para>After we tested our prototype, we found users needed proper affordances and swiping or tapping interactions confused them. Ultimately, we decided the value proposition was not strong enough, especially with the amount of engineering needed to be implemented. We icebox-ed the feature and would take a look at it again another date.</Para>
     </Textbox>
 
     <Framer src="https://framer.cloud/gRnDc/" frameborder="0"/>
+    <Cap mt={[1,0]} mb={3}>*Hold the alt key while moving your cursor—to pinch in prototype.</Cap>
 
     <Textbox>
       <H2>Mobile Interview Planning</H2>
@@ -94,7 +103,7 @@ export default () => (
     <Image img = "../static/talent-sonar/002.png" cap="Mobile Interview Planning Flow (1 of 2)"/>
     <Image img = "../static/talent-sonar/003.png" cap="Mobile Interview Planning Flow (2 of 2)"/>
     <Textbox>
-      <Para>With the visual design of the flow, we wanted to keep simple iOS components. It was more important to keep things simple so we could ship the feature first, and iterate from there. Down the road, we want to explore a more dashboard-like view for jobs and tab bar navigation for candidates, criteria, and team member sections. We also hope to explore other interactions for lists like: swipe interactions for editing, drag and drop, and horizontal scrolling.</Para>
+      <Para>In terms of the visual design, we wanted to keep simple iOS components. In doing so, we could ship the feature first, and iterate from there. Down the road, we want to explore a more dashboard-like view for jobs and tab bar navigation for candidates, criteria, and team member sections. We also hope to explore other interactions for lists like: swipe interactions for editing, drag and drop, and horizontal scrolling.</Para>
     </Textbox>
     <Image img = "../static/talent-sonar/004-1.png" cap="Add New Job + Job Criteria Flow"/>
     <Image img = "../static/talent-sonar/004-2.png" cap="Job Candidates + Job Team Members"/>
@@ -102,14 +111,14 @@ export default () => (
 
     <Textbox>
       <H2>Component System</H2>
-      <Para>While we worked on mobile features, opportunities to work on desktop designs also came up. Since they already had common components in their code, I created a design system within Sketch and collaborated with the Product Manager using Abstract. With a component system and version control for designs, we turned around mockups quicker and had a more efficient feedback loop when a feature story came in. This ensured more time focused on business goals and usability rather than fiddle with aesthetics.</Para>
+      <Para>While we worked on mobile features, opportunities to work on desktop designs also came up. Since they already had common components in their code, I created a design system within Sketch and collaborated with the Product Manager using Abstract. With a component system and version control for designs, we turned around mockups quicker and had a more efficient feedback loop when a feature story came in. This ensured more time focused on success metrics and usability rather than fiddle with aesthetics.</Para>
     </Textbox>
     <Image img = "../static/talent-sonar/005.png" cap="Sketch Component System"/>
     <Imagegrid img1 = "../static/talent-sonar/006.png" cap1="Abstract Version Control (1 of 2)" img2="../static/talent-sonar/007.png" cap2="Abstract Version Control (2 of 2)"/>
 
     <Textbox>
       <H2>Marketing / Sales</H2>
-      <Para>Because I worked on the product, I had enough context to understand business goals and create informative illustrations for their marketing & sales teams. Blockframes became the main hero in the graphics and showcased certain features in development and within the current app. Other illustrations addressed a need to humanize the hiring process, and also retain context to the technology that powered it.</Para>
+      <Para>Because I worked on the product, I had enough context to understand business goals and create informative illustrations for their marketing & sales teams. Blockframes became the main hero in the graphics and showcased certain features in development and within the current app. Other illustrations addressed a need to humanize the hiring process, while retaining context to the technology that powered it.</Para>
     </Textbox>
 
     <Grid>

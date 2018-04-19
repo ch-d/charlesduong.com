@@ -17,7 +17,7 @@ export default () => (
         <Background>
           <Card
             title = "Talent Sonar"
-            sub1 = "User Interface Design"
+            sub1 = "Mobile Interaction Design"
             sub2 = "Design System"
             sub3 = "Marketing Design"
             img = "../static/talent-sonar/hero.png"

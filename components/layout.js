@@ -107,7 +107,7 @@ export default ({ children, title = 'charles duong | product designer', date, ti
           <Work>other work</Work>
           <Card cs={1} disp={disp1}
             title = "Talent Sonar"
-            sub1 = "User Interface Design"
+            sub1 = "Mobile Interaction Design"
             sub2 = "Design System"
             sub3 = "Marketing Design"
             img = "../static/talent-sonar/hero.png"

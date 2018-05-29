@@ -2,12 +2,13 @@
   "name": "",
   "version": "",
   "dependencies": {
+    "babel-plugin-styled-components": "^1.5.1",
     "grid-styled": "^2.0.0-10",
     "next": "^3.0.1-beta.20",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-scrollchor": "^4.1.0",
-    "styled-components": "^2.1.1",
+    "styled-components": "^3.3.0",
     "styled-system": "^1.0.0-11"
   },
   "scripts": {

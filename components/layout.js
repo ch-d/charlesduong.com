@@ -15,7 +15,7 @@ import Footer from './footer';
 // Layout constants
 import baseStyles from '../constants/baseStyles';
 import colors from '../constants/colors';
-import {H1, H2, Para } from '../constants/typography';
+import { H1, H2, Para } from '../constants/typography';
 
 baseStyles();
 

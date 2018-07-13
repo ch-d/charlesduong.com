@@ -19,7 +19,6 @@ const Main = styled.button`
 
   // Main styles
   background-color:#fff;
-  border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.12);
   &:hover {
     box-shadow: 0 10px 20px rgba(0,0,0,0.12), 0 6px 6px rgba(0,0,0,0.24);
@@ -115,7 +114,6 @@ const Image = styled.div`
   background-image:url(${props => props.img});
   background-size:cover;
   background-position:center;
-  border-radius: 4px;
   @media (max-width: 40rem) {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;

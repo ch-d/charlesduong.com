@@ -9,7 +9,7 @@ const Main = styled.button`
   border:0;
   padding:0;
   cursor: pointer;
-
+  border-radius: 2px;
   // Case Study Button vs. Index Button
   width: ${props => props.cs ? '100%' : '125%'};
   @media (max-width: 40rem) {

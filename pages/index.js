@@ -1,4 +1,5 @@
 import baseStyles from '../constants/baseStyles';
+import colors from '../constants/colors';
 import styled from 'styled-components/';
 import { space } from 'styled-system';
 import { ThemeProvider } from 'styled-components'
@@ -39,21 +40,24 @@ const WhiteOffset = styled.div`
   ${space}
 `;
 
-const H1 = styled.h1`
+const Title = styled.h1`
+	font-family: quicksand;
+	color: ${props => props.theme.colors.black};
   font-size: 2.25rem;
+  letter-spacing: .1em;
   font-weight: 100;
   margin: 0;
-  letter-spacing: .1em;
-`
+`;
 
-const H2 = styled.h2`
-  font-size: .875rem;
-  font-weight: 600;
+const SubTitle = styled.h2`
+  color: ${props => props.theme.colors.blue};
+  font-size: 0.875rem;
   text-transform: uppercase;
-  padding-bottom: 1rem;
   margin: 0;
   letter-spacing: .25em;
-`
+  font-weight: 600;
+  padding-bottom: 1rem;
+`;
 
 const Icolink= styled.a`
   ${space}
@@ -66,7 +70,7 @@ const Icolink= styled.a`
 `
 
 const Main = styled.a`
-  border-bottom: 2px solid #0000EE;
+  border-bottom: 2px solid ${props => props.theme.colors.blue};;
   text-decoration:none;
   display:inline-block;
   line-height:1rem;
@@ -77,7 +81,7 @@ const Main = styled.a`
     margin-bottom:-2px;
   };
   &:visited, &:active {
-    border-bottom:2px solid #551A8B
+    border-bottom:2px solid ${props => props.theme.colors.blue};
     text-decoration:none;
   };
   cursor: pointer;
@@ -90,11 +94,11 @@ const Moji = styled.span`
 export default () => (
   <div>
     <Heading titleCase=""/>
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={colors}>
     	<White p={[2,2,2,3]}>
     		<WhiteOffset p={[2,2,2,3]} >
-    			<H1>charles duong</H1>
-    			<H2>product designer</H2>
+    			<Title>charles duong</Title>
+    			<SubTitle>product designer</SubTitle>
           <Box>
             <Icolink href='https://twitter.com/hicharlesd' target='_blank' mr={1} color="#1DA1F2">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7f959d" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>

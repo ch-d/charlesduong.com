@@ -25,10 +25,6 @@ const Container = Box.extend`
   margin-right:auto;
 `
 
-const Navbar = Flex.extend`
-  align-items: center
-`
-
 const Logo = styled.a`
   font-size: 1rem;
   font-weight: 400;
@@ -70,8 +66,8 @@ export default ({ children, title = 'charles duong | product designer', date, ti
     <ThemeProvider theme={colors}>
       <div>
         <Container px={2}>
-          <Navbar py={2}>
-            <Link prefetch href='/'>
+          <Flex alignItems='center' py={2}>
+            <Link prefetch href='/work'>
               <Logo>charles duong</Logo>
             </Link>
             <Box flex='1 1 auto' />
@@ -95,7 +91,7 @@ export default ({ children, title = 'charles duong | product designer', date, ti
               site='gmail'
               color='D14836'
             />
-          </Navbar>
+          </Flex>
           <Flex wrap pt={2} mx={[0,4]} px={[0,4]}>
             <H1>{title}</H1>
             <Divider h="1" hideDivider={hideDivider}/>

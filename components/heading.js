@@ -4,7 +4,7 @@ import Script from '../components/script';
 export default ({
   meta = 'product designer',
   titleCase,
-  desc = "Hi, I'm Charles, a product designer based in Chicago, IL interested in web accessibility and inclusive design. Currently working on design systems, research, and tooling."
+  desc = "Hi, I'm Charles, a product designer based in San Francisco, CA currently working on design systems, research, and tooling. Continuously interested in making technology a little more human, accessible, and inclusive. Always up for meeting new friends!"
   }) => (
   <Head>
     <meta charSet='utf-8' />

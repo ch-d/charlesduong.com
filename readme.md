@@ -65,3 +65,13 @@ yarn build &&
 yarn export &&
 aws s3 sync out/. s3://work.charlesduong.com
 ```
+
+### Deploy to Netlify
+Make changes off of `work` branch
+```sh
+git push && 
+git checkout master &&
+git merge work &&
+git push &&
+git checkout work
+```

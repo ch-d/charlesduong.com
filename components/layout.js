@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
 import { space } from 'styled-system';
+import { Twitter, Linkedin, Github, Mail } from 'react-feather'
 
 // Layout Components
 import Heading from './heading';
@@ -60,6 +61,16 @@ const Work = styled.h1`
   opacity:0.6;
 `;
 
+const Icolink= styled.a`
+  ${space}
+  &:hover {
+    border-bottom: 2px solid ${props => props.color}
+  }
+  &:hover svg {
+    stroke:${props => props.color}
+  };
+`
+
 export default ({ children, title = 'charles duong | product designer', date, titleCase, desc, disp1, disp2, disp3, disp4, disp5, hideDivider }) => (
   <div>
     <Heading meta={title} titleCase={titleCase} desc={desc}/>
@@ -71,7 +82,21 @@ export default ({ children, title = 'charles duong | product designer', date, ti
               <Logo>charles duong</Logo>
             </Link>
             <Box flex='1 1 auto' />
-            <Social
+            <Box>
+              <Icolink href='https://twitter.com/hicharlesd' target='_blank' mr={1} color="#1DA1F2">
+                <Twitter color="#7f959d" size={24} />
+              </Icolink>
+              <Icolink href='https://linkedin.com/in/charlesduong' target='_blank' mx={1} color="#0077B5">
+                <Linkedin color="#7f959d" size={24} />
+              </Icolink>
+              <Icolink href='https://github.com/ch-d' target='_blank' mx={1} color="#181717">
+                <Github color="#7f959d" size={24} />
+              </Icolink>
+              <Icolink href='mailto:charles@charlesduong.com' target='_blank' mx={1} color="#D14836">
+                <Mail color="#7f959d" size={24} />
+              </Icolink>
+            </Box>
+            {/* <Social
               url='https://twitter.com/hicharlesd'
               site='twitter'
               color='1DA1F2'
@@ -90,7 +115,7 @@ export default ({ children, title = 'charles duong | product designer', date, ti
               url='mailto:charles@charlesduong.com'
               site='gmail'
               color='D14836'
-            />
+            /> */}
           </Flex>
           <Flex wrap pt={2} mx={[0,4]} px={[0,4]}>
             <H1>{title}</H1>

@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 import { Flex, Box } from 'grid-styled';
-import Social from './social';
 import { space } from 'styled-system';
-import { Twitter, Linkedin, Github, Mail } from 'react-feather'
+import Social from './social';
 
 const Title = styled.h1`
 	font-family: quicksand;
@@ -29,16 +28,6 @@ const Paragraph = styled.p`
 	${space}
 `;
 
-const Icolink= styled.a`
-  ${space}
-  &:hover {
-    border-bottom: 2px solid ${props => props.color}
-  }
-  &:hover svg {
-    stroke:${props => props.color}
-  };
-`
-
 export default () => (
 	<Flex wrap mx={[2,2,0]}>
     <Box width={[1, 1/2, 1/3]} ml={['0','0','16.7%']} py={[1,3,4]} my={[4,2,4]} pl={[0,3,0]}>
@@ -49,40 +38,7 @@ export default () => (
       <Paragraph mb={[4,2]}>
         Hi, I’m Charles and I’m a product designer working on the world wide web. I do work on design systems, research, and tooling. Continuously interested in making technology a little more human, accessible, and inclusive. Always up for meeting new friends:
       </Paragraph>
-      <Box>
-        <Icolink href='https://twitter.com/hicharlesd' target='_blank' mr={1} color="#1DA1F2">
-          <Twitter color="#7f959d" size={24} />
-        </Icolink>
-        <Icolink href='https://linkedin.com/in/charlesduong' target='_blank' mx={1} color="#0077B5">
-          <Linkedin color="#7f959d" size={24} />
-        </Icolink>
-        <Icolink href='https://github.com/ch-d' target='_blank' mx={1} color="#181717">
-          <Github color="#7f959d" size={24} />
-        </Icolink>
-        <Icolink href='mailto:charles@charlesduong.com' target='_blank' mx={1} color="#D14836">
-          <Mail color="#7f959d" size={24} />
-        </Icolink>
-      </Box>
-      {/* <Social
-        url='https://twitter.com/hicharlesd'
-        site='twitter'
-        color='1DA1F2'
-      />
-      <Social
-        url='https://linkedin.com/in/charlesduong'
-        site='linkedin'
-        color='0077B5'
-      />
-      <Social
-        url='https://github.com/ch-d'
-        site='github'
-        color='181717'
-      />
-      <Social
-        url='mailto:charles@charlesduong.com'
-        site='gmail'
-        color='D14836'
-      /> */}
+      <Social />
     </Box>
 	</Flex>
 )

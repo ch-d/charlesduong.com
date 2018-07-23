@@ -6,7 +6,7 @@ import { ThemeProvider } from 'styled-components'
 import Heading from '../components/heading';
 import { Box } from 'grid-styled';
 import Link from 'next/link';
-import { Twitter, Linkedin, Github, Mail } from 'react-feather'
+import Social from './social';
 
 const theme = {
   breakpoints: [
@@ -100,23 +100,7 @@ export default () => (
     		<WhiteOffset p={[2,2,2,3]} >
     			<Title>charles duong</Title>
     			<SubTitle>product designer</SubTitle>
-          <Box>
-            <Icolink href='https://twitter.com/hicharlesd' target='_blank' mr={1} color="#1DA1F2">
-              <Twitter color="#7f959d" size={24} />
-            </Icolink>
-            <Icolink href='https://linkedin.com/in/charlesduong' target='_blank' mx={1} color="#0077B5">
-              <Linkedin color="#7f959d" size={24} />
-            </Icolink>
-            <Icolink href='https://github.com/ch-d' target='_blank' mx={1} color="#181717">
-              <Github color="#7f959d" size={24} />
-            </Icolink>
-            <Icolink href='mailto:charles@charlesduong.com' target='_blank' mx={1} color="#D14836">
-              <Mail color="#7f959d" size={24} />
-            </Icolink>
-            {/* <Icolink href='http://scapes.charlesduong.com' target='_blank' mx={1} color="#0077B5">
-              <Camera size={24} />
-            </Icolink> */}
-          </Box>
+          <Social />
           <Link href="/work" prefetch>
             <Main>
               view design work

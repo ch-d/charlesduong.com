@@ -6,7 +6,7 @@ import { ThemeProvider } from 'styled-components'
 import Heading from '../components/heading';
 import { Box } from 'grid-styled';
 import Link from 'next/link';
-import Social from './social';
+import Social from '../components/social';
 
 const theme = {
   breakpoints: [

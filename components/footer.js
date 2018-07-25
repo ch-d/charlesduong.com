@@ -15,26 +15,7 @@ export default () => (
     <Center mt={1}>✌️</Center>
     <Center mb={2}>take care</Center>
     <Center mb={3}>
-      <Social
-        url='https://twitter.com/hicharlesd'
-        site='twitter'
-        color='1DA1F2'
-      />
-      <Social
-        url='https://linkedin.com/in/charlesduong'
-        site='linkedin'
-        color='0077B5'
-      />
-      <Social
-        url='https://github.com/ch-d'
-        site='github'
-        color='181717'
-      />
-      <Social
-        url='mailto:charles@charlesduong.com'
-        site='gmail'
-        color='D14836'
-      />
+      <Social />
     </Center>
   </div>
 )

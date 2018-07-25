@@ -145,7 +145,7 @@ export default ({ url, title, sub1, sub2, sub3, img, cs, disp, date }) => (
         </Box>
         <Info width={[1,1/3]} pl={[0,2,3]} pt={[3,2,2]} pb={[2,0]}>
           <Date>{date}</Date>
-          <Title mb={[2,2,3]}>{title}</Title>
+          <Title mb={3}>{title}</Title>
           <Sub>{sub1}</Sub>
           <Sub>{sub2}</Sub>
           <Sub>{sub3}</Sub>

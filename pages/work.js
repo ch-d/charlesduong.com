@@ -33,6 +33,16 @@ export default () => (
             url = "/lawyer-exchange"
             date = "Late 2016 &ndash; Early 2017"
           />
+          <a href="https://alliebot.com/">
+            <Card
+              title = "Allie Bot"
+              sub1 = "Marketing Development"
+              sub2 = "Design Sprints"
+              img = "../static/alliebot/hero.png"
+              url = "https://alliebot.com/"
+              date = "2018"
+            />
+          </a>
           <Card
             title = "Koeo Travel"
             sub1 = "Front-End Development"

@@ -41,7 +41,7 @@ const Info = Box.extend`
 
 const Date = styled.h5`
   font-family: quicksand;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.15rem;
   color: ${props => props.theme.colors.black};

@@ -39,29 +39,44 @@ const Info = Box.extend`
   flex-direction: column;
 `
 
+const Date = styled.h5`
+  font-family: quicksand;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.25rem;
+  color: ${props => props.theme.colors.black};
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  opacity: 0.35;
+  @media (max-width: 40rem) {
+    text-align: center
+  }
+`
+
 const Title = styled.h3`
   font-family: quicksand;
-  color: ${props => props.theme.colors.black};
+  font-size: 1.5rem;
+  font-weight: 300;
   letter-spacing: .1em;
-  font-size: 1.75rem;
-  font-weight: 200;
-  line-height:1;
+  color: ${props => props.theme.colors.black};
   text-transform:lowercase;
-  margin-top:0px;
-  ${space};
+  margin-top: 0;
+  margin-bottom: 2rem;
+  line-height: 1;
   @media (max-width: 40rem) {
     text-align: center
   };
 `
 
 const Sub = styled.h4`
-  color: ${props => props.theme.colors.blue};
+  font-family: quicksand;
   font-size: 0.875rem;
+  font-weight: 500;
   letter-spacing: .1em;
-  font-weight: 600;
-  // line-height:1.5;
-  margin:0;
-  padding-bottom:1rem;
+  color: ${props => props.theme.colors.blue};
+  margin: 0;
+  padding-bottom: 1rem;
   @media (max-width: 50rem) {
     padding-bottom: 0.5rem;
   };
@@ -87,18 +102,19 @@ const CsLink = Flex.extend`
 `
 
 const Sub2 = styled.h4`
-  color: ${props => props.theme.colors.black};
-  font-size: 0.875rem;
+  font-family: quicksand;
+  font-size: 0.875rem;  
+  font-weight: 400;
   letter-spacing: .1em;
-  font-weight: 600;
-  margin:0;
-  padding-bottom:1rem;
+  color: ${props => props.theme.colors.black};
+  margin: 0;
+  padding-bottom: 1rem;
   @media (max-width: 50rem) {
     padding-bottom: 0.5rem
   };
   @media (max-width: 40rem) {
-    padding-top:1rem;
-    padding-bottom:0rem;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
   };
 `
 
@@ -120,21 +136,6 @@ const Image = styled.div`
   }
 `
 
-const Date = styled.h5`
-  color: ${props => props.theme.colors.black};
-  font-family: quicksand;
-  margin: 0;
-  margin-bottom: 0.25rem;
-  font-size: 0.75rem;
-  opacity: 0.35;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.14rem;
-  @media (max-width: 40rem) {
-    text-align: center
-  }
-`
-
 // CHANGE SUB COMPONENT (DRY) TO LIST & KEYS TO-DO ---------------
 export default ({ url, title, sub1, sub2, sub3, img, cs, disp, date }) => (
   <Link prefetch href={url}>
@@ -145,7 +146,7 @@ export default ({ url, title, sub1, sub2, sub3, img, cs, disp, date }) => (
         </Box>
         <Info width={[1,1/3]} pl={[0,2,3]} pt={[3,2,2]} pb={[2,0]}>
           <Date>{date}</Date>
-          <Title mb={3}>{title}</Title>
+          <Title>{title}</Title>
           <Sub>{sub1}</Sub>
           <Sub>{sub2}</Sub>
           <Sub>{sub3}</Sub>

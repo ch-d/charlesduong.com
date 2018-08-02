@@ -39,7 +39,7 @@ export default () => (
         Hi, I’m Charles and I’m a product designer working on the world wide web. I do work on design systems, research, and tooling. Continuously interested in making technology a little more human, accessible, and inclusive.
       </Paragraph>
       <Paragraph>
-        Currently available for full-time or contract opportunities.
+        Currently available for full-time or contract opportunities. 
       </Paragraph>
       <Social />
     </Box>

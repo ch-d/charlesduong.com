@@ -67,11 +67,7 @@ aws s3 sync out/. s3://work.charlesduong.com
 ```
 
 ### Deploy to Netlify
-Make changes off of `work` branch
+Commit changes locally and push to master
 ```sh
-git push && 
-git checkout master &&
-git merge work &&
-git push &&
-git checkout work
+git push
 ```

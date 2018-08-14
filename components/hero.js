@@ -65,7 +65,7 @@ const grow = keyframes`
 const Pulse = styled.span`
   display: inline-block;
   position: relative;
-  top: -2px;
+  top: -.125rem;
   margin-right: .5rem;
   width: .5rem;
   height: .5rem;
@@ -79,10 +79,10 @@ const Pulse = styled.span`
     width: .75rem;
     height: .75rem;
     border-radius: 50%;
-    border: 2px solid #fff;
-    position:absolute;
-    top:-.25rem;
-    left:-.25rem;
+    border: .125rem solid #fff;
+    position: absolute;
+    top: -.25rem;
+    left: -.25rem;
     animation: ${pulse} 2s ease 0s infinite;
   }
 `

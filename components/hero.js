@@ -31,8 +31,14 @@ const Paragraph = styled.p`
 const Pill = styled.span`
   background-color: #17a890;
   color: #fff;
-  padding: .125rem .75rem;
+  padding: .125rem .5rem;
   border-radius: .25rem;
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .125rem;
+  position: relative;
+  top: -2px;
+  box-shadow: 0 0 4px 2px rgba(23,168,144,.24);
 `
 
 const pulse = keyframes`
@@ -65,7 +71,7 @@ const grow = keyframes`
 const Pulse = styled.span`
   display: inline-block;
   position: relative;
-  top: -.125rem;
+  top: -1px;
   margin-right: .5rem;
   width: .5rem;
   height: .5rem;

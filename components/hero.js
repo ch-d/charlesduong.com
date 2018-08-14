@@ -29,16 +29,16 @@ const Paragraph = styled.p`
 `;
 
 const Pill = styled.span`
-  background-color: ${props => props.theme.colors.gradient.green};
-  color: white;
-  padding: .125rem .5rem;
+  background-color: #17a890;
+  color: #fff;
+  padding: .125rem .75rem;
   border-radius: .25rem;
 `
 
 const pulse = keyframes`
   0% {
-      opacity: .5;
-      transform: scale(1);
+      opacity: 1;
+      transform: scale(.5);
   }
   80% {
       opacity: 0;
@@ -46,19 +46,19 @@ const pulse = keyframes`
   }
   100% {
       opacity: 0;
-      transform: scale(2);
+      transform: scale(3);
   }
 `;
 
 const grow = keyframes`
   0% {
-      transform: scale(.5);
-  }
-  80% {
       transform: scale(.75);
   }
-  100% {
+  50% {
       transform: scale(1);
+  }
+  100% {
+      transform: scale(.75);
   }
 `;
 

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Box } from 'grid-styled';
 import { space } from 'styled-system';
-import { Twitter, Linkedin, Github, Mail } from 'react-feather'
+import { Twitter, Linkedin, GitHub, Mail } from 'react-feather'
 
 const Icolink= styled.a`
   ${space}
@@ -22,7 +22,7 @@ export default () => (
       <Linkedin color="#7f959d" size={24} />
     </Icolink>
     <Icolink href='https://github.com/ch-d' target='_blank' mx={1} color="#181717">
-      <Github color="#7f959d" size={24} />
+      <GitHub color="#7f959d" size={24} />
     </Icolink>
     <Icolink href='mailto:charles@charlesduong.com' target='_blank' mx={1} color="#D14836">
       <Mail color="#7f959d" size={24} />

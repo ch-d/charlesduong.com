@@ -101,7 +101,7 @@ export default () => (
     </Box>
     <Box width={[1, 1/2, 1/3]} py={[0,2,3]} my={[0,2,4]}>
       <Paragraph mb={[4,2]}>
-        Hi, I’m Charles&mdash;a designer 👨‍💻 who works on the world wide web. Especially enjoy tinkering with design systems, research processes, and tooling. Continuously interested in making technology a little more human, accessible, and inclusive.
+        Hi, I'm a designer 👨‍💻 always up for tackling hard ethical, social problems. Empathy, words, and modular systems are my tools of choice throughout the design process. Continuously interested in making technology a little more human, accessible, and inclusive.
       </Paragraph>
       <Paragraph>
         Currently <Pill><Pulse />available</Pill> for full-time or contract opportunities. 

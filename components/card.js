@@ -5,20 +5,21 @@ import { space } from 'styled-system';
 
 const Main = styled.button`
   // remove default button styles
-  font-family : inherit;
-  border:0;
-  padding:0;
+  font-family: inherit;
+  border: 0;
+  padding: 0;
   cursor: pointer;
   border-radius: 2px;
+
   // Case Study Button vs. Index Button
   width: ${props => props.cs ? '100%' : '125%'};
   @media (max-width: 40rem) {
-      width:100%;
+      width: 100%;
   };
-  display:${props => props.disp};
+  display: ${props => props.disp};
 
   // Main styles
-  background-color:transparent;
+  background-color: transparent;
   &:hover {
     transform: scale(1.025);
   };
@@ -26,14 +27,14 @@ const Main = styled.button`
 `;
 
 const Info = Box.extend`
-  text-align:left;
+  text-align: left;
   @media (max-width: 50rem) {
-    height:14rem;
+    height: 14rem;
   };
   @media (max-width: 40rem) {
     height:auto
   };
-  display:flex;
+  display: flex;
   flex-direction: column;
   ${Main}:hover & {
     padding-left: 2rem;
@@ -61,7 +62,7 @@ const Title = styled.h3`
   font-weight: 300;
   letter-spacing: .1em;
   color: ${props => props.theme.colors.black};
-  text-transform:lowercase;
+  text-transform: lowercase;
   margin-top: 0;
   margin-bottom: 2rem;
   line-height: 1;
@@ -87,14 +88,14 @@ const Sub = styled.h4`
 `
 
 const CsLink = Flex.extend`
-  align-items:flex-end;
-  justify-content:flex-end;
+  align-items: flex-end;
+  justify-content: flex-end;
   @media (max-width: 50rem) {
-    justify-content:flex-start;
+    justify-content: flex-start;
   };
   @media (max-width: 40rem) {
-    align-items:center;
-    justify-content:center;
+    align-items: center;
+    justify-content: center;
     border-top: 1px solid rgba(0,0,0,0.12);
     padding-bottom: 0.25rem;
   };
@@ -111,9 +112,9 @@ const Sub2 = styled.h4`
   color: #fff;
   margin: 0;
   padding: 0.5rem 1rem;
-  background-color:${props => props.theme.colors.black};
-  position:relative;
-  top:-16px;
+  background-color: ${props => props.theme.colors.black};
+  position: relative;
+  top: -16px;
   @media (max-width: 50rem) {
     padding-bottom: 0.5rem
   };
@@ -123,29 +124,29 @@ const Sub2 = styled.h4`
   };
   ${Main}:hover & {
     opacity: 1;
-    top:0px;
+    top: 0px;
   }
 `
 
 const Image = styled.div`
-  width:100%;
-  height:18rem;
+  width: 100%;
+  height: 18rem;
   @media (max-width: 50rem) {
-    height:14rem;
+    height: 14rem;
   };
   @media (max-width: 40rem) {
-    height:10rem;
+    height: 10rem;
   };
-  background-image:url(${props => props.img});
-  background-size:cover;
-  background-position:center;
+  background-image: url(${props => props.img});
+  background-size: cover;
+  background-position: center;
   ${Main}:hover & {
-    background-image:linear-gradient(180deg, ${props => props.theme.colors.black}, ${props => props.theme.colors.black}), url(${props => props.img});
+    background-image: linear-gradient(180deg, ${props => props.theme.colors.black}, ${props => props.theme.colors.black}), url(${props => props.img});
     background-blend-mode: screen;
   }
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   @media (max-width: 40rem) {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;

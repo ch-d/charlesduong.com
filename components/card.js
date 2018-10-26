@@ -13,13 +13,16 @@ const Main = styled.button`
 
   // Case Study Button vs. Index Button
   width: ${props => props.cs ? '100%' : '125%'};
-  @media (max-width: 40rem) {
-      width: 100%;
-  };
   display: ${props => props.disp};
 
   // Main styles
   background-color: transparent;
+  @media (max-width: 40rem) {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.12);
+    overflow: hidden;
+  };
   &:hover {
     transform: scale(1.025);
   };
@@ -28,16 +31,12 @@ const Main = styled.button`
 
 const Info = Box.extend`
   text-align: left;
-  @media (max-width: 50rem) {
-    height: 14rem;
-  };
-  @media (max-width: 40rem) {
-    height:auto
-  };
-  display: flex;
-  flex-direction: column;
   ${Main}:hover & {
     padding-left: 2rem;
+  }
+  @media (max-width: 40rem) {
+    order: 2;
+    padding-bottom: 0;
   }
 `
 
@@ -77,34 +76,31 @@ const Sub = styled.h4`
   font-weight: 500;
   letter-spacing: .1em;
   color: ${props => props.theme.colors.blue};
-  margin: 0;
-  padding-bottom: 1rem;
-  @media (max-width: 50rem) {
-    padding-bottom: 0.5rem;
-  };
+  margin-top: 0;
+  margin-bottom: 1rem;
   @media (max-width: 40rem) {
     text-align: center
   };
 `
 
-const CsLink = Flex.extend`
-  align-items: flex-end;
-  justify-content: flex-end;
-  @media (max-width: 50rem) {
-    justify-content: flex-start;
-  };
+const CtaMobile = styled.h4`
+  display: none;
   @media (max-width: 40rem) {
+    display: flex;
     align-items: center;
     justify-content: center;
-    border-top: 1px solid rgba(0,0,0,0.12);
-    padding-bottom: 0.25rem;
   };
-  opacity: 0.75;
-  margin-top: 1.5rem;
+    border-top: 1px solid rgba(0,0,0,0.12);
+    font-family: IBM Plex Sans;
+    font-size: 0.875rem;  
+    font-weight: 400;
+    letter-spacing: .1em;
+    opacity: 0.75;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
 `
 
-const Sub2 = styled.h4`
-  opacity: 0;
+const Cta = styled.h4`
   font-family: IBM Plex Sans;
   font-size: 0.875rem;  
   font-weight: 400;
@@ -113,15 +109,16 @@ const Sub2 = styled.h4`
   margin: 0;
   padding: 0.5rem 1rem;
   background-color: ${props => props.theme.colors.black};
-  position: relative;
-  top: -16px;
-  @media (max-width: 50rem) {
-    padding-bottom: 0.5rem
-  };
   @media (max-width: 40rem) {
+    display: none;
     padding-top: 1rem;
     padding-bottom: 0rem;
   };
+
+  // hover effect
+  opacity: 0;
+  position: relative;
+  top: -16px;
   ${Main}:hover & {
     opacity: 1;
     top: 0px;
@@ -147,10 +144,6 @@ const Image = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media (max-width: 40rem) {
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
 `
 
 // CHANGE SUB COMPONENT (DRY) TO LIST & KEYS TO-DO ---------------
@@ -164,10 +157,11 @@ export default ({ url, title, sub1, sub2, sub3, img, cs, disp, date, cta }) => (
           <Sub>{sub1}</Sub>
           <Sub>{sub2}</Sub>
           <Sub>{sub3}</Sub>
+          <CtaMobile>{cta}</CtaMobile>
         </Info>
         <Box width={[1,2/3]}>
           <Image img={img}>
-            <Sub2>{cta}</Sub2>
+            <Cta>{cta}</Cta>
           </Image>
         </Box>
       </Flex>

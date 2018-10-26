@@ -75,7 +75,7 @@ export default ({ children, title = 'charles duong | product designer', date, ti
       <div>
         <Container px={2}>
           <Flex alignItems='center' py={2}>
-            <Link prefetch href='/work'>
+            <Link prefetch href='/'>
               <Logo>charles duong</Logo>
             </Link>
             <Box flex='1 1 auto' />

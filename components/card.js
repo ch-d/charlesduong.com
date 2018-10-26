@@ -18,11 +18,9 @@ const Main = styled.button`
   display:${props => props.disp};
 
   // Main styles
-  background-color:#fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.12);
+  background-color:transparent;
   &:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.12), 0 6px 6px rgba(0,0,0,0.24);
-    transform: translateY(-2px);
+    transform: scale(1.025);
   };
   ${space};
 `;
@@ -37,6 +35,9 @@ const Info = Box.extend`
   };
   display:flex;
   flex-direction: column;
+  ${Main}:hover & {
+    padding-left: 2rem;
+  }
 `
 
 const Date = styled.h5`
@@ -102,13 +103,17 @@ const CsLink = Flex.extend`
 `
 
 const Sub2 = styled.h4`
+  opacity: 0;
   font-family: IBM Plex Sans;
   font-size: 0.875rem;  
   font-weight: 400;
   letter-spacing: .1em;
-  color: ${props => props.theme.colors.black};
+  color: #fff;
   margin: 0;
-  padding-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  background-color:${props => props.theme.colors.black};
+  position:relative;
+  top:-16px;
   @media (max-width: 50rem) {
     padding-bottom: 0.5rem
   };
@@ -116,6 +121,10 @@ const Sub2 = styled.h4`
     padding-top: 1rem;
     padding-bottom: 0rem;
   };
+  ${Main}:hover & {
+    opacity: 1;
+    top:0px;
+  }
 `
 
 const Image = styled.div`
@@ -130,6 +139,13 @@ const Image = styled.div`
   background-image:url(${props => props.img});
   background-size:cover;
   background-position:center;
+  ${Main}:hover & {
+    background-image:linear-gradient(180deg, ${props => props.theme.colors.black}, ${props => props.theme.colors.black}), url(${props => props.img});
+    background-blend-mode: screen;
+  }
+  display:flex;
+  align-items:center;
+  justify-content:center;
   @media (max-width: 40rem) {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -137,23 +153,22 @@ const Image = styled.div`
 `
 
 // CHANGE SUB COMPONENT (DRY) TO LIST & KEYS TO-DO ---------------
-export default ({ url, title, sub1, sub2, sub3, img, cs, disp, date }) => (
+export default ({ url, title, sub1, sub2, sub3, img, cs, disp, date, cta }) => (
   <Link prefetch href={url}>
     <Main cs={cs} mb={[2,4]} disp={disp}>
       <Flex wrap p={[0,2]}>
-        <Box width={[1,2/3]}>
-          <Image img={img} />
-        </Box>
-        <Info width={[1,1/3]} pl={[0,2,3]} pt={[3,2,2]} pb={[2,0]}>
+        <Info width={[1,1/3]} pt={[3,2,2]} pb={[2,0]}>
           <Date>{date}</Date>
           <Title>{title}</Title>
           <Sub>{sub1}</Sub>
           <Sub>{sub2}</Sub>
           <Sub>{sub3}</Sub>
-          <CsLink flex="1 1 auto">
-            <Sub2>View Case Study 👉</Sub2>
-          </CsLink>
         </Info>
+        <Box width={[1,2/3]}>
+          <Image img={img}>
+            <Sub2>{cta}</Sub2>
+          </Image>
+        </Box>
       </Flex>
     </Main>
   </Link>

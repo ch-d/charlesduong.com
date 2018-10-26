@@ -49,7 +49,7 @@ const Divider = Box.extend`
 `
 
 const Work = styled.h1`
-  font-family: quicksand;
+  font-family: IBM Plex Sans;
   font-size:3rem;
   letter-spacing: .1em;
   font-weight: 100;

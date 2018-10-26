@@ -42,7 +42,7 @@ const WhiteOffset = styled.div`
 `;
 
 const Title = styled.h1`
-	font-family: quicksand;
+	font-family: IBM Plex Sans;
 	color: ${props => props.theme.colors.black};
   font-size: 2.25rem;
   letter-spacing: .1em;

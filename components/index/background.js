@@ -15,10 +15,12 @@ const Grey = styled.div`
 `;
 
 const Divider = Box.extend`
-  width:100%;
-  height:${props => props.h}px;
-  margin-left:20%;
-  width:80%;
+  height: ${props => props.h}px;
+  margin-left: 20%;
+  @media (min-width: 40rem) {
+    margin-left: 15%;
+  }
+  width: 80%;
   background: linear-gradient(to right, ${props => props.theme.colors.gradient.purple}, ${props => props.theme.colors.gradient.green});
 `
 
@@ -27,18 +29,16 @@ const Work = styled.h1`
   font-size:3rem;
   letter-spacing: .1em;
   font-weight: 100;
-  margin: 0;
+  padding-left: 8px;
   transform: translateY(-50%);
-  @media (max-width: 40rem) {
-    transform: translate(0,-50%);
-  };
   color: ${props => props.theme.colors.wash};
 `;
 
 const Container = styled.div`
   transform: translateX(64px);
-  margin-right: -64px;
-  width: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: calc(100% - 16px);
 `
 
 export default ({children}) => (

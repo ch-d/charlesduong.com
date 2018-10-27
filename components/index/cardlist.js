@@ -30,7 +30,7 @@ export default () => (
       img = "../static/koeo/hero.png"
       url = "#"
       date = "Financial Services"
-      cta = "Case Study Coming Soon 👀"
+      cta = "Case Study Coming Soon ⏳"
     />
   </Background>
 )

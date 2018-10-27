@@ -46,29 +46,9 @@ const Divider = Box.extend`
   background: linear-gradient(to right, ${props => props.theme.colors.gradient.purple}, ${props => props.theme.colors.gradient.green});
   margin-left: ${props => props.offset ? '20%' : ''};
   width: ${props => props.offset ? '80%' : ''};
-  display: ${props => props.hideDivider ? 'none' : ''}
 `
 
-const Work = styled.h1`
-  font-family: IBM Plex Sans;
-  font-size:3rem;
-  letter-spacing: .1em;
-  font-weight: 100;
-  color: ${props => props.theme.colors.blue};
-  opacity:0.6;
-`;
-
-const Icolink= styled.a`
-  ${space}
-  &:hover {
-    border-bottom: 2px solid ${props => props.color}
-  }
-  &:hover svg {
-    stroke:${props => props.color}
-  };
-`
-
-export default ({ children, title = 'charles duong | product designer', date, titleCase, desc, disp1, disp2, disp3, disp4, disp5, hideDivider }) => (
+export default ({ children, title = 'charles duong | product designer', date, titleCase, desc }) => (
   <div>
     <Heading meta={title} titleCase={titleCase} desc={desc}/>
     <ThemeProvider theme={colors}>
@@ -83,7 +63,7 @@ export default ({ children, title = 'charles duong | product designer', date, ti
           </Flex>
           <Flex wrap pt={2} mx={[0,4]} px={[0,4]}>
             <H1>{title}</H1>
-            <Divider h="1" hideDivider={hideDivider}/>
+            <Divider h="1" />
             <H1 style={{'fontSize': '1rem'}}>{date}</H1>
           </Flex>
           { children }

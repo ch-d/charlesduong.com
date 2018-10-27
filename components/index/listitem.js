@@ -37,6 +37,7 @@ const Title = styled.h3`
   margin: 0;
   text-transform: lowercase;
   opacity: 0.5;
+  flex-shrink: 0;
 `;
 
 const Tag = styled.h5`
@@ -47,6 +48,8 @@ const Tag = styled.h5`
   color: ${props => props.theme.colors.blue};
   margin: 0 .5rem;
   opacity: .5;
+  flex-shrink: 0;
+  text-transform: uppercase;
 `;
 
 const Subtitle = styled.h4`
@@ -57,7 +60,6 @@ const Subtitle = styled.h4`
   letter-spacing: .1em;
   color: ${props => props.theme.colors.black};
   margin: 0;
-  text-transform: uppercase;
 `;
 
 const Cta = styled.h5`

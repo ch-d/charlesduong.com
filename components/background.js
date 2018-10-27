@@ -4,7 +4,7 @@ import { Flex, Box } from 'grid-styled';
 const Grey = styled.div`
   background-color: ${props => props.theme.colors.grey};
   width:100%;
-  height:114rem;
+  height:64rem;
 `;
 
 const Gradient = styled.div`
@@ -15,7 +15,7 @@ const Gradient = styled.div`
   // gradient
   position: relative;
   // HACK ==> REMOVE HARDCODED HEIGHT & MARGIN 1200px TO-DO -------
-  margin-bottom:-114rem;
+  margin-bottom:-64rem;
   &:before, &:after {
     content: "";
     position: absolute;

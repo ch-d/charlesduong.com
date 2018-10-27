@@ -5,6 +5,7 @@ import Heading from '../components/heading';
 import Hero from '../components/hero';
 import Background from '../components/background';
 import Card from '../components/card';
+import List from '../components/list';
 
 baseStyles();
 
@@ -71,6 +72,7 @@ export default () => (
             date = "Late 2016"
           /> */}
         </Background>
+        <List />
       </div>
     </ThemeProvider>
   </div>

@@ -2,7 +2,6 @@ module.exports = {
   exportPathMap: function () {
     return {
       "/": { page: "/" },
-      "/work": { page: "/work" },
       "/talent-sonar": { page: "/talent-sonar" },
       "/koeo": { page: "/koeo" },
       "/ballot-ready": { page: "/ballot-ready" },

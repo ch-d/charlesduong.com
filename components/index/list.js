@@ -12,45 +12,44 @@ const Container = styled.div`
 export default () => (
   <Background list={1} title="more work">
     <Container>
-      <Listitem 
-        title="Peoplism"
-        tag="Late 2018" 
-        cta="View Website" 
-        subtitle="Marketing Development" 
-        img="http://tachyons.io/img/logo.jpg"
-        url=""
-      />
-      <Listitem 
-        title="Allie Bot"
-        tag="Early 2018" 
-        cta="View Website" 
-        subtitle="Marketing Development" 
-        img="http://tachyons.io/img/logo.jpg"
-        url=""
-      />
+      <a href="https://www.peoplism.com/">
+        <Listitem 
+          title="Peoplism"
+          tag="Late 2018" 
+          cta="View Website" 
+          subtitle="Marketing Development" 
+          url="https://www.peoplism.com/"
+        />
+      </a>
+      <a href="https://www.alliebot.com/">
+        <Listitem 
+          title="Allie Bot"
+          tag="Early 2018" 
+          cta="View Website" 
+          subtitle="Marketing Development"
+          url=""
+        />
+      </a>
       <Listitem 
         title="Koeo Travel"
         tag="Late 2017" 
         cta="View Case Study" 
-        subtitle="Front-End Development, User Research" 
-        img="http://tachyons.io/img/logo.jpg"
-        url=""
+        subtitle="Front-End Development, User Research"
+        url="/koeo"
       />
       <Listitem 
         title="BallotReady"
         tag="Late 2016" 
         cta="View Case Study" 
-        subtitle="Marketing Design, Data Visualization" 
-        img="http://tachyons.io/img/logo.jpg"
-        url=""
+        subtitle="Marketing Design, Data Visualization"
+        url="ballot-ready"
       />
       <Listitem 
         title="Luna Lights"
         tag="Early 2016" 
         cta="View Case Study" 
-        subtitle="User Interface Design, Data Visualization" 
-        img="http://tachyons.io/img/logo.jpg"
-        url=""
+        subtitle="User Interface Design, Data Visualization"
+        url="luna-lights"
       />
     </Container>
   </Background>

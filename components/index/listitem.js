@@ -1,7 +1,14 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 
-const Card = styled.div`
+const Card = styled.button`
+  // remove default button styles
+  font-family: inherit;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+
+  // card styles
   display: flex;
   align-items: center;
   flex: 320px;
@@ -9,15 +16,7 @@ const Card = styled.div`
   cursor: pointer;
 `;
 
-const Image = styled.img`
-  width: 3rem;
-  height: 3rem;
-  border-radius: 100%;
-  background-image: url(${props => props.img});
-`;
-
 const Text = styled.div`
-  // margin-left: .5rem;
   width: 100%;
 `;
 
@@ -52,6 +51,7 @@ const Subtitle = styled.h4`
   font-family: IBM Plex Sans;
   font-size: 0.75rem;
   font-weight: 500;
+  text-align: left;
   letter-spacing: .1em;
   color: ${props => props.theme.colors.black};
   margin: 0;
@@ -72,10 +72,9 @@ const Cta = styled.h5`
   }
 `;
 
-export default ({ title, tag, cta, subtitle, img, url }) => (
+export default ({ title, tag, cta, subtitle, url }) => (
   <Link prefetch href={ url }>
     <Card>
-      {/* <Image img={img} /> */}
       <Text>
         <TitleText>
           <Title>{ title }</Title>

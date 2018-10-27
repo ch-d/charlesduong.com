@@ -5,15 +5,15 @@ import { Flex, Box } from 'grid-styled';
 import { space } from 'styled-system';
 
 // Layout Components
-import Heading from './heading';
-import Social from './social';
+import Heading from '../shared/heading';
+import Social from '../shared/social';
 import Card from './card';
-import Footer from './footer';
+import Footer from '../shared/footer';
 
 // Layout constants
-import baseStyles from '../constants/baseStyles';
-import colors from '../constants/colors';
-import { H1, H2, Para } from '../constants/typography';
+import baseStyles from '../../constants/baseStyles';
+import colors from '../../constants/colors';
+import { H1, H2, Para } from '../../constants/typography';
 
 baseStyles();
 

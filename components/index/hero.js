@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import { Flex, Box } from 'grid-styled';
 import { space } from 'styled-system';
-import Social from './social';
+import Social from '../shared/social';
 
 const Title = styled.h1`
   font-family: IBM Plex Sans;

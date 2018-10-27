@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Script from '../components/script';
+import Script from './script';
 
 export default ({
   meta = 'product designer',

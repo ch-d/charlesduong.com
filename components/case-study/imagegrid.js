@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { space } from 'styled-system';
 import { Flex, Box } from 'grid-styled';
-import { Caption } from '../constants/typography';
+import { Caption } from '../../constants/typography';
 
 const Image = styled.img`
   max-width:100%;

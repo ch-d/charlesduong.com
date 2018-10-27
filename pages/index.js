@@ -1,12 +1,12 @@
 import baseStyles from '../constants/baseStyles';
 import colors from '../constants/colors';
 import { ThemeProvider } from 'styled-components';
-import Heading from '../components/heading';
-import Hero from '../components/hero';
-import Background from '../components/background';
-import Card from '../components/card';
-import List from '../components/list';
-import Footer from '../components/footer';
+import Heading from '../components/shared/heading';
+import Hero from '../components/index/hero';
+import Background from '../components/index/background';
+import Card from '../components/index/card';
+import List from '../components/index/list';
+import Footer from '../components/shared/footer';
 
 baseStyles();
 

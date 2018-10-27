@@ -6,6 +6,7 @@ import Hero from '../components/hero';
 import Background from '../components/background';
 import Card from '../components/card';
 import List from '../components/list';
+import Footer from '../components/footer';
 
 baseStyles();
 
@@ -73,6 +74,7 @@ export default () => (
           /> */}
         </Background>
         <List />
+        <Footer />
       </div>
     </ThemeProvider>
   </div>

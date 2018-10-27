@@ -7,6 +7,7 @@ const Card = styled.button`
   border: 0;
   padding: 0;
   cursor: pointer;
+  background-color: transparent;
 
   // card styles
   display: flex;
@@ -14,6 +15,7 @@ const Card = styled.button`
   flex: 320px;
   padding: 1rem;
   cursor: pointer;
+  width: 100%;
 `;
 
 const Text = styled.div`

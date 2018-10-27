@@ -13,17 +13,21 @@ const Grey = styled.div`
   width: 100%;
   transform: translateX(${props => props.list ? '0' : '-32'}px);
   margin-left: ${props => props.list ? '0' : '-32'}px;
+  padding-bottom: 8px;
+  @media (min-width: 40rem) {
+    padding-bottom: 32px;
+  }
 `;
 
 const Divider = Box.extend`
   height: ${props => props.h}px;
   margin-left: ${props => props.list ? '0' : '20%'};
+  width: 80%;
   @media (min-width: 40rem) {
     margin-left: ${props => props.list ? '2.5%' : '37.5%'};
     width: 60%;
   }
-  width: 80%;
-  background: linear-gradient(to right, ${props => props.theme.colors.gradient.purple}, ${props => props.theme.colors.gradient.green});
+  background: linear-gradient(to ${props => props.list ? 'right' : 'left'}, ${props => props.theme.colors.gradient.purple}, ${props => props.theme.colors.gradient.green});
 `
 
 const Title = styled.h1`

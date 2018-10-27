@@ -151,7 +151,7 @@ const Image = styled.div`
 // CHANGE SUB COMPONENT (DRY) TO LIST & KEYS TO-DO ---------------
 export default ({ url, title, sub1, sub2, sub3, img, cs, disp, date, cta }) => (
   <Link prefetch href={url}>
-    <Main cs={cs} mb={[2,4]} disp={disp}>
+    <Main cs={cs} my={[1,3]} disp={disp}>
       <Flex wrap p={[0,2]}>
         <Info width={[1,1/3]} pt={[3,2,2]} pb={[2,0]}>
           <Date>{date}</Date>

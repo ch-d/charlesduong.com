@@ -31,12 +31,40 @@ const Divider = Box.extend`
   z-index: 1;
 `
 
-export default () => (
+const hide = {
+  display: 'none'
+};
+
+export default ({ isMain }) => (
   <div>
     <Divider h="4" mb={1} />
     <Divider h="1" />
     <Background list={1} title="more work" >
       <Container>
+        <Listitem 
+          title="Savings Account"
+          tag="2018" 
+          cta="Case Study Coming Soon" 
+          subtitle="UI Design, Design System"
+          url=""
+          customStyle={isMain ? hide : {}}
+        />
+        <Listitem 
+          title="Talent Sonar"
+          tag="Late 2017" 
+          cta="View Case Study" 
+          subtitle="Mobile Interaction Design, Design System, Marketing Design"
+          url="/talent-sonar"
+          customStyle={isMain ? hide : {}}
+        />
+        <Listitem 
+          title="Lawyer Exchange"
+          tag="Late 2016 –" 
+          cta="View Case Study" 
+          subtitle="Marketing & Development, User Research, Design System"
+          url="/lawyer-exchange"
+          customStyle={isMain ? hide : {}}
+        />
         <External href="https://www.peoplism.com/">
           <Listitem 
             title="Peoplism"

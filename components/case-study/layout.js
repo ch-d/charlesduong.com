@@ -7,7 +7,6 @@ import { space } from 'styled-system';
 // Layout Components
 import Heading from '../shared/heading';
 import Social from '../shared/social';
-import Cardlist from '../index/cardlist';
 import List from '../index/list';
 import Footer from '../shared/footer';
 
@@ -89,11 +88,9 @@ export default ({ children, title = 'charles duong | product designer', date, ti
           </Flex>
           { children }
         </Container>
-        <Cardlist />
         <List />
         <Footer />
       </div>
     </ThemeProvider>
-
   </div>
 )

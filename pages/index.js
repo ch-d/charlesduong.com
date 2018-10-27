@@ -16,7 +16,7 @@ export default () => (
       <div>
         <Hero />
         <Cardlist />
-        <List />
+        <List isMain />
         <Footer />
       </div>
     </ThemeProvider>

@@ -26,7 +26,7 @@ export default () => (
     <Card
       title = "Savings Account"
       sub1 = "UI Design"
-      sub2 = "User Research"
+      sub2 = "Design System"
       img = "../static/koeo/hero.png"
       url = "#"
       date = "Financial Services"

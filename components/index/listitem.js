@@ -74,9 +74,9 @@ const Cta = styled.h5`
   }
 `;
 
-export default ({ title, tag, cta, subtitle, url }) => (
+export default ({ title, tag, cta, subtitle, url, customStyle }) => (
   <Link prefetch href={ url }>
-    <Card>
+    <Card style={customStyle}>
       <Text>
         <TitleText>
           <Title>{ title }</Title>

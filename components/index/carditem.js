@@ -12,7 +12,8 @@ const Main = styled.button`
   border-radius: 2px;
 
   // Case Study Button vs. Index Button
-  width: ${props => props.cs ? '100%' : '125%'};
+  // width: ${props => props.cs ? '100%' : '125%'};
+  width: 100%;
   display: ${props => props.disp};
 
   // Main styles

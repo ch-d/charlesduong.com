@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import Listitem from './listitem';
 
 const Background = styled.div`
-  width:100%;
-  margin:16rem 0 8rem 0;
+  width: 100%;
+  margin: 8rem 0;
 `;
 
 const Container = styled.div`

@@ -75,13 +75,14 @@ const Sub = styled.h4`
   font-family: IBM Plex Sans;
   font-size: 0.875rem;
   font-weight: 500;
-  letter-spacing: .1em;
-  color: ${props => props.theme.colors.blue};
+  letter-spacing: .15em;
+  color: ${props => props.theme.colors.black};
   margin-top: 0;
   margin-bottom: 1rem;
   @media (max-width: 40rem) {
     text-align: center
   };
+  opacity: .75;
 `
 
 const CtaMobile = styled.h4`

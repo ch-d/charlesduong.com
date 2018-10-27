@@ -9,46 +9,48 @@ const Main = styled.div`
 
 const Grey = styled.div`
   background-color: ${props => props.theme.colors.grey};
+  background-image: linear-gradient(90deg, #fff, #F7F9FA);
   width: 100%;
-  transform: translateX(-32px);
-  margin-left: -32px;
+  transform: translateX(${props => props.list ? '0' : '-32'}px);
+  margin-left: ${props => props.list ? '0' : '-32'}px;
 `;
 
 const Divider = Box.extend`
   height: ${props => props.h}px;
-  margin-left: 20%;
+  margin-left: ${props => props.list ? '0' : '20%'};
   @media (min-width: 40rem) {
-    margin-left: 15%;
+    margin-left: ${props => props.list ? '2.5%' : '37.5%'};
+    width: 60%;
   }
   width: 80%;
   background: linear-gradient(to right, ${props => props.theme.colors.gradient.purple}, ${props => props.theme.colors.gradient.green});
 `
 
-const Work = styled.h1`
+const Title = styled.h1`
   font-family: IBM Plex Sans;
   font-size:3rem;
   letter-spacing: .1em;
   font-weight: 100;
-  padding-left: 8px;
+  padding-left: 12px;
   transform: translateY(-50%);
-  color: ${props => props.theme.colors.wash};
+  color: ${props => props.theme.colors.blue};
 `;
 
 const Container = styled.div`
-  transform: translateX(64px);
+  transform: translateX(${props => props.list ? '0' : '64'}px);
   padding-left: 8px;
   padding-right: 8px;
   width: calc(100% - 16px);
 `
 
-export default ({children}) => (
+export default ({children, list, title}) => (
   <Flex column mt={4}>
-    <Divider h="1" mb={1} />
-    <Divider h="4" mb={4} />
+    <Divider h="1" mb={1} list={list}/>
+    <Divider h="4" mb={4} list={list}/>
     <Main>
-      <Grey>
-        <Container>
-          <Work>design work</Work>
+      <Grey list={list}>
+        <Container list={list}>
+          <Title>{title}</Title>
           {children}
         </Container>
       </Grey>

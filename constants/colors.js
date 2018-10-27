@@ -1,7 +1,7 @@
 const colors = {
   colors: {
     black: '#525866',
-    grey: '#FAFAFA',
+    grey: '#F7F9FA',
     blue: '#5C8A99',
     wash: '#9CB7C0',
     gradient: {

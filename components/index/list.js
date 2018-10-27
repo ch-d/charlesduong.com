@@ -1,10 +1,6 @@
 import styled from 'styled-components';
+import Background from './background';
 import Listitem from './listitem';
-
-const Background = styled.div`
-  width: 100%;
-  margin: 8rem 0;
-`;
 
 const Container = styled.div`
   margin: auto;
@@ -14,7 +10,7 @@ const Container = styled.div`
 `;
 
 export default () => (
-  <Background>
+  <Background list={1} title="more work">
     <Container>
       <Listitem 
         title="Peoplism"

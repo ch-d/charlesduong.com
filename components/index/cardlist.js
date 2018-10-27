@@ -1,7 +1,8 @@
 import Card from './carditem';
+import Background from './background';
 
 export default () => (
-  <div>
+  <Background title="design work">
     <Card
       title = "Talent Sonar"
       sub1 = "Mobile Interaction Design"
@@ -31,5 +32,5 @@ export default () => (
       date = "Financial Services"
       cta = "Case Study Coming Soon 👀"
     />
-  </div>
+  </Background>
 )

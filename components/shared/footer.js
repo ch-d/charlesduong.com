@@ -12,7 +12,7 @@ const Center = Box.extend`
 
 export default () => (
   <div>
-    <Center mt={1}>✌️</Center>
+    <Center mt={4}>✌️</Center>
     <Center mb={2}>take care</Center>
     <Center mb={3}>
       <Social />

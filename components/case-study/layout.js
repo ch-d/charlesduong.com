@@ -7,7 +7,8 @@ import { space } from 'styled-system';
 // Layout Components
 import Heading from '../shared/heading';
 import Social from '../shared/social';
-import Card from '../index/carditem';
+import Cardlist from '../index/cardlist';
+import List from '../index/list';
 import Footer from '../shared/footer';
 
 // Layout constants
@@ -87,53 +88,10 @@ export default ({ children, title = 'charles duong | product designer', date, ti
             <H1 style={{'fontSize': '1rem'}}>{date}</H1>
           </Flex>
           { children }
-          <Divider offset h="1" mt={[2,4]}/>
-          <Divider offset h="4" mt={1} mb={[2,4]}/>
-          <Work>other work</Work>
-          <Card cs={1} disp={disp1}
-            title = "Talent Sonar"
-            sub1 = "Mobile Interaction Design"
-            sub2 = "Design System"
-            sub3 = "Marketing Design"
-            img = "../static/talent-sonar/hero.png"
-            url = "/talent-sonar"
-            date = "Late 2017"
-          />
-          <Card cs={1} disp={disp2}
-            title = "Lawyer Exchange"
-            sub1 = "Marketing & Development"
-            sub2 = "User Research"
-            sub3 = "Design System"
-            img = "../static/lawyer-exchange/hero.png"
-            url = "/lawyer-exchange"
-            date = "Late 2016 &ndash; Early 2017"
-          />
-          <Card cs={1} disp={disp3}
-            title = "Koeo Travel"
-            sub1 = "Front-End Development"
-            sub2 = "User Research"
-            img = "../static/koeo/hero.png"
-            url = "/koeo"
-            date = "Late 2017 &ndash;"
-          />
-          <Card cs={1} disp={disp4}
-            title = "Luna Lights"
-            sub1 = "User Interface Design"
-            sub2 = "Data Visualization"
-            img = "../static/luna-lights/hero.png"
-            url = "/luna-lights"
-            date = "Early 2016"
-          />
-          <Card cs={1} disp={disp5}
-            title = "BallotReady"
-            sub1 = "Marketing Design"
-            sub2 = "Data Visualizations"
-            img = "../static/ballot-ready/hero.png"
-            url = "/ballot-ready"
-            date = "Late 2016"
-          />
-          <Footer />
         </Container>
+        <Cardlist />
+        <List />
+        <Footer />
       </div>
     </ThemeProvider>
 

@@ -6,6 +6,7 @@ const Card = styled.div`
   align-items: center;
   flex: 320px;
   padding: 1rem;
+  cursor: pointer;
 `;
 
 const Image = styled.img`
@@ -16,7 +17,7 @@ const Image = styled.img`
 `;
 
 const Text = styled.div`
-  margin-left: .5rem;
+  // margin-left: .5rem;
   width: 100%;
 `;
 
@@ -62,20 +63,27 @@ const Cta = styled.h5`
   text-align: right;
   margin: 0;
   font-size: .75rem;
-  cursor: pointer;
   color: ${props => props.theme.colors.blue};
+  opacity: 0;
+  margin-right: 16px;
+  ${Card}:hover & {
+    opacity: 1;
+    margin-right: 0;
+  }
 `;
 
 export default ({ title, tag, cta, subtitle, img, url }) => (
-  <Card>
-    <Image img={img} />
-    <Text>
-      <TitleText>
-        <Title>{ title }</Title>
-        <Tag>{ tag }</Tag>
-        <Link prefetch href={ url }><Cta>{ cta }</Cta></Link>
-      </TitleText>
-      <Subtitle>{ subtitle }</Subtitle>
-    </Text>
-  </Card>
+  <Link prefetch href={ url }>
+    <Card>
+      {/* <Image img={img} /> */}
+      <Text>
+        <TitleText>
+          <Title>{ title }</Title>
+          <Tag>{ tag }</Tag>
+          <Cta>{ cta }</Cta>
+        </TitleText>
+        <Subtitle>{ subtitle }</Subtitle>
+      </Text>
+    </Card>
+  </Link>
 )

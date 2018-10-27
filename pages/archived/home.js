@@ -1,5 +1,5 @@
-import baseStyles from '../constants/baseStyles';
-import colors from '../constants/colors';
+import baseStyles from '../../constants/baseStyles';
+import colors from '../../constants/colors';
 import styled from 'styled-components/';
 import { space } from 'styled-system';
 import { ThemeProvider } from 'styled-components'

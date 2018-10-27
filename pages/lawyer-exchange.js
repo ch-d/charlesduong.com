@@ -2,10 +2,10 @@ import { Flex, Box } from 'grid-styled';
 import styled from 'styled-components';
 
 // Layout Components
-import Layout from '../components/layout';
-import Textbox from '../components/textbox';
-import Image from '../components/image';
-import Imagegrid from '../components/imagegrid';
+import Layout from '../components/case-study/layout';
+import Textbox from '../components/case-study/textbox';
+import Image from '../components/case-study/image';
+import Imagegrid from '../components/case-study/imagegrid';
 
 // Layout constants
 import baseStyles from '../constants/baseStyles';

@@ -7,7 +7,7 @@ import { space } from 'styled-system';
 // Layout Components
 import Heading from '../shared/heading';
 import Social from '../shared/social';
-import Card from './card';
+import Card from '../index/carditem';
 import Footer from '../shared/footer';
 
 // Layout constants

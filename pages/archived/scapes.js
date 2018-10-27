@@ -3,16 +3,16 @@ import styled from 'styled-components';
 import { space } from 'styled-system';
 
 // Layout Components
-import Layout from '../components/layout';
-import Textbox from '../components/textbox';
-import Image from '../components/image';
-import Imagegrid from '../components/imagegrid';
-import NavScapes from '../components/navScapes';
+import Layout from '../../components/case-study/layout';
+import Textbox from '../../components/case-study/textbox';
+import Image from '../../components/case-study/image';
+import Imagegrid from '../../components/case-study/imagegrid';
+// import NavScapes from '../components/navScapes';
 
 // Layout constants
-import baseStyles from '../constants/baseStyles';
-import colors from '../constants/colors';
-import {H1, H2, Para } from '../constants/typography';
+import baseStyles from '../../constants/baseStyles';
+import colors from '../../constants/colors';
+import {H1, H2, Para } from '../../constants/typography';
 
 const Center = styled.div`
   text-align:center;
@@ -28,7 +28,7 @@ const Center = styled.div`
 
 export default () => (
   <div>
-    <NavScapes />
+    {/* <NavScapes /> */}
     <Layout
       title='photography'
       titleCase="/photography"

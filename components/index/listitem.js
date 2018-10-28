@@ -36,7 +36,6 @@ const Title = styled.h3`
   color: ${props => props.theme.colors.black};
   margin: 0;
   text-transform: lowercase;
-  opacity: 0.5;
   flex-shrink: 0;
 `;
 
@@ -60,6 +59,8 @@ const Subtitle = styled.h4`
   letter-spacing: .1em;
   color: ${props => props.theme.colors.black};
   margin: 0;
+  opacity: 0.5;
+  text-transform: uppercase;
 `;
 
 const Cta = styled.h5`
@@ -76,9 +77,28 @@ const Cta = styled.h5`
   }
 `;
 
-export default ({ title, tag, cta, subtitle, url, customStyle }) => (
+const Image = styled.div`
+  width: 48px;
+  height: 48px;
+  background-color: ${props => props.theme.colors.wash};
+  margin-right: -48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  z-index: -1;
+  opacity: 0;
+  transform: translate(0px, -8px);
+  ${Card}:hover & {
+    opacity: 1;
+    transform: translate(-32px, -8px);
+  }
+`
+
+export default ({ title, tag, cta, subtitle, url, customStyle, children }) => (
   <Link prefetch href={ url }>
     <Card style={customStyle}>
+      <Image>{ children }</Image>
       <Text>
         <TitleText>
           <Title>{ title }</Title>

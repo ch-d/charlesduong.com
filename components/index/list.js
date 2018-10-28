@@ -54,7 +54,7 @@ export default ({ isMain }) => (
           url=""
           customStyle={isMain ? hide : {}}
         >
-          <Clock color="#fff" />
+          <Clock color="#5A8A97" />
         </ComingSoon>
         <Listitem 
           title="Talent Sonar"
@@ -64,7 +64,7 @@ export default ({ isMain }) => (
           url="/talent-sonar"
           customStyle={isMain ? hide : {}}
         >
-          <ChevronsRight color="#fff" />
+          <ChevronsRight color="#5A8A97" />
         </Listitem>
         <Listitem 
           title="Lawyer Exchange"
@@ -74,7 +74,7 @@ export default ({ isMain }) => (
           url="/lawyer-exchange"
           customStyle={isMain ? hide : {}}
         >
-          <ChevronsRight color="#fff" />
+          <ChevronsRight color="#5A8A97" />
         </Listitem>
         <External href="https://www.peoplism.com/">
           <Listitem 
@@ -84,7 +84,7 @@ export default ({ isMain }) => (
             subtitle="Marketing Development" 
             url="https://www.peoplism.com/"
           >
-            <ExternalLink color="#fff" />
+            <ExternalLink color="#5A8A97" />
           </Listitem>
         </External>
         <External href="https://www.alliebot.com/">
@@ -95,7 +95,7 @@ export default ({ isMain }) => (
             subtitle="Marketing Development"
             url="https://www.alliebot.com/"
           >
-            <ExternalLink color="#fff" />
+            <ExternalLink color="#5A8A97" />
           </Listitem>
         </External>
         <Listitem 
@@ -105,7 +105,7 @@ export default ({ isMain }) => (
           subtitle="Front-End Development, User Research"
           url="/koeo"
         >
-          <ChevronsRight color="#fff" />
+          <ChevronsRight color="#5A8A97" />
         </Listitem>
         <Listitem 
           title="BallotReady"
@@ -114,7 +114,7 @@ export default ({ isMain }) => (
           subtitle="Marketing Design, Data Visualization"
           url="ballot-ready"
         >
-          <ChevronsRight color="#fff" />
+          <ChevronsRight color="#5A8A97" />
         </Listitem>
         <Listitem 
           title="Luna Lights"
@@ -123,7 +123,7 @@ export default ({ isMain }) => (
           subtitle="User Interface Design, Data Visualization"
           url="luna-lights"
         >
-          <ChevronsRight color="#fff" />
+          <ChevronsRight color="#5A8A97" />
         </Listitem>
       </Container>
     </Background>

@@ -106,7 +106,7 @@ const Cta = styled.h5`
 const Image = styled.div`
   width: 48px;
   height: 48px;
-  background-color: ${props => props.theme.colors.wash};
+  background-color: #fff;
   margin-right: -48px;
   display: flex;
   align-items: center;
@@ -117,7 +117,7 @@ const Image = styled.div`
   transform: translate(0px, -8px);
   ${Card}:hover & {
     opacity: 1;
-    transform: translate(-32px, -8px);
+    transform: translate(-40px, -8px);
   }
 `
 

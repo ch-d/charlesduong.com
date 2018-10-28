@@ -17,22 +17,35 @@ const Background = styled.div`
 const Container = styled.div`
   width: 100%;
   max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   padding-top: 64px;
+  padding-bottom: 0;
+  margin: auto;
   @media (min-width: 40rem) {
-    flex-direction: row;
-    padding-top: 0;
+    padding-top: 128px;
+    padding-bottom: 64px;
   }
 `
 
-const Section = styled.div`
-  flex: 1;
-  margin: 16px 8px;
+const TitleSection = styled.div`
+  flex: 0;
+  white-space: nowrap;
+  padding-top: 16px;
+  padding-left: 16px;
   @media (min-width: 40rem) {
-    margin: 128px 16px;
+    padding-bottom: 64px;
+  }
+`
+
+const TextSection = styled.div`
+  flex: 30rem;
+  max-width: 30rem;
+  margin: 16px auto;
+  padding: 0 8px 0 32px;
+  @media (min-width: 40rem) {
+    margin: 0 auto;
+    padding: 0 16px 0 64px;
   }
 `
 
@@ -131,19 +144,19 @@ const Pulse = styled.span`
 export default () => (
   <Background>
     <Container>
-      <Section>
+      <TitleSection>
         <Title>charles duong</Title>
         <SubTitle>PRODUCT DESIGNER</SubTitle>
-      </Section>
-      <Section>
-        <Paragraph mb={[4,2]}>
+      </TitleSection>
+      <TextSection>
+        <Paragraph mb={3}>
           Hi, I'm a designer 👨‍💻 always up for tackling hard ethical, social problems. Empathy, words, and modular systems are my tools of choice throughout the design process. Continuously interested in making technology a little more human, accessible, and inclusive.
         </Paragraph>
         <Paragraph>
           Currently <Pill><Pulse />available</Pill> for full-time or contract opportunities. 
         </Paragraph>
         <Social />
-      </Section>
+      </TextSection>
     </Container>
   </Background>
 )

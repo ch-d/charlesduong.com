@@ -35,7 +35,7 @@ const Title = styled.h1`
   font-size:3rem;
   letter-spacing: .1em;
   font-weight: 100;
-  padding-left: 12px;
+  padding-left: 8px;
   transform: translateY(-50%);
   color: ${props => props.theme.colors.blue};
 `;

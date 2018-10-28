@@ -3,6 +3,39 @@ import { Flex, Box } from 'grid-styled';
 import { space } from 'styled-system';
 import Social from '../shared/social';
 
+const Background = styled.div`
+  width: 100%;
+  background-image: 
+    linear-gradient(${props => props.theme.colors.grey}, #fff);
+  background-repeat: no-repeat;
+  background-position: 
+    15% 96px;
+  background-size: 
+    50% 320px;
+`
+
+const Container = styled.div`
+  width: 100%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 64px;
+  @media (min-width: 40rem) {
+    flex-direction: row;
+    padding-top: 0;
+  }
+`
+
+const Section = styled.div`
+  flex: 1;
+  margin: 16px 8px;
+  @media (min-width: 40rem) {
+    margin: 128px 16px;
+  }
+`
+
 const Title = styled.h1`
   font-family: IBM Plex Sans;
 	color: ${props => props.theme.colors.black};
@@ -13,12 +46,14 @@ const Title = styled.h1`
 `;
 
 const SubTitle = styled.h2`
-  color: ${props => props.theme.colors.blue};
+  font-family: IBM Plex Sans;
+  color: ${props => props.theme.colors.black};
   font-size: 0.875rem;
   text-transform: uppercase;
   margin: 0;
   letter-spacing: .25em;
-  font-weight: 600;
+  font-weight: 700;
+  opacity: .50;
 `;
 
 const Paragraph = styled.p`
@@ -94,19 +129,21 @@ const Pulse = styled.span`
 `
 
 export default () => (
-	<Flex wrap mx={[2,2,0]}>
-    <Box width={[1, 1/2, 1/3]} ml={['0','0','16.7%']} py={[1,3,4]} my={[4,2,4]} pl={[0,3,0]}>
-      <Title>charles duong</Title>
-      <SubTitle>PRODUCT DESIGNER</SubTitle>
-    </Box>
-    <Box width={[1, 1/2, 1/3]} py={[0,2,3]} my={[0,2,4]}>
-      <Paragraph mb={[4,2]}>
-        Hi, I'm a designer 👨‍💻 always up for tackling hard ethical, social problems. Empathy, words, and modular systems are my tools of choice throughout the design process. Continuously interested in making technology a little more human, accessible, and inclusive.
-      </Paragraph>
-      <Paragraph>
-        Currently <Pill><Pulse />available</Pill> for full-time or contract opportunities. 
-      </Paragraph>
-      <Social />
-    </Box>
-	</Flex>
+  <Background>
+    <Container>
+      <Section>
+        <Title>charles duong</Title>
+        <SubTitle>PRODUCT DESIGNER</SubTitle>
+      </Section>
+      <Section>
+        <Paragraph mb={[4,2]}>
+          Hi, I'm a designer 👨‍💻 always up for tackling hard ethical, social problems. Empathy, words, and modular systems are my tools of choice throughout the design process. Continuously interested in making technology a little more human, accessible, and inclusive.
+        </Paragraph>
+        <Paragraph>
+          Currently <Pill><Pulse />available</Pill> for full-time or contract opportunities. 
+        </Paragraph>
+        <Social />
+      </Section>
+    </Container>
+  </Background>
 )

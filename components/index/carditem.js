@@ -50,7 +50,7 @@ const Date = styled.h5`
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0.25rem;
-  opacity: 0.35;
+  opacity: 0.5;
   @media (max-width: 40rem) {
     text-align: center
   }

@@ -21,8 +21,8 @@ export default () => (
     />
     <Card
       title = "Savings Account"
-      desc = {["UI Design", "Design System"]}
-      img = "../static/koeo/hero.png"
+      desc = {["UI Design", "Design System", "Marketing & Sales Design"]}
+      img = "../static/finance/hero.png"
       url = "#"
       date = "Financial Services"
       cta = "Case Study Coming Soon ⏳"

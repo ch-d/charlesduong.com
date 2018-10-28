@@ -47,7 +47,6 @@ const TitleText = styled.span`
 `;
 
 const Title = styled.h3`
-  font-family: IBM Plex Sans;
   font-size: 1.5rem;
   font-weight: 300;
   letter-spacing: .1em;
@@ -58,7 +57,6 @@ const Title = styled.h3`
 `;
 
 const Tag = styled.h5`
-  font-family: IBM Plex Sans;
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: .1em;
@@ -70,7 +68,6 @@ const Tag = styled.h5`
 `;
 
 const Subtitle = styled.h4`
-  font-family: IBM Plex Sans;
   font-size: 0.75rem;
   font-weight: 500;
   text-align: left;
@@ -86,6 +83,7 @@ const Cta = styled.h5`
   text-align: right;
   margin: 0;
   font-size: .75rem;
+  font-weight: 400;
   color: ${props => props.theme.colors.blue};
   opacity: 1;
   margin-right: 0;
@@ -114,10 +112,10 @@ const Image = styled.div`
   border-radius: 100%;
   z-index: -1;
   opacity: 0;
-  transform: translate(0px, -8px);
+  transform: translate(0px, -8px) rotate(180deg);
   ${Card}:hover & {
     opacity: 1;
-    transform: translate(-40px, -8px);
+    transform: translate(-40px, -8px) rotate(0deg);
   }
 `
 

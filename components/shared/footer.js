@@ -14,7 +14,7 @@ export default () => (
   <div>
     <Center mt={4}>✌️</Center>
     <Center mb={2}>take care</Center>
-    <Center mb={3}>
+    <Center pb={3}>
       <Social />
     </Center>
   </div>

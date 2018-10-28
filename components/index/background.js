@@ -31,7 +31,6 @@ const Divider = Box.extend`
 `
 
 const Title = styled.h1`
-  font-family: IBM Plex Sans;
   font-size:3rem;
   letter-spacing: .1em;
   font-weight: 100;

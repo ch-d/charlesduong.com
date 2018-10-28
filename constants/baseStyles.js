@@ -5,6 +5,9 @@ const baseStyles = () =>
   injectGlobal`
     @import url(//fonts.googleapis.com/css?family=Source+Sans+Pro);
     @import url(//fonts.googleapis.com/css?family=IBM+Plex+Sans:100,200,300,400,500,600,700);
+    html {
+      background-color: #9CB7C0;
+    }
     body {
       font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
                  'avenir next', avenir,
@@ -14,6 +17,16 @@ const baseStyles = () =>
                  'segoe ui', arial,
                  sans-serif;
       margin:0;
+      background-color: #fff;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont,
+      'avenir next', avenir,
+      helvetica, 'helvetica neue',
+      ubuntu,
+      roboto, noto,
+      'segoe ui', arial,
+      sans-serif;
     }
     p a:link {
       border-bottom:2px solid #0000EE;

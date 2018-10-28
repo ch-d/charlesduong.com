@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 const H1 = styled.h1`
-	font-family: IBM Plex Sans;
 	color: ${props => props.theme.colors.black};
   font-size: 1.5rem;
 	position: relative;
@@ -11,7 +10,6 @@ const H1 = styled.h1`
 `;
 
 const H2 = styled.h2`
-	font-family: IBM Plex Sans;
 	color: ${props => props.theme.colors.black};
   font-size: 1.25rem;
 	margin-bottom:0

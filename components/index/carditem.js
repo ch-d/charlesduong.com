@@ -38,7 +38,6 @@ const Info = Box.extend`
 `
 
 const Date = styled.h5`
-  font-family: IBM Plex Sans;
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.15rem;
@@ -53,7 +52,6 @@ const Date = styled.h5`
 `
 
 const Title = styled.h3`
-  font-family: IBM Plex Sans;
   font-size: 1.5rem;
   font-weight: 300;
   letter-spacing: .1em;
@@ -68,7 +66,6 @@ const Title = styled.h3`
 `
 
 const Sub = styled.h4`
-  font-family: IBM Plex Sans;
   font-size: 0.875rem;
   font-weight: 500;
   letter-spacing: .15em;
@@ -98,7 +95,6 @@ const CtaMobile = styled.h4`
     justify-content: center;
   };
     border-top: 1px solid rgba(0,0,0,0.12);
-    font-family: IBM Plex Sans;
     font-size: 0.875rem;  
     font-weight: 400;
     letter-spacing: .1em;
@@ -108,7 +104,6 @@ const CtaMobile = styled.h4`
 `
 
 const Cta = styled.h4`
-  font-family: IBM Plex Sans;
   font-size: 0.875rem;  
   font-weight: 400;
   letter-spacing: .1em;

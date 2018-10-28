@@ -16,16 +16,34 @@ const Card = styled.button`
   padding: 1rem;
   cursor: pointer;
   width: 100%;
+  border-bottom: 2px solid ${props => props.theme.colors.grey};
+  @media (min-width: 40rem) {
+    border-bottom: none;
+  }
 `;
 
 const Text = styled.div`
   width: 100%;
 `;
 
+const MobileBottom = styled.div`
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+  order: 2;
+  @media (min-width: 40rem) {  
+    order: 1;
+  };
+`
+
 const TitleText = styled.span`
   display: flex;
   align-items: baseline;
   flex: 1 1 auto;
+  flex-direction: column;
+  @media (min-width: 40rem) {
+    flex-direction: row;
+  }
 `;
 
 const Title = styled.h3`
@@ -69,12 +87,20 @@ const Cta = styled.h5`
   margin: 0;
   font-size: .75rem;
   color: ${props => props.theme.colors.blue};
-  opacity: 0;
-  margin-right: 16px;
+  opacity: 1;
+  margin-right: 0;
+  order: 1;
+  @media (min-width: 40rem) {
+    margin-right: 16px;
+    order: 2;
+  };
+  @media (min-width: 52rem) {
+    opacity: 0;
+  };
   ${Card}:hover & {
     opacity: 1;
     margin-right: 0;
-  }
+  };
 `;
 
 const Image = styled.div`
@@ -101,8 +127,10 @@ export default ({ title, tag, cta, subtitle, url, customStyle, children }) => (
       <Image>{ children }</Image>
       <Text>
         <TitleText>
-          <Title>{ title }</Title>
-          <Tag>{ tag }</Tag>
+          <MobileBottom>
+            <Title>{ title }</Title>
+            <Tag>{ tag }</Tag>
+          </MobileBottom>
           <Cta>{ cta }</Cta>
         </TitleText>
         <Subtitle>{ subtitle }</Subtitle>

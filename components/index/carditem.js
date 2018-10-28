@@ -9,14 +9,10 @@ const Main = styled.button`
   border: 0;
   padding: 0;
   cursor: pointer;
+
+  // main button styles
   border-radius: 2px;
-
-  // Case Study Button vs. Index Button
-  // width: ${props => props.cs ? '100%' : '125%'};
   width: 100%;
-  display: ${props => props.disp};
-
-  // Main styles
   background-color: transparent;
   @media (max-width: 40rem) {
     width: 100%;
@@ -85,6 +81,15 @@ const Sub = styled.h4`
   opacity: .75;
 `
 
+function Description(props) {
+  const description = props.desc;
+  return description.map((description, i) => (
+    <Sub key={i}>
+      {description}
+    </Sub>
+  ));
+}
+
 const CtaMobile = styled.h4`
   display: none;
   @media (max-width: 40rem) {
@@ -149,16 +154,14 @@ const Image = styled.div`
 `
 
 // CHANGE SUB COMPONENT (DRY) TO LIST & KEYS TO-DO ---------------
-export default ({ url, title, sub1, sub2, sub3, img, cs, disp, date, cta }) => (
+export default ({ url, title, img, cs, disp, date, cta, desc }) => (
   <Link prefetch href={url}>
     <Main cs={cs} my={[1,3]} disp={disp}>
       <Flex wrap p={[0,2]}>
         <Info width={[1,1/3]} pt={[3,2,2]} pb={[2,0]}>
           <Date>{date}</Date>
           <Title>{title}</Title>
-          <Sub>{sub1}</Sub>
-          <Sub>{sub2}</Sub>
-          <Sub>{sub3}</Sub>
+          <Description desc={desc}></Description>
           <CtaMobile>{cta}</CtaMobile>
         </Info>
         <Box width={[1,2/3]}>

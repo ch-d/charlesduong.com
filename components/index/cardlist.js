@@ -5,9 +5,7 @@ export default () => (
   <Background title="design work">
     <Card
       title = "Talent Sonar"
-      sub1 = "Mobile Interaction Design"
-      sub2 = "Design System"
-      sub3 = "Marketing Design"
+      desc = {["Mobile Interaction Design", "Design System", "Marketing Design"]}
       img = "../static/talent-sonar/hero.png"
       url = "/talent-sonar"
       date = "Talent Acquisition"
@@ -15,9 +13,7 @@ export default () => (
     />
     <Card
       title = "Lawyer Exchange"
-      sub1 = "Marketing & Development"
-      sub2 = "User Research"
-      sub3 = "Design System"
+      desc = {["Marketing & Development", "User Research", "Design System"]}
       img = "../static/lawyer-exchange/hero.png"
       url = "/lawyer-exchange"
       date = "Legal Marketplace"
@@ -25,8 +21,7 @@ export default () => (
     />
     <Card
       title = "Savings Account"
-      sub1 = "UI Design"
-      sub2 = "Design System"
+      desc = {["UI Design", "Design System"]}
       img = "../static/koeo/hero.png"
       url = "#"
       date = "Financial Services"

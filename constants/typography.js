@@ -30,7 +30,7 @@ const Para = styled.p`
   line-height:1.5;
 `;
 
-module.exports = {
+export {
   H1,
   H2,
 	Caption,

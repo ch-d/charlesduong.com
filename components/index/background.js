@@ -9,7 +9,7 @@ const Main = styled.div`
 
 const Grey = styled.div`
   background-color: ${props => props.theme.colors.grey};
-  background-image: linear-gradient(90deg, #fff, #F7F9FA);
+  background-image: linear-gradient(to ${props => props.list ? 'left' : 'right'}, #fff, ${props => props.theme.colors.grey});
   width: 100%;
   transform: translateX(${props => props.list ? '0' : '-32'}px);
   margin-left: ${props => props.list ? '0' : '-32'}px;

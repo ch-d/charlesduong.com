@@ -27,7 +27,7 @@ const Logo = styled.a`
   font-size: 1rem;
   font-weight: 400;
   margin-left: 0.25rem;
-  color: ${props => props.theme.colors.blue};
+  color: ${props => props.theme.colors.black};
   text-decoration: none;
   cursor: pointer;
   opacity: 1;

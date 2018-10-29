@@ -50,7 +50,6 @@ const TextSection = styled.div`
 `
 
 const Title = styled.h1`
-  font-family: IBM Plex Sans;
 	color: ${props => props.theme.colors.black};
   font-size: 2.25rem;
   letter-spacing: .1em;
@@ -59,7 +58,6 @@ const Title = styled.h1`
 `;
 
 const SubTitle = styled.h2`
-  font-family: IBM Plex Sans;
   color: ${props => props.theme.colors.black};
   font-size: 0.875rem;
   text-transform: uppercase;

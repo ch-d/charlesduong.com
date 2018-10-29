@@ -63,7 +63,7 @@ const SubTitle = styled.h2`
   text-transform: uppercase;
   margin: 0;
   letter-spacing: .25em;
-  font-weight: 700;
+  font-weight: 500;
   opacity: .50;
 `;
 

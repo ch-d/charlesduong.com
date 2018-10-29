@@ -51,7 +51,7 @@ export default ({ isMain }) => (
           tag="2018" 
           cta="Case Study Coming Soon" 
           subtitle="UI Design, Design System"
-          url=""
+          url="#"
           customStyle={isMain ? hide : {}}
         >
           <Clock color="#5A8A97" />
@@ -112,7 +112,7 @@ export default ({ isMain }) => (
           tag="Late 2016" 
           cta="View Case Study" 
           subtitle="Marketing Design, Data Visualization"
-          url="ballot-ready"
+          url="/ballot-ready"
         >
           <ChevronsRight color="#5A8A97" />
         </Listitem>
@@ -121,7 +121,7 @@ export default ({ isMain }) => (
           tag="Early 2016" 
           cta="View Case Study" 
           subtitle="User Interface Design, Data Visualization"
-          url="luna-lights"
+          url="/luna-lights"
         >
           <ChevronsRight color="#5A8A97" />
         </Listitem>

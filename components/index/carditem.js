@@ -20,9 +20,6 @@ const Main = styled.button`
     box-shadow: 0 2px 4px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.12);
     overflow: hidden;
   };
-  &:hover {
-    transform: scale(1.025);
-  };
   ${space};
 `;
 

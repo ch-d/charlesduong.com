@@ -68,13 +68,13 @@ const Tag = styled.h5`
 `;
 
 const Subtitle = styled.h4`
-  font-size: 0.75rem;
-  font-weight: 500;
+  font-size: 0.875rem;
+  font-weight: 700;
   text-align: left;
   letter-spacing: .1em;
   color: ${props => props.theme.colors.black};
   margin: 0;
-  opacity: 0.5;
+  /* opacity: 0.6; */
   text-transform: uppercase;
 `;
 

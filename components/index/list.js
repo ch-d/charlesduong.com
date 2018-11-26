@@ -81,7 +81,7 @@ export default ({ isMain }) => (
             title="Peoplism"
             tag="Late 2018" 
             cta="View Website" 
-            subtitle="Marketing Development" 
+            subtitle="End-to-End D&I+ Consultancy" 
             url="https://www.peoplism.com/"
           >
             <ExternalLink color="#5A8A97" />
@@ -92,7 +92,7 @@ export default ({ isMain }) => (
             title="Allie Bot"
             tag="Early 2018" 
             cta="View Website" 
-            subtitle="Marketing Development"
+            subtitle="Slack Bot for Inclusion at Work"
             url="https://www.alliebot.com/"
           >
             <ExternalLink color="#5A8A97" />

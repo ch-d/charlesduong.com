@@ -74,7 +74,7 @@ const Subtitle = styled.h4`
   letter-spacing: .1em;
   color: ${props => props.theme.colors.black};
   margin: 0;
-  /* opacity: 0.6; */
+  opacity: 0.6;
   text-transform: uppercase;
 `;
 

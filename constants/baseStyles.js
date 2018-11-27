@@ -3,13 +3,13 @@ import colors from '../constants/colors';
 
 const baseStyles = () =>
   injectGlobal`
-    @import url(//fonts.googleapis.com/css?family=Source+Sans+Pro);
+    @import url(//rsms.me/inter/inter-ui.css);
     @import url(//fonts.googleapis.com/css?family=IBM+Plex+Sans:100,200,300,400,500,600,700);
     html {
       background-color: #9CB7C0;
     }
     body {
-      font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+      font-family: 'Inter UI', -apple-system, BlinkMacSystemFont,
                  'avenir next', avenir,
                  helvetica, 'helvetica neue',
                  ubuntu,
@@ -51,5 +51,4 @@ const baseStyles = () =>
       font-weight:700
     }
   `
-
 export default baseStyles

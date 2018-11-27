@@ -25,20 +25,17 @@ const Main = styled.button`
 
 const Info = Box.extend`
   text-align: left;
-  ${Main}:hover & {
-    padding-left: 2rem;
-  }
   @media (max-width: 40rem) {
     order: 2;
     padding-bottom: 0;
   }
 `
 
-const Date = styled.h5`
+const Subtitle = styled.h5`
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.15rem;
-  color: ${props => props.theme.colors.black};
+  color: ${props => props.theme.colors.blue};
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0.25rem;
@@ -52,7 +49,7 @@ const Title = styled.h3`
   font-size: 1.5rem;
   font-weight: 300;
   letter-spacing: .1em;
-  color: ${props => props.theme.colors.black};
+  color: ${props => props.theme.colors.blue};
   text-transform: lowercase;
   margin-top: 0;
   margin-bottom: 2rem;
@@ -62,13 +59,14 @@ const Title = styled.h3`
   };
 `
 
-const Sub = styled.h4`
+const DescriptionItem = styled.p`
   font-size: 0.875rem;
   font-weight: 500;
-  letter-spacing: .15em;
   color: ${props => props.theme.colors.black};
   margin-top: 0;
   margin-bottom: 1rem;
+  margin-right: 2rem;
+  line-height: 1.5;
   @media (max-width: 40rem) {
     text-align: center
   };
@@ -78,9 +76,9 @@ const Sub = styled.h4`
 function Description(props) {
   const description = props.desc;
   return description.map((description, i) => (
-    <Sub key={i}>
+    <DescriptionItem key={i}>
       {description}
-    </Sub>
+    </DescriptionItem>
   ));
 }
 
@@ -146,12 +144,12 @@ const Image = styled.div`
 `
 
 // CHANGE SUB COMPONENT (DRY) TO LIST & KEYS TO-DO ---------------
-export default ({ url, title, img, cs, disp, date, cta, desc }) => (
+export default ({ url, title, img, cs, disp, subtitle, cta, desc }) => (
   <Link prefetch href={url}>
     <Main cs={cs} my={[1,3]} disp={disp}>
       <Flex wrap p={[0,2]}>
         <Info width={[1,1/3]} pt={[3,2,2]} pb={[2,0]}>
-          <Date>{date}</Date>
+          <Subtitle>{subtitle}</Subtitle>
           <Title>{title}</Title>
           <Description desc={desc}></Description>
           <CtaMobile>{cta}</CtaMobile>

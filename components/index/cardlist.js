@@ -4,27 +4,28 @@ import Background from './background';
 export default () => (
   <Background title="design work">
     <Card
+      subtitle = "Talent Acquisition"
       title = "Talent Sonar"
-      desc = {["Mobile Interaction Design", "Design System", "Marketing Design"]}
+      desc = {["A platform that addresses unconscious bias in the hiring process and provides a model for hiring teams to source and select the right fit for job requisitions."]}
       img = "../static/talent-sonar/hero.png"
       url = "/talent-sonar"
-      date = "Talent Acquisition"
+      
       cta = "View Case Study 👉"
     />
     <Card
+      subtitle = "Legal Marketplace"
       title = "Lawyer Exchange"
-      desc = {["Marketing & Development", "User Research", "Design System"]}
+      desc = {["A new venture from the founder of VisaNow set out to answer the question: why are most people who need legal work not able to access affordable services?"]}
       img = "../static/lawyer-exchange/hero.png"
       url = "/lawyer-exchange"
-      date = "Legal Marketplace"
       cta = "View Case Study 👉"
     />
     <Card
+      subtitle = "Financial Services"
       title = "Savings Account"
       desc = {["UI Design", "Design System", "Marketing & Sales Design"]}
       img = "../static/finance/hero.png"
       url = "#"
-      date = "Financial Services"
       cta = "Case Study Coming Soon ⏳"
     />
   </Background>

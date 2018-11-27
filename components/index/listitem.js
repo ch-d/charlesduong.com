@@ -68,7 +68,7 @@ const Tag = styled.h5`
 `;
 
 const Subtitle = styled.h4`
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: 700;
   text-align: left;
   letter-spacing: .1em;

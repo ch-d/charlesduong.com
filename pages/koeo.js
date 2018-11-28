@@ -25,17 +25,19 @@ export default () => (
         <H1>Group Travel Planner</H1>
         <Para>From an early age, I had the privilege to question and to wonder. My curiosity for a world outside my own started with books and reading. But, the act of physically being somewhere new and learning from people with different experiences was the greatest privilege of all. It was through traveling where I began to appreciate human connections with folks who had their own human stories. Koeo is a project and an opportunity to facilitate this exchange of authentic experiences. I hope it can give time back to travelers, so they can be fully present in the ephemeral moments of travel.</Para>
       </Description>
-      <Divider w="1"/>
-      <Details>
-        <CategoryLabel>Company</CategoryLabel>
-          <CategoryItem>Koeo</CategoryItem>
-        <CategoryLabel>Team Members</CategoryLabel>
-          <CategoryItem>Taylor Dennis, JS Web Developer</CategoryItem>
-          <CategoryItem>Rod Dennis, JS Web Developer</CategoryItem>
-        <CategoryLabel>Projects</CategoryLabel>
-          <CategoryItem>User Research</CategoryItem>
-          <CategoryItem>Front-End Development</CategoryItem>
-      </Details>
+      <Flex>
+        <Divider w="1"/>
+        <Details>
+          <CategoryLabel>Company</CategoryLabel>
+            <CategoryItem>Koeo</CategoryItem>
+          <CategoryLabel>Team Members</CategoryLabel>
+            <CategoryItem>Taylor Dennis, JS Web Developer</CategoryItem>
+            <CategoryItem>Rod Dennis, JS Web Developer</CategoryItem>
+          <CategoryLabel>Projects</CategoryLabel>
+            <CategoryItem>User Research</CategoryItem>
+            <CategoryItem>Front-End Development</CategoryItem>
+        </Details>
+      </Flex>
     </Flex>
     <Image img = "../static/koeo/hero.png"/>
 

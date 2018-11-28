@@ -39,22 +39,29 @@ const Logo = styled.a`
   }
 `
 
-const Divider = Box.extend`
-  width:100%;
-  height: ${props => props.h}px;
-  background: linear-gradient(to bottom, ${props => props.theme.colors.gradient.purple}, ${props => props.theme.colors.gradient.green});
-  margin-left: ${props => props.offset ? '20%' : ''};
-  width: ${props => props.w}px;
-`
-
 const Description = styled.div`
   max-width: 35rem;
   width: 100%;
   padding-right: 2rem;
+  @media (max-width: 40rem) {
+    padding-right: 0;
+  };
 `
 
 const Details = styled.div`
   padding-left: 2rem;
+  @media (max-width: 30rem) {
+    padding-left: 1rem;
+  };
+`
+
+const Divider = Box.extend`
+  width: 100%;
+  width: ${props => props.w}px;
+  height: 100%;
+  height: ${props => props.h}px;
+  background: linear-gradient(to bottom, ${props => props.theme.colors.gradient.purple}, ${props => props.theme.colors.gradient.green});
+  margin-left: ${props => props.offset ? '20%' : ''};
 `
 
 const CategoryLabel = styled.h3`

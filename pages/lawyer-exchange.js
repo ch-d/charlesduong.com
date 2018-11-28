@@ -29,21 +29,23 @@ export default () => (
         <Para>The immediate goal was to facilitate the bringing together of these legal professionals in similar ways Thumbtack and UpWork provide service professionals to consumers. Our assumption was that the increased efficiency and flexibility for smaller firms should in turn decrease the average cost to access legal services.</Para>
         <Para>I was the first person to work full-time with the founder when it was only an idea in the Fall of 2016. Together, we collaborated with emerging lawyers and a development team to ship the initial MVP a year later.</Para>
       </Description>
-      <Divider w="1"/>
-      <Details>
-        <CategoryLabel>Company</CategoryLabel>
-          <CategoryItem>Lawyer Exchange</CategoryItem>
-        <CategoryLabel>Team Members</CategoryLabel>
-          <CategoryItem>Robert Meltzer, CEO, Founder</CategoryItem>
-          <CategoryItem>Britney McDonald, Counsel</CategoryItem>
-          <CategoryItem>Josh Turk, Counsel</CategoryItem>
-          <CategoryItem>Leo Fedorov, Lead Developer</CategoryItem>
-        <CategoryLabel>Projects</CategoryLabel>
-          <CategoryItem>UI Design</CategoryItem>
-          <CategoryItem>User Research</CategoryItem>
-          <CategoryItem>Product Management</CategoryItem>
-          <CategoryItem>Marketing Design</CategoryItem>
-      </Details>
+      <Flex>
+        <Divider w="1"/>
+        <Details>
+          <CategoryLabel>Company</CategoryLabel>
+            <CategoryItem>Lawyer Exchange</CategoryItem>
+          <CategoryLabel>Team Members</CategoryLabel>
+            <CategoryItem>Robert Meltzer, CEO, Founder</CategoryItem>
+            <CategoryItem>Britney McDonald, Counsel</CategoryItem>
+            <CategoryItem>Josh Turk, Counsel</CategoryItem>
+            <CategoryItem>Leo Fedorov, Lead Developer</CategoryItem>
+          <CategoryLabel>Projects</CategoryLabel>
+            <CategoryItem>UI Design</CategoryItem>
+            <CategoryItem>User Research</CategoryItem>
+            <CategoryItem>Product Management</CategoryItem>
+            <CategoryItem>Marketing Design</CategoryItem>
+        </Details>
+      </Flex>
     </Flex>
     <Image img = "../static/lawyer-exchange/hero.png"/>
     

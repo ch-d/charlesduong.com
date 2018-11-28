@@ -68,7 +68,8 @@ const DescriptionItem = styled.p`
   margin-right: 2rem;
   line-height: 1.5;
   @media (max-width: 40rem) {
-    text-align: center
+    text-align: center;
+    margin-left: 2rem;
   };
   opacity: .75;
 `

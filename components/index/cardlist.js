@@ -23,15 +23,15 @@ export default () => (
     <Card
       subtitle = "Travel Planner"
       title = "Koeo Travel"
-      desc = {["A new venture from the founder of VisaNow set out to answer the question: why are most people who need legal work not able to access affordable services?"]}
+      desc = {["A simple group trip planning application where travelers can collaborate with friends and family to organize future travel plans."]}
       img = "../static/koeo/hero.png"
       url = "/koeo"
       cta = "View Case Study 👉"
     />
     <Card
       subtitle = "Financial Services"
-      title = "Savings Account"
-      desc = {["UI Design", "Design System", "Marketing & Sales Design"]}
+      title = "Forbes Fintech 50 company"
+      desc = {["A company that helps you put a few dollars aside, make loan payments, and allocate funds efficiently to get you out of debt faster"]}
       img = "../static/finance/hero.png"
       url = "#"
       cta = "Case Study Coming Soon ⏳"

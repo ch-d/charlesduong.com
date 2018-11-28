@@ -23,7 +23,8 @@ export default () => (
     <Flex wrap py={4}>
       <Description>
         <H1>Group Travel Planner</H1>
-        <Para>From an early age, I had the privilege to question and to wonder. My curiosity for a world outside my own started with books and reading. But, the act of physically being somewhere new and learning from people with different experiences was the greatest privilege of all. It was through traveling where I began to appreciate human connections with folks who had their own human stories. Koeo is a project and an opportunity to facilitate this exchange of authentic experiences. I hope it can give time back to travelers, so they can be fully present in the ephemeral moments of travel.</Para>
+        <Para>From an early age, I had the privilege to question and to wonder. My curiosity for a world outside my own started with books and reading. But, the act of physically being somewhere new and learning from people with different experiences was the greatest privilege of all. It was through traveling where I began to appreciate human connections with folks who had their own human stories.</Para> 
+        <Para>Koeo is a simple group trip planning application and an opportunity to facilitate an exchange of authentic experiences. Users can collaborate with friends and family to organize future travel plans—from planning to mundane parts like transportation to planning exciting events. With more efficiency in the planning process, I time can be given back to all travelers so they can be fully present in the ephemeral moments of travel.</Para>
       </Description>
       <Flex>
         <Divider w="1"/>
@@ -34,6 +35,7 @@ export default () => (
             <CategoryItem>Taylor Dennis, JS Web Developer</CategoryItem>
             <CategoryItem>Rod Dennis, JS Web Developer</CategoryItem>
           <CategoryLabel>Projects</CategoryLabel>
+            <CategoryItem>UI Design</CategoryItem>
             <CategoryItem>User Research</CategoryItem>
             <CategoryItem>Front-End Development</CategoryItem>
         </Details>

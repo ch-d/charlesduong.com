@@ -51,6 +51,10 @@ export default ({
     <meta name="msapplication-square150x150logo" content="/static/favicon/mstile-150x150.png" />
     <meta name="msapplication-wide310x150logo" content="/static/favicon/mstile-310x150.png" />
     <meta name="msapplication-square310x310logo" content="/static/favicon/mstile-310x310.png" />
+
+    <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+
     <Script>
     {
       () => {

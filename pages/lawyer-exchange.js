@@ -7,6 +7,7 @@ import Textbox from '../components/case-study/textbox';
 import Image from '../components/case-study/image';
 import Imagegrid from '../components/case-study/imagegrid';
 import Twocolumn from '../components/case-study/twocolumn';
+import Carousel from '../components/case-study/carousel';
 
 // Layout constants
 import baseStyles from '../constants/baseStyles';
@@ -74,11 +75,25 @@ export default () => (
       <Para>Etiam porta sem malesuada magna mollis euismod. Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis. Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui.</Para>
       <Para>Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</Para>
     </Twocolumn>
-    <Image img = "../static/lawyer-exchange/013.gif" cap="Project Lawyer Profile"/>
-    {/* <Imagegrid img1 = "../static/lawyer-exchange/018.png" cap1="Wireframe Exploration (1 of 2)" img2="../static/lawyer-exchange/019.png" cap2="Wireframe Exploration (2 of 2)"/>
-    <Imagegrid img1 = "../static/lawyer-exchange/007.png" cap1="Proposal Screen v1" img2="../static/lawyer-exchange/008.png" cap2="Profile Wizard Screen v1"/>
-    <Imagegrid img1 = "../static/lawyer-exchange/009.png" cap1="In-Person User Testing" img2="../static/lawyer-exchange/010.png" cap2="Remote User Testing"/>
-    <Imagegrid img1 = "../static/lawyer-exchange/012.png" cap1="Profile Wizard" img2="../static/lawyer-exchange/011.png" cap2="Profile Editor"/> */}
+    <Carousel>
+      <Image img = "../static/lawyer-exchange/013.gif" cap="Project Lawyer Profile"/>
+      <Image img = "../static/lawyer-exchange/013.gif" cap="Wireframe Exploration (1 of 2)" />
+      <Image img = "../static/lawyer-exchange/013.gif" cap="Wireframe Exploration (2 of 2)" />
+      <Image img = "../static/lawyer-exchange/013.gif" cap="Proposal Screen v1" />
+      <Image img = "../static/lawyer-exchange/013.gif" cap="Profile Wizard Screen v1" />
+      <Image img = "../static/lawyer-exchange/013.gif" cap="In-Person User Testing" />
+      <Image img = "../static/lawyer-exchange/013.gif" cap="Remote User Testing" />
+      <Image img = "../static/lawyer-exchange/013.gif" cap="Profile Wizard" />
+      <Image img = "../static/lawyer-exchange/013.gif" cap="Profile Editor" />
+      {/* <Image img = "../static/lawyer-exchange/018.png" cap="Wireframe Exploration (1 of 2)" />
+      <Image img = "../static/lawyer-exchange/019.png" cap="Wireframe Exploration (2 of 2)" />
+      <Image img = "../static/lawyer-exchange/007.png" cap="Proposal Screen v1" />
+      <Image img = "../static/lawyer-exchange/008.png" cap="Profile Wizard Screen v1" />
+      <Image img = "../static/lawyer-exchange/009.png" cap="In-Person User Testing" />
+      <Image img = "../static/lawyer-exchange/010.png" cap="Remote User Testing" />
+      <Image img = "../static/lawyer-exchange/012.png" cap="Profile Wizard" />
+      <Image img = "../static/lawyer-exchange/011.png" cap="Profile Editor" /> */}
+    </Carousel>
     <Imagegrid img1 = "../static/lawyer-exchange/004.png" cap1="Sign Up Flow" img2="../static/lawyer-exchange/005.png" cap2="Settings Flow"/>
 
     <H2>Project Proposals and Messaging</H2>

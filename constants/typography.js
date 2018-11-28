@@ -6,7 +6,7 @@ const H1 = styled.h1`
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	font-weight:400
+	font-weight: 700
 `;
 
 const H2 = styled.h2`

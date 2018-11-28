@@ -33,6 +33,6 @@ export default ({ img, cap, showBorder }) => (
     <ImageBorder showBorder={showBorder}>
       <Image src={img} alt={cap + " image not found 😵 "} title={cap}/>
     </ImageBorder>
-    <Cap mt={[1,0]} mb={3}>{cap}</Cap>
+    <Cap mt={[1,0]} mb={4}>{cap}</Cap>
   </div>
 )

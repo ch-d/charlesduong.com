@@ -41,10 +41,10 @@ const Logo = styled.a`
 
 const Divider = Box.extend`
   width:100%;
-  height:${props => props.h}px;
+  height: ${props => props.h}px;
   background: linear-gradient(to bottom, ${props => props.theme.colors.gradient.purple}, ${props => props.theme.colors.gradient.green});
   margin-left: ${props => props.offset ? '20%' : ''};
-  width: 1px;
+  width: ${props => props.w}px;
 `
 
 const Description = styled.div`
@@ -86,29 +86,6 @@ export default ({ children, title = 'charles duong | product designer', date, ti
             <Box flex='1 1 auto' />
             <Social />
           </Flex>
-          <Flex wrap py={4}>
-            <Description>
-              <H1>Providing Small / Solo Firms with BigLaw Resources</H1>
-              <Para>The Lawyer Exchange is a new venture from the founder of VisaNow to answer the question: why are most people who need legal work not able to access affordable services? Through initial research, he determined the first step should be to help small / solo firm lawyers grow their practice by introducing them to freelance lawyers looking for meaningful legal experiences.</Para>
-              <Para>The immediate goal was to facilitate the bringing together of these legal professionals in similar ways Thumbtack and UpWork provide service professionals to consumers. Our assumption was that the increased efficiency and flexibility for smaller firms should in turn decrease the average cost to access legal services.</Para>
-              <Para>I was the first person to work full-time with the founder when it was only an idea in the Fall of 2016. Together, we collaborated with emerging lawyers and a development team to ship the initial MVP a year later.</Para>
-            </Description>
-            <Divider />
-            <Details>
-              <CategoryLabel>Company</CategoryLabel>
-                <CategoryItem>{title}</CategoryItem>
-              <CategoryLabel>Team Members</CategoryLabel>
-                <CategoryItem>Robert Meltzer, CEO, Founder</CategoryItem>
-                <CategoryItem>Britney McDonald, Counsel</CategoryItem>
-                <CategoryItem>Josh Turk, Counsel</CategoryItem>
-                <CategoryItem>Leo Fedorov, Lead Developer</CategoryItem>
-              <CategoryLabel>Projects</CategoryLabel>
-                <CategoryItem>User Researcher</CategoryItem>
-                <CategoryItem>UI Designer</CategoryItem>
-                <CategoryItem>Marketing Design</CategoryItem>
-                <CategoryItem>Product Management</CategoryItem>
-            </Details>
-          </Flex>
           { children }
         </Container>
         <List />
@@ -117,3 +94,11 @@ export default ({ children, title = 'charles duong | product designer', date, ti
     </ThemeProvider>
   </div>
 )
+
+export {
+  Description, 
+  Details, 
+  Divider,
+  CategoryLabel,
+  CategoryItem
+}

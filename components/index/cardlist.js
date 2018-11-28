@@ -21,6 +21,14 @@ export default () => (
       cta = "View Case Study 👉"
     />
     <Card
+      subtitle = "Travel Planner"
+      title = "Koeo Travel"
+      desc = {["A new venture from the founder of VisaNow set out to answer the question: why are most people who need legal work not able to access affordable services?"]}
+      img = "../static/koeo/hero.png"
+      url = "/koeo"
+      cta = "View Case Study 👉"
+    />
+    <Card
       subtitle = "Financial Services"
       title = "Savings Account"
       desc = {["UI Design", "Design System", "Marketing & Sales Design"]}

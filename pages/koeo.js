@@ -2,7 +2,7 @@ import { Flex, Box } from 'grid-styled';
 import styled from 'styled-components';
 
 // Layout Components
-import Layout from '../components/case-study/layout';
+import Layout, { Divider, Description, Details, CategoryLabel, CategoryItem } from '../components/case-study/layout';
 import Textbox from '../components/case-study/textbox';
 import Image from '../components/case-study/image';
 import Imagegrid from '../components/case-study/imagegrid';
@@ -20,10 +20,23 @@ export default () => (
     titleCase="/koeo"
     desc="Koeo is a project and an opportunity to facilitate this exchange of authentic experiences. I hope it can give time back to travelers, so they can be fully present in the ephemeral moments of travel."
   >
-
-    <Textbox>
-      <Para>From an early age, I had the privilege to question and to wonder. My curiosity for a world outside my own started with books and reading. But, the act of physically being somewhere new and learning from people with different experiences was the greatest privilege of all. It was through traveling where I began to appreciate human connections with folks who had their own human stories. Koeo is a project and an opportunity to facilitate this exchange of authentic experiences. I hope it can give time back to travelers, so they can be fully present in the ephemeral moments of travel.</Para>
-    </Textbox>
+    <Flex wrap py={4}>
+      <Description>
+        <H1>Group Travel Planner</H1>
+        <Para>From an early age, I had the privilege to question and to wonder. My curiosity for a world outside my own started with books and reading. But, the act of physically being somewhere new and learning from people with different experiences was the greatest privilege of all. It was through traveling where I began to appreciate human connections with folks who had their own human stories. Koeo is a project and an opportunity to facilitate this exchange of authentic experiences. I hope it can give time back to travelers, so they can be fully present in the ephemeral moments of travel.</Para>
+      </Description>
+      <Divider w="1"/>
+      <Details>
+        <CategoryLabel>Company</CategoryLabel>
+          <CategoryItem>Koeo</CategoryItem>
+        <CategoryLabel>Team Members</CategoryLabel>
+          <CategoryItem>Taylor Dennis, JS Web Developer</CategoryItem>
+          <CategoryItem>Rod Dennis, JS Web Developer</CategoryItem>
+        <CategoryLabel>Projects</CategoryLabel>
+          <CategoryItem>User Research</CategoryItem>
+          <CategoryItem>Front-End Development</CategoryItem>
+      </Details>
+    </Flex>
     <Image img = "../static/koeo/hero.png"/>
 
     <Textbox>

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { space } from 'styled-system';
 
 // Layout Components
-import Layout from '../components/case-study/layout';
+import Layout, { Divider, Description, Details, CategoryLabel, CategoryItem } from '../components/case-study/layout';
 import Textbox from '../components/case-study/textbox';
 import Image from '../components/case-study/image';
 import Imagegrid from '../components/case-study/imagegrid';
@@ -74,10 +74,28 @@ export default () => (
     desc='Talent Sonar is a SaaS platform that addresses unconscious bias in the hiring process and provides a model for hiring teams to source and select the right fit for job requisitions.'
   >
 
-    <Textbox>
-      <Para>Talent Sonar is a SaaS platform that addresses unconscious bias in the hiring process and provides a model for hiring teams to source and select the right fit for job requisitions. The platform facilitates identity-blind resume reviews to reduce bias when scanning resumes and structured interviews to reduce the tendency to screen candidates on   <a href="https://www.linkedin.com/pulse/theory-hiring-part-1-lou-adler/">short-term positive</a> criteria. Overall, the application promotes quantifiable decision-making to find a long-term fit between companies and candidates.</Para>
-      {/* <Para>I worked with various stakeholders: product managers, developers, and marketing/sales team. We worked together to ship features on their mobile app, web platform, and marketing/sales collateral.</Para> */}
-    </Textbox>
+    <Flex wrap py={4}>
+      <Description>
+        <H1>Addressing unconscious bias in the hiring process</H1>
+        <Para>Talent Sonar provides a model for hiring teams to source and select the right fit for job requisitions. The platform facilitates identity-blind resume reviews to reduce bias when scanning resumes and structured interviews to reduce the tendency to screen candidates on   <a href="https://www.linkedin.com/pulse/theory-hiring-part-1-lou-adler/">short-term positive</a> criteria. Overall, the application promotes quantifiable decision-making to find a long-term fit between companies and candidates.</Para>
+        <Para>I worked with various stakeholders: product managers, developers, and marketing/sales team. We worked together to ship features on their mobile app, web platform, and marketing/sales collateral.</Para>
+      </Description>
+      <Divider w="1" />
+      <Details>
+        <CategoryLabel>Company</CategoryLabel>
+          <CategoryItem>Talent Sonar</CategoryItem>
+        <CategoryLabel>Team Members</CategoryLabel>
+          <CategoryItem>Catrina Patton, Product Manager</CategoryItem>
+          <CategoryItem>Paige Panter, Marketing Manager</CategoryItem>
+          <CategoryItem>Liz Kofman, Sociologist</CategoryItem>
+          <CategoryItem>Daniel Kim, JS Web Developer</CategoryItem>
+          <CategoryItem>Reggie, Swift Mobile Developer</CategoryItem>
+        <CategoryLabel>Projects</CategoryLabel>
+          <CategoryItem>Mobile Interaction Design</CategoryItem>
+          <CategoryItem>Web Interaction Design</CategoryItem>
+          <CategoryItem>Marketing / Sales Assets</CategoryItem>
+      </Details>
+    </Flex>
     <Image img = "../static/talent-sonar/hero.png"/>
 
     <Textbox>

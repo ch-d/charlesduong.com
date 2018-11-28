@@ -2,7 +2,7 @@ import { Flex, Box } from 'grid-styled';
 import styled from 'styled-components';
 
 // Layout Components
-import Layout from '../components/case-study/layout';
+import Layout, { Divider } from '../components/case-study/layout';
 import Textbox from '../components/case-study/textbox';
 import Image from '../components/case-study/image';
 import Imagegrid from '../components/case-study/imagegrid';
@@ -14,12 +14,16 @@ import {H1, H2, Para } from '../constants/typography';
 
 export default () => (
   <Layout
-    title='Luna Lights'
-    date='Early 2016'
-    disp4="none"
     titleCase="/luna-lights"
     desc="Luna Lights is an automated lighting system that utilizes cloud based data analytics to prevent and detect falls in the older adult population."
   >
+
+    <Flex wrap pt={2} mx={[0,4]} px={[0,4]}>
+      <H1>Luna Lights</H1>
+      <Divider h="1" />
+      <H1 style={{fontSize: '0.875rem', opacity: '0.6', textTransform: 'uppercase', letterSpacing: '0.1rem'}}>Early 2016</H1>
+    </Flex>
+
     <Textbox>
       <Para>Luna Lights is an automated lighting system that utilizes cloud based data analytics to prevent and detect falls in the older adult population. In March 2016, they recorded data on their personal backend system, but the only method of report was through screen­shots from a third party extension, Mixpanel. The goal for this project was to design a streamlined way for care providers to interact with data about their residents and further inform better care for older adults.</Para>
     </Textbox>

@@ -2,7 +2,7 @@ import { Flex, Box } from 'grid-styled';
 import styled from 'styled-components';
 
 // Layout Components
-import Layout from '../components/case-study/layout';
+import Layout, { Divider } from '../components/case-study/layout';
 import Textbox from '../components/case-study/textbox';
 import Image from '../components/case-study/image';
 import Imagegrid from '../components/case-study/imagegrid';
@@ -14,11 +14,13 @@ import {H1, H2, Para } from '../constants/typography';
 
 export default () => (
   <Layout
-    title='Past Media'
     titleCase="/past-media"
     desc="Prior to 2015, while taking Mechanical Engineering courses, I was missing an outlet for my creativity. I ended up teaching myself VFX techniques, film post-production, and graphic design, while working on several side projects. These projects satisfied my need to build things and tell stories, before I began settling down with a more agile medium of web design."
   >
-
+    <Flex wrap pt={2} mx={[0,4]} px={[0,4]}>
+      <H1>Past Media</H1>
+      <Divider h="1" />
+    </Flex>
     <Textbox>
       <Para>Prior to 2015, while taking Mechanical Engineering courses, I was missing an outlet for my creativity. I ended up teaching myself VFX techniques, film post-production, and graphic design, while working on several side projects. These projects satisfied my need to build things and tell stories, before I began settling down with a more agile medium of web design.</Para>
     </Textbox>

@@ -17,6 +17,7 @@
     "dev": "next",
     "build": "next build",
     "export": "next export",
-    "start": "next start"
+    "start": "next start",
+    "netlify-deploy": "git push && git checkout master && git merge work && git push && git checkout work"
   }
 }

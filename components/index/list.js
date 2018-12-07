@@ -104,7 +104,6 @@ export default ({ isMain }) => (
           cta="View Case Study" 
           subtitle="Front-End Development, User Research"
           url="/koeo"
-          customStyle={isMain ? hide : {}}
         >
           <ChevronsRight color="#5A8A97" />
         </Listitem>

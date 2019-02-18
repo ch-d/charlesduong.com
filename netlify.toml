@@ -1,0 +1,6 @@
+[[redirects]]
+from = "/*"
+to = "/404"
+status = 301
+force = true
+conditions = {Country = ["ve"]}

@@ -7,7 +7,9 @@ module.exports = {
       "/ballot-ready": { page: "/ballot-ready" },
       "/lawyer-exchange": { page: "/lawyer-exchange" },
       "/luna-lights": { page: "/luna-lights" },
-      "/past-media": { page: "/past-media" }
+      "/past-media": { page: "/past-media" },
+      "/404": { page: "/404" },
+      "/error": { page: "/error" }
     }
   },
 }

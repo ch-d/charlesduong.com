@@ -1,6 +1,6 @@
 [[redirects]]
 from = "/*"
-to = "/404"
+to = "/error"
 status = 301
 force = true
 conditions = {Country = ["ve"]}

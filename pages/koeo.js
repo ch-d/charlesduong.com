@@ -50,7 +50,7 @@ export default () => (
     <Image img = "../static/koeo/001.png" cap="Initial User Research"/>
 
     <Textbox>
-      <Para>We decided to create a simple group trip planning application. Users can search for event, lodging, and transportation plans and organize a trip. I started with designs on <strong>Figma</strong>, but found an opportunity to work on the actual development. The other incredibly smart developers (<a href="https://twitter.com/Tay_llure">Taylor</a> and <a href="https://twitter.com/rrrrrrod">Rod</a>) set up the infrastructure and patiently taught me back-end & javascript conventions along the way. We developed on the <strong>Vue</strong> framework, managed state with Vuex and <strong>Firebase</strong>, and deployed via <strong>Zeit's Now</strong>. To add extra polish to trip plans, I integrated external APIs like Unsplash's Image API.</Para>
+      <Para>We decided to create a simple group trip planning application. Users can search for event, lodging, and transportation plans and organize a trip. I started with designs on <strong>Figma</strong>, but found an opportunity to work on the actual development. The other incredibly smart developers set up the infrastructure and patiently taught me back-end & javascript conventions along the way. We developed on the <strong>Vue</strong> framework, managed state with Vuex and <strong>Firebase</strong>, and deployed via <strong>Zeit's Now</strong>. To add extra polish to trip plans, I integrated external APIs like Unsplash's Image API.</Para>
     </Textbox>
     <Image img = "../static/koeo/002.png" cap="Initial Figma Designs"/>
     <Imagegrid img1 = "../static/koeo/001.gif" cap1="Add a Trip + Unsplash API" img2="../static/koeo/002.gif" cap2="Inline Edit Trip Details"/>

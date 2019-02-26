@@ -14,7 +14,7 @@ export default () => (
 			<h1 className='f2 fw1 ma0 tracked'>charles duong</h1>
 			<h2 className='f6 fw6 ttu measure pb2 ma0 tracked-mega'>product designer</h2>
 			<Social
-				url='https://twitter.com/hicharlesd'
+				url='https://twitter.com/charlesduong_'
 				site='twitter'
 				color='1DA1F2'
 			/>

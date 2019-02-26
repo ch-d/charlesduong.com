@@ -15,7 +15,7 @@ const Icolink= styled.a`
 
 export default () => (
   <Box>
-    <Icolink href='https://twitter.com/hicharlesd' target='_blank' mr={1} color="#1DA1F2">
+    <Icolink href='https://twitter.com/charlesduong_' target='_blank' mr={1} color="#1DA1F2">
       Twitter
     </Icolink>
     <Icolink href='https://linkedin.com/in/charlesduong' target='_blank' mx={1} color="#0077B5">

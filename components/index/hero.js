@@ -150,9 +150,9 @@ export default () => (
         <Paragraph mb={3}>
           Hi, I'm a designer 👨‍💻 always up for tackling hard ethical, social problems. Empathy, words, and modular systems are my tools of choice throughout the design process. Continuously interested in making technology a little more human, accessible, and inclusive.
         </Paragraph>
-        <Paragraph>
+        {/* <Paragraph>
           Currently <Pill><Pulse />available</Pill> for full-time or contract opportunities. 
-        </Paragraph>
+        </Paragraph> */}
         <Social />
       </TextSection>
     </Container>

@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Box } from 'grid-styled';
+import styled from "styled-components";
+import { Box } from "grid-styled";
 
 const Columns = Box.extend`
   columns: 2;
@@ -9,11 +9,7 @@ const Columns = Box.extend`
     max-width: 35rem;
     width: 100%;
     margin-right: auto;
-  };
-`
+  }
+`;
 
-export default ({ children }) => (
-  <Columns mb={3}>
-    {children}
-  </Columns>
-)
+export default ({ children }) => <Columns mb={3}>{children}</Columns>;

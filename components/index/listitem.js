@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import Link from 'next/link';
+import styled from "styled-components";
+import Link from "next/link";
 
 const Card = styled.button`
   // remove default button styles
@@ -31,10 +31,10 @@ const MobileBottom = styled.div`
   align-items: baseline;
   flex-direction: row;
   order: 2;
-  @media (min-width: 40rem) {  
+  @media (min-width: 40rem) {
     order: 1;
-  };
-`
+  }
+`;
 
 const TitleText = styled.span`
   display: flex;
@@ -49,7 +49,7 @@ const TitleText = styled.span`
 const Title = styled.h3`
   font-size: 1.5rem;
   font-weight: 300;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   color: ${props => props.theme.colors.black};
   margin: 0;
   text-transform: lowercase;
@@ -59,10 +59,10 @@ const Title = styled.h3`
 const Tag = styled.h5`
   font-size: 0.75rem;
   font-weight: 500;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   color: ${props => props.theme.colors.blue};
-  margin: 0 .5rem;
-  opacity: .5;
+  margin: 0 0.5rem;
+  opacity: 0.5;
   flex-shrink: 0;
   text-transform: uppercase;
 `;
@@ -71,7 +71,7 @@ const Subtitle = styled.h4`
   font-size: 0.75rem;
   font-weight: 700;
   text-align: left;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   color: ${props => props.theme.colors.black};
   margin: 0;
   opacity: 0.6;
@@ -82,7 +82,7 @@ const Cta = styled.h5`
   flex: 1 1 auto;
   text-align: right;
   margin: 0;
-  font-size: .75rem;
+  font-size: 0.75rem;
   font-weight: 400;
   color: ${props => props.theme.colors.blue};
   opacity: 1;
@@ -91,14 +91,14 @@ const Cta = styled.h5`
   @media (min-width: 40rem) {
     margin-right: 16px;
     order: 2;
-  };
+  }
   @media (min-width: 52rem) {
     opacity: 0;
-  };
+  }
   ${Card}:hover & {
     opacity: 1;
     margin-right: 0;
-  };
+  }
 `;
 
 const Image = styled.div`
@@ -117,22 +117,22 @@ const Image = styled.div`
     opacity: 1;
     transform: translate(-40px, -8px) rotate(0deg);
   }
-`
+`;
 
 export default ({ title, tag, cta, subtitle, url, customStyle, children }) => (
-  <Link prefetch href={ url }>
+  <Link prefetch href={url}>
     <Card style={customStyle}>
-      <Image>{ children }</Image>
+      <Image>{children}</Image>
       <Text>
         <TitleText>
           <MobileBottom>
-            <Title>{ title }</Title>
-            <Tag>{ tag }</Tag>
+            <Title>{title}</Title>
+            <Tag>{tag}</Tag>
           </MobileBottom>
-          <Cta>{ cta }</Cta>
+          <Cta>{cta}</Cta>
         </TitleText>
-        <Subtitle>{ subtitle }</Subtitle>
+        <Subtitle>{subtitle}</Subtitle>
       </Text>
     </Card>
   </Link>
-)
+);

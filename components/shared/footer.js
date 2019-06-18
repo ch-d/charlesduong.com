@@ -1,14 +1,14 @@
-import styled from 'styled-components'
-import {Box} from 'grid-styled'
-import Social from './social'
+import styled from "styled-components";
+import { Box } from "grid-styled";
+import Social from "./social";
 
 const Center = Box.extend`
-  text-align:center;
-  width:100%;
+  text-align: center;
+  width: 100%;
   color: ${props => props.theme.colors.blue};
   font-size: 0.75rem;
-  font-weight:100;
-`
+  font-weight: 100;
+`;
 
 export default () => (
   <div>
@@ -18,4 +18,4 @@ export default () => (
       <Social />
     </Center>
   </div>
-)
+);

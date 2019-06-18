@@ -111,24 +111,6 @@ export default ({ isMain }) => (
         >
           <ChevronsRight color="#5A8A97" />
         </Listitem>
-        <Listitem
-          title="BallotReady"
-          tag="Late 2016"
-          cta="View Case Study"
-          subtitle="Marketing Design, Data Visualization"
-          url="/ballot-ready"
-        >
-          <ChevronsRight color="#5A8A97" />
-        </Listitem>
-        <Listitem
-          title="Luna Lights"
-          tag="Early 2016"
-          cta="View Case Study"
-          subtitle="User Interface Design, Data Visualization"
-          url="/luna-lights"
-        >
-          <ChevronsRight color="#5A8A97" />
-        </Listitem>
       </Container>
     </Background>
   </div>

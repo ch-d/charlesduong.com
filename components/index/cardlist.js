@@ -23,14 +23,6 @@ export default () => (
       url="/lawyer-exchange"
       cta="View Case Study 👉"
     />
-    {/* <Card
-      subtitle = "Travel Planner"
-      title = "Koeo Travel"
-      desc = {["A simple group trip planning application where travelers can collaborate with friends and family to organize future travel plans."]}
-      img = "../static/koeo/hero.png"
-      url = "/koeo"
-      cta = "View Case Study 👉"
-    /> */}
     <Card
       subtitle="Financial Services"
       title="Forbes Fintech 50 company"

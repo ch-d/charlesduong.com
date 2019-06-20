@@ -8,15 +8,15 @@ import Layout, {
   Details,
   CategoryLabel,
   CategoryItem
-} from "../components/case-study/layout";
-import Textbox from "../components/case-study/textbox";
-import Image from "../components/case-study/image";
-import Imagegrid from "../components/case-study/imagegrid";
+} from "../../components/case-study/layout";
+import Textbox from "../../components/case-study/textbox";
+import Image from "../../components/case-study/image";
+import Imagegrid from "../../components/case-study/imagegrid";
 
 // Layout constants
-import baseStyles from "../constants/baseStyles";
-import colors from "../constants/colors";
-import { H1, H2, Para } from "../constants/typography";
+import baseStyles from "../../constants/baseStyles";
+import colors from "../../constants/colors";
+import { H1, H2, Para } from "../../constants/typography";
 
 export default () => (
   <Layout

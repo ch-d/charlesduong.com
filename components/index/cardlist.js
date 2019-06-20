@@ -4,6 +4,16 @@ import Background from "./background";
 export default () => (
   <Background title="design work">
     <Card
+      subtitle="Financial Services"
+      title="Forbes Fintech 50 company"
+      desc={[
+        "A company that helps you put a few dollars aside to make loan payments and allocate funds efficiently to get you out of debt faster."
+      ]}
+      img="../static/finance/hero.png"
+      url="/finance"
+      cta="View Case Study 👉"
+    />
+    <Card
       subtitle="Talent Acquisition"
       title="Talent Sonar"
       desc={[
@@ -22,16 +32,6 @@ export default () => (
       img="../static/lawyer-exchange/hero.png"
       url="/lawyer-exchange"
       cta="View Case Study 👉"
-    />
-    <Card
-      subtitle="Financial Services"
-      title="Forbes Fintech 50 company"
-      desc={[
-        "A company that helps you put a few dollars aside to make loan payments and allocate funds efficiently to get you out of debt faster."
-      ]}
-      img="../static/finance/hero.png"
-      url="#"
-      cta="Case Study Coming Soon ⏳"
     />
   </Background>
 );

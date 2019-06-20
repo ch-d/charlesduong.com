@@ -40,26 +40,22 @@ const hide = {
   display: "none"
 };
 
-const ComingSoon = styled(Listitem)`
-  cursor: default;
-`;
-
 export default ({ isMain }) => (
   <div>
     <Divider h="4" mb={1} />
     <Divider h="1" />
     <Background list={1} title="more work">
       <Container>
-        <ComingSoon
-          title="Savings Account"
-          tag="2018"
-          cta="Case Study Coming Soon"
-          subtitle="UI Design, Design System"
-          url="#"
+        <Listitem
+          title="Finance App"
+          tag="2018 – 2019"
+          cta="View Case Study"
+          subtitle="Web Interaction Design, Design System"
+          url="/finance"
           customStyle={isMain ? hide : {}}
         >
-          <Clock color="#5A8A97" />
-        </ComingSoon>
+          <ChevronsRight color="#5A8A97" />
+        </Listitem>
         <Listitem
           title="Talent Sonar"
           tag="Late 2017"
@@ -72,11 +68,30 @@ export default ({ isMain }) => (
         </Listitem>
         <Listitem
           title="Lawyer Exchange"
-          tag="Late 2016 –"
+          tag="2016 – 2017"
           cta="View Case Study"
-          subtitle="User Research, Design System"
+          subtitle="Web Interaction Design, Design System"
           url="/lawyer-exchange"
           customStyle={isMain ? hide : {}}
+        >
+          <ChevronsRight color="#5A8A97" />
+        </Listitem>
+        <div style={{ flex: 1, display: isMain ? "none" : "inherit" }} />
+        <Listitem
+          title="BE MORE"
+          tag="Spring 2019"
+          cta="View Case Study"
+          subtitle="React Native Development, Mobile Interaction Design"
+          url="/mobile-dev"
+        >
+          <ChevronsRight color="#5A8A97" />
+        </Listitem>
+        <Listitem
+          title="ROC United"
+          tag="Winter 2019"
+          cta="View Case Study"
+          subtitle="React Native Development, Mobile Interaction Design"
+          url="/mobile-dev"
         >
           <ChevronsRight color="#5A8A97" />
         </Listitem>
@@ -85,7 +100,7 @@ export default ({ isMain }) => (
             title="Peoplism"
             tag="Late 2018"
             cta="View Website"
-            subtitle="End-to-End D&I+ Consultancy"
+            subtitle="Marketing Design, Diversity+Inclusion"
             url="https://www.peoplism.com/"
           >
             <ExternalLink color="#5A8A97" />
@@ -96,21 +111,12 @@ export default ({ isMain }) => (
             title="Allie Bot"
             tag="Early 2018"
             cta="View Website"
-            subtitle="Slack Bot for Inclusion at Work"
+            subtitle="Marketing Design, Diversity+Inclusion"
             url="https://www.alliebot.com/"
           >
             <ExternalLink color="#5A8A97" />
           </Listitem>
         </External>
-        <Listitem
-          title="Koeo Travel"
-          tag="Late 2017"
-          cta="View Case Study"
-          subtitle="Front-End Development, User Research"
-          url="/koeo"
-        >
-          <ChevronsRight color="#5A8A97" />
-        </Listitem>
       </Container>
     </Background>
   </div>

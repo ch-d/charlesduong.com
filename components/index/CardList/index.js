@@ -1,5 +1,5 @@
-import Card from "./carditem";
-import Background from "./background";
+import Card from "./card";
+import Background from "../Background";
 
 export default () => (
   <Background title="design work">

@@ -1,17 +1,18 @@
 import styled from "styled-components";
-import Link from "next/link";
-import { space, flexbox } from "styled-system";
+import { space, flexbox, layout } from "styled-system";
 
-const Flex = styled.div`
+export const Flex = styled.div`
+  display: flex;
   ${space};
   ${flexbox};
 `;
 
-const Box = styled.div`
+export const Box = styled.div`
   ${space};
+  ${layout};
 `;
 
-const Main = styled.button`
+export const Main = styled.button`
   // remove default button styles
   font-family: inherit;
   border: 0;
@@ -31,17 +32,18 @@ const Main = styled.button`
   ${space};
 `;
 
-const Info = styled.div`
-  ${space};
-  ${flexbox};
+export const Info = styled.div`
   text-align: left;
   @media (max-width: 40rem) {
     order: 2;
     padding-bottom: 0;
   }
+  ${space};
+  ${flexbox};
+  ${layout};
 `;
 
-const Subtitle = styled.h5`
+export const Subtitle = styled.h5`
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.15rem;
@@ -55,7 +57,7 @@ const Subtitle = styled.h5`
   }
 `;
 
-const Title = styled.h3`
+export const Title = styled.h3`
   font-size: 1.5rem;
   font-weight: 300;
   letter-spacing: 0.1em;
@@ -69,7 +71,7 @@ const Title = styled.h3`
   }
 `;
 
-const DescriptionItem = styled.p`
+export const DescriptionItem = styled.p`
   font-size: 0.875rem;
   font-weight: 500;
   color: ${props => props.theme.colors.black};
@@ -84,14 +86,7 @@ const DescriptionItem = styled.p`
   opacity: 0.75;
 `;
 
-function Description(props) {
-  const description = props.desc;
-  return description.map((description, i) => (
-    <DescriptionItem key={i}>{description}</DescriptionItem>
-  ));
-}
-
-const CtaMobile = styled.h4`
+export const CtaMobile = styled.h4`
   display: none;
   @media (max-width: 40rem) {
     display: flex;
@@ -107,7 +102,7 @@ const CtaMobile = styled.h4`
   padding-top: 1rem;
 `;
 
-const Cta = styled.h4`
+export const Cta = styled.h4`
   font-size: 0.875rem;
   font-weight: 400;
   letter-spacing: 0.1em;
@@ -131,7 +126,7 @@ const Cta = styled.h4`
   }
 `;
 
-const Image = styled.div`
+export const Image = styled.div`
   width: 100%;
   height: 18rem;
   @media (max-width: 50rem) {
@@ -156,24 +151,3 @@ const Image = styled.div`
   align-items: center;
   justify-content: center;
 `;
-
-// CHANGE SUB COMPONENT (DRY) TO LIST & KEYS TO-DO ---------------
-export default ({ url, title, img, cs, disp, subtitle, cta, desc }) => (
-  <Link prefetch href={url}>
-    <Main cs={cs} my={[1, 3]} disp={disp}>
-      <Flex flexWrap p={[0, 2]}>
-        <Info width={[1, 1 / 3]} pt={[3, 2, 2]} pb={[2, 0]}>
-          <Subtitle>{subtitle}</Subtitle>
-          <Title>{title}</Title>
-          <Description desc={desc} />
-          <CtaMobile>{cta}</CtaMobile>
-        </Info>
-        <Box width={[1, 2 / 3]}>
-          <Image img={img}>
-            <Cta>{cta}</Cta>
-          </Image>
-        </Box>
-      </Flex>
-    </Main>
-  </Link>
-);

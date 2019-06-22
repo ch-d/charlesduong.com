@@ -1,7 +1,42 @@
 import styled from "styled-components";
-import Link from "next/link";
+import { space } from "styled-system";
 
-const Card = styled.button`
+// List
+export const Container = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  @media (max-width: 52rem) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0.5rem;
+  }
+`;
+
+export const External = styled.a`
+  text-decoration: none;
+`;
+
+export const Divider = styled.div`
+  height: ${props => props.h}px;
+  margin-left: 20%;
+  @media (min-width: 40rem) {
+    margin-left: 37.5%;
+    width: 60%;
+  }
+  width: 80%;
+  background: linear-gradient(
+    to left,
+    ${props => props.theme.colors.gradient.purple},
+    ${props => props.theme.colors.gradient.green}
+  );
+  transform: translateY(280px);
+  position: relative;
+  z-index: 1;
+  ${space};
+`;
+
+// Item
+export const Card = styled.button`
   // remove default button styles
   font-family: inherit;
   border: 0;
@@ -22,11 +57,11 @@ const Card = styled.button`
   }
 `;
 
-const Text = styled.div`
+export const Text = styled.div`
   width: 100%;
 `;
 
-const MobileBottom = styled.div`
+export const MobileBottom = styled.div`
   display: flex;
   align-items: baseline;
   flex-direction: row;
@@ -36,7 +71,7 @@ const MobileBottom = styled.div`
   }
 `;
 
-const TitleText = styled.span`
+export const TitleText = styled.span`
   display: flex;
   align-items: baseline;
   flex: 1 1 auto;
@@ -46,7 +81,7 @@ const TitleText = styled.span`
   }
 `;
 
-const Title = styled.h3`
+export const Title = styled.h3`
   font-size: 1.5rem;
   font-weight: 300;
   letter-spacing: 0.1em;
@@ -56,7 +91,7 @@ const Title = styled.h3`
   flex-shrink: 0;
 `;
 
-const Tag = styled.h5`
+export const Tag = styled.h5`
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.1em;
@@ -67,7 +102,7 @@ const Tag = styled.h5`
   text-transform: uppercase;
 `;
 
-const Subtitle = styled.h4`
+export const Subtitle = styled.h4`
   font-size: 0.75rem;
   font-weight: 700;
   text-align: left;
@@ -78,7 +113,7 @@ const Subtitle = styled.h4`
   text-transform: uppercase;
 `;
 
-const Cta = styled.h5`
+export const Cta = styled.h5`
   flex: 1 1 auto;
   text-align: right;
   margin: 0;
@@ -101,7 +136,7 @@ const Cta = styled.h5`
   }
 `;
 
-const Image = styled.div`
+export const Image = styled.div`
   width: 48px;
   height: 48px;
   background-color: #fff;
@@ -118,21 +153,3 @@ const Image = styled.div`
     transform: translate(-40px, -8px) rotate(0deg);
   }
 `;
-
-export default ({ title, tag, cta, subtitle, url, customStyle, children }) => (
-  <Link prefetch href={url}>
-    <Card style={customStyle}>
-      <Image>{children}</Image>
-      <Text>
-        <TitleText>
-          <MobileBottom>
-            <Title>{title}</Title>
-            <Tag>{tag}</Tag>
-          </MobileBottom>
-          <Cta>{cta}</Cta>
-        </TitleText>
-        <Subtitle>{subtitle}</Subtitle>
-      </Text>
-    </Card>
-  </Link>
-);

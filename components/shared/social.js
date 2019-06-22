@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { space } from "styled-system";
 
 const Icolink = styled.a`
-  ${space}
   &:hover {
     border-bottom: 1px solid ${props => props.color};
     color: ${props => props.color};
@@ -10,6 +9,7 @@ const Icolink = styled.a`
   font-size: 0.875rem;
   color: ${props => props.theme.colors.blue};
   text-decoration: none;
+  ${space}
 `;
 
 export default () => (

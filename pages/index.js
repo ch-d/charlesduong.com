@@ -1,11 +1,11 @@
 import { ThemeProvider } from "styled-components";
 import Heading from "../components/shared/heading";
 import GlobalStyle from "../theme/globalStyle";
-import theme from "../theme";
+import { theme } from "../theme";
 
-import Hero from "../components/index/hero";
-import Cardlist from "../components/index/cardlist";
-import List from "../components/index/list";
+import Hero from "../components/index/Hero";
+import CardList from "../components/index/CardList";
+import List from "../components/index/List";
 import Footer from "../components/shared/footer";
 
 export default () => (
@@ -15,7 +15,7 @@ export default () => (
     <ThemeProvider theme={theme}>
       <React.Fragment>
         <Hero />
-        <Cardlist />
+        <CardList />
         <List isMain />
         <Footer />
       </React.Fragment>

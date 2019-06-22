@@ -1,16 +1,16 @@
 import styled, { keyframes } from "styled-components";
-import { space } from "styled-system";
-import Social from "../shared/social";
+import { theme } from "../../../theme";
+import { space, flexbox } from "styled-system";
 
-const Background = styled.div`
+export const Background = styled.div`
   width: 100%;
-  background-image: linear-gradient(${props => props.theme.colors.grey}, #fff);
+  background-image: linear-gradient(${theme.colors.grey}, #fff);
   background-repeat: no-repeat;
   background-position: 15% 96px;
   background-size: 50% 320px;
 `;
 
-const Container = styled.div`
+export const Container = styled.div`
   width: 100%;
   max-width: 960px;
   display: flex;
@@ -24,7 +24,7 @@ const Container = styled.div`
   }
 `;
 
-const TitleSection = styled.div`
+export const TitleSection = styled.div`
   flex: 0;
   white-space: nowrap;
   padding-top: 16px;
@@ -34,7 +34,7 @@ const TitleSection = styled.div`
   }
 `;
 
-const TextSection = styled.div`
+export const TextSection = styled.div`
   flex: 30rem;
   max-width: 30rem;
   margin: 16px auto;
@@ -45,16 +45,16 @@ const TextSection = styled.div`
   }
 `;
 
-const Title = styled.h1`
-  color: ${props => props.theme.colors.black};
+export const Title = styled.h1`
+  color: ${theme.colors.black};
   font-size: 2.25rem;
   letter-spacing: 0.1em;
   font-weight: 100;
   margin: 0;
 `;
 
-const SubTitle = styled.h2`
-  color: ${props => props.theme.colors.black};
+export const SubTitle = styled.h2`
+  color: ${theme.colors.black};
   font-size: 0.875rem;
   text-transform: uppercase;
   margin: 0;
@@ -63,14 +63,14 @@ const SubTitle = styled.h2`
   opacity: 0.5;
 `;
 
-const Paragraph = styled.p`
-  color: ${props => props.theme.colors.black};
+export const Paragraph = styled.p`
+  color: ${theme.colors.black};
   font-size: 1rem;
   line-height: 1.5;
   ${space}
 `;
 
-const Pill = styled.span`
+export const Pill = styled.span`
   background-color: #17a890;
   color: #fff;
   padding: 0.125rem 0.5rem;
@@ -83,7 +83,7 @@ const Pill = styled.span`
   box-shadow: 0 0 4px 2px rgba(23, 168, 144, 0.24);
 `;
 
-const pulse = keyframes`
+export const pulse = keyframes`
   0% {
       opacity: 1;
       transform: scale(.5);
@@ -98,7 +98,7 @@ const pulse = keyframes`
   }
 `;
 
-const grow = keyframes`
+export const grow = keyframes`
   0% {
       transform: scale(.75);
   }
@@ -110,7 +110,7 @@ const grow = keyframes`
   }
 `;
 
-const Pulse = styled.span`
+export const Pulse = styled.span`
   display: inline-block;
   position: relative;
   top: -1px;
@@ -134,31 +134,3 @@ const Pulse = styled.span`
     animation: ${pulse} 2s ease 0s infinite;
   }
 `;
-
-export default () => (
-  <Background>
-    <Container>
-      <TitleSection>
-        <Title>charles duong</Title>
-        <SubTitle>PRODUCT DESIGNER</SubTitle>
-      </TitleSection>
-      <TextSection>
-        <Paragraph mb={3}>
-          Hi, I'm a designer 👨‍💻 always up for tackling hard ethical, social
-          problems. Empathy, words, and modular systems are my tools of choice
-          throughout the design process. Continuously interested in making
-          technology a little more human, accessible, and inclusive.
-        </Paragraph>
-        <Paragraph>
-          Currently{" "}
-          <Pill>
-            <Pulse />
-            available
-          </Pill>{" "}
-          for full-time or contract opportunities.
-        </Paragraph>
-        <Social />
-      </TextSection>
-    </Container>
-  </Background>
-);

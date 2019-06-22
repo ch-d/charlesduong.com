@@ -1,18 +1,17 @@
 import styled from "styled-components";
-import { space, flexbox } from "styled-system";
+import { space } from "styled-system";
 
-const Flex = styled.div`
+export const Box = styled.div`
   ${space};
-  ${flexbox};
 `;
 
-const Main = styled.div`
+export const Main = styled.div`
   width: 100%;
   max-width: 960px;
   margin: 2rem auto;
 `;
 
-const Grey = styled.div`
+export const Grey = styled.div`
   background-color: ${props => props.theme.colors.grey};
   background-image: linear-gradient(
     to ${props => (props.list ? "left" : "right")},
@@ -28,7 +27,7 @@ const Grey = styled.div`
   }
 `;
 
-const Divider = styled.div`
+export const Divider = styled.div`
   height: ${props => props.h}px;
   margin-left: ${props => (props.list ? "0" : "20%")};
   width: 80%;
@@ -44,7 +43,7 @@ const Divider = styled.div`
   ${space};
 `;
 
-const Title = styled.h1`
+export const Title = styled.h1`
   font-size: 3rem;
   letter-spacing: 0.1em;
   font-weight: 100;
@@ -53,24 +52,9 @@ const Title = styled.h1`
   color: ${props => props.theme.colors.blue};
 `;
 
-const Container = styled.div`
+export const Container = styled.div`
   transform: translateX(${props => (props.list ? "0" : "64")}px);
   padding-left: 8px;
   padding-right: 8px;
   width: calc(100% - 16px);
 `;
-
-export default ({ children, list, title }) => (
-  <Flex column mt={4}>
-    <Divider h="1" mb={1} list={list} />
-    <Divider h="4" mb={4} list={list} />
-    <Main>
-      <Grey list={list}>
-        <Container list={list}>
-          <Title>{title}</Title>
-          {children}
-        </Container>
-      </Grey>
-    </Main>
-  </Flex>
-);

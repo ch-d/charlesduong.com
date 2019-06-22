@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { space } from "styled-system";
-import Social from "./social";
+import Social from "./Social";
 
 const Center = styled.div`
   text-align: center;

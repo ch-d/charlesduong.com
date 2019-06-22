@@ -1,4 +1,4 @@
-import Social from "../../shared/social";
+import Social from "../../Social";
 import {
   Background,
   Container,

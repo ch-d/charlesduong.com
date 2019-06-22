@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { space } from "styled-system";
+import { theme } from "../../../theme";
 
 export const Box = styled.div`
   ${space};
@@ -12,11 +13,11 @@ export const Main = styled.div`
 `;
 
 export const Grey = styled.div`
-  background-color: ${props => props.theme.colors.grey};
+  background-color: ${theme.colors.grey};
   background-image: linear-gradient(
     to ${props => (props.list ? "left" : "right")},
     #fff,
-    ${props => props.theme.colors.grey}
+    ${theme.colors.grey}
   );
   width: 100%;
   transform: translateX(${props => (props.list ? "0" : "-32")}px);
@@ -37,8 +38,8 @@ export const Divider = styled.div`
   }
   background: linear-gradient(
     to ${props => (props.list ? "right" : "left")},
-    ${props => props.theme.colors.gradient.purple},
-    ${props => props.theme.colors.gradient.green}
+    ${theme.colors.gradient.purple},
+    ${theme.colors.gradient.green}
   );
   ${space};
 `;
@@ -49,7 +50,7 @@ export const Title = styled.h1`
   font-weight: 100;
   padding-left: 8px;
   transform: translateY(-50%);
-  color: ${props => props.theme.colors.blue};
+  color: ${theme.colors.blue};
 `;
 
 export const Container = styled.div`

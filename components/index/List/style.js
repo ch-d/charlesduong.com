@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { space } from "styled-system";
+import { theme } from "../../../theme";
 
 // List
 export const Container = styled.div`
@@ -26,8 +27,8 @@ export const Divider = styled.div`
   width: 80%;
   background: linear-gradient(
     to left,
-    ${props => props.theme.colors.gradient.purple},
-    ${props => props.theme.colors.gradient.green}
+    ${theme.colors.gradient.purple},
+    ${theme.colors.gradient.green}
   );
   transform: translateY(280px);
   position: relative;
@@ -51,7 +52,7 @@ export const Card = styled.button`
   padding: 1rem;
   cursor: pointer;
   width: 100%;
-  border-bottom: 2px solid ${props => props.theme.colors.grey};
+  border-bottom: 2px solid ${theme.colors.grey};
   @media (min-width: 40rem) {
     border-bottom: none;
   }
@@ -85,7 +86,7 @@ export const Title = styled.h3`
   font-size: 1.5rem;
   font-weight: 300;
   letter-spacing: 0.1em;
-  color: ${props => props.theme.colors.black};
+  color: ${theme.colors.black};
   margin: 0;
   text-transform: lowercase;
   flex-shrink: 0;
@@ -95,7 +96,7 @@ export const Tag = styled.h5`
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.1em;
-  color: ${props => props.theme.colors.blue};
+  color: ${theme.colors.blue};
   margin: 0 0.5rem;
   opacity: 0.5;
   flex-shrink: 0;
@@ -107,7 +108,7 @@ export const Subtitle = styled.h4`
   font-weight: 700;
   text-align: left;
   letter-spacing: 0.1em;
-  color: ${props => props.theme.colors.black};
+  color: ${theme.colors.black};
   margin: 0;
   opacity: 0.6;
   text-transform: uppercase;
@@ -119,7 +120,7 @@ export const Cta = styled.h5`
   margin: 0;
   font-size: 0.75rem;
   font-weight: 400;
-  color: ${props => props.theme.colors.blue};
+  color: ${theme.colors.blue};
   opacity: 1;
   margin-right: 0;
   order: 1;

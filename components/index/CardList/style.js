@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { space, flexbox, layout } from "styled-system";
+import { theme } from "../../../theme";
 
 export const Flex = styled.div`
   display: flex;
@@ -47,7 +48,7 @@ export const Subtitle = styled.h5`
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.15rem;
-  color: ${props => props.theme.colors.blue};
+  color: ${theme.colors.blue};
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0.25rem;
@@ -61,7 +62,7 @@ export const Title = styled.h3`
   font-size: 1.5rem;
   font-weight: 300;
   letter-spacing: 0.1em;
-  color: ${props => props.theme.colors.blue};
+  color: ${theme.colors.blue};
   text-transform: lowercase;
   margin-top: 0;
   margin-bottom: 2rem;
@@ -74,7 +75,7 @@ export const Title = styled.h3`
 export const DescriptionItem = styled.p`
   font-size: 0.875rem;
   font-weight: 500;
-  color: ${props => props.theme.colors.black};
+  color: ${theme.colors.black};
   margin-top: 0;
   margin-bottom: 1rem;
   margin-right: 2rem;
@@ -109,7 +110,7 @@ export const Cta = styled.h4`
   color: #fff;
   margin: 0;
   padding: 0.5rem 1rem;
-  background-color: ${props => props.theme.colors.black};
+  background-color: ${theme.colors.black};
   @media (max-width: 40rem) {
     display: none;
     padding-top: 1rem;
@@ -141,8 +142,8 @@ export const Image = styled.div`
   ${Main}:hover & {
     background-image: linear-gradient(
         180deg,
-        ${props => props.theme.colors.black},
-        ${props => props.theme.colors.black}
+        ${theme.colors.black},
+        ${theme.colors.black}
       ),
       url(${props => props.img});
     background-blend-mode: screen;

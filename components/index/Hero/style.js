@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
+import { space } from "styled-system";
 import { theme } from "../../../theme";
-import { space, flexbox } from "styled-system";
 
 export const Background = styled.div`
   width: 100%;

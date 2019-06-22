@@ -1,7 +1,7 @@
-import Layout, { H2, Para } from "../components/case-study/layout";
+import Layout from "../components/case-study/Layout";
+import Image from "../components/case-study/Image";
+import { H2, Para } from "../components/case-study/Typography";
 import Textbox from "../components/case-study/textbox";
-import Image from "../components/case-study/image";
-import Imagegrid from "../components/case-study/imagegrid";
 import Twocolumn from "../components/case-study/twocolumn";
 import Carousel from "../components/case-study/carousel";
 
@@ -12,37 +12,30 @@ export default () => (
     disp2="none"
     titleCase="/lawyer-exchange"
     desc="The Lawyer Exchange is a new venture from the founder of VisaNow set out to answer the question: why are most people who need legal work not able to access affordable services?"
-    // introTitle="Providing Small / Solo Firms with BigLaw Resources"
-    // subTitleLabel="a"
-    // subTitleItem="a"
-    // intro={[
-    //   "The Lawyer Exchange is a new venture from the founder of VisaNow to answer the question: why are most people who need legal work not able to access affordable services? Through initial research, he determined the first step should be to help small / solo firm lawyers grow their practice by introducing them to freelance lawyers looking for meaningful legal experiences.",
-    //   "The immediate goal was to facilitate the bringing together of these legal professionals in similar ways Thumbtack and UpWork provide service professionals to consumers. Our assumption was that the increased efficiency and flexibility for smaller firms should in turn decrease the average cost to access legal services.",
-    //   "I was the first person to work full-time with the founder when it was only an idea in the Fall of 2016. Together, we collaborated with emerging lawyers and a development team to ship the initial MVP a year later."
-    // ]}
-    // categories={[
-    //   { label: "Company", items: ["Lawyer Exchange"] },
-    //   {
-    //     label: "Team Members",
-    //     items: [
-    //       "Robert Meltzer, CEO, Founder",
-    //       "Britney McDonald, Counsel",
-    //       "Josh Turk, Counsel",
-    //       "Leo Fedorov, Lead Developer"
-    //     ]
-    //   },
-    //   {
-    //     label: "Projects",
-    //     items: [
-    //       "UI Design",
-    //       "User Research",
-    //       "Product Management",
-    //       "Marketing Design"
-    //     ]
-    //   }
-    // ]}
+    introTitle="Providing Small / Solo Firms with BigLaw Resources"
+    subTitleLabel="a"
+    subTitleItem="a"
+    intro={[
+      "The Lawyer Exchange is a new venture from the founder of VisaNow to answer the question: why are most people who need legal work not able to access affordable services? Through initial research, he determined the first step should be to help small / solo firm lawyers grow their practice by introducing them to freelance lawyers looking for meaningful legal experiences.",
+      "The immediate goal was to facilitate the bringing together of these legal professionals in similar ways Thumbtack and UpWork provide service professionals to consumers. Our assumption was that the increased efficiency and flexibility for smaller firms should in turn decrease the average cost to access legal services.",
+      "I was the first person to work full-time with the founder when it was only an idea in the Fall of 2016. Together, we collaborated with emerging lawyers and a development team to ship the initial MVP a year later."
+    ]}
+    categories={[
+      { type: "label", text: "Company" },
+      { type: "item", text: "Lawyer Exchange" },
+      { type: "label", text: "Team Members" },
+      { type: "item", text: "Robert Meltzer, CEO, Founder" },
+      { type: "item", text: "Britney McDonald, Counsel" },
+      { type: "item", text: "Josh Turk, Counsel" },
+      { type: "item", text: "Leo Fedorov, Lead Developer" },
+      { type: "label", text: "Projects" },
+      { type: "item", text: "UI Design" },
+      { type: "item", text: "User Research" },
+      { type: "item", text: "Product Management" },
+      { type: "item", text: "Marketing Design" }
+    ]}
   >
-    <Image img="../static/lawyer-exchange/hero.png" />
+    <Image fullWidth images={[{ src: "../static/lawyer-exchange/hero.png" }]} />
 
     <H2>Legal Research</H2>
     <Twocolumn>
@@ -77,8 +70,13 @@ export default () => (
       </Para>
     </Twocolumn>
     <Image
-      img="../static/lawyer-exchange/006.png"
-      cap="Early Whiteboard Brainstorm"
+      fullWidth
+      images={[
+        {
+          src: "../static/lawyer-exchange/006.png",
+          caption: "Early Whiteboard Brainstorm"
+        }
+      ]}
     />
 
     <H2>User Research</H2>
@@ -114,8 +112,13 @@ export default () => (
       </Para>
     </Twocolumn>
     <Image
-      img="../static/lawyer-exchange/001.gif"
-      cap="Early Whiteboard Brainstorm"
+      fullWidth
+      images={[
+        {
+          src: "../static/lawyer-exchange/001.gif",
+          caption: "Early Whiteboard Brainstorm"
+        }
+      ]}
     />
 
     <H2>Profile and Project Onboarding</H2>
@@ -150,7 +153,7 @@ export default () => (
         ante venenatis dapibus posuere velit aliquet.
       </Para>
     </Twocolumn>
-    <Carousel>
+    {/* <Carousel>
       <Image
         img="../static/lawyer-exchange/013.gif"
         cap="Project Lawyer Profile"
@@ -178,20 +181,26 @@ export default () => (
       />
       <Image img="../static/lawyer-exchange/013.gif" cap="Profile Wizard" />
       <Image img="../static/lawyer-exchange/013.gif" cap="Profile Editor" />
-      {/* <Image img = "../static/lawyer-exchange/018.png" cap="Wireframe Exploration (1 of 2)" />
+      <Image img = "../static/lawyer-exchange/018.png" cap="Wireframe Exploration (1 of 2)" />
       <Image img = "../static/lawyer-exchange/019.png" cap="Wireframe Exploration (2 of 2)" />
       <Image img = "../static/lawyer-exchange/007.png" cap="Proposal Screen v1" />
       <Image img = "../static/lawyer-exchange/008.png" cap="Profile Wizard Screen v1" />
       <Image img = "../static/lawyer-exchange/009.png" cap="In-Person User Testing" />
       <Image img = "../static/lawyer-exchange/010.png" cap="Remote User Testing" />
       <Image img = "../static/lawyer-exchange/012.png" cap="Profile Wizard" />
-      <Image img = "../static/lawyer-exchange/011.png" cap="Profile Editor" /> */}
-    </Carousel>
-    <Imagegrid
-      img1="../static/lawyer-exchange/004.png"
-      cap1="Sign Up Flow"
-      img2="../static/lawyer-exchange/005.png"
-      cap2="Settings Flow"
+      <Image img = "../static/lawyer-exchange/011.png" cap="Profile Editor" />
+    </Carousel> */}
+    <Image
+      images={[
+        {
+          src: "../static/lawyer-exchange/004.png",
+          caption: "Sign Up Flow"
+        },
+        {
+          src: "../static/lawyer-exchange/005.png",
+          caption: "Settings Flow"
+        }
+      ]}
     />
 
     <H2>Project Proposals and Messaging</H2>
@@ -227,14 +236,25 @@ export default () => (
       </Para>
     </Twocolumn>
     <Image
-      img="../static/lawyer-exchange/013.gif"
-      cap="Project Lawyer Profile"
+      fullWidth
+      images={[
+        {
+          src: "../static/lawyer-exchange/013.gif",
+          caption: "Project Lawyer Profile"
+        }
+      ]}
     />
-    <Imagegrid
-      img1="../static/lawyer-exchange/004.png"
-      cap1="Sign Up Flow"
-      img2="../static/lawyer-exchange/005.png"
-      cap2="Settings Flow"
+    <Image
+      images={[
+        {
+          src: "../static/lawyer-exchange/004.png",
+          caption: "Sign Up Flow"
+        },
+        {
+          src: "../static/lawyer-exchange/005.png",
+          caption: "Settings Flow"
+        }
+      ]}
     />
 
     <Textbox>
@@ -246,11 +266,17 @@ export default () => (
         multiple pages, in one central location.
       </Para>
     </Textbox>
-    <Imagegrid
-      img1="../static/lawyer-exchange/002.png"
-      cap1="Style Guide v1"
-      img2="../static/lawyer-exchange/003.png"
-      cap2="Style Guide v2"
+    <Image
+      images={[
+        {
+          src: "../static/lawyer-exchange/002.png",
+          caption: "Style Guide v1"
+        },
+        {
+          src: "../static/lawyer-exchange/003.png",
+          caption: "Style Guide v2"
+        }
+      ]}
     />
 
     <Textbox>
@@ -267,11 +293,17 @@ export default () => (
         to take initiative in the conversation.
       </Para>
     </Textbox>
-    <Imagegrid
-      img1="../static/lawyer-exchange/015.png"
-      cap1="Hiring Lawyer Project Brief"
-      img2="../static/lawyer-exchange/016.png"
-      cap2="Project Lawyer Available Projects"
+    <Image
+      images={[
+        {
+          src: "../static/lawyer-exchange/015.png",
+          caption: "Hiring Lawyer Project Brief"
+        },
+        {
+          src: "../static/lawyer-exchange/016.png",
+          caption: "Project Lawyer Available Projects"
+        }
+      ]}
     />
 
     <Textbox>
@@ -288,11 +320,17 @@ export default () => (
         to take initiative in the conversation.
       </Para>
     </Textbox>
-    <Imagegrid
-      img1="../static/lawyer-exchange/017.png"
-      cap1="Project Lawyer Send Proposal"
-      img2="../static/lawyer-exchange/014.png"
-      cap2="Hiring Lawyer Select Proposal"
+    <Image
+      images={[
+        {
+          src: "../static/lawyer-exchange/017.png",
+          caption: "Project Lawyer Send Proposal"
+        },
+        {
+          src: "../static/lawyer-exchange/014.png",
+          caption: "Hiring Lawyer Select Proposal"
+        }
+      ]}
     />
   </Layout>
 );

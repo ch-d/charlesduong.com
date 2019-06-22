@@ -1,6 +1,17 @@
 import styled from "styled-components";
-import { space } from "styled-system";
-// import { Caption } from "../../constants/typography";
+import { space, flexbox, layout } from "styled-system";
+import { Caption } from "./Typography";
+
+const Flex = styled.div`
+  display: flex;
+  ${space};
+  ${flexbox};
+`;
+
+const Box = styled.div`
+  ${space};
+  ${layout};
+`;
 
 const Image = styled.img`
   max-width: 100%;
@@ -15,7 +26,6 @@ const Image = styled.img`
     margin-left: -50vw;
     margin-right: -50vw;
   }
-  ${space};
 `;
 
 const ImageBorder = styled.div`
@@ -25,17 +35,40 @@ const ImageBorder = styled.div`
   border-radius: 0.5rem;
 `;
 
-// const Cap = Caption.extend`
-//   ${space};
-// `;
-
-export default ({ img, cap, showBorder }) => (
-  <div>
-    <ImageBorder showBorder={showBorder}>
-      <Image src={img} alt={cap + " image not found 😵 "} title={cap} />
-    </ImageBorder>
-    {/* <Cap mt={[1, 0]} mb={4}>
-      {cap}
-    </Cap> */}
-  </div>
+export default ({ images, fullWidth }) => (
+  <Flex flexWrap={["wrap", "nowrap"]} mb={[3, 1]}>
+    {images.map((image, i) =>
+      fullWidth ? (
+        <Box key={i} width={[1]} mb={[2, 2, 0]}>
+          <ImageBorder showBorder={image.showBorder}>
+            <Image
+              src={image.src}
+              alt={image.caption + " image not found 😵 "}
+              title={image.caption}
+            />
+          </ImageBorder>
+          <Caption mt={[2, 1]} mb={[3, 4]}>
+            {image.caption}
+          </Caption>
+        </Box>
+      ) : (
+        <Box
+          key={i}
+          width={[1, 1 / 2]}
+          pr={[0, i % 2 === 0 ? 2 : 0, i % 2 === 0 ? 3 : 0]}
+          pl={[0, i % 2 === 0 ? 0 : 2, i % 2 === 0 ? 0 : 3]}
+          mb={[2, 2, 0]}
+        >
+          <Image
+            src={image.src}
+            alt={image.caption + " image not found 😵 "}
+            title={image.caption}
+          />
+          <Caption mt={[2, 1]} mb={[3, 4]}>
+            {image.caption}
+          </Caption>
+        </Box>
+      )
+    )}
+  </Flex>
 );

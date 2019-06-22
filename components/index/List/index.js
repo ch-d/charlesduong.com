@@ -49,7 +49,7 @@ export default ({ isMain }) => (
           tag="Spring 2019"
           cta="View Case Study"
           subtitle="React Native Development, Mobile Interaction Design"
-          url="/mobile-dev"
+          url="/bemore"
         >
           <ChevronsRight color="#5A8A97" />
         </Item>
@@ -58,7 +58,7 @@ export default ({ isMain }) => (
           tag="Winter 2019"
           cta="View Case Study"
           subtitle="React Native Development, Mobile Interaction Design"
-          url="/mobile-dev"
+          url="/roc"
         >
           <ChevronsRight color="#5A8A97" />
         </Item>

@@ -3,10 +3,9 @@ import Layout from "../components/case-study/Layout";
 export default () => (
   <Layout
     title="BE MORE: Breaking Bias Lite"
-    date="Late 2016 &ndash; Early 2017"
-    disp2="none"
     titleCase="/bemore"
     desc="BE MORE Lite is a gateway to breaking bias with emotional intelligence. It’s an interactive way to learn about unconscious bias and develop the skills to reduce it in your personal and professional life."
+    color="orange"
     introTitle="BE MORE: Breaking Bias Lite"
     subTitleLabel="Project Timeline"
     subTitleItem="12 weeks"

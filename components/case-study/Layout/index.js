@@ -7,6 +7,7 @@ import Social from "../../Social";
 import List from "../../index/List";
 import Footer from "../../Footer";
 import {
+  Main,
   Container,
   Flex,
   Logo,
@@ -28,43 +29,48 @@ export default ({
   subTitleLabel,
   subTitleItem,
   intro,
-  categories
+  categories,
+  color
 }) => (
   <div>
     <Head meta={title} titleCase={titleCase} desc={desc} />
     <GlobalStyle />
     <ThemeProvider theme={theme}>
       <React.Fragment>
-        <Container px={3}>
-          <Flex alignItems="center" py={3}>
-            <Link prefetch href="/">
-              <Logo>charles duong</Logo>
-            </Link>
-            <Flex flex="1 1 auto" />
-            <Social />
-          </Flex>
-          <Flex flexWrap="wrap" py={5}>
-            <Description>
-              <Title>{introTitle}</Title>
-              {intro.map((text, i) => (
-                <Para key={i}>{text}</Para>
-              ))}
-            </Description>
-            <Flex>
-              <Divider w="1" />
-              <Details>
-                {categories.map((item, i) =>
-                  item.type === "label" ? (
-                    <CategoryLabel key={i}>{item.text}</CategoryLabel>
-                  ) : (
-                    <CategoryItem key={i}>{item.text}</CategoryItem>
-                  )
-                )}
-              </Details>
+        <Main bg={theme.colors[color][5]}>
+          <Container px={3}>
+            <Flex alignItems="center" py={3}>
+              <Link prefetch href="/">
+                <Logo>charles duong</Logo>
+              </Link>
+              <Flex flex="1 1 auto" />
+              <Social />
             </Flex>
-          </Flex>
-          {children}
-        </Container>
+            <Flex flexWrap="wrap" py={5} bg={theme.colors[color][5]}>
+              <Description>
+                <Title>{introTitle}</Title>
+                {intro.map((text, i) => (
+                  <Para key={i}>{text}</Para>
+                ))}
+              </Description>
+              <Flex>
+                <Divider w="1" color={color} />
+                <Details>
+                  {categories.map((item, i) =>
+                    item.type === "label" ? (
+                      <CategoryLabel key={i} color={color}>
+                        {item.text}
+                      </CategoryLabel>
+                    ) : (
+                      <CategoryItem key={i}>{item.text}</CategoryItem>
+                    )
+                  )}
+                </Details>
+              </Flex>
+            </Flex>
+          </Container>
+        </Main>
+        <Container px={3}>{children}</Container>
         <List />
         <Footer />
       </React.Fragment>

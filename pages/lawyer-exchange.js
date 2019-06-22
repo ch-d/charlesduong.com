@@ -8,13 +8,12 @@ import Carousel from "../components/case-study/carousel";
 export default () => (
   <Layout
     title="Lawyer Exchange"
-    date="Late 2016 &ndash; Early 2017"
-    disp2="none"
     titleCase="/lawyer-exchange"
     desc="The Lawyer Exchange is a new venture from the founder of VisaNow set out to answer the question: why are most people who need legal work not able to access affordable services?"
+    color="green"
     introTitle="Providing Small / Solo Firms with BigLaw Resources"
     subTitleLabel="a"
-    subTitleItem="a"
+    subTitleItem="Late 2016 &ndash; Early 2017"
     intro={[
       "The Lawyer Exchange is a new venture from the founder of VisaNow to answer the question: why are most people who need legal work not able to access affordable services? Through initial research, he determined the first step should be to help small / solo firm lawyers grow their practice by introducing them to freelance lawyers looking for meaningful legal experiences.",
       "The immediate goal was to facilitate the bringing together of these legal professionals in similar ways Thumbtack and UpWork provide service professionals to consumers. Our assumption was that the increased efficiency and flexibility for smaller firms should in turn decrease the average cost to access legal services.",

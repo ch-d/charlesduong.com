@@ -1,11 +1,16 @@
 import styled from "styled-components";
-import { space, flexbox } from "styled-system";
+import { space, flexbox, color } from "styled-system";
 import { theme } from "../../../theme";
 
 export const Flex = styled.div`
   display: flex;
   ${space};
   ${flexbox};
+`;
+
+export const Main = styled.div`
+  width: 100%;
+  ${color};
 `;
 
 export const Container = styled.div`
@@ -54,15 +59,14 @@ export const Divider = styled.div`
   height: ${props => props.h}px;
   background: linear-gradient(
     to bottom,
-    ${theme.colors.gradient.purple},
-    ${theme.colors.gradient.green}
+    ${props => theme.colors[props.color][50]},
+    ${props => theme.colors[props.color][100]}
   );
-  margin-left: ${props => (props.offset ? "20%" : "")};
   ${space};
 `;
 
 export const CategoryLabel = styled.h3`
-  color: ${theme.colors.blue};
+  color: ${props => theme.colors[props.color][500]};
   font-size: 0.75rem;
   opacity: 0.8;
   margin: 1.35rem auto 0 auto;
@@ -71,6 +75,7 @@ export const CategoryLabel = styled.h3`
 `;
 
 export const CategoryItem = styled.p`
+  color: ${theme.colors.neutral[500]};
   font-size: 0.75rem;
   margin: 0.25rem auto;
   font-weight: 500;

@@ -1,10 +1,12 @@
 import { createGlobalStyle } from "styled-components";
+import { theme } from "./index";
 
 const GlobalStyle = createGlobalStyle`
     @import url(//rsms.me/inter/inter-ui.css);
     @import url(//fonts.googleapis.com/css?family=IBM+Plex+Sans:100,200,300,400,500,600,700);
     html {
-      background-color: #9CB7C0;
+      background-color: ${props =>
+        props.color ? theme.colors[props.color][50] : theme.colors.green[50]};
     }
     body {
       font-family: 'Inter UI', -apple-system, BlinkMacSystemFont,

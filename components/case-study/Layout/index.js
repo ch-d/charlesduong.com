@@ -8,6 +8,7 @@ import List from "../../index/List";
 import Footer from "../../Footer";
 import {
   Main,
+  SlantBg,
   Container,
   Flex,
   Logo,
@@ -34,10 +35,10 @@ export default ({
 }) => (
   <div>
     <Head meta={title} titleCase={titleCase} desc={desc} />
-    <GlobalStyle />
+    <GlobalStyle color={color} />
     <ThemeProvider theme={theme}>
       <React.Fragment>
-        <Main bg={theme.colors[color][5]}>
+        <Main bg={theme.colors[color][10]}>
           <Container px={3}>
             <Flex alignItems="center" py={3}>
               <Link prefetch href="/">
@@ -46,7 +47,7 @@ export default ({
               <Flex flex="1 1 auto" />
               <Social />
             </Flex>
-            <Flex flexWrap="wrap" py={5} bg={theme.colors[color][5]}>
+            <Flex flexWrap="wrap" py={5}>
               <Description>
                 <Title>{introTitle}</Title>
                 {intro.map((text, i) => (
@@ -70,7 +71,9 @@ export default ({
             </Flex>
           </Container>
         </Main>
-        <Container px={3}>{children}</Container>
+        <SlantBg color={color}>
+          <Container px={3}>{children}</Container>
+        </SlantBg>
         <List />
         <Footer />
       </React.Fragment>

@@ -13,6 +13,18 @@ export const Main = styled.div`
   ${color};
 `;
 
+export const SlantBg = styled.div`
+  width: 100%;
+  background: #fff;
+  background: linear-gradient(
+    10deg,
+    #fff 50%,
+    ${props => theme.colors[props.color][10]} 50%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 320px;
+`;
+
 export const Container = styled.div`
   max-width: 60rem;
   margin-left: auto;
@@ -68,18 +80,15 @@ export const Divider = styled.div`
 export const CategoryLabel = styled.h3`
   color: ${props => theme.colors[props.color][500]};
   font-size: 0.75rem;
-  opacity: 0.8;
   margin: 1.35rem auto 0 auto;
   text-transform: uppercase;
   letter-spacing: 0.15;
 `;
 
 export const CategoryItem = styled.p`
-  color: ${theme.colors.neutral[500]};
+  color: ${theme.colors.neutral[300]};
   font-size: 0.75rem;
   margin: 0.25rem auto;
-  font-weight: 500;
-  opacity: 0.8;
 `;
 
 export const Title = styled.h1`

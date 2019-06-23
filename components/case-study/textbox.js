@@ -8,7 +8,7 @@ const Flex = styled.div`
 `;
 
 export default ({ children }) => (
-  <Flex flexWrap="wrap" pt={[0, 2]} mx={[0, 4]} px={[0, 4]} mb={[2, 4]}>
+  <Flex flexWrap="wrap" pt={[0, 3]} mx={[0, 5]} px={[0, 5]} mb={[3, 5]}>
     {children}
   </Flex>
 );

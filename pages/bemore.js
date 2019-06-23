@@ -1,4 +1,5 @@
 import Layout from "../components/case-study/Layout";
+import Image from "../components/case-study/Image";
 
 export default () => (
   <Layout
@@ -27,5 +28,7 @@ export default () => (
       { type: "item", text: "iOS Mobile Design" },
       { type: "item", text: "Android Mobile Design" }
     ]}
-  />
+  >
+    <Image fullWidth images={[{ src: "../static/lawyer-exchange/hero.png" }]} />
+  </Layout>
 );

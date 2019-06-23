@@ -64,7 +64,7 @@ export const SubTitle = styled.h2`
 `;
 
 export const Paragraph = styled.p`
-  color: ${theme.colors.black};
+  color: ${theme.colors.neutral[500]};
   font-size: 1rem;
   line-height: 1.5;
   ${space}

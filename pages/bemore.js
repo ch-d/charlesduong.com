@@ -19,16 +19,16 @@ export default () => (
       { type: "item", text: "BE MORE, Inc." },
       { type: "label", text: "Team Members" },
       { type: "item", text: "Cris Nelson, Product Manager" },
-      { type: "item", text: "Scott Nelson, Developer" },
+      { type: "item", text: "Scott Nelson, Back-End Developer" },
       { type: "item", text: "Ethan Winn, User Researcher" },
       { type: "item", text: "Taylor Sokolowski, Communications Designer" },
       { type: "item", text: "Monica Gragg, Content Strategist" },
-      { type: "label", text: "Role" },
-      { type: "item", text: "React Native (Expo SDK) Development" },
-      { type: "item", text: "iOS Mobile Design" },
-      { type: "item", text: "Android Mobile Design" }
+      { type: "label", text: "Roles" },
+      { type: "item", text: "React Native Front-End Developer" },
+      { type: "item", text: "iOS Mobile Designer" },
+      { type: "item", text: "Android Mobile Designer" }
     ]}
   >
-    <Image fullWidth images={[{ src: "../static/lawyer-exchange/hero.png" }]} />
+    <Image src="../static/lawyer-exchange/hero.png" />
   </Layout>
 );

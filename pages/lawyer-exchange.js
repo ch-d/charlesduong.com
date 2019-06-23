@@ -1,5 +1,6 @@
 import Layout from "../components/case-study/Layout";
 import Image from "../components/case-study/Image";
+import ImagesTwo from "../components/case-study/ImagesTwo";
 import { H2, Para } from "../components/case-study/Typography";
 import Textbox from "../components/case-study/textbox";
 import Twocolumn from "../components/case-study/twocolumn";
@@ -12,8 +13,8 @@ export default () => (
     desc="The Lawyer Exchange is a new venture from the founder of VisaNow set out to answer the question: why are most people who need legal work not able to access affordable services?"
     color="green"
     introTitle="Providing Small / Solo Firms with BigLaw Resources"
-    subTitleLabel="a"
-    subTitleItem="Late 2016 &ndash; Early 2017"
+    subTitleLabel=""
+    subTitleItem="2016 &ndash; 2018"
     intro={[
       "The Lawyer Exchange is a new venture from the founder of VisaNow to answer the question: why are most people who need legal work not able to access affordable services? Through initial research, he determined the first step should be to help small / solo firm lawyers grow their practice by introducing them to freelance lawyers looking for meaningful legal experiences.",
       "The immediate goal was to facilitate the bringing together of these legal professionals in similar ways Thumbtack and UpWork provide service professionals to consumers. Our assumption was that the increased efficiency and flexibility for smaller firms should in turn decrease the average cost to access legal services.",
@@ -34,7 +35,7 @@ export default () => (
       { type: "item", text: "Marketing Design" }
     ]}
   >
-    <Image fullWidth images={[{ src: "../static/lawyer-exchange/hero.png" }]} />
+    <Image src="../static/lawyer-exchange/hero.png" />
 
     <H2>Legal Research</H2>
     <Twocolumn>
@@ -69,13 +70,8 @@ export default () => (
       </Para>
     </Twocolumn>
     <Image
-      fullWidth
-      images={[
-        {
-          src: "../static/lawyer-exchange/006.png",
-          caption: "Early Whiteboard Brainstorm"
-        }
-      ]}
+      src="../static/lawyer-exchange/006.png"
+      caption="Early Whiteboard Brainstorm"
     />
 
     <H2>User Research</H2>
@@ -111,13 +107,8 @@ export default () => (
       </Para>
     </Twocolumn>
     <Image
-      fullWidth
-      images={[
-        {
-          src: "../static/lawyer-exchange/001.gif",
-          caption: "Early Whiteboard Brainstorm"
-        }
-      ]}
+      src="../static/lawyer-exchange/001.gif"
+      caption="Early Whiteboard Brainstorm"
     />
 
     <H2>Profile and Project Onboarding</H2>
@@ -189,7 +180,7 @@ export default () => (
       <Image img = "../static/lawyer-exchange/012.png" cap="Profile Wizard" />
       <Image img = "../static/lawyer-exchange/011.png" cap="Profile Editor" />
     </Carousel> */}
-    <Image
+    <ImagesTwo
       images={[
         {
           src: "../static/lawyer-exchange/004.png",
@@ -235,15 +226,10 @@ export default () => (
       </Para>
     </Twocolumn>
     <Image
-      fullWidth
-      images={[
-        {
-          src: "../static/lawyer-exchange/013.gif",
-          caption: "Project Lawyer Profile"
-        }
-      ]}
+      src="../static/lawyer-exchange/013.gif"
+      caption="Project Lawyer Profile"
     />
-    <Image
+    <ImagesTwo
       images={[
         {
           src: "../static/lawyer-exchange/004.png",
@@ -265,7 +251,7 @@ export default () => (
         multiple pages, in one central location.
       </Para>
     </Textbox>
-    <Image
+    <ImagesTwo
       images={[
         {
           src: "../static/lawyer-exchange/002.png",
@@ -292,7 +278,7 @@ export default () => (
         to take initiative in the conversation.
       </Para>
     </Textbox>
-    <Image
+    <ImagesTwo
       images={[
         {
           src: "../static/lawyer-exchange/015.png",
@@ -319,7 +305,7 @@ export default () => (
         to take initiative in the conversation.
       </Para>
     </Textbox>
-    <Image
+    <ImagesTwo
       images={[
         {
           src: "../static/lawyer-exchange/017.png",

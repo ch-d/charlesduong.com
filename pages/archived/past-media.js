@@ -11,8 +11,8 @@ export default () => (
     desc="Prior to 2015, while taking Mechanical Engineering courses, I was missing an outlet for my creativity. I ended up teaching myself VFX techniques, film post-production, and graphic design, while working on several side projects. These projects satisfied my need to build things and tell stories, before I began settling down with a more agile medium of web design."
     color="turquoise"
     introTitle="Past Media"
-    subTitleLabel=""
-    subTitleItem="2016 &ndash; 2018"
+    subTitleLabel="2011 - 2014"
+    subTitleItem=""
     intro={[
       "Prior to 2015, while taking Mechanical Engineering courses, I was missing an outlet for my creativity. I ended up teaching myself VFX techniques, film post-production, and graphic design, while working on several side projects. These projects satisfied my need to build things and tell stories, before I began settling down with a more agile medium of web design."
     ]}

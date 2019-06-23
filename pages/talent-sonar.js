@@ -13,8 +13,8 @@ export default () => (
     desc="Talent Sonar is a SaaS platform that addresses unconscious bias in the hiring process and provides a model for hiring teams to source and select the right fit for job requisitions."
     color="blue"
     introTitle="Addressing unconscious bias in the hiring process"
-    subTitleLabel=""
-    subTitleItem="Late 2017"
+    subTitleLabel="Late 2017"
+    subTitleItem=""
     intro={[
       "Talent Sonar provides a model for hiring teams to source and select the right fit for job requisitions. The platform facilitates identity-blind resume reviews to reduce bias when scanning resumes and structured interviews to reduce the tendency to screen candidates on short-term positive criteria. Overall, the application promotes quantifiable decision-making to find a long-term fit between companies and candidates.",
       "I worked with various stakeholders: product managers, developers, and marketing/sales team. We worked together to ship features on their mobile app, web platform, and marketing/sales collateral."

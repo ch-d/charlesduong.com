@@ -5,10 +5,7 @@ export default () => (
   <Layout
     title="ROC National Diners' Guide"
     titleCase="/roc"
-    desc="The Diners’ Guide showcases food establishments who take the “high
-          road” to profitability, providing livable wages, paid time off, racial
-          equity, an environment free of sexual harassment, and opportunities
-          for advancement."
+    desc="The Diners’ Guide showcases food establishments who take the “high road” to profitability, providing livable wages, paid time off, racial equity, an environment free of sexual harassment, and opportunities for advancement."
     color="turquoise"
     introTitle="ROC National Diners' Guide"
     subTitleLabel="Project Timeline"

@@ -80,22 +80,22 @@ export const Divider = styled.div`
 export const CategoryLabel = styled.h3`
   color: ${props => theme.colors[props.color][500]};
   font-size: 0.75rem;
-  margin: 1.35rem auto 0 auto;
+  margin-top: 1.25rem;
+  margin-bottom: 0;
   text-transform: uppercase;
   letter-spacing: 0.15;
+  ${space};
 `;
 
 export const CategoryItem = styled.p`
   color: ${theme.colors.neutral[300]};
   font-size: 0.75rem;
-  margin: 0.25rem auto;
+  margin: 0.25rem 0;
 `;
 
 export const Title = styled.h1`
   color: ${theme.colors.neutral[800]};
   font-size: 1.5rem;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
   font-weight: 700;
+  margin-bottom: 0;
 `;

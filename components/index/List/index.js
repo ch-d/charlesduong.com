@@ -35,7 +35,7 @@ export default ({ isMain }) => (
         </Item>
         <Item
           title="Lawyer Exchange"
-          tag="2016 – 2017"
+          tag="2016 – 2018"
           cta="View Case Study"
           subtitle="Web Interaction Design, Design System"
           url="/lawyer-exchange"

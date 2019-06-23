@@ -2,7 +2,7 @@ import Layout from "../../components/case-study/Layout";
 import Image from "../../components/case-study/Image";
 import ImagesTwo from "../../components/case-study/ImagesTwo";
 import { H2, Para } from "../../components/case-study/Typography";
-import Textbox from "../../components/case-study/textbox";
+import TextBox from "../../components/case-study/TextBox";
 
 export default () => (
   <Layout
@@ -31,7 +31,7 @@ export default () => (
   >
     <Image src="../static/koeo/hero.png" />
 
-    <Textbox>
+    <TextBox>
       <H2>Initial Development</H2>
       <Para>
         For initial research, we conducted user surveys and interviews. I also
@@ -41,10 +41,10 @@ export default () => (
         then discussed their current process and looked for pain points
         technology could resolve.
       </Para>
-    </Textbox>
+    </TextBox>
     <Image src="../static/koeo/001.png" caption="Initial User Research" />
 
-    <Textbox>
+    <TextBox>
       <Para>
         We decided to create a simple group trip planning application. Users can
         search for event, lodging, and transportation plans and organize a trip.
@@ -57,7 +57,7 @@ export default () => (
         To add extra polish to trip plans, I integrated external APIs like
         Unsplash's Image API.
       </Para>
-    </Textbox>
+    </TextBox>
     <Image src="../static/koeo/002.png" caption="Initial Figma Designs" />
     <ImagesTwo
       images={[
@@ -72,7 +72,7 @@ export default () => (
       ]}
     />
 
-    <Textbox>
+    <TextBox>
       <H2>Event Plans</H2>
       <Para>
         For event plans, we researched integrations with the Yelp, Tripadvisor,
@@ -88,7 +88,7 @@ export default () => (
         fully experience the tedious balancing act between finding time to fix
         bugs or develop new features.
       </Para>
-    </Textbox>
+    </TextBox>
     <Image
       showBorder
       src="../static/koeo/003.gif"
@@ -96,7 +96,7 @@ export default () => (
     />
     <Image showBorder src="../static/koeo/004.gif" caption="Edit a Plan" />
 
-    <Textbox>
+    <TextBox>
       <H2>Flight Plans</H2>
       <Para>
         Next, we worked off the Plan Component and added support to search
@@ -107,14 +107,14 @@ export default () => (
         I developed autocomplete inputs to search for flight info given Airline
         & Airport IATA code data.
       </Para>
-    </Textbox>
+    </TextBox>
     <Image
       showBorder
       src="../static/koeo/005.gif"
       caption="Autocomplete Flight Details"
     />
 
-    <Textbox>
+    <TextBox>
       <H2>Future Designs</H2>
       <Para>
         Personally, this was a great exercise to understand Javacript and to
@@ -126,7 +126,7 @@ export default () => (
         plans for voting and payment features. Sign up for updates here:{" "}
         <a href="https://koeo.co">koeo.co</a>
       </Para>
-    </Textbox>
+    </TextBox>
     <Image src="../static/koeo/006.gif" caption="" />
   </Layout>
 );

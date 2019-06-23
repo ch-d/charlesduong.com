@@ -1,8 +1,30 @@
 import Slider from "react-slick";
-import styled from "styled-components";
-// import carouselStyles from "../../constants/carouselStyles";
+import styled, { injectGlobal } from "styled-components";
 
-// carouselStyles();
+() =>
+  injectGlobal`
+    /* .slick-dots li button:before,
+    .slick-dots li.slick-active button:before {
+
+    } */
+    .slick-arrow:before {
+      color: #333;
+      @media (max-width: 62rem) {
+        display: none;
+      }
+    }
+    .slick-dots {
+      bottom: 3rem;
+      @media (max-width: 40rem) {
+        bottom: 2rem;
+      }
+    }    
+    .slick-slide h6 {
+      @media (max-width: 40rem){
+        padding-right: 1rem;
+      }
+    }
+  `;
 
 const settings = {
   accessibility: true,
@@ -12,6 +34,7 @@ const settings = {
 };
 
 const Container = styled.div`
+  margin-bottom: 32px;
   @media (max-width: 40rem) {
     max-width: none;
     width: 100vw;

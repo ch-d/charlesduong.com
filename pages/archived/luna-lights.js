@@ -2,7 +2,7 @@ import Layout from "../../components/case-study/Layout";
 import Image from "../../components/case-study/Image";
 import ImagesTwo from "../../components/case-study/ImagesTwo";
 import { H2, Para } from "../../components/case-study/Typography";
-import Textbox from "../../components/case-study/textbox";
+import TextBox from "../../components/case-study/TextBox";
 
 export default () => (
   <Layout
@@ -20,7 +20,7 @@ export default () => (
   >
     <Image src="../static/luna-lights/hero.png" />
 
-    <Textbox>
+    <TextBox>
       <H2>Ideation</H2>
       <Para>
         After several brainstorming sessions, we decided to design for the
@@ -30,7 +30,7 @@ export default () => (
         explored ways to help day time staff members to easily observe any
         anomalies when they first come into work.
       </Para>
-    </Textbox>
+    </TextBox>
     <ImagesTwo
       images={[
         {
@@ -44,7 +44,7 @@ export default () => (
       ]}
     />
 
-    <Textbox>
+    <TextBox>
       <H2>Structure</H2>
       <Para>
         We were all new to data visualization, so we wanted to spend time
@@ -66,7 +66,7 @@ export default () => (
         determined the best way to display this data was in the form of
         something similiar to a gannt chart.
       </Para>
-    </Textbox>
+    </TextBox>
     <a href="https://projects.invisionapp.com/share/AE7FSGHYS#/161047204_Last12hours-00">
       <Image
         src="../static/luna-lights/003.png"
@@ -74,7 +74,7 @@ export default () => (
       />
     </a>
 
-    <Textbox>
+    <TextBox>
       <H2>Daily View</H2>
       <Para>
         While iterating on the daily view, I saw myself repeating processes and
@@ -96,7 +96,7 @@ export default () => (
         the urgent hourly view. This gave the day time staff a means for more
         thoughtful interactions of long-term trends for individual residents.
       </Para>
-    </Textbox>
+    </TextBox>
     <Image
       src="../static/luna-lights/004.gif"
       caption="Sketch Nested Symbol Process"
@@ -114,7 +114,7 @@ export default () => (
       ]}
     />
 
-    <Textbox>
+    <TextBox>
       <H2>Final Mockup</H2>
       <Para>
         After a month of experimenting with processes and designs, we came up
@@ -124,7 +124,7 @@ export default () => (
         clear. We did not have time to implement the designs as code, but it was
         a strong exercise in understanding design tools and workflows.
       </Para>
-    </Textbox>
+    </TextBox>
     <Image src="../static/luna-lights/007.png" caption="Final Dashboard View" />
     <ImagesTwo
       images={[

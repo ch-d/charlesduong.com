@@ -2,9 +2,9 @@ import Layout from "../components/case-study/Layout";
 import Image from "../components/case-study/Image";
 import ImagesTwo from "../components/case-study/ImagesTwo";
 import { H2, Para } from "../components/case-study/Typography";
-import Textbox from "../components/case-study/textbox";
-import Twocolumn from "../components/case-study/twocolumn";
-import Carousel from "../components/case-study/carousel";
+import TextBox from "../components/case-study/TextBox";
+import TwoColumn from "../components/case-study/TextTwoColumn";
+import Carousel from "../components/case-study/Carousel";
 
 export default () => (
   <Layout
@@ -38,7 +38,7 @@ export default () => (
     <Image src="../static/lawyer-exchange/hero.png" />
 
     <H2>Legal Research</H2>
-    <Twocolumn>
+    <TwoColumn>
       <Para>
         Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
         vestibulum. Maecenas faucibus mollis interdum. Cras justo odio, dapibus
@@ -68,14 +68,14 @@ export default () => (
         ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a
         ante venenatis dapibus posuere velit aliquet.
       </Para>
-    </Twocolumn>
+    </TwoColumn>
     <Image
       src="../static/lawyer-exchange/006.png"
       caption="Early Whiteboard Brainstorm"
     />
 
     <H2>User Research</H2>
-    <Twocolumn>
+    <TwoColumn>
       <Para>
         Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
         vestibulum. Maecenas faucibus mollis interdum. Cras justo odio, dapibus
@@ -105,14 +105,14 @@ export default () => (
         ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a
         ante venenatis dapibus posuere velit aliquet.
       </Para>
-    </Twocolumn>
+    </TwoColumn>
     <Image
       src="../static/lawyer-exchange/001.gif"
       caption="Early Whiteboard Brainstorm"
     />
 
     <H2>Profile and Project Onboarding</H2>
-    <Twocolumn>
+    <TwoColumn>
       <Para>
         Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
         vestibulum. Maecenas faucibus mollis interdum. Cras justo odio, dapibus
@@ -142,34 +142,37 @@ export default () => (
         ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a
         ante venenatis dapibus posuere velit aliquet.
       </Para>
-    </Twocolumn>
-    {/* <Carousel>
+    </TwoColumn>
+    <Carousel>
       <Image
-        img="../static/lawyer-exchange/013.gif"
-        cap="Project Lawyer Profile"
+        src="../static/lawyer-exchange/013.gif"
+        caption="Project Lawyer Profile"
       />
       <Image
-        img="../static/lawyer-exchange/013.gif"
-        cap="Wireframe Exploration (1 of 2)"
+        src="../static/lawyer-exchange/013.gif"
+        caption="Wireframe Exploration (1 of 2)"
       />
       <Image
-        img="../static/lawyer-exchange/013.gif"
-        cap="Wireframe Exploration (2 of 2)"
-      />
-      <Image img="../static/lawyer-exchange/013.gif" cap="Proposal Screen v1" />
-      <Image
-        img="../static/lawyer-exchange/013.gif"
-        cap="Profile Wizard Screen v1"
+        src="../static/lawyer-exchange/013.gif"
+        caption="Wireframe Exploration (2 of 2)"
       />
       <Image
-        img="../static/lawyer-exchange/013.gif"
-        cap="In-Person User Testing"
+        src="../static/lawyer-exchange/013.gif"
+        caption="Proposal Screen v1"
       />
       <Image
-        img="../static/lawyer-exchange/013.gif"
-        cap="Remote User Testing"
+        src="../static/lawyer-exchange/013.gif"
+        caption="Profile Wizard Screen v1"
       />
-      <Image img="../static/lawyer-exchange/013.gif" cap="Profile Wizard" />
+      <Image
+        src="../static/lawyer-exchange/013.gif"
+        caption="In-Person User Testing"
+      />
+      <Image
+        src="../static/lawyer-exchange/013.gif"
+        caption="Remote User Testing"
+      />
+      {/* <Image img="../static/lawyer-exchange/013.gif" cap="Profile Wizard" />
       <Image img="../static/lawyer-exchange/013.gif" cap="Profile Editor" />
       <Image img = "../static/lawyer-exchange/018.png" cap="Wireframe Exploration (1 of 2)" />
       <Image img = "../static/lawyer-exchange/019.png" cap="Wireframe Exploration (2 of 2)" />
@@ -178,8 +181,8 @@ export default () => (
       <Image img = "../static/lawyer-exchange/009.png" cap="In-Person User Testing" />
       <Image img = "../static/lawyer-exchange/010.png" cap="Remote User Testing" />
       <Image img = "../static/lawyer-exchange/012.png" cap="Profile Wizard" />
-      <Image img = "../static/lawyer-exchange/011.png" cap="Profile Editor" />
-    </Carousel> */}
+      <Image img = "../static/lawyer-exchange/011.png" cap="Profile Editor" /> */}
+    </Carousel>
     <ImagesTwo
       images={[
         {
@@ -194,7 +197,7 @@ export default () => (
     />
 
     <H2>Project Proposals and Messaging</H2>
-    <Twocolumn>
+    <TwoColumn>
       <Para>
         Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
         vestibulum. Maecenas faucibus mollis interdum. Cras justo odio, dapibus
@@ -224,7 +227,7 @@ export default () => (
         ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a
         ante venenatis dapibus posuere velit aliquet.
       </Para>
-    </Twocolumn>
+    </TwoColumn>
     <Image
       src="../static/lawyer-exchange/013.gif"
       caption="Project Lawyer Profile"
@@ -242,7 +245,7 @@ export default () => (
       ]}
     />
 
-    <Textbox>
+    <TextBox>
       <H2>Increasing Internal Company Efficiency</H2>
       <Para>
         To work through designs quicker, I worked on a component style guide to
@@ -250,7 +253,7 @@ export default () => (
         made it incredibly simple to switch the style of a component found on
         multiple pages, in one central location.
       </Para>
-    </Textbox>
+    </TextBox>
     <ImagesTwo
       images={[
         {
@@ -264,7 +267,7 @@ export default () => (
       ]}
     />
 
-    <Textbox>
+    <TextBox>
       <H2>Results</H2>
       <Para>
         Another important moment in the application was the interaction between
@@ -277,7 +280,7 @@ export default () => (
         firm, it was important to design empowerment to remind Project Lawyers
         to take initiative in the conversation.
       </Para>
-    </Textbox>
+    </TextBox>
     <ImagesTwo
       images={[
         {
@@ -291,7 +294,7 @@ export default () => (
       ]}
     />
 
-    <Textbox>
+    <TextBox>
       <H2>Further Considerations</H2>
       <Para>
         Another important moment in the application was the interaction between
@@ -304,7 +307,7 @@ export default () => (
         firm, it was important to design empowerment to remind Project Lawyers
         to take initiative in the conversation.
       </Para>
-    </Textbox>
+    </TextBox>
     <ImagesTwo
       images={[
         {

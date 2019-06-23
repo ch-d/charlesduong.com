@@ -2,7 +2,7 @@ import Layout from "../../components/case-study/Layout";
 import Image from "../../components/case-study/Image";
 import ImagesTwo from "../../components/case-study/ImagesTwo";
 import { H2, Para } from "../../components/case-study/Typography";
-import Textbox from "../../components/case-study/textbox";
+import TextBox from "../../components/case-study/TextBox";
 
 export default () => (
   <Layout
@@ -20,7 +20,7 @@ export default () => (
   >
     <Image src="../static/ballot-ready/hero.png" />
 
-    <Textbox>
+    <TextBox>
       <H2>Social Media Ads</H2>
       <Para>
         My first task was to develop marketing assets for Facebook and Twitter
@@ -32,7 +32,7 @@ export default () => (
         positions to vote on, and it was often difficult to determine who was
         actually qualified.
       </Para>
-    </Textbox>
+    </TextBox>
 
     <ImagesTwo
       images={[
@@ -71,7 +71,7 @@ export default () => (
       ]}
     />
 
-    <Textbox>
+    <TextBox>
       <H2>Data Visualization & Revisions</H2>
       <Para>
         As the deadline of the election neared closer, we decided to reach out
@@ -82,7 +82,7 @@ export default () => (
         Our goal with these ads were to reach those less politically engaged,
         and could portray the image of voting informed in a more positive light.
       </Para>
-    </Textbox>
+    </TextBox>
     <Image src="../static/ballot-ready/006.png" caption="Newsletter Graphic" />
     <ImagesTwo
       images={[

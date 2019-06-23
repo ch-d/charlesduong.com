@@ -2,7 +2,7 @@ import Layout from "../components/case-study/Layout";
 import Image from "../components/case-study/Image";
 import ImagesTwo from "../components/case-study/ImagesTwo";
 import { H2, Para } from "../components/case-study/Typography";
-import Textbox from "../components/case-study/textbox";
+import TextBox from "../components/case-study/TextBox";
 import { Grid, GridImage } from "../components/case-study/ImagesGrid";
 import Framer from "../components/case-study/Framer";
 
@@ -37,7 +37,7 @@ export default () => (
     {/* https://www.linkedin.com/pulse/theory-hiring-part-1-lou-adler/ */}
     <Image src="../static/talent-sonar/hero.png" />
 
-    <Textbox>
+    <TextBox>
       <H2>Mobile Resume Review</H2>
       <Para>
         When I first came onboard, the mobile app was in its early stages and
@@ -47,13 +47,13 @@ export default () => (
         redaction flow for web did not involve too many steps, so we decided to
         explore what this feature would look like in a mobile context.
       </Para>
-    </Textbox>
+    </TextBox>
     <Image
       src="../static/talent-sonar/001.png"
       caption="Mobile Interview Planning Flow (1 of 2)"
     />
 
-    <Textbox>
+    <TextBox>
       <Para>
         Since resumes are commonly used in context of 8.5 x 11 piece of paper,
         we knew it would be a design challenge to fit everything into the
@@ -69,10 +69,10 @@ export default () => (
         amount of engineering needed to be implemented. We icebox-ed the feature
         and would take a look at it again another date.
       </Para>
-    </Textbox>
+    </TextBox>
     <Framer src="https://framer.cloud/gRnDc/" frameborder="0" />
 
-    <Textbox>
+    <TextBox>
       <H2>Mobile Interview Planning</H2>
       <Para>
         A more important flow we wanted to push out was the interview planning
@@ -89,7 +89,7 @@ export default () => (
         (which had questions), and rounds (which included its own set of
         candidates, interviewers, criteria, and questions).
       </Para>
-    </Textbox>
+    </TextBox>
     <Image
       src="../static/talent-sonar/002.png"
       caption="Mobile Interview Planning Flow (1 of 2)"
@@ -99,7 +99,7 @@ export default () => (
       caption="Mobile Interview Planning Flow (2 of 2)"
     />
 
-    <Textbox>
+    <TextBox>
       <Para>
         In terms of the visual design, we wanted to keep simple iOS components.
         In doing so, we could ship the feature first, and iterate from there.
@@ -108,7 +108,7 @@ export default () => (
         sections. We also hope to explore other interactions for lists like:
         swipe interactions for editing, drag and drop, and horizontal scrolling.
       </Para>
-    </Textbox>
+    </TextBox>
     <Image
       src="../static/talent-sonar/004-1.png"
       caption="Add New Job + Job Criteria Flow"
@@ -122,7 +122,7 @@ export default () => (
       caption="Round Candidates + Round Team Members"
     />
 
-    <Textbox>
+    <TextBox>
       <H2>Component System</H2>
       <Para>
         While we worked on mobile features, opportunities to work on desktop
@@ -134,7 +134,7 @@ export default () => (
         time focused on success metrics and usability rather than fiddle with
         aesthetics.
       </Para>
-    </Textbox>
+    </TextBox>
     <Image
       src="../static/talent-sonar/005.png"
       caption="Sketch Component System"
@@ -152,7 +152,7 @@ export default () => (
       ]}
     />
 
-    <Textbox>
+    <TextBox>
       <H2>Marketing / Sales</H2>
       <Para>
         Because I worked on the product, I had enough context to understand
@@ -162,7 +162,7 @@ export default () => (
         Other illustrations addressed a need to humanize the hiring process,
         while retaining context to the technology that powered it.
       </Para>
-    </Textbox>
+    </TextBox>
     <Grid>
       <GridImage
         column_l="1 / 2"

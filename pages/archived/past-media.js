@@ -2,7 +2,7 @@ import Layout from "../../components/case-study/Layout";
 import Image from "../../components/case-study/Image";
 import ImagesTwo from "../../components/case-study/ImagesTwo";
 import { H2, Para } from "../../components/case-study/Typography";
-import Textbox from "../../components/case-study/textbox";
+import TextBox from "../../components/case-study/TextBox";
 
 export default () => (
   <Layout
@@ -20,7 +20,7 @@ export default () => (
   >
     <Image src="../static/past-media/hero.png" />
 
-    <Textbox>
+    <TextBox>
       <H2>Senior Project</H2>
       <Para>
         In partial fufillment of my Bachelor of Arts degree at Cal Poly, I spent
@@ -41,7 +41,7 @@ export default () => (
       >
         &nbsp;
       </span>
-    </Textbox>
+    </TextBox>
     <ImagesTwo
       images={[
         { src: "../static/past-media/001.gif" },
@@ -55,7 +55,7 @@ export default () => (
       ]}
     />
 
-    <Textbox>
+    <TextBox>
       <H2>Info Booth</H2>
       <Para>
         Info Booth came out of a weekend charrette, exploring the creative
@@ -75,7 +75,7 @@ export default () => (
       >
         &nbsp;
       </span>
-    </Textbox>
+    </TextBox>
     <ImagesTwo
       images={[
         { src: "../static/past-media/005.gif" },
@@ -89,7 +89,7 @@ export default () => (
       ]}
     />
 
-    <Textbox>
+    <TextBox>
       <H2>Poly Xpress</H2>
       <Para>
         Poly Xpress was an interactive web app that delivered a location-based
@@ -109,7 +109,7 @@ export default () => (
       >
         &nbsp;
       </span>
-    </Textbox>
+    </TextBox>
     <ImagesTwo
       images={[
         { src: "../static/past-media/009.gif" },
@@ -117,7 +117,7 @@ export default () => (
       ]}
     />
 
-    <Textbox>
+    <TextBox>
       <H2>Binoculars</H2>
       <Para>
         Binoculars was a student film made by{" "}
@@ -126,7 +126,7 @@ export default () => (
         comp for the binoculars that would be a lens for the protagonist to see
         the people around her.
       </Para>
-    </Textbox>
+    </TextBox>
     <Image src="../static/past-media/011.gif" />
   </Layout>
 );

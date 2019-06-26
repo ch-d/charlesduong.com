@@ -50,7 +50,7 @@ export default () => (
     </TextBox>
     <Image
       src="../static/talent-sonar/001.png"
-      caption="Mobile Interview Planning Flow (1 of 2)"
+      caption="Mobile Resume Review Flow"
     />
 
     <TextBox>
@@ -62,6 +62,7 @@ export default () => (
         prototype with a toolbar that slid halfway over a resume so users could
         have both the survey and resume to reference when reviewing.
       </Para>
+      <Embed src="https://framer.cloud/gRnDc/" border={0} />
       <Para>
         After we tested our prototype, we found users needed proper affordances
         and swiping or tapping interactions confused them. Ultimately, we
@@ -69,10 +70,7 @@ export default () => (
         amount of engineering needed to be implemented. We icebox-ed the feature
         and would take a look at it again another date.
       </Para>
-    </TextBox>
-    <Embed src="https://framer.cloud/gRnDc/" border={0} />
 
-    <TextBox>
       <H2>Mobile Interview Planning</H2>
       <Para>
         A more important flow we wanted to push out was the interview planning

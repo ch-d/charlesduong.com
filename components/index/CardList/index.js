@@ -11,6 +11,7 @@ export default () => (
       ]}
       img="../static/finance/hero.png"
       url="/finance"
+      color="green"
       cta="View Case Study 👉"
     />
     <Card
@@ -21,6 +22,7 @@ export default () => (
       ]}
       img="../static/talent-sonar/hero.png"
       url="/talent-sonar"
+      color="blue"
       cta="View Case Study 👉"
     />
     <Card
@@ -31,6 +33,7 @@ export default () => (
       ]}
       img="../static/lawyer-exchange/hero.png"
       url="/lawyer-exchange"
+      color="purple"
       cta="View Case Study 👉"
     />
   </Background>

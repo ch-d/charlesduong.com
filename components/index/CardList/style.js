@@ -103,30 +103,6 @@ export const CtaMobile = styled.h4`
   padding-top: 1rem;
 `;
 
-export const Cta = styled.h4`
-  font-size: 0.875rem;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  color: #fff;
-  margin: 0;
-  padding: 0.5rem 1rem;
-  background-color: ${theme.colors.black};
-  @media (max-width: 40rem) {
-    display: none;
-    padding-top: 1rem;
-    padding-bottom: 0rem;
-  }
-
-  // hover effect
-  opacity: 0;
-  position: relative;
-  top: -16px;
-  ${Main}:hover & {
-    opacity: 1;
-    top: 0px;
-  }
-`;
-
 export const Image = styled.div`
   width: 100%;
   height: 18rem;
@@ -136,19 +112,51 @@ export const Image = styled.div`
   @media (max-width: 40rem) {
     height: 10rem;
   }
-  background-image: url(${props => props.img});
+  border: 4px solid #fff;
+  border-radius: 2px;
+  box-shadow: 0px 0px 1px ${theme.colors.neutral[100]};
   background-size: cover;
-  background-position: center;
+  background-position: top;
+  background-image: url(${props => props.img}),
+    linear-gradient(
+      ${props => theme.colors[props.color][40]},
+      ${props => theme.colors[props.color][60]}
+    );
   ${Main}:hover & {
-    background-image: linear-gradient(
-        180deg,
-        ${theme.colors.black},
-        ${theme.colors.black}
-      ),
-      url(${props => props.img});
-    background-blend-mode: screen;
+    background-image: url(${props => props.img}),
+      linear-gradient(
+        ${props => theme.colors[props.color][100]},
+        ${props => theme.colors[props.color][500]}
+      );
+    // filter: blur(8px)
   }
-  display: flex;
-  align-items: center;
-  justify-content: center;
+`;
+
+export const CtaContainer = styled.div`
+  width: 100%;
+  height: 100%;
+`;
+
+export const Cta = styled.h4`
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  margin: 0 4rem;
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  background-color: ${props => theme.colors[props.color][10]};
+  color: ${props => theme.colors[props.color][800]};
+  border: 1px solid ${props => theme.colors[props.color][500]};
+  @media (max-width: 40rem) {
+    display: none;
+  }
+
+  // hover effect
+  position: relative;
+  opacity: 0;
+  top: -2rem;
+  ${Main}:hover & {
+    opacity: 1;
+    top: -1rem;
+  }
 `;

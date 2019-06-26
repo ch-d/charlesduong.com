@@ -9,6 +9,7 @@ import {
   CtaMobile,
   Box,
   Image,
+  CtaContainer,
   Cta
 } from "./style";
 
@@ -19,7 +20,7 @@ function Description(props) {
   ));
 }
 
-export default ({ url, title, img, cs, disp, subtitle, cta, desc }) => (
+export default ({ url, title, img, cs, disp, subtitle, cta, desc, color }) => (
   <Link prefetch href={url}>
     <Main cs={cs} my={[2, 4]} disp={disp}>
       <Flex flexWrap="wrap" p={[1, 3]}>
@@ -30,8 +31,9 @@ export default ({ url, title, img, cs, disp, subtitle, cta, desc }) => (
           <CtaMobile>{cta}</CtaMobile>
         </Info>
         <Box width={[1, 2 / 3]}>
-          <Image img={img}>
-            <Cta>{cta}</Cta>
+          <Image img={img} color={color}>
+            <CtaContainer />
+            <Cta color={color}>{cta}</Cta>
           </Image>
         </Box>
       </Flex>

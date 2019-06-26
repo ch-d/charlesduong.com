@@ -82,7 +82,7 @@ export default ({
         </Main>
         <SlantBg color={color}>
           <Container px={3}>
-            <ImageHero src={image} color={color} />
+            {image && <ImageHero src={image} color={color} />}
             {children}
           </Container>
         </SlantBg>

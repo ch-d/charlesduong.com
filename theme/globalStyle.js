@@ -45,7 +45,9 @@ const GlobalStyle = createGlobalStyle`
       transition: all .2s ease-in-out;
     }
     ::selection {
-      background: #FFFBCC;
+      background: ${props =>
+        props.color ? theme.colors[props.color][20] : theme.colors.green[20]};
+        // color: #fff
     }
     strong {
       font-weight:700

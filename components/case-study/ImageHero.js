@@ -15,7 +15,7 @@ const Gradient = styled.div`
 
 const HeroImage = styled.div`
   padding-bottom: 56.25%;
-  margin: 0 32px;
+  margin: 2px 32px;
   background-image: url(${props => props.src});
   background-size: cover;
 `;

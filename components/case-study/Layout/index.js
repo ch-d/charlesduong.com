@@ -6,6 +6,7 @@ import { theme } from "../../../theme";
 import Social from "../../Social";
 import List from "../../index/List";
 import Footer from "../../Footer";
+import ImageHero from "../ImageHero";
 import {
   Main,
   SlantBg,
@@ -26,6 +27,7 @@ export default ({
   title = "charles duong | product designer",
   titleCase,
   desc,
+  image,
   introTitle,
   subTitleLabel,
   subTitleItem,
@@ -79,7 +81,10 @@ export default ({
           </Container>
         </Main>
         <SlantBg color={color}>
-          <Container px={3}>{children}</Container>
+          <Container px={3}>
+            <ImageHero src={image} color={color} />
+            {children}
+          </Container>
         </SlantBg>
         <List />
         <Footer />

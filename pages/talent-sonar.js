@@ -4,13 +4,14 @@ import ImagesTwo from "../components/case-study/ImagesTwo";
 import { H2, Para } from "../components/case-study/Typography";
 import TextBox from "../components/case-study/TextBox";
 import { Grid, GridImage } from "../components/case-study/ImagesGrid";
-import Framer from "../components/case-study/Framer";
+import Embed from "../components/case-study/Embed";
 
 export default () => (
   <Layout
     title="Talent Sonar"
     titleCase="/talent-sonar"
     desc="Talent Sonar is a SaaS platform that addresses unconscious bias in the hiring process and provides a model for hiring teams to source and select the right fit for job requisitions."
+    image="../static/talent-sonar/hero.png"
     color="blue"
     introTitle="Addressing unconscious bias in the hiring process"
     subTitleLabel="Late 2017"
@@ -35,7 +36,6 @@ export default () => (
     ]}
   >
     {/* https://www.linkedin.com/pulse/theory-hiring-part-1-lou-adler/ */}
-    <Image src="../static/talent-sonar/hero.png" />
 
     <TextBox>
       <H2>Mobile Resume Review</H2>
@@ -70,7 +70,7 @@ export default () => (
         and would take a look at it again another date.
       </Para>
     </TextBox>
-    <Framer src="https://framer.cloud/gRnDc/" frameborder="0" />
+    <Embed src="https://framer.cloud/gRnDc/" border={0} />
 
     <TextBox>
       <H2>Mobile Interview Planning</H2>

@@ -1,8 +1,8 @@
 import Slider from "react-slick";
-import styled, { injectGlobal } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 () =>
-  injectGlobal`
+  createGlobalStyle`
     /* .slick-dots li button:before,
     .slick-dots li.slick-active button:before {
 

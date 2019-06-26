@@ -11,7 +11,8 @@ export default () => (
     title="Lawyer Exchange"
     titleCase="/lawyer-exchange"
     desc="The Lawyer Exchange is a new venture from the founder of VisaNow set out to answer the question: why are most people who need legal work not able to access affordable services?"
-    color="green"
+    image="../static/lawyer-exchange/hero.png"
+    color="purple"
     introTitle="Providing Small / Solo Firms with BigLaw Resources"
     subTitleLabel="2016 – 2018"
     subTitleItem=""
@@ -35,8 +36,6 @@ export default () => (
       { type: "item", text: "Marketing Design" }
     ]}
   >
-    <Image src="../static/lawyer-exchange/hero.png" />
-
     <H2>Legal Research</H2>
     <TwoColumn>
       <Para>

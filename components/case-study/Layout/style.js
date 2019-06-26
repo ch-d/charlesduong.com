@@ -17,12 +17,12 @@ export const SlantBg = styled.div`
   width: 100%;
   background: #fff;
   background: linear-gradient(
-    10deg,
+    15deg,
     #fff 50%,
     ${props => theme.colors[props.color][10]} 50%
   );
   background-repeat: no-repeat;
-  background-size: 100% 320px;
+  background-size: 100% 480px;
 `;
 
 export const Container = styled.div`

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { space, layout } from "styled-system";
 import { theme } from "../../theme";
 import { Caption } from "./Typography";
+import Embed from "./Embed";
 
 const Box = styled.div`
   ${space};
@@ -33,20 +34,21 @@ const ImageContainer = styled.div`
   border-radius: 8px;
 `;
 
-const Image = styled.div`
+const Image = styled(Embed)`
   width: 256px;
-  padding-bottom: 216.53%;
-  background-image: url(${props => props.src});
-  background-size: contain;
-  background-repeat: no-repeat;
+  height: 554.33px;
+  // padding-bottom: 216.53%;
+  // background-image: url(${props => props.src});
+  // background-size: contain;
+  // background-repeat: no-repeat;
 `;
 
 export default ({ color, images }) => (
   <ImagesThreeBg color={color}>
-    {images.map(image => (
-      <Box m={2}>
+    {images.map((image, i) => (
+      <Box m={2} key={i}>
         <ImageContainer>
-          <Image src={image.src} />
+          <Image src={image.src} border="0" m={0} />
         </ImageContainer>
         <Caption mt={[2, 1]} mb={[3, 4]}>
           {image.caption}

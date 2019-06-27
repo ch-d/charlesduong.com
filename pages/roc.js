@@ -28,8 +28,14 @@ export default () => (
     <ImagesThree
       color="turquoise"
       images={[
-        { src: "../static/roc/001.png", caption: "Image Placeholder 1" },
-        { src: "../static/roc/001.png", caption: "Image Placeholder 2" },
+        {
+          src: "https://player.vimeo.com/video/344737522",
+          caption: "Image Placeholder 1"
+        },
+        {
+          src: "https://player.vimeo.com/video/344737522",
+          caption: "Image Placeholder 2"
+        },
         { src: "../static/roc/001.png", caption: "Image Placeholder 3" },
         { src: "../static/roc/001.png", caption: "Image Placeholder 4" }
       ]}

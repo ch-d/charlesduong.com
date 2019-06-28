@@ -16,10 +16,9 @@ export const Para = styled.p`
 `;
 
 export const Caption = styled.h6`
-  color: ${theme.colors.neutral[800]};
+  color: ${theme.colors.neutral[500]};
   font-size: 0.75rem;
   text-align: right;
   font-weight: 400;
-  opacity: 0.8;
   ${space}
 `;

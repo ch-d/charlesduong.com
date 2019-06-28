@@ -48,11 +48,10 @@ export const Subtitle = styled.h5`
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.15rem;
-  color: ${props => theme.colors[props.color][300]};
+  color: ${props => theme.colors[props.color][200]};
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0.25rem;
-  opacity: 0.5;
   @media (max-width: 40rem) {
     text-align: center;
   }
@@ -74,7 +73,7 @@ export const Title = styled.h3`
 
 export const DescriptionItem = styled.p`
   font-size: 0.875rem;
-  color: ${theme.colors.neutral[800]};
+  color: ${theme.colors.neutral[300]};
   margin-top: 0;
   margin-bottom: 1rem;
   margin-right: 2rem;
@@ -83,7 +82,6 @@ export const DescriptionItem = styled.p`
     text-align: center;
     margin-left: 2rem;
   }
-  opacity: 0.75;
 `;
 
 export const CtaMobile = styled.h4`
@@ -97,23 +95,22 @@ export const CtaMobile = styled.h4`
   font-size: 0.875rem;
   font-weight: 400;
   letter-spacing: 0.1em;
-  opacity: 0.75;
   margin-top: 1.5rem;
   padding-top: 1rem;
 `;
 
 export const Image = styled.div`
   width: 100%;
-  height: 18rem;
-  @media (max-width: 50rem) {
+  height: 10rem;
+  @media (min-width: 40rem) {
     height: 14rem;
+    border-radius: 2px;
+    border: 4px solid #fff;
+    box-shadow: 0px 0px 1px ${theme.colors.neutral[100]};
   }
-  @media (max-width: 40rem) {
-    height: 10rem;
+  @media (min-width: 50rem) {
+    height: 18rem;
   }
-  border: 4px solid #fff;
-  border-radius: 2px;
-  box-shadow: 0px 0px 1px ${theme.colors.neutral[100]};
   background-size: cover;
   background-position: top;
   background-image: url(${props => props.img}),
@@ -160,8 +157,8 @@ export const Cta = styled.h4`
   padding: 0.5rem 1rem;
   border-radius: 2px;
   background-color: ${props => theme.colors[props.color][10]};
-  color: ${props => theme.colors[props.color][800]};
-  border: 1px solid ${props => theme.colors[props.color][500]};
+  color: ${props => theme.colors[props.color][500]};
+  border: 1px solid ${props => theme.colors[props.color][40]};
   @media (max-width: 40rem) {
     display: none;
   }

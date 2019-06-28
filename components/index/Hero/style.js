@@ -70,9 +70,9 @@ export const Paragraph = styled.p`
 `;
 
 export const Pill = styled.span`
-  background-color: ${theme.colors.green[50]};
-  color: ${theme.colors.green[1000]};
-  border: 1px solid ${theme.colors.green[100]};
+  background-color: ${theme.colors.green[20]};
+  color: ${theme.colors.green[800]};
+  border: 1px solid ${theme.colors.green[50]};
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
   font-size: 0.75rem;

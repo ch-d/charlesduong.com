@@ -41,10 +41,7 @@ export const Logo = styled.a`
   opacity: 1;
   &:hover,
   &:focus {
-    opacity: 0.5;
-  }
-  &:active {
-    opacity: 0.8;
+    opacity: 0.75;
   }
 `;
 

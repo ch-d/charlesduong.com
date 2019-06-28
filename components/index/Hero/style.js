@@ -4,7 +4,7 @@ import { theme } from "../../../theme";
 
 export const Background = styled.div`
   width: 100%;
-  background-image: linear-gradient(${theme.colors.blue[7]}, #fff);
+  background-image: linear-gradient(${theme.colors.blue[5]}, #fff);
   background-repeat: no-repeat;
   background-position: 15% 96px;
   background-size: 50% 320px;

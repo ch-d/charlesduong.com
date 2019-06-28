@@ -27,8 +27,10 @@ export const Divider = styled.div`
   width: 80%;
   background: linear-gradient(
     to left,
-    ${theme.colors.blue[50]},
-    ${theme.colors.green[100]}
+    ${props =>
+      props.color ? theme.colors[props.color][20] : theme.colors.blue[50]},
+    ${props =>
+      props.color ? theme.colors[props.color][200] : theme.colors.green[100]}
   );
   transform: translateY(280px);
   position: relative;

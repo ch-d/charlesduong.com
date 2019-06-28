@@ -1,5 +1,5 @@
 import Layout from "../components/case-study/Layout";
-import Image from "../components/case-study/Image";
+import ImagesThree from "../components/case-study/ImagesThree";
 
 export default () => (
   <Layout
@@ -29,6 +29,20 @@ export default () => (
       { type: "item", text: "Android Mobile Designer" }
     ]}
   >
-    <Image src="../static/lawyer-exchange/hero.png" />
+    <ImagesThree
+      color="orange"
+      images={[
+        {
+          src: "https://player.vimeo.com/video/344737522",
+          caption: "Image Placeholder 1"
+        },
+        {
+          src: "https://player.vimeo.com/video/344737522",
+          caption: "Image Placeholder 2"
+        },
+        { src: "../static/roc/001.png", caption: "Image Placeholder 3" },
+        { src: "../static/roc/001.png", caption: "Image Placeholder 4" }
+      ]}
+    />
   </Layout>
 );

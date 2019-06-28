@@ -17,7 +17,8 @@ export const Grey = styled.div`
   background-image: linear-gradient(
     to ${props => (props.list ? "left" : "right")},
     #fff,
-    ${theme.colors.blue[7]}
+    ${props =>
+      props.color ? theme.colors[props.color][5] : theme.colors.blue[5]}
   );
   width: 100%;
   transform: translateX(${props => (props.list ? "0" : "-32")}px);
@@ -38,8 +39,10 @@ export const Divider = styled.div`
   }
   background: linear-gradient(
     to ${props => (props.list ? "right" : "left")},
-    ${theme.colors.blue[50]},
-    ${theme.colors.green[100]}
+    ${props =>
+      props.color ? theme.colors[props.color][20] : theme.colors.blue[50]},
+    ${props =>
+      props.color ? theme.colors[props.color][200] : theme.colors.green[100]}
   );
   ${space};
 `;

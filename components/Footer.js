@@ -5,9 +5,8 @@ import Social from "./Social";
 const Center = styled.div`
   text-align: center;
   width: 100%;
-  color: ${props => props.theme.colors.blue};
+  color: ${props => props.theme.colors.neutral[500]};
   font-size: 0.75rem;
-  font-weight: 100;
   ${space}
 `;
 

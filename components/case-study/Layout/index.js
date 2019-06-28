@@ -86,7 +86,7 @@ export default ({
             {children}
           </Container>
         </SlantBg>
-        <List />
+        <List color={color} />
         <Footer />
       </React.Fragment>
     </ThemeProvider>

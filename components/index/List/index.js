@@ -8,11 +8,11 @@ const hide = {
   display: "none"
 };
 
-export default ({ isMain }) => (
+export default ({ isMain, color }) => (
   <div>
-    <Divider h="4" mb={2} />
-    <Divider h="1" />
-    <Background list={1} title="more work">
+    <Divider h="4" mb={2} color={color} />
+    <Divider h="1" color={color} />
+    <Background list={1} title="more work" color={color}>
       <Container>
         <Item
           title="Finance App"

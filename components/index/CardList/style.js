@@ -122,13 +122,29 @@ export const Image = styled.div`
       ${props => theme.colors[props.color][40]},
       ${props => theme.colors[props.color][60]}
     );
-  ${Main}:hover & {
+  position: relative;
+
+  &:before {
+    border-radius: inherit;
     background-image: url(${props => props.img}),
       linear-gradient(
         ${props => theme.colors[props.color][100]},
         ${props => theme.colors[props.color][500]}
       );
-    // filter: blur(8px)
+    background-size: cover;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  ${Main}:hover & {
+    &:before {
+      opacity: 1;
+    }
   }
 `;
 
@@ -154,9 +170,9 @@ export const Cta = styled.h4`
   // hover effect
   position: relative;
   opacity: 0;
-  top: -2rem;
+  transform: translateY(-80%);
   ${Main}:hover & {
     opacity: 1;
-    top: -1rem;
+    transform: translateY(-50%);
   }
 `;

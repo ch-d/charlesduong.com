@@ -25,11 +25,12 @@ const ImagesThreeBg = styled.div`
 
 const ImageContainer = styled.div`
   padding: 0.5rem;
-  box-shadow: 0px 2px 6px rgba(9, 39, 68, 0.16),
+  // neutral[1000] -> neutral[50]
+  box-shadow: 0px 2px 4px rgba(9, 39, 68, 0.16),
     0px 10px 20px rgba(9, 39, 68, 0.08),
-    inset 0px -2px 10px rgba(193, 206, 217, 0.24),
-    inset 0px 4px 7px rgba(255, 255, 255, 1),
-    inset 0px 2px 10px rgba(193, 206, 217, 0.24);
+    inset 0px -2px 8px rgba(193, 206, 217, 0.24),
+    inset 0px 2px 8px rgba(193, 206, 217, 0.24),
+    inset 0px 4px 8px rgba(255, 255, 255, 1);
   background-color: #fff;
   border-radius: 8px;
 `;

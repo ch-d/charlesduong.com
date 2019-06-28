@@ -29,15 +29,21 @@ export default () => (
       color="turquoise"
       images={[
         {
-          src: "https://player.vimeo.com/video/344737522",
-          caption: "Image Placeholder 1"
+          src: "https://player.vimeo.com/video/345113067",
+          caption: "Restaurants Tab"
         },
         {
-          src: "https://player.vimeo.com/video/344737522",
-          caption: "Image Placeholder 2"
+          src: "https://player.vimeo.com/video/345113038",
+          caption: "Search Tab"
         },
-        { src: "../static/roc/001.png", caption: "Image Placeholder 3" },
-        { src: "../static/roc/001.png", caption: "Image Placeholder 4" }
+        {
+          src: "https://player.vimeo.com/video/345113049",
+          caption: "Map Tab"
+        },
+        {
+          src: "https://player.vimeo.com/video/345113077",
+          caption: "Profile Tab"
+        }
       ]}
     />
   </Layout>

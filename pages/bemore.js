@@ -33,15 +33,22 @@ export default () => (
       color="orange"
       images={[
         {
-          src: "https://player.vimeo.com/video/344737522",
-          caption: "Image Placeholder 1"
+          src: "https://player.vimeo.com/video/345118772",
+          caption: "Sterotype Recognition Game"
         },
         {
-          src: "https://player.vimeo.com/video/344737522",
-          caption: "Image Placeholder 2"
+          src: "https://player.vimeo.com/video/345118765",
+          caption: "Timed Association Game"
         },
-        { src: "../static/roc/001.png", caption: "Image Placeholder 3" },
-        { src: "../static/roc/001.png", caption: "Image Placeholder 4" }
+        {
+          src: "https://player.vimeo.com/video/345118755",
+          caption: "Multiple Choice Questions + Videos"
+        },
+        {
+          src: "../static/bemore/002.png",
+          caption: "Likert Scale Survey Questions"
+        },
+        { src: "../static/bemore/001.png", caption: "Card Matching Game" }
       ]}
     />
   </Layout>

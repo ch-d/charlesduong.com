@@ -35,21 +35,32 @@ const ImageContainer = styled.div`
   border-radius: 8px;
 `;
 
-const Image = styled(Embed)`
+const Video = styled(Embed)`
   width: 256px;
   height: 554.33px;
-  // padding-bottom: 216.53%;
-  // background-image: url(${props => props.src});
-  // background-size: contain;
-  // background-repeat: no-repeat;
 `;
+
+const Image = styled.div`
+  width: 256px;
+  padding-bottom: 216.53%;
+  background-image: url(${props => props.src});
+  background-size: contain;
+  background-repeat: no-repeat;
+`;
+
+const r = new RegExp("^(?:[a-z]+:)?//", "i");
+const isUrl = text => r.test(text);
 
 export default ({ color, images }) => (
   <ImagesThreeBg color={color}>
     {images.map((image, i) => (
       <Box m={2} key={i}>
         <ImageContainer>
-          <Image src={image.src} border="0" m={0} />
+          {isUrl(image.src) ? (
+            <Video src={image.src} border="0" m={0} />
+          ) : (
+            <Image src={image.src} />
+          )}
         </ImageContainer>
         <Caption mt={[2, 1]} mb={[3, 4]}>
           {image.caption}

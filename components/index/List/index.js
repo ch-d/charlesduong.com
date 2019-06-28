@@ -2,6 +2,7 @@ import { ExternalLink, ChevronsRight } from "react-feather";
 import Background from "../Background";
 import Item from "./item";
 import { Divider, Container, External } from "./style";
+import { theme } from "../../../theme";
 
 const hide = {
   display: "none"
@@ -21,7 +22,7 @@ export default ({ isMain }) => (
           url="/finance"
           customStyle={isMain ? hide : {}}
         >
-          <ChevronsRight color="#5A8A97" />
+          <ChevronsRight color={theme.colors.neutral[200]} />
         </Item>
         <Item
           title="Talent Sonar"
@@ -31,7 +32,7 @@ export default ({ isMain }) => (
           url="/talent-sonar"
           customStyle={isMain ? hide : {}}
         >
-          <ChevronsRight color="#5A8A97" />
+          <ChevronsRight color={theme.colors.neutral[200]} />
         </Item>
         <Item
           title="Lawyer Exchange"
@@ -41,7 +42,7 @@ export default ({ isMain }) => (
           url="/lawyer-exchange"
           customStyle={isMain ? hide : {}}
         >
-          <ChevronsRight color="#5A8A97" />
+          <ChevronsRight color={theme.colors.neutral[200]} />
         </Item>
         <div style={{ flex: 1, display: isMain ? "none" : "inherit" }} />
         <Item
@@ -51,7 +52,7 @@ export default ({ isMain }) => (
           subtitle="React Native Development, Mobile Interaction Design"
           url="/bemore"
         >
-          <ChevronsRight color="#5A8A97" />
+          <ChevronsRight color={theme.colors.neutral[200]} />
         </Item>
         <Item
           title="ROC United"
@@ -60,7 +61,7 @@ export default ({ isMain }) => (
           subtitle="React Native Development, Mobile Interaction Design"
           url="/roc"
         >
-          <ChevronsRight color="#5A8A97" />
+          <ChevronsRight color={theme.colors.neutral[200]} />
         </Item>
         <External href="https://www.peoplism.com/">
           <Item
@@ -70,7 +71,7 @@ export default ({ isMain }) => (
             subtitle="Marketing Design, Diversity+Inclusion"
             url="https://www.peoplism.com/"
           >
-            <ExternalLink color="#5A8A97" />
+            <ExternalLink color={theme.colors.neutral[200]} />
           </Item>
         </External>
         <External href="https://www.alliebot.com/">
@@ -81,7 +82,7 @@ export default ({ isMain }) => (
             subtitle="Marketing Design, Diversity+Inclusion"
             url="https://www.alliebot.com/"
           >
-            <ExternalLink color="#5A8A97" />
+            <ExternalLink color={theme.colors.neutral[200]} />
           </Item>
         </External>
       </Container>

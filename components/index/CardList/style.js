@@ -48,7 +48,7 @@ export const Subtitle = styled.h5`
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.15rem;
-  color: ${theme.colors.blue};
+  color: ${props => theme.colors[props.color][300]};
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0.25rem;
@@ -62,7 +62,7 @@ export const Title = styled.h3`
   font-size: 1.5rem;
   font-weight: 300;
   letter-spacing: 0.1em;
-  color: ${theme.colors.blue};
+  color: ${props => theme.colors[props.color][500]};
   text-transform: lowercase;
   margin-top: 0;
   margin-bottom: 2rem;
@@ -74,8 +74,7 @@ export const Title = styled.h3`
 
 export const DescriptionItem = styled.p`
   font-size: 0.875rem;
-  font-weight: 500;
-  color: ${theme.colors.black};
+  color: ${theme.colors.neutral[800]};
   margin-top: 0;
   margin-bottom: 1rem;
   margin-right: 2rem;

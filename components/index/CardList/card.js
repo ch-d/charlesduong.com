@@ -25,8 +25,8 @@ export default ({ url, title, img, cs, disp, subtitle, cta, desc, color }) => (
     <Main cs={cs} my={[2, 4]} disp={disp}>
       <Flex flexWrap="wrap" p={[1, 3]}>
         <Info width={[1, 1 / 3]} pt={[4, 3, 3]} pb={[3, 1]}>
-          <Subtitle>{subtitle}</Subtitle>
-          <Title>{title}</Title>
+          <Subtitle color={color}>{subtitle}</Subtitle>
+          <Title color={color}>{title}</Title>
           <Description desc={desc} />
           <CtaMobile>{cta}</CtaMobile>
         </Info>

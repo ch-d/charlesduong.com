@@ -4,7 +4,7 @@ import { theme } from "../../../theme";
 
 export const Background = styled.div`
   width: 100%;
-  background-image: linear-gradient(${theme.colors.grey}, #fff);
+  background-image: linear-gradient(${theme.colors.blue[7]}, #fff);
   background-repeat: no-repeat;
   background-position: 15% 96px;
   background-size: 50% 320px;
@@ -36,7 +36,7 @@ export const TitleSection = styled.div`
 
 export const TextSection = styled.div`
   flex: 30rem;
-  max-width: 30rem;
+  max-width: 32rem;
   margin: 16px auto;
   padding: 0 8px 0 32px;
   @media (min-width: 40rem) {
@@ -46,7 +46,7 @@ export const TextSection = styled.div`
 `;
 
 export const Title = styled.h1`
-  color: ${theme.colors.black};
+  color: ${theme.colors.neutral[500]};
   font-size: 2.25rem;
   letter-spacing: 0.1em;
   font-weight: 100;
@@ -54,13 +54,12 @@ export const Title = styled.h1`
 `;
 
 export const SubTitle = styled.h2`
-  color: ${theme.colors.black};
+  color: ${theme.colors.neutral[300]};
   font-size: 0.875rem;
   text-transform: uppercase;
   margin: 0;
   letter-spacing: 0.25em;
   font-weight: 500;
-  opacity: 0.5;
 `;
 
 export const Paragraph = styled.p`
@@ -71,16 +70,17 @@ export const Paragraph = styled.p`
 `;
 
 export const Pill = styled.span`
-  background-color: #17a890;
-  color: #fff;
-  padding: 0.125rem 0.5rem;
+  background-color: ${theme.colors.green[50]};
+  color: ${theme.colors.green[1000]};
+  border: 1px solid ${theme.colors.green[100]};
+  padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
   font-size: 0.75rem;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.125rem;
   position: relative;
-  top: -2px;
-  box-shadow: 0 0 4px 2px rgba(23, 168, 144, 0.24);
+  top: -1px;
 `;
 
 export const pulse = keyframes`
@@ -113,12 +113,11 @@ export const grow = keyframes`
 export const Pulse = styled.span`
   display: inline-block;
   position: relative;
-  top: -1px;
   margin-right: 0.5rem;
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  background: #fff;
+  background: ${theme.colors.green[500]};
   position: relative;
   animation: ${grow} 2s ease 0s infinite;
   &:after {
@@ -127,7 +126,7 @@ export const Pulse = styled.span`
     width: 0.75rem;
     height: 0.75rem;
     border-radius: 50%;
-    border: 0.125rem solid #fff;
+    border: 0.125rem solid ${theme.colors.green[500]};
     position: absolute;
     top: -0.25rem;
     left: -0.25rem;

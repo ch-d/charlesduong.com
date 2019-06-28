@@ -33,7 +33,7 @@ export default () => (
       ]}
       img="../static/lawyer-exchange/hero.png"
       url="/lawyer-exchange"
-      color="purple"
+      color="neutral"
       cta="View Case Study 👉"
     />
   </Background>

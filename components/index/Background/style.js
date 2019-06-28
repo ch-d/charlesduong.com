@@ -13,11 +13,11 @@ export const Main = styled.div`
 `;
 
 export const Grey = styled.div`
-  background-color: ${theme.colors.grey};
+  background-color: ${theme.colors.blue[10]};
   background-image: linear-gradient(
     to ${props => (props.list ? "left" : "right")},
     #fff,
-    ${theme.colors.grey}
+    ${theme.colors.blue[7]}
   );
   width: 100%;
   transform: translateX(${props => (props.list ? "0" : "-32")}px);
@@ -38,8 +38,8 @@ export const Divider = styled.div`
   }
   background: linear-gradient(
     to ${props => (props.list ? "right" : "left")},
-    ${theme.colors.gradient.purple},
-    ${theme.colors.gradient.green}
+    ${theme.colors.blue[50]},
+    ${theme.colors.green[100]}
   );
   ${space};
 `;
@@ -50,7 +50,7 @@ export const Title = styled.h1`
   font-weight: 100;
   padding-left: 8px;
   transform: translateY(-50%);
-  color: ${theme.colors.blue};
+  color: ${theme.colors.neutral[500]};
 `;
 
 export const Container = styled.div`

@@ -29,16 +29,19 @@ const GlobalStyle = createGlobalStyle`
       sans-serif;
     }
     p a:link {
-      border-bottom:2px solid #0000EE;
+      color: ${theme.colors.blue[800]};
+      border-bottom:2px solid ${theme.colors.blue[800]};
       text-decoration:none;
       display:inline-block;
       line-height:1rem;
     }
     p a:hover, p a:focus {
       padding-bottom:2px;
+      margin-bottom:-2px;
     }
     p a:visited, p a:active {
-      border-bottom:2px solid #551A8B
+      color: ${theme.colors.purple[800]};
+      border-bottom:2px solid ${theme.colors.purple[800]};
       text-decoration:none;
     }
     * {

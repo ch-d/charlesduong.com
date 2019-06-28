@@ -2,13 +2,15 @@ import styled from "styled-components";
 import { space } from "styled-system";
 
 const Anchor = styled.a`
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: ${props => props.theme.colors.neutral[800]};
   &:hover {
     border-bottom: 1px solid ${props => props.color};
     color: ${props => props.color};
+    padding-bottom: 2px;
+    margin-bottom: -2px;
   }
-  font-size: 0.875rem;
-  color: ${props => props.theme.colors.neutral[1000]};
-  text-decoration: none;
   ${space}
 `;
 

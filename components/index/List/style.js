@@ -27,8 +27,8 @@ export const Divider = styled.div`
   width: 80%;
   background: linear-gradient(
     to left,
-    ${theme.colors.gradient.purple},
-    ${theme.colors.gradient.green}
+    ${theme.colors.blue[50]},
+    ${theme.colors.green[100]}
   );
   transform: translateY(280px);
   position: relative;
@@ -52,7 +52,7 @@ export const Card = styled.button`
   padding: 1rem;
   cursor: pointer;
   width: 100%;
-  border-bottom: 2px solid ${theme.colors.grey};
+  border-bottom: 2px solid ${theme.colors.neutral[10]};
   @media (min-width: 40rem) {
     border-bottom: none;
   }
@@ -86,7 +86,7 @@ export const Title = styled.h3`
   font-size: 1.5rem;
   font-weight: 300;
   letter-spacing: 0.1em;
-  color: ${theme.colors.black};
+  color: ${theme.colors.neutral[500]};
   margin: 0;
   text-transform: lowercase;
   flex-shrink: 0;
@@ -94,23 +94,21 @@ export const Title = styled.h3`
 
 export const Tag = styled.h5`
   font-size: 0.75rem;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0.1em;
-  color: ${theme.colors.blue};
+  color: ${theme.colors.neutral[200]};
   margin: 0 0.5rem;
-  opacity: 0.5;
   flex-shrink: 0;
   text-transform: uppercase;
 `;
 
 export const Subtitle = styled.h4`
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 600;
   text-align: left;
   letter-spacing: 0.1em;
-  color: ${theme.colors.black};
+  color: ${theme.colors.neutral[200]};
   margin: 0;
-  opacity: 0.6;
   text-transform: uppercase;
 `;
 
@@ -120,7 +118,7 @@ export const Cta = styled.h5`
   margin: 0;
   font-size: 0.75rem;
   font-weight: 400;
-  color: ${theme.colors.blue};
+  color: ${theme.colors.neutral[300]};
   opacity: 1;
   margin-right: 0;
   order: 1;

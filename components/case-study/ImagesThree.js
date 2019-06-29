@@ -32,12 +32,13 @@ const ImageContainer = styled.div`
     inset 0px 2px 8px rgba(193, 206, 217, 0.24),
     inset 0px 4px 8px rgba(255, 255, 255, 1);
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 16px;
 `;
 
 const Video = styled(Embed)`
   width: 256px;
   height: 554.33px;
+  border-radius: 8px;
 `;
 
 const Image = styled.div`
@@ -46,6 +47,7 @@ const Image = styled.div`
   background-image: url(${props => props.src});
   background-size: contain;
   background-repeat: no-repeat;
+  border-radius: 8px;
 `;
 
 const r = new RegExp("^(?:[a-z]+:)?//", "i");

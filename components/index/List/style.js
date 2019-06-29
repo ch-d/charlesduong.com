@@ -30,7 +30,7 @@ export const Divider = styled.div`
     ${props =>
       props.color ? theme.colors[props.color][20] : theme.colors.blue[50]},
     ${props =>
-      props.color ? theme.colors[props.color][200] : theme.colors.green[100]}
+      props.color ? theme.colors[props.color][200] : theme.colors.green[50]}
   );
   transform: translateY(280px);
   position: relative;

@@ -22,22 +22,20 @@ export const Main = styled.button`
 
   // main button styles
   border-radius: 2px;
-  width: 100%;
-  background-color: transparent;
-  @media (max-width: 40rem) {
-    width: 100%;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
-    overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0px 0px 1px ${theme.colors.neutral[100]};
+  @media (min-width: 40rem) {
+    background-color: transparent;
+    box-shadow: none;
   }
   ${space};
 `;
 
 export const Info = styled.div`
   text-align: left;
-  @media (max-width: 40rem) {
-    order: 2;
-    padding-bottom: 0;
+  order: 1;
+  @media (min-width: 40rem) {
+    order: 0;
   }
   ${space};
   ${flexbox};
@@ -52,8 +50,9 @@ export const Subtitle = styled.h5`
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0.25rem;
-  @media (max-width: 40rem) {
-    text-align: center;
+  text-align: center;
+  @media (min-width: 40rem) {
+    text-align: left;
   }
 `;
 
@@ -66,32 +65,34 @@ export const Title = styled.h3`
   margin-top: 0;
   margin-bottom: 2rem;
   line-height: 1;
-  @media (max-width: 40rem) {
-    text-align: center;
+  text-align: center;
+  @media (min-width: 40rem) {
+    text-align: left;
   }
 `;
 
 export const DescriptionItem = styled.p`
   font-size: 0.875rem;
   color: ${theme.colors.neutral[300]};
-  margin-top: 0;
-  margin-bottom: 1rem;
-  margin-right: 2rem;
+  margin: 0 0 0 2rem;
   line-height: 1.5;
-  @media (max-width: 40rem) {
-    text-align: center;
-    margin-left: 2rem;
+  text-align: center;
+  @media (min-width: 40rem) {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 2rem;
   }
 `;
 
 export const CtaMobile = styled.h4`
-  display: none;
-  @media (max-width: 40rem) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: 40rem) {
+    display: none;
   }
-  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  color: ${theme.colors.neutral[300]};
+  border-top: 1px solid ${theme.colors.neutral[10]};
   font-size: 0.875rem;
   font-weight: 400;
   letter-spacing: 0.1em;

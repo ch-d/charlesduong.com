@@ -10,8 +10,8 @@ module.exports = {
       "/ballot-ready": { page: "/archived/ballot-ready" },
       "/luna-lights": { page: "/archived/luna-lights" },
       "/past-media": { page: "/archived/past-media" },
-      "/404": { page: "/__404" },
-      "/error": { page: "/__error" }
+      "/404": { page: "/404" },
+      "/error": { page: "/404" }
     };
   }
 };

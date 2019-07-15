@@ -23,11 +23,11 @@ export default () => (
     ]}
     categories={[
       { type: "label", text: "Team Members" },
-      { type: "item", text: "Brendan Kereiakes, PM; Savings Account" },
-      { type: "item", text: "Eric Nagy, Developer; Savings Account" },
-      { type: "item", text: "Brad Woodcox, Business Development; Bill Pay" },
-      { type: "item", text: "Paul Stiff, PM; Internal Tool" },
-      { type: "item", text: "Zachary Stallings, Developer; Internal Tool" },
+      { type: "item", text: "Brendan, PM; Savings Account" },
+      { type: "item", text: "Eric, Developer; Savings Account" },
+      { type: "item", text: "Brad, Business Development; Bill Pay" },
+      { type: "item", text: "Paul, PM; Internal Tool" },
+      { type: "item", text: "Zachary, Developer; Internal Tool" },
       { type: "label", text: "Projects" },
       { type: "item", text: "UI Design" },
       { type: "item", text: "User Research" },

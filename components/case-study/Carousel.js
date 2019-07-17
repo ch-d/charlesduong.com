@@ -55,6 +55,14 @@ const Button = styled.button`
   }
 `;
 
+// const Divider = styled.div`
+//   background-color: ${props => theme.colors[props.color][100]};
+//   height: 1px;
+//   width: 100%;
+//   margin-top: 1rem;
+//   margin-bottom: 1rem;
+// `;
+
 const Thumbnails = styled.nav`
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -154,13 +162,14 @@ export default class Carousel extends React.Component {
         <Navigation>
           <Button onClick={this.slidePrevPage}>Previous Slide</Button>
           <SlideTitle m={0}>
-            {currentIndex >= 0 &&
-              currentIndex < items.length &&
-              items[currentIndex].text}
+            {currentIndex >= 0 && currentIndex < items.length
+              ? items[currentIndex].text
+              : "-"}
           </SlideTitle>
-          {console.log(currentIndex)}
           <Button onClick={this.slideNextPage}>Next Slide</Button>
         </Navigation>
+
+        {/* <Divider color={color} /> */}
 
         <Thumbnails>{items.map(thumbItem)}</Thumbnails>
       </React.Fragment>

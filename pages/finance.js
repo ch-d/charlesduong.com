@@ -19,13 +19,13 @@ export default () => (
     subTitleLabel="2018 – 2019"
     subTitleItem=""
     intro={[
-      "A company that helps you put a few dollars aside to make loan payments and allocate funds efficiently to get you out of debt faster."
+      "This Forbes Fintech 50 Company (“Company”) had an overall mission to get Americans out of debt, save on interest payments and change the paycheck-to-paycheck cycle. When I joined the team, they were growing several service offerings on their web platform along with client partnerships to further this mission.",
+      "Along with several one-off marketing and visual product design tasks, two main projects I worked on were a customer-facing Savings Account and an internal tool to help the customer service team better serve the Company’s users."
     ]}
     categories={[
       { type: "label", text: "Team Members" },
       { type: "item", text: "Brendan, PM; Savings Account" },
       { type: "item", text: "Eric, Developer; Savings Account" },
-      { type: "item", text: "Brad, Business Development; Bill Pay" },
       { type: "item", text: "Paul, PM; Internal Tool" },
       { type: "item", text: "Zachary, Developer; Internal Tool" },
       { type: "label", text: "Projects" },
@@ -34,7 +34,66 @@ export default () => (
       { type: "item", text: "UX Development" }
     ]}
   >
-    <H2>Bill Pay</H2>
+    <H2>Savings Account - Scope</H2>
+    <TwoColumn>
+      <Para>
+        Studies show that homeownership improves many social outcomes like
+        educational achievement, civic participation, health, crime, and
+        property maintenance. However, saving for a downpayment is the #1 reason
+        renters don’t purchase a home. To challenge this problem, the Company
+        partnered with a client company (“Client”) to provide a 2:1 down payment
+        match.
+      </Para>
+      <Para>
+        The product manager described the scope of our project to create:
+        <ol>
+          <li>
+            Savings Account - a savings feature where customers can view and
+            manage their savings within the Company application.
+          </li>
+          <li>
+            Matching - Display Client matching for savings towards a down
+            payment on a mortgage up to specified limits.
+          </li>
+          <li>
+            Redemption - Present information to consumers on how to redeem
+            savings values allocated by Client toward the down payment on a
+            mortgage.
+          </li>
+        </ol>
+      </Para>
+    </TwoColumn>
+
+    <H2>Savings Account - Onboarding</H2>
+    <TextBox>
+      <Para>
+        Vestibulum id ligula porta felis euismod semper. Nullam id dolor id nibh
+        ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod
+        semper. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo
+        quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+      </Para>
+    </TextBox>
+
+    <H2>Savings Account - Account Management</H2>
+    <TextBox>
+      <Para>
+        Vestibulum id ligula porta felis euismod semper. Nullam id dolor id nibh
+        ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod
+        semper. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo
+        quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+      </Para>
+    </TextBox>
+    <H2>Savings Account - Learnings</H2>
+    <TextBox>
+      <Para>
+        Vestibulum id ligula porta felis euismod semper. Nullam id dolor id nibh
+        ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod
+        semper. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo
+        quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+      </Para>
+    </TextBox>
+
+    {/* <H2>Bill Pay</H2>
     <Para>
       Proposed Design via Figma{" "}
       <a href="https://www.figma.com/proto/0kxdK5rbkVHmZs4lGtk0aO5c/bill-pay?node-id=0%3A1&viewport=-1054%2C-516%2C0.20870602130889893&scaling=scale-down-width">
@@ -47,7 +106,8 @@ export default () => (
       maxHeight={[384, 512]}
       border="1px solid"
       borderColor="green.100"
-    />
+    /> */}
+
     <H2>Internal Customer Service Tool</H2>
     <Para>
       Prototype using Next.js, React Material UI Components, and Airtable

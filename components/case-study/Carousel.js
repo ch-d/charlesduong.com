@@ -8,9 +8,19 @@ const Navigation = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
   margin-bottom: 16px;
   margin-top: 8px;
+`;
+
+const SlideTitle = styled(Caption)`
+  text-align: center;
+  @media (max-width: 60rem) {
+    width: 100%;
+    order: -1;
+    margin-bottom: 1rem;
+  }
 `;
 
 const Button = styled.button`
@@ -21,7 +31,10 @@ const Button = styled.button`
   cursor: pointer;
 
   // custom button styles
-  width: 200px;
+  flex: 0 1 200px;
+  @media (max-width: 60rem) {
+    flex: 0 1 40%;
+  }
   padding: 8px;
   border-radius: 4px;
   border: 1px solid ${theme.colors.neutral[50]};
@@ -46,20 +59,20 @@ const Thumbnails = styled.nav`
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 16px;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 `;
 
 const Thumbnail = styled.img`
   width: 100%;
   border-radius: 2px;
   cursor: pointer;
-  border: 4px solid;
+  border: 2px solid;
   border-color: ${props =>
     props.thumbIndex === props.galleryIndex
-      ? theme.colors.neutral[100]
+      ? theme.colors[props.color][400]
       : "#fff"};
   &:hover {
-    border-color: ${theme.colors.neutral[50]};
+    border-color: ${props => theme.colors[props.color][200]};
   }
 `;
 
@@ -111,12 +124,13 @@ export default class Carousel extends React.Component {
   };
 
   render() {
-    const { items } = this.props;
+    const { items, color } = this.props;
     const { currentIndex, galleryItems } = this.state;
 
     const thumbItem = (item, i) => (
       <Thumbnail
         onClick={() => this.Carousel.slideTo(i)}
+        color={color}
         thumbIndex={i}
         galleryIndex={this.state.currentIndex}
         src={item.src}
@@ -139,7 +153,12 @@ export default class Carousel extends React.Component {
 
         <Navigation>
           <Button onClick={this.slidePrevPage}>Previous Slide</Button>
-          <Caption m={0}>{items[currentIndex].text}</Caption>
+          <SlideTitle m={0}>
+            {currentIndex >= 0 &&
+              currentIndex < items.length &&
+              items[currentIndex].text}
+          </SlideTitle>
+          {console.log(currentIndex)}
           <Button onClick={this.slideNextPage}>Next Slide</Button>
         </Navigation>
 

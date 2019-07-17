@@ -74,42 +74,43 @@ export default () => (
       </Para>
     </TextBox>
     <Carousel
+      color="green"
       items={[
         {
           src: "../../static/lawyer-exchange/002.png",
-          text: "asdasd"
+          text: "Slide 1"
         },
         {
           src: "../../static/lawyer-exchange/003.png",
-          text: "asdasdasdsa"
+          text: "Slide 2"
         },
         {
           src: "../../static/lawyer-exchange/002.png",
-          text: "asdasd"
+          text: "Slide 3"
         },
         {
           src: "../../static/lawyer-exchange/002.png",
-          text: "asdasda"
+          text: "Slide 4"
         },
         {
           src: "../../static/lawyer-exchange/002.png",
-          text: "asdasdasdasdasd"
+          text: "Slide 5"
         },
         {
           src: "../../static/lawyer-exchange/002.png",
-          text: "asdasdasdasdas"
+          text: "Slide 6"
         },
         {
           src: "../../static/lawyer-exchange/002.png",
-          text: "asdasd"
+          text: "Slide 7"
         },
         {
           src: "../../static/lawyer-exchange/002.png",
-          text: "asdasd"
+          text: "Slide 8"
         },
         {
           src: "../../static/lawyer-exchange/002.png",
-          text: "asdasd"
+          text: "Slide 9"
         }
       ]}
     />

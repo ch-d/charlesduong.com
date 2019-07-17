@@ -4,7 +4,7 @@ import { space } from "styled-system";
 export const Container = styled.div`
   max-width: 40rem;
   width: 100%;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   margin-left: ${props => (props.center ? "auto" : 0)};
   margin-right: ${props => (props.center ? "auto" : 0)};
   @media (max-width: 40rem) {

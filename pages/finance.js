@@ -73,6 +73,37 @@ export default () => (
         quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
       </Para>
     </TextBox>
+    <Carousel
+      items={[
+        {
+          src: "../../static/lawyer-exchange/002.png"
+        },
+        {
+          src: "../../static/lawyer-exchange/003.png"
+        },
+        {
+          src: "../../static/lawyer-exchange/002.png"
+        },
+        {
+          src: "../../static/lawyer-exchange/002.png"
+        },
+        {
+          src: "../../static/lawyer-exchange/002.png"
+        },
+        {
+          src: "../../static/lawyer-exchange/002.png"
+        },
+        {
+          src: "../../static/lawyer-exchange/002.png"
+        },
+        {
+          src: "../../static/lawyer-exchange/002.png"
+        },
+        {
+          src: "../../static/lawyer-exchange/002.png"
+        }
+      ]}
+    />
 
     <H2>Savings Account - Account Management</H2>
     <TextBox>

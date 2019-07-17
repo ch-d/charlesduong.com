@@ -76,31 +76,40 @@ export default () => (
     <Carousel
       items={[
         {
-          src: "../../static/lawyer-exchange/002.png"
+          src: "../../static/lawyer-exchange/002.png",
+          text: "asdasd"
         },
         {
-          src: "../../static/lawyer-exchange/003.png"
+          src: "../../static/lawyer-exchange/003.png",
+          text: "asdasdasdsa"
         },
         {
-          src: "../../static/lawyer-exchange/002.png"
+          src: "../../static/lawyer-exchange/002.png",
+          text: "asdasd"
         },
         {
-          src: "../../static/lawyer-exchange/002.png"
+          src: "../../static/lawyer-exchange/002.png",
+          text: "asdasda"
         },
         {
-          src: "../../static/lawyer-exchange/002.png"
+          src: "../../static/lawyer-exchange/002.png",
+          text: "asdasdasdasdasd"
         },
         {
-          src: "../../static/lawyer-exchange/002.png"
+          src: "../../static/lawyer-exchange/002.png",
+          text: "asdasdasdasdas"
         },
         {
-          src: "../../static/lawyer-exchange/002.png"
+          src: "../../static/lawyer-exchange/002.png",
+          text: "asdasd"
         },
         {
-          src: "../../static/lawyer-exchange/002.png"
+          src: "../../static/lawyer-exchange/002.png",
+          text: "asdasd"
         },
         {
-          src: "../../static/lawyer-exchange/002.png"
+          src: "../../static/lawyer-exchange/002.png",
+          text: "asdasd"
         }
       ]}
     />

@@ -1,11 +1,13 @@
 import AliceCarousel from "react-alice-carousel";
-import "react-alice-carousel/lib/alice-carousel.css";
 import styled from "styled-components";
+import "react-alice-carousel/lib/alice-carousel.css";
 import { theme } from "../../theme";
+import { Caption } from "./Typography";
 
 const Navigation = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   margin-bottom: 16px;
   margin-top: 8px;
@@ -44,14 +46,15 @@ const Thumbnails = styled.nav`
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 16px;
+  margin-bottom: 2rem;
 `;
 
 const Thumbnail = styled.img`
   width: 100%;
   border-radius: 2px;
   cursor: pointer;
-  border: 4px solid #fff;
-  // border-color: ${props =>
+  border: 4px solid;
+  border-color: ${props =>
     props.thumbIndex === props.galleryIndex
       ? theme.colors.neutral[100]
       : "#fff"};
@@ -60,41 +63,62 @@ const Thumbnail = styled.img`
   }
 `;
 
-export default class Gallery extends React.Component {
-  // state = {
-  //   currentIndex: 0
-  // };
-  // slideTo = i => this.setState({ currentIndex: i });
-  // onSlideChanged = e => this.setState({ currentIndex: e.item });
-  // slideNext = () =>
-  //   this.setState({
-  //     currentIndex: this.state.currentIndex + 1
-  //   });
-  // slidePrev = () =>
-  //   this.setState({
-  //     currentIndex: this.state.currentIndex - 1
-  //   });
+export default class Carousel extends React.Component {
+  state = {
+    currentIndex: 0
+  };
+
+  state = {
+    currentIndex: 0,
+    itemsInSlide: 1,
+    responsive: { 0: { items: 3 } },
+    galleryItems: this.galleryItems()
+  };
+
+  galleryItems() {
+    return this.props.items.map((item, i) => (
+      <img
+        src={item.src}
+        onDragStart={e => e.preventDefault()}
+        style={{ width: "100%" }}
+        key={i}
+      />
+    ));
+  }
+
+  slidePrevPage = () => {
+    const currentIndex = this.state.currentIndex - this.state.itemsInSlide;
+    this.setState({ currentIndex });
+  };
+
+  slideNextPage = () => {
+    const {
+      itemsInSlide,
+      galleryItems: { length }
+    } = this.state;
+    let currentIndex = this.state.currentIndex + itemsInSlide;
+    if (currentIndex > length) currentIndex = length;
+
+    this.setState({ currentIndex });
+  };
+
+  handleOnSlideChange = event => {
+    const { itemsInSlide, item } = event;
+    this.setState({
+      itemsInSlide,
+      currentIndex: item
+    });
+  };
 
   render() {
     const { items } = this.props;
-
-    const handleOnDragStart = e => e.preventDefault();
-    const galleryItems = items.map((item, i) => (
-      <div>
-        <img
-          src={item.src}
-          onDragStart={handleOnDragStart}
-          style={{ width: "100%" }}
-          key={i}
-        />
-      </div>
-    ));
+    const { currentIndex, galleryItems } = this.state;
 
     const thumbItem = (item, i) => (
       <Thumbnail
         onClick={() => this.Carousel.slideTo(i)}
         thumbIndex={i}
-        // galleryIndex={this.state.currentIndex}
+        galleryIndex={this.state.currentIndex}
         src={item.src}
         key={i}
       />
@@ -106,17 +130,17 @@ export default class Gallery extends React.Component {
           mouseDragEnabled
           dotsDisabled={true}
           buttonsDisabled={true}
-          slideToIndex={this.currentIndex}
-          onSlideChanged={this.onSlideChanged}
           items={galleryItems}
+          slideToIndex={currentIndex}
+          onInitialized={this.handleOnSlideChange}
+          onSlideChanged={this.handleOnSlideChange}
           ref={el => (this.Carousel = el)}
         />
 
         <Navigation>
-          <Button onClick={() => this.Carousel.slidePrev()}>
-            Previous Slide
-          </Button>
-          <Button onClick={() => this.Carousel.slideNext()}>Next Slide</Button>
+          <Button onClick={this.slidePrevPage}>Previous Slide</Button>
+          <Caption m={0}>{items[currentIndex].text}</Caption>
+          <Button onClick={this.slideNextPage}>Next Slide</Button>
         </Navigation>
 
         <Thumbnails>{items.map(thumbItem)}</Thumbnails>

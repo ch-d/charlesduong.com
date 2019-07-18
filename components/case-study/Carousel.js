@@ -11,7 +11,7 @@ const Navigation = styled.div`
   flex-wrap: wrap;
   width: 100%;
   margin-bottom: 16px;
-  margin-top: 8px;
+  margin-top: 16px;
 `;
 
 const SlideTitle = styled(Caption)`
@@ -55,32 +55,31 @@ const Button = styled.button`
   }
 `;
 
-// const Divider = styled.div`
-//   background-color: ${props => theme.colors[props.color][100]};
-//   height: 1px;
-//   width: 100%;
-//   margin-top: 1rem;
-//   margin-bottom: 1rem;
-// `;
-
 const Thumbnails = styled.nav`
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
   grid-gap: 16px;
   margin-bottom: 4rem;
+  background-color: ${props => theme.colors[props.color][20]};
+  border: 1px solid ${props => theme.colors[props.color][100]};
+  padding: 16px;
+  border-radius: 2px;
 `;
 
 const Thumbnail = styled.img`
   width: 100%;
   border-radius: 2px;
   cursor: pointer;
-  border: 2px solid;
+  border: 1px solid;
+  background-color: #fff;
+  opacity: ${props => (props.thumbIndex === props.galleryIndex ? 1 : 0.6)};
   border-color: ${props =>
     props.thumbIndex === props.galleryIndex
       ? theme.colors[props.color][400]
       : "#fff"};
   &:hover {
     border-color: ${props => theme.colors[props.color][200]};
+    opacity: 0.8;
   }
 `;
 
@@ -93,15 +92,22 @@ export default class Carousel extends React.Component {
     currentIndex: 0,
     itemsInSlide: 1,
     responsive: { 0: { items: 3 } },
-    galleryItems: this.galleryItems()
+    galleryItems: this.galleryItems(this.props.color)
   };
 
-  galleryItems() {
+  galleryItems(color) {
     return this.props.items.map((item, i) => (
       <img
         src={item.src}
         onDragStart={e => e.preventDefault()}
-        style={{ width: "100%" }}
+        style={{
+          width: "100%"
+          // borderRadius: 2,
+          // background: `linear-gradient(
+          //   180deg,
+          //   ${theme.colors[color][10]} 0%,
+          //   ${theme.colors[color][20]} 100%`
+        }}
         key={i}
       />
     ));
@@ -171,7 +177,7 @@ export default class Carousel extends React.Component {
 
         {/* <Divider color={color} /> */}
 
-        <Thumbnails>{items.map(thumbItem)}</Thumbnails>
+        <Thumbnails color={color}>{items.map(thumbItem)}</Thumbnails>
       </React.Fragment>
     );
   }

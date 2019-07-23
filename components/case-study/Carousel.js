@@ -1,6 +1,5 @@
 import AliceCarousel from "react-alice-carousel";
 import styled from "styled-components";
-import "react-alice-carousel/lib/alice-carousel.css";
 import { theme } from "../../theme";
 import { Caption } from "./Typography";
 
@@ -154,6 +153,10 @@ export default class Carousel extends React.Component {
 
     return (
       <React.Fragment>
+        <style jsx>{`
+          @import "static/alice-carousel.css";
+        `}</style>
+
         <AliceCarousel
           mouseDragEnabled
           dotsDisabled={true}

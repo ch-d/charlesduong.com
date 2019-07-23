@@ -153,10 +153,6 @@ export default class Carousel extends React.Component {
 
     return (
       <React.Fragment>
-        <style jsx>{`
-          @import "../../static/alice-carousel.css";
-        `}</style>
-
         <AliceCarousel
           mouseDragEnabled
           dotsDisabled={true}

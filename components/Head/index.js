@@ -9,13 +9,10 @@ export default ({
   <Head>
     <meta charSet="utf-8" />
     <title>charles duong | {meta}</title>
-
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     <base target="_blank" />
-
     <meta name="description" content={desc} />
     <meta name="author" content="Charles Duong" />
-
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:domain" content="charlesduong.com" />
     <meta name="twitter:site" content="@hicharlesd" />
@@ -29,7 +26,6 @@ export default ({
       name="twitter:image:src"
       content={"http://work.charlesduong.com/static" + titleCase + "/hero.png"}
     />
-
     <meta property="og:type" content="website" />
     <meta property="og:title" content={"charles duong | " + meta} />
     <meta property="og:description" content={desc} />
@@ -42,7 +38,6 @@ export default ({
       property="og:image"
       content={"http://work.charlesduong.com/static" + titleCase + "/hero.png"}
     />
-
     <link
       rel="apple-touch-icon-precomposed"
       sizes="57x57"
@@ -135,7 +130,6 @@ export default ({
       name="msapplication-square310x310logo"
       content="/static/favicon/mstile-310x310.png"
     />
-
     <link
       rel="stylesheet"
       type="text/css"
@@ -146,6 +140,7 @@ export default ({
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
     />
+    <style>@import "../../static/alice-carousel.css";</style>
 
     <Script>
       {() => {

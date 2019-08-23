@@ -6,10 +6,8 @@ import {
   Subtitle,
   Title,
   DescriptionItem,
-  CtaMobile,
   Box,
   Image,
-  CtaContainer,
   Cta
 } from "./style";
 
@@ -28,13 +26,10 @@ export default ({ url, title, img, cs, disp, subtitle, cta, desc, color }) => (
           <Subtitle color={color}>{subtitle}</Subtitle>
           <Title color={color}>{title}</Title>
           <Description desc={desc} />
-          <CtaMobile>{cta}</CtaMobile>
+          <Cta color={color}>{cta}</Cta>
         </Info>
         <Box width={[1, 2 / 3]}>
-          <Image img={img} color={color}>
-            <CtaContainer />
-            <Cta color={color}>{cta}</Cta>
-          </Image>
+          <Image img={img} color={color} />
         </Box>
       </Flex>
     </Main>

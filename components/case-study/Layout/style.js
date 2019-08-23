@@ -85,7 +85,7 @@ export const CategoryLabel = styled.h3`
 `;
 
 export const CategoryItem = styled.p`
-  color: ${theme.colors.neutral[300]};
+  color: ${theme.colors.neutral[500]};
   font-size: 0.75rem;
   margin: 0.25rem 0;
 `;

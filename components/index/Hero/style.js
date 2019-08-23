@@ -25,18 +25,17 @@ export const Container = styled.div`
 `;
 
 export const TitleSection = styled.div`
-  flex: 0;
-  white-space: nowrap;
+  width: 100%;
+  max-width: 32rem;
   padding-top: 16px;
   padding-left: 16px;
+  margin-bottom: 4rem;
   @media (min-width: 40rem) {
-    padding-bottom: 64px;
+    margin: 0;
   }
 `;
 
 export const TextSection = styled.div`
-  flex: 30rem;
-  max-width: 32rem;
   margin: 16px auto;
   padding: 0 8px 0 32px;
   @media (min-width: 40rem) {
@@ -46,15 +45,18 @@ export const TextSection = styled.div`
 `;
 
 export const Title = styled.h1`
-  color: ${theme.colors.neutral[500]};
+  color: ${theme.colors.neutral[1000]};
   font-size: 2.25rem;
   letter-spacing: 0.1em;
   font-weight: 100;
-  margin: 0;
+  margin-bottom: 4rem;
+  @media (min-width: 40rem) {
+    margin: 0;
+  }
 `;
 
 export const SubTitle = styled.h2`
-  color: ${theme.colors.neutral[300]};
+  color: ${theme.colors.neutral[800]};
   font-size: 0.875rem;
   text-transform: uppercase;
   margin: 0;
@@ -63,7 +65,7 @@ export const SubTitle = styled.h2`
 `;
 
 export const Paragraph = styled.p`
-  color: ${theme.colors.neutral[500]};
+  color: ${theme.colors.neutral[1000]};
   font-size: 1rem;
   line-height: 1.5;
   ${space}
@@ -113,7 +115,9 @@ export const grow = keyframes`
 export const Pulse = styled.span`
   display: inline-block;
   position: relative;
+  margin-left: 0.25rem;
   margin-right: 0.5rem;
+  margin-bottom: 0.125rem;
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
@@ -132,4 +136,17 @@ export const Pulse = styled.span`
     left: -0.25rem;
     animation: ${pulse} 2s ease 0s infinite;
   }
+`;
+
+export const Anchor = styled.a`
+  font-size: 1rem;
+  text-decoration: none;
+  color: ${props => props.theme.colors.neutral[500]};
+  &:hover {
+    border-bottom: 1px solid ${props => props.color};
+    color: ${props => props.color};
+    padding-bottom: 2px;
+    margin-bottom: -2px;
+  }
+  ${space}
 `;

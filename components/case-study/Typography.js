@@ -9,14 +9,16 @@ export const H2 = styled.h2`
 `;
 
 export const H6 = styled.h6`
-  color: ${props => theme.colors[props.color][200]};
-  font-weight: 700;
+  color: ${props => theme.colors.neutral[200]};
+  font-weight: 500;
   font-size: 0.75rem;
   margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 `;
 
 export const Para = styled.p`
-  color: ${theme.colors.neutral[500]};
+  color: ${theme.colors.neutral[800]};
   font-size: 0.875rem;
   line-height: 1.5;
   margin-top: 0;

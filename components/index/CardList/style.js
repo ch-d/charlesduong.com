@@ -46,7 +46,7 @@ export const Subtitle = styled.h5`
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.15rem;
-  color: ${props => theme.colors[props.color][200]};
+  color: ${theme.colors.neutral[200]};
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0.25rem;
@@ -60,7 +60,7 @@ export const Title = styled.h3`
   font-size: 1.5rem;
   font-weight: 300;
   letter-spacing: 0.1em;
-  color: ${props => theme.colors[props.color][500]};
+  color: ${theme.colors.neutral[800]};
   text-transform: lowercase;
   margin-top: 0;
   margin-bottom: 2rem;
@@ -73,7 +73,7 @@ export const Title = styled.h3`
 
 export const DescriptionItem = styled.p`
   font-size: 0.875rem;
-  color: ${theme.colors.neutral[300]};
+  color: ${theme.colors.neutral[800]};
   margin: 0 0 0 2rem;
   line-height: 1.5;
   text-align: center;
@@ -84,20 +84,24 @@ export const DescriptionItem = styled.p`
   }
 `;
 
-export const CtaMobile = styled.h4`
+export const Cta = styled.h4`
   display: flex;
   align-items: center;
   justify-content: center;
   @media (min-width: 40rem) {
-    display: none;
+    border: none;
+    justify-content: flex-start;
   }
-  color: ${theme.colors.neutral[300]};
+  color: ${theme.colors.neutral[500]};
   border-top: 1px solid ${theme.colors.neutral[10]};
   font-size: 0.875rem;
   font-weight: 400;
-  letter-spacing: 0.1em;
   margin-top: 1.5rem;
   padding-top: 1rem;
+  letter-spacing: 1px;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 export const Image = styled.div`
@@ -142,34 +146,7 @@ export const Image = styled.div`
     &:before {
       opacity: 1;
     }
-  }
-`;
-
-export const CtaContainer = styled.div`
-  width: 100%;
-  height: 100%;
-`;
-
-export const Cta = styled.h4`
-  font-size: 0.875rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  margin: 0 4rem;
-  padding: 0.5rem 1rem;
-  border-radius: 2px;
-  background-color: ${props => theme.colors[props.color][10]};
-  color: ${props => theme.colors[props.color][500]};
-  border: 1px solid ${props => theme.colors[props.color][40]};
-  @media (max-width: 40rem) {
-    display: none;
-  }
-
-  // hover effect
-  position: relative;
-  opacity: 0;
-  transform: translateY(-80%);
-  ${Main}:hover & {
-    opacity: 1;
-    transform: translateY(-50%);
+    transform: translateY(-4px);
+    box-shadow: 0px 4px 8px ${theme.colors.neutral[40]};
   }
 `;

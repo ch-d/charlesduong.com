@@ -131,25 +131,25 @@ export default () => (
     <Carousel
       color="green"
       items={[
+        // {
+        //   src: "../../static/finance/001.png",
+        //   text: "Lo-Fidelity Flow from PM"
+        // },
         {
-          src: "../../static/finance/001.png",
-          text: "Lo-Fidelity Flow from PM"
+          src: "../../static/finance/003.png",
+          text: "Create Account (AFTER)"
         },
         {
           src: "../../static/finance/002.png",
           text: "Create Account (BEFORE)"
         },
         {
-          src: "../../static/finance/003.png",
-          text: "Create Account (AFTER)"
+          src: "../../static/finance/005.png",
+          text: "Down Payment Wallet (AFTER)"
         },
         {
           src: "../../static/finance/004.png",
           text: "Down Payment Wallet (BEFORE)"
-        },
-        {
-          src: "../../static/finance/005.png",
-          text: "Down Payment Wallet (AFTER)"
         },
         {
           src: "../../static/finance/006.png",

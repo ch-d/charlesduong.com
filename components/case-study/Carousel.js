@@ -36,20 +36,16 @@ const Button = styled.button`
   }
   padding: 8px;
   border-radius: 4px;
-  border: 1px solid ${theme.colors.neutral[50]};
+  border: 1px solid ${theme.colors.neutral[20]};
   color: ${theme.colors.neutral[500]};
-  background: linear-gradient(
-    180deg,
-    ${theme.colors.neutral[10]} 0%,
-    ${theme.colors.neutral[20]} 100%
-  );
+  background: linear-gradient(180deg, #fff 0%, ${theme.colors.neutral[5]} 100%);
 
   &:hover,
   &:focus {
     background: linear-gradient(
       180deg,
-      ${theme.colors.neutral[15]} 0%,
-      ${theme.colors.neutral[30]} 100%
+      ${theme.colors.neutral[3]} 0%,
+      ${theme.colors.neutral[7]} 100%
     );
   }
 `;
@@ -59,9 +55,7 @@ const Thumbnails = styled.nav`
   grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
   grid-gap: 16px;
   margin-bottom: 4rem;
-  background-color: ${props => theme.colors[props.color][20]};
-  border: 1px solid ${props => theme.colors[props.color][100]};
-  padding: 16px;
+  padding: 8px 0;
   border-radius: 2px;
 `;
 

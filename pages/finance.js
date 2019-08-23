@@ -25,7 +25,6 @@ const Card = styled.li`
   flex: 1 1 240px;
   background-color: ${theme.colors.green[10]};
   border-radius: 4px;
-  border: 1px solid ${theme.colors.green[100]};
   padding: 16px;
   margin: 8px;
   position: relative;
@@ -117,7 +116,7 @@ export default () => (
 
     <TextBox>
       <H6 color="green">Savings Account</H6>
-      <H2>Onboarding</H2>
+      <H2>Customer Onboarding</H2>
       <Para>
         To get an understanding of how we can best work together, My initial
         task was to do a light refresh of the on boarding process. Brendan
@@ -211,7 +210,7 @@ export default () => (
       ]}
     />
 
-    <div
+    {/* <div
       style={{
         width: "100%",
         height: 4,
@@ -245,11 +244,11 @@ export default () => (
       maxHeight={[384, 512]}
       border="1px solid"
       borderColor="green.100"
-    />
+    /> */}
 
     <TextBox>
       <H6 color="green">Savings Account</H6>
-      <H2>Learnings</H2>
+      <H2>Personal Learnings</H2>
       <Para>
         Ultimately, the designs were scaled down a bit to better fit engineering
         constraints. Although it achieved the scope, a good amount of the design

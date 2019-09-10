@@ -110,16 +110,46 @@ export default () => (
         reason renters don’t purchase a home. The Company partnered with a
         client company (“Client”) to provide a 2:1 down payment match for
         potential first time home buyers who were not approved for a conforming
-        mortgage.
+        mortgage. Brendan described the scope of our project to create an MVP
+        with the following features:
       </Para>
     </TextBox>
+    <CardContainer>
+      <Card>
+        <CardTextContainer>
+          <CardTitle>Savings Account</CardTitle>
+          <CardContent>
+            Display savings feature where customers can view and manage their
+            savings within the Company application.
+          </CardContent>
+        </CardTextContainer>
+      </Card>
+      <Card>
+        <CardTextContainer>
+          <CardTitle>Matching</CardTitle>
+          <CardContent>
+            Display Client matching for savings towards a down payment on a
+            mortgage up to specified limits.
+          </CardContent>
+        </CardTextContainer>
+      </Card>
+      <Card>
+        <CardTextContainer>
+          <CardTitle>Redemption</CardTitle>
+          <CardContent>
+            Present information to consumers on how to redeem savings values
+            allocated by Client toward the down payment on a mortgage.
+          </CardContent>
+        </CardTextContainer>
+      </Card>
+    </CardContainer>
 
     <TextBox>
       <H6 color="green">Savings Account</H6>
       <H2>Customer Onboarding</H2>
       <Para>
-        To get an understanding of how we can best work together, My initial
-        task was to do a light refresh of the on boarding process. Brendan
+        To get an understanding of how we can best work together, my initial
+        task was to do a light refresh of the onboarding process. Brendan
         initiated a user flow in a Google Drawings doc, and we iterated together
         to clean up the designs. We communicated with Slack conversations +
         calls and Google Docs, while I made mockups in Figma. The goal was to
@@ -165,47 +195,39 @@ export default () => (
         After creating a new design aesthetic and getting a sense of how to work
         together, we began the account management side of the app. Now with the
         developer, Eric, we had weekly meetings to determine the best way to
-        approach the feature set which the Client had asked for. Brendan
-        described the scope of our project to create an MVP with the following
-        features:
+        approach the feature set which the Client had asked for. The two main
+        pages we worked on were the Account Dashboard and the Loan Details Page.
+        It was expected that a user could both view the savings match progress
+        and redeem those savings.
       </Para>
     </TextBox>
-    <CardContainer>
-      <Card>
-        <CardTextContainer>
-          <CardTitle>Savings Account</CardTitle>
-          <CardContent>
-            Display savings feature where customers can view and manage their
-            savings within the Company application.
-          </CardContent>
-        </CardTextContainer>
-      </Card>
-      <Card>
-        <CardTextContainer>
-          <CardTitle>Matching</CardTitle>
-          <CardContent>
-            Display Client matching for savings towards a down payment on a
-            mortgage up to specified limits.
-          </CardContent>
-        </CardTextContainer>
-      </Card>
-      <Card>
-        <CardTextContainer>
-          <CardTitle>Redemption</CardTitle>
-          <CardContent>
-            Present information to consumers on how to redeem savings values
-            allocated by Client toward the down payment on a mortgage.
-          </CardContent>
-        </CardTextContainer>
-      </Card>
-    </CardContainer>
 
     <Carousel
       color="green"
       items={[
         {
           src: "../../static/finance/011.png",
-          text: "Account Dashboard (BEFORE + AFTER)"
+          text: "Account Dashboard (PROPOSED)"
+        },
+        {
+          src: "../../static/finance/012.png",
+          text: "Account Dashboard (BEFORE)"
+        },
+        {
+          src: "../../static/finance/014.png",
+          text: "Loan Details I (PROPOSED)"
+        },
+        {
+          src: "../../static/finance/015.png",
+          text: "Loan Details I (BEFORE)"
+        },
+        {
+          src: "../../static/finance/017.png",
+          text: "Loan Details II (PROPOSED)"
+        },
+        {
+          src: "../../static/finance/018.png",
+          text: "Loan Details II (BEFORE)"
         }
       ]}
     />
@@ -267,6 +289,24 @@ export default () => (
         the actual project.
       </Para>
     </TextBox>
+
+    <Carousel
+      color="green"
+      items={[
+        {
+          src: "../../static/finance/013.png",
+          text: "Account Dashboard (SCOPED)"
+        },
+        {
+          src: "../../static/finance/016.png",
+          text: "Loan Details I (SCOPED)"
+        },
+        {
+          src: "../../static/finance/019.png",
+          text: "Loan Details II (SCOPED)"
+        }
+      ]}
+    />
 
     <div
       style={{

@@ -17,6 +17,7 @@ export default () => (
       "Prior to 2015, while taking Mechanical Engineering courses, I was missing an outlet for my creativity. I ended up teaching myself VFX techniques, film post-production, and graphic design, while working on several side projects. These projects satisfied my need to build things and tell stories, before I began settling down with a more agile medium of web design."
     ]}
     categories={[""]}
+    hasContainer
   >
     <Image src="../static/past-media/hero.png" />
 

@@ -6,6 +6,7 @@ import Image from "../components/case-study/Image";
 import ImagesTwo from "../components/case-study/ImagesTwo";
 import { H2, H6, Para } from "../components/case-study/Typography";
 import TextBox from "../components/case-study/TextBox";
+import Container from "../components/case-study/Container";
 import TwoColumn from "../components/case-study/TextTwoColumn";
 import Carousel from "../components/case-study/Carousel";
 import Embed from "../components/case-study/Embed";
@@ -114,35 +115,38 @@ export default () => (
         with the following features:
       </Para>
     </TextBox>
-    <CardContainer>
-      <Card>
-        <CardTextContainer>
-          <CardTitle>Savings Account</CardTitle>
-          <CardContent>
-            Display savings feature where customers can view and manage their
-            savings within the Company application.
-          </CardContent>
-        </CardTextContainer>
-      </Card>
-      <Card>
-        <CardTextContainer>
-          <CardTitle>Matching</CardTitle>
-          <CardContent>
-            Display Client matching for savings towards a down payment on a
-            mortgage up to specified limits.
-          </CardContent>
-        </CardTextContainer>
-      </Card>
-      <Card>
-        <CardTextContainer>
-          <CardTitle>Redemption</CardTitle>
-          <CardContent>
-            Present information to consumers on how to redeem savings values
-            allocated by Client toward the down payment on a mortgage.
-          </CardContent>
-        </CardTextContainer>
-      </Card>
-    </CardContainer>
+
+    <Container>
+      <CardContainer>
+        <Card>
+          <CardTextContainer>
+            <CardTitle>Savings Account</CardTitle>
+            <CardContent>
+              Display savings feature where customers can view and manage their
+              savings within the Company application.
+            </CardContent>
+          </CardTextContainer>
+        </Card>
+        <Card>
+          <CardTextContainer>
+            <CardTitle>Matching</CardTitle>
+            <CardContent>
+              Display Client matching for savings towards a down payment on a
+              mortgage up to specified limits.
+            </CardContent>
+          </CardTextContainer>
+        </Card>
+        <Card>
+          <CardTextContainer>
+            <CardTitle>Redemption</CardTitle>
+            <CardContent>
+              Present information to consumers on how to redeem savings values
+              allocated by Client toward the down payment on a mortgage.
+            </CardContent>
+          </CardTextContainer>
+        </Card>
+      </CardContainer>
+    </Container>
 
     <TextBox>
       <H6 color="green">Savings Account</H6>
@@ -158,6 +162,7 @@ export default () => (
         app.
       </Para>
     </TextBox>
+
     <Carousel
       color="green"
       items={[
@@ -308,23 +313,25 @@ export default () => (
       ]}
     />
 
-    <div
-      style={{
-        width: "100%",
-        height: 4,
-        backgroundColor: theme.colors.green[200],
-        marginTop: "4rem",
-        marginBottom: ".5rem"
-      }}
-    />
-    <div
-      style={{
-        width: "100%",
-        height: 1,
-        backgroundColor: theme.colors.green[200],
-        marginBottom: "4rem"
-      }}
-    />
+    <Container>
+      <div
+        style={{
+          width: "100%",
+          height: 4,
+          backgroundColor: theme.colors.green[200],
+          marginTop: "4rem",
+          marginBottom: ".5rem"
+        }}
+      />
+      <div
+        style={{
+          width: "100%",
+          height: 1,
+          backgroundColor: theme.colors.green[200],
+          marginBottom: "4rem"
+        }}
+      />
+    </Container>
 
     <TextBox>
       <H2>Internal Customer Service Tool</H2>
@@ -350,23 +357,25 @@ export default () => (
       </Para>
     </TextBox>
 
-    <Embed
-      src="https://5d126f9c73a1630007cf1344--inspiring-ride-bf5c15.netlify.com/loan/01"
-      css={css`
-        -ms-zoom: 0.6;
-        -moz-transform: scale(0.6);
-        -moz-transform-origin: 0 0;
-        -o-transform: scale(0.6);
-        -o-transform-origin: 0 0;
-        -webkit-transform: scale(0.6);
-        -webkit-transform-origin: 0 0;
-        width: 166%;
-        margin-right: -66%;
-      `}
-      mb={[-140, -280]}
-      maxHeight={[640, 854]}
-      border="1px solid"
-      borderColor="green.100"
-    />
+    <Container>
+      <Embed
+        src="https://5d126f9c73a1630007cf1344--inspiring-ride-bf5c15.netlify.com/loan/01"
+        css={css`
+          -ms-zoom: 0.6;
+          -moz-transform: scale(0.6);
+          -moz-transform-origin: 0 0;
+          -o-transform: scale(0.6);
+          -o-transform-origin: 0 0;
+          -webkit-transform: scale(0.6);
+          -webkit-transform-origin: 0 0;
+          width: 166%;
+          margin-right: -66%;
+        `}
+        mb={[-140, -280]}
+        maxHeight={[640, 854]}
+        border="1px solid"
+        borderColor="green.100"
+      />
+    </Container>
   </Layout>
 );

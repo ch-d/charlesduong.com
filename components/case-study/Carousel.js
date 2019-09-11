@@ -2,6 +2,7 @@ import AliceCarousel from "react-alice-carousel";
 import styled from "styled-components";
 import { theme } from "../../theme";
 import { Caption } from "./Typography";
+import Container from "./Container";
 
 const Navigation = styled.div`
   display: flex;
@@ -146,7 +147,7 @@ export default class Carousel extends React.Component {
     );
 
     return (
-      <React.Fragment>
+      <Container>
         <AliceCarousel
           mouseDragEnabled
           dotsDisabled={true}
@@ -171,7 +172,7 @@ export default class Carousel extends React.Component {
         {/* <Divider color={color} /> */}
 
         <Thumbnails color={color}>{items.map(thumbItem)}</Thumbnails>
-      </React.Fragment>
+      </Container>
     );
   }
 }

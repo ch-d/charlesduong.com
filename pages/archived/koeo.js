@@ -28,6 +28,7 @@ export default () => (
       { type: "item", text: "User Research" },
       { type: "item", text: "Front-End Development" }
     ]}
+    hasContainer
   >
     <Image src="../static/koeo/hero.png" />
 

@@ -24,6 +24,7 @@ export default () => (
       { type: "item", text: "iOS Mobile Designer" },
       { type: "item", text: "Android Mobile Designer" }
     ]}
+    hasContainer
   >
     <ImagesThree
       color="turquoise"

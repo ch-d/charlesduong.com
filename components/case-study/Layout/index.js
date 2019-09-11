@@ -7,10 +7,10 @@ import Social from "../../Social";
 import List from "../../index/List";
 import Footer from "../../Footer";
 import ImageHero from "../ImageHero";
+import Container from "../Container";
 import {
   Main,
   SlantBg,
-  Container,
   Flex,
   Logo,
   Description,
@@ -33,7 +33,8 @@ export default ({
   subTitleItem,
   intro,
   categories,
-  color
+  color,
+  hasContainer
 }) => (
   <div>
     <Head meta={title} titleCase={titleCase} desc={desc} />
@@ -81,10 +82,19 @@ export default ({
           </Container>
         </Main>
         <SlantBg color={color}>
-          <Container px={3}>
-            {image && <ImageHero src={image} color={color} />}
-            {children}
-          </Container>
+          {hasContainer ? (
+            <Container>
+              {image && <ImageHero src={image} color={color} />}
+              {children}
+            </Container>
+          ) : (
+            <React.Fragment>
+              <Container>
+                {image && <ImageHero src={image} color={color} />}
+              </Container>
+              {children}
+            </React.Fragment>
+          )}
         </SlantBg>
         <List color={color} />
         <Footer />

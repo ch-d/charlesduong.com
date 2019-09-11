@@ -38,8 +38,9 @@ export default () => (
     ]}
   >
     {/* https://www.linkedin.com/pulse/theory-hiring-part-1-lou-adler/ */}
+    <Section py={[3, 4]} />
 
-    <Section>
+    <Section py={[2, 3]}>
       <TextBox>
         <H2>Mobile Resume Review</H2>
         <Para>
@@ -77,7 +78,7 @@ export default () => (
       </TextBox>
     </Section>
 
-    <Section bg={theme.colors.blue[10]}>
+    <Section py={[2, 3]}>
       <TextBox>
         <H2>Mobile Interview Planning</H2>
         <Para>
@@ -104,9 +105,7 @@ export default () => (
         src="../static/talent-sonar/003.png"
         caption="Mobile Interview Planning Flow (2 of 2)"
       />
-    </Section>
 
-    <Section>
       <TextBox>
         <Para>
           In terms of the visual design, we wanted to keep simple iOS
@@ -132,7 +131,7 @@ export default () => (
       />
     </Section>
 
-    <Section bg={theme.colors.blue[10]}>
+    <Section py={[2, 3]}>
       <TextBox>
         <H2>Component System</H2>
         <Para>
@@ -146,9 +145,7 @@ export default () => (
           fiddle with aesthetics.
         </Para>
       </TextBox>
-    </Section>
 
-    <Section>
       <Image
         src="../static/talent-sonar/005.png"
         caption="Sketch Component System"
@@ -167,7 +164,7 @@ export default () => (
       />
     </Section>
 
-    <Section bg={theme.colors.blue[10]}>
+    <Section py={[2, 3]}>
       <TextBox>
         <H2>Marketing / Sales</H2>
         <Para>
@@ -180,9 +177,7 @@ export default () => (
           it.
         </Para>
       </TextBox>
-    </Section>
 
-    <Section>
       <Grid>
         <GridImage
           column_l="1 / 2"

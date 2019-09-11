@@ -2,6 +2,7 @@ import Layout from "../components/case-study/Layout";
 import Image from "../components/case-study/Image";
 import ImagesTwo from "../components/case-study/ImagesTwo";
 import { H2, Para } from "../components/case-study/Typography";
+import Container from "../components/case-study/Container";
 import TextBox from "../components/case-study/TextBox";
 import TwoColumn from "../components/case-study/TextTwoColumn";
 import Carousel from "../components/case-study/Carousel";
@@ -12,7 +13,7 @@ export default () => (
     titleCase="/lawyer-exchange"
     desc="The Lawyer Exchange is a new venture from the founder of VisaNow set out to answer the question: why are most people who need legal work not able to access affordable services?"
     image="../static/lawyer-exchange/hero.png"
-    color="purple"
+    color="neutral"
     introTitle="Providing Small / Solo Firms with BigLaw Resources"
     subTitleLabel="2016 – 2018"
     subTitleItem=""
@@ -36,152 +37,154 @@ export default () => (
       { type: "item", text: "Marketing Design" }
     ]}
   >
-    <H2>Legal Research</H2>
-    <TwoColumn>
-      <Para>
-        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
-        vestibulum. Maecenas faucibus mollis interdum. Cras justo odio, dapibus
-        ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis
-        euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
-        venenatis vestibulum.
-      </Para>
-      <Para>
-        Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac
-        facilisis in, egestas eget quam. Aenean lacinia bibendum nulla sed
-        consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-        dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at
-        eros.
-      </Para>
-      <Para>
-        Etiam porta sem malesuada magna mollis euismod. Curabitur blandit tempus
-        porttitor. Curabitur blandit tempus porttitor. Sed posuere consectetur
-        est at lobortis. Etiam porta sem malesuada magna mollis euismod. Aenean
-        eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-        Donec sed odio dui.
-      </Para>
-      <Para>
-        Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue
-        laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at
-        lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor
-        ligula, eget lacinia odio sem nec elit. Aenean eu leo quam. Pellentesque
-        ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a
-        ante venenatis dapibus posuere velit aliquet.
-      </Para>
-    </TwoColumn>
+    <Container>
+      <H2>Legal Research</H2>
+      <TwoColumn>
+        <Para>
+          Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+          vestibulum. Maecenas faucibus mollis interdum. Cras justo odio,
+          dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
+          felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem
+          lacinia quam venenatis vestibulum.
+        </Para>
+        <Para>
+          Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac
+          facilisis in, egestas eget quam. Aenean lacinia bibendum nulla sed
+          consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+          dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at
+          eros.
+        </Para>
+        <Para>
+          Etiam porta sem malesuada magna mollis euismod. Curabitur blandit
+          tempus porttitor. Curabitur blandit tempus porttitor. Sed posuere
+          consectetur est at lobortis. Etiam porta sem malesuada magna mollis
+          euismod. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+          venenatis vestibulum. Donec sed odio dui.
+        </Para>
+        <Para>
+          Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue
+          laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at
+          lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor
+          ligula, eget lacinia odio sem nec elit. Aenean eu leo quam.
+          Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer
+          posuere erat a ante venenatis dapibus posuere velit aliquet.
+        </Para>
+      </TwoColumn>
+    </Container>
+
     <Image
       src="../static/lawyer-exchange/006.png"
       caption="Early Whiteboard Brainstorm"
     />
 
-    <H2>User Research</H2>
-    <TwoColumn>
-      <Para>
-        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
-        vestibulum. Maecenas faucibus mollis interdum. Cras justo odio, dapibus
-        ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis
-        euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
-        venenatis vestibulum.
-      </Para>
-      <Para>
-        Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac
-        facilisis in, egestas eget quam. Aenean lacinia bibendum nulla sed
-        consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-        dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at
-        eros.
-      </Para>
-      <Para>
-        Etiam porta sem malesuada magna mollis euismod. Curabitur blandit tempus
-        porttitor. Curabitur blandit tempus porttitor. Sed posuere consectetur
-        est at lobortis. Etiam porta sem malesuada magna mollis euismod. Aenean
-        eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-        Donec sed odio dui.
-      </Para>
-      <Para>
-        Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue
-        laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at
-        lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor
-        ligula, eget lacinia odio sem nec elit. Aenean eu leo quam. Pellentesque
-        ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a
-        ante venenatis dapibus posuere velit aliquet.
-      </Para>
-    </TwoColumn>
-    <Image
-      src="../static/lawyer-exchange/001.gif"
-      caption="Early Whiteboard Brainstorm"
+    <Container>
+      <H2>User Research</H2>
+      <TwoColumn>
+        <Para>
+          Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+          vestibulum. Maecenas faucibus mollis interdum. Cras justo odio,
+          dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
+          felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem
+          lacinia quam venenatis vestibulum.
+        </Para>
+        <Para>
+          Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac
+          facilisis in, egestas eget quam. Aenean lacinia bibendum nulla sed
+          consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+          dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at
+          eros.
+        </Para>
+        <Para>
+          Etiam porta sem malesuada magna mollis euismod. Curabitur blandit
+          tempus porttitor. Curabitur blandit tempus porttitor. Sed posuere
+          consectetur est at lobortis. Etiam porta sem malesuada magna mollis
+          euismod. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+          venenatis vestibulum. Donec sed odio dui.
+        </Para>
+        <Para>
+          Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue
+          laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at
+          lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor
+          ligula, eget lacinia odio sem nec elit. Aenean eu leo quam.
+          Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer
+          posuere erat a ante venenatis dapibus posuere velit aliquet.
+        </Para>
+      </TwoColumn>
+      <Image
+        src="../static/lawyer-exchange/001.gif"
+        caption="Early Whiteboard Brainstorm"
+      />
+    </Container>
+
+    <Container>
+      <H2>Profile and Project Onboarding</H2>
+      <TwoColumn>
+        <Para>
+          Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+          vestibulum. Maecenas faucibus mollis interdum. Cras justo odio,
+          dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
+          felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem
+          lacinia quam venenatis vestibulum.
+        </Para>
+        <Para>
+          Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac
+          facilisis in, egestas eget quam. Aenean lacinia bibendum nulla sed
+          consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+          dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at
+          eros.
+        </Para>
+        <Para>
+          Etiam porta sem malesuada magna mollis euismod. Curabitur blandit
+          tempus porttitor. Curabitur blandit tempus porttitor. Sed posuere
+          consectetur est at lobortis. Etiam porta sem malesuada magna mollis
+          euismod. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+          venenatis vestibulum. Donec sed odio dui.
+        </Para>
+        <Para>
+          Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue
+          laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at
+          lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor
+          ligula, eget lacinia odio sem nec elit. Aenean eu leo quam.
+          Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer
+          posuere erat a ante venenatis dapibus posuere velit aliquet.
+        </Para>
+      </TwoColumn>
+    </Container>
+
+    <Carousel
+      color="green"
+      items={[
+        {
+          src: "../static/lawyer-exchange/013.gif",
+          text: "Project Lawyer Profile"
+        },
+        {
+          src: "../static/lawyer-exchange/013.gif",
+          text: "Wireframe Exploration (1 of 2)"
+        },
+        {
+          src: "../static/lawyer-exchange/013.gif",
+          text: "Wireframe Exploration (2 of 2)"
+        },
+        {
+          src: "../static/lawyer-exchange/013.gif",
+          text: "Proposal Screen v1"
+        },
+        {
+          src: "../static/lawyer-exchange/013.gif",
+          text: "Profile Wizard Screen v1"
+        },
+        {
+          src: "../static/lawyer-exchange/013.gif",
+          text: "In-Person User Testing"
+        },
+        {
+          src: "../static/lawyer-exchange/013.gif",
+          text: "Remote User Testing"
+        }
+      ]}
     />
 
-    <H2>Profile and Project Onboarding</H2>
-    <TwoColumn>
-      <Para>
-        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
-        vestibulum. Maecenas faucibus mollis interdum. Cras justo odio, dapibus
-        ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis
-        euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
-        venenatis vestibulum.
-      </Para>
-      <Para>
-        Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac
-        facilisis in, egestas eget quam. Aenean lacinia bibendum nulla sed
-        consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-        dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at
-        eros.
-      </Para>
-      <Para>
-        Etiam porta sem malesuada magna mollis euismod. Curabitur blandit tempus
-        porttitor. Curabitur blandit tempus porttitor. Sed posuere consectetur
-        est at lobortis. Etiam porta sem malesuada magna mollis euismod. Aenean
-        eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-        Donec sed odio dui.
-      </Para>
-      <Para>
-        Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue
-        laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at
-        lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor
-        ligula, eget lacinia odio sem nec elit. Aenean eu leo quam. Pellentesque
-        ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a
-        ante venenatis dapibus posuere velit aliquet.
-      </Para>
-    </TwoColumn>
-    <Carousel>
-      <Image
-        src="../static/lawyer-exchange/013.gif"
-        caption="Project Lawyer Profile"
-      />
-      <Image
-        src="../static/lawyer-exchange/013.gif"
-        caption="Wireframe Exploration (1 of 2)"
-      />
-      <Image
-        src="../static/lawyer-exchange/013.gif"
-        caption="Wireframe Exploration (2 of 2)"
-      />
-      <Image
-        src="../static/lawyer-exchange/013.gif"
-        caption="Proposal Screen v1"
-      />
-      <Image
-        src="../static/lawyer-exchange/013.gif"
-        caption="Profile Wizard Screen v1"
-      />
-      <Image
-        src="../static/lawyer-exchange/013.gif"
-        caption="In-Person User Testing"
-      />
-      <Image
-        src="../static/lawyer-exchange/013.gif"
-        caption="Remote User Testing"
-      />
-      {/* <Image img="../static/lawyer-exchange/013.gif" cap="Profile Wizard" />
-      <Image img="../static/lawyer-exchange/013.gif" cap="Profile Editor" />
-      <Image img = "../static/lawyer-exchange/018.png" cap="Wireframe Exploration (1 of 2)" />
-      <Image img = "../static/lawyer-exchange/019.png" cap="Wireframe Exploration (2 of 2)" />
-      <Image img = "../static/lawyer-exchange/007.png" cap="Proposal Screen v1" />
-      <Image img = "../static/lawyer-exchange/008.png" cap="Profile Wizard Screen v1" />
-      <Image img = "../static/lawyer-exchange/009.png" cap="In-Person User Testing" />
-      <Image img = "../static/lawyer-exchange/010.png" cap="Remote User Testing" />
-      <Image img = "../static/lawyer-exchange/012.png" cap="Profile Wizard" />
-      <Image img = "../static/lawyer-exchange/011.png" cap="Profile Editor" /> */}
-    </Carousel>
     <ImagesTwo
       images={[
         {
@@ -195,38 +198,40 @@ export default () => (
       ]}
     />
 
-    <H2>Project Proposals and Messaging</H2>
-    <TwoColumn>
-      <Para>
-        Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
-        vestibulum. Maecenas faucibus mollis interdum. Cras justo odio, dapibus
-        ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis
-        euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
-        venenatis vestibulum.
-      </Para>
-      <Para>
-        Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac
-        facilisis in, egestas eget quam. Aenean lacinia bibendum nulla sed
-        consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-        dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at
-        eros.
-      </Para>
-      <Para>
-        Etiam porta sem malesuada magna mollis euismod. Curabitur blandit tempus
-        porttitor. Curabitur blandit tempus porttitor. Sed posuere consectetur
-        est at lobortis. Etiam porta sem malesuada magna mollis euismod. Aenean
-        eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-        Donec sed odio dui.
-      </Para>
-      <Para>
-        Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue
-        laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at
-        lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor
-        ligula, eget lacinia odio sem nec elit. Aenean eu leo quam. Pellentesque
-        ornare sem lacinia quam venenatis vestibulum. Integer posuere erat a
-        ante venenatis dapibus posuere velit aliquet.
-      </Para>
-    </TwoColumn>
+    <Container>
+      <H2>Project Proposals and Messaging</H2>
+      <TwoColumn>
+        <Para>
+          Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+          vestibulum. Maecenas faucibus mollis interdum. Cras justo odio,
+          dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
+          felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem
+          lacinia quam venenatis vestibulum.
+        </Para>
+        <Para>
+          Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac
+          facilisis in, egestas eget quam. Aenean lacinia bibendum nulla sed
+          consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+          dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at
+          eros.
+        </Para>
+        <Para>
+          Etiam porta sem malesuada magna mollis euismod. Curabitur blandit
+          tempus porttitor. Curabitur blandit tempus porttitor. Sed posuere
+          consectetur est at lobortis. Etiam porta sem malesuada magna mollis
+          euismod. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
+          venenatis vestibulum. Donec sed odio dui.
+        </Para>
+        <Para>
+          Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue
+          laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at
+          lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor
+          ligula, eget lacinia odio sem nec elit. Aenean eu leo quam.
+          Pellentesque ornare sem lacinia quam venenatis vestibulum. Integer
+          posuere erat a ante venenatis dapibus posuere velit aliquet.
+        </Para>
+      </TwoColumn>
+    </Container>
     <Image
       src="../static/lawyer-exchange/013.gif"
       caption="Project Lawyer Profile"

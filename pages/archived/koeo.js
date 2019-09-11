@@ -31,8 +31,9 @@ export default () => (
     ]}
   >
     <Image src="../static/koeo/hero.png" />
+    <Section py={[2, 3]} />
 
-    <Section py={[3, 4]}>
+    <Section py={[2, 3]}>
       <TextBox>
         <H2>Initial Development</H2>
         <Para>
@@ -75,7 +76,7 @@ export default () => (
       />
     </Section>
 
-    <Section py={[3, 4]}>
+    <Section py={[2, 3]}>
       <TextBox>
         <H2>Event Plans</H2>
         <Para>
@@ -102,7 +103,7 @@ export default () => (
       <Image showBorder src="../static/koeo/004.gif" caption="Edit a Plan" />
     </Section>
 
-    <Section py={[3, 4]}>
+    <Section py={[2, 3]}>
       <TextBox>
         <H2>Flight Plans</H2>
         <Para>
@@ -122,7 +123,7 @@ export default () => (
       />
     </Section>
 
-    <Section py={[3, 4]}>
+    <Section py={[2, 3]}>
       <TextBox>
         <H2>Future Designs</H2>
         <Para>

@@ -7,7 +7,7 @@ const Container = styled.div`
 `;
 
 export default ({ children }) => (
-  <Container maxWidth={640} mx="auto" px={3}>
+  <Container maxWidth={640} mx="auto" mb={4} px={3}>
     {children}
   </Container>
 );

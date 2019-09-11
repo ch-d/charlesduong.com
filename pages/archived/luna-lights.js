@@ -20,8 +20,9 @@ export default () => (
     categories={[""]}
   >
     <Image src="../static/luna-lights/hero.png" />
+    <Section py={[2, 3]} />
 
-    <Section py={[3, 4]}>
+    <Section py={[2, 3]}>
       <TextBox>
         <H2>Ideation</H2>
         <Para>
@@ -47,7 +48,7 @@ export default () => (
       />
     </Section>
 
-    <Section py={[3, 4]}>
+    <Section py={[2, 3]}>
       <TextBox>
         <H2>Structure</H2>
         <Para>
@@ -64,7 +65,7 @@ export default () => (
       </TextBox>
     </Section>
 
-    <Section py={[3, 4]}>
+    <Section py={[2, 3]}>
       <TextBox>
         <H2>Hourly View</H2>
         <Para>
@@ -84,7 +85,7 @@ export default () => (
       </a>
     </Section>
 
-    <Section py={[3, 4]}>
+    <Section py={[2, 3]}>
       <TextBox>
         <H2>Daily View</H2>
         <Para>
@@ -102,7 +103,7 @@ export default () => (
       </TextBox>
     </Section>
 
-    <Section py={[3, 4]}>
+    <Section py={[2, 3]}>
       <TextBox>
         <H2>Resident View</H2>
         <Para>
@@ -132,7 +133,7 @@ export default () => (
       />
     </Section>
 
-    <Section py={[3, 4]}>
+    <Section py={[2, 3]}>
       <TextBox>
         <H2>Final Mockup</H2>
         <Para>

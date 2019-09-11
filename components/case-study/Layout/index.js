@@ -89,9 +89,7 @@ export default ({
             </Container>
           ) : (
             <React.Fragment>
-              <Container>
-                {image && <ImageHero src={image} color={color} />}
-              </Container>
+              {image && <ImageHero src={image} color={color} />}
               {children}
             </React.Fragment>
           )}

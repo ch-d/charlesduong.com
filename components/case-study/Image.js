@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { space, layout } from "styled-system";
 import { Caption } from "./Typography";
+import Container from "./Container";
 
 const Box = styled.div`
   ${space};
@@ -30,12 +31,18 @@ const ImageBorder = styled.div`
 `;
 
 export default ({ src, caption, showBorder }) => (
-  <Box width={[1]} mb={[2, 2, 0]}>
-    <ImageBorder showBorder={showBorder}>
-      <Image src={src} alt={caption + " image not found 😵 "} title={caption} />
-    </ImageBorder>
-    <Caption mt={[2, 1]} mb={[3, 4]}>
-      {caption}
-    </Caption>
-  </Box>
+  <Container>
+    <Box width={[1]} mb={[2, 2, 0]}>
+      <ImageBorder showBorder={showBorder}>
+        <Image
+          src={src}
+          alt={caption + " image not found 😵 "}
+          title={caption}
+        />
+      </ImageBorder>
+      <Caption mt={[2, 1]} mb={[3, 4]}>
+        {caption}
+      </Caption>
+    </Box>
+  </Container>
 );

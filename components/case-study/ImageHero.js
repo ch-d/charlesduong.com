@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { theme } from "../../theme";
+import Container from "./Container";
 
 const Gradient = styled.div`
   height: 0;
@@ -21,7 +22,9 @@ const HeroImage = styled.div`
 `;
 
 export default ({ src, color }) => (
-  <Gradient color={color}>
-    <HeroImage src={src} />
-  </Gradient>
+  <Container>
+    <Gradient color={color}>
+      <HeroImage src={src} />
+    </Gradient>
+  </Container>
 );

@@ -32,7 +32,7 @@ const ImageBorder = styled.div`
 
 export default ({ src, caption, showBorder }) => (
   <Container>
-    <Box width={[1]} mb={[2, 2, 0]}>
+    <Box width={[1]} mt={[3, 4]}>
       <ImageBorder showBorder={showBorder}>
         <Image
           src={src}
@@ -40,9 +40,7 @@ export default ({ src, caption, showBorder }) => (
           title={caption}
         />
       </ImageBorder>
-      <Caption mt={[2, 1]} mb={[3, 4]}>
-        {caption}
-      </Caption>
+      <Caption mt={1}>{caption}</Caption>
     </Box>
   </Container>
 );

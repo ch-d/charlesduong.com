@@ -21,7 +21,7 @@ export default () => (
   >
     <Image src="../static/past-media/hero.png" />
 
-    <Section py={[2, 3]}>
+    <Section py={[3, 4]}>
       <TextBox>
         <H2>Senior Project</H2>
         <Para>
@@ -58,7 +58,7 @@ export default () => (
       />
     </Section>
 
-    <Section py={[2, 3]}>
+    <Section py={[3, 4]}>
       <TextBox>
         <H2>Info Booth</H2>
         <Para>
@@ -94,7 +94,7 @@ export default () => (
       />
     </Section>
 
-    <Section py={[2, 3]}>
+    <Section py={[3, 4]}>
       <TextBox>
         <H2>Poly Xpress</H2>
         <Para>
@@ -124,7 +124,7 @@ export default () => (
       />
     </Section>
 
-    <Section py={[2, 3]}>
+    <Section py={[3, 4]}>
       <TextBox>
         <H2>Binoculars</H2>
         <Para>

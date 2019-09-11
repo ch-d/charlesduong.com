@@ -21,7 +21,7 @@ export default () => (
   >
     <Image src="../static/ballot-ready/hero.png" />
 
-    <Section py={[2, 3]}>
+    <Section py={[3, 4]}>
       <TextBox>
         <H2>Social Media Ads</H2>
         <Para>
@@ -74,7 +74,7 @@ export default () => (
       />
     </Section>
 
-    <Section py={[2, 3]}>
+    <Section py={[3, 4]}>
       <TextBox>
         <H2>Data Visualization & Revisions</H2>
         <Para>

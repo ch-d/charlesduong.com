@@ -7,6 +7,7 @@ import ImagesTwo from "../components/case-study/ImagesTwo";
 import { H2, H6, Para } from "../components/case-study/Typography";
 import TextBox from "../components/case-study/TextBox";
 import Container from "../components/case-study/Container";
+import Section from "../components/case-study/Section";
 import TwoColumn from "../components/case-study/TextTwoColumn";
 import Carousel from "../components/case-study/Carousel";
 import Embed from "../components/case-study/Embed";
@@ -17,7 +18,6 @@ const CardContainer = styled.ol`
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  margin-bottom: 4rem;
 `;
 
 const Card = styled.li`
@@ -102,280 +102,257 @@ export default () => (
       { type: "item", text: "UX Development" }
     ]}
   >
-    <TextBox>
-      <H2>Savings Account</H2>
-      <Para>
-        Studies show that homeownership improves many social outcomes like
-        educational achievement, civic participation, health, crime, and
-        property maintenance. However, saving for a downpayment is the primary
-        reason renters don’t purchase a home. The Company partnered with a
-        client company (“Client”) to provide a 2:1 down payment match for
-        potential first time home buyers who were not approved for a conforming
-        mortgage. Brendan described the scope of our project to create an MVP
-        with the following features:
-      </Para>
-    </TextBox>
+    <Section>
+      <TextBox>
+        <H2>Savings Account</H2>
+        <Para>
+          Studies show that homeownership improves many social outcomes like
+          educational achievement, civic participation, health, crime, and
+          property maintenance. However, saving for a downpayment is the primary
+          reason renters don’t purchase a home. The Company partnered with a
+          client company (“Client”) to provide a 2:1 down payment match for
+          potential first time home buyers who were not approved for a
+          conforming mortgage. The Company brought on a new PM, Brendan, for the
+          project and together we went about designing an MVP in 6 weeks.
+        </Para>
+      </TextBox>
 
-    <Container>
-      <CardContainer>
-        <Card>
-          <CardTextContainer>
-            <CardTitle>Savings Account</CardTitle>
-            <CardContent>
-              Display savings feature where customers can view and manage their
-              savings within the Company application.
-            </CardContent>
-          </CardTextContainer>
-        </Card>
-        <Card>
-          <CardTextContainer>
-            <CardTitle>Matching</CardTitle>
-            <CardContent>
-              Display Client matching for savings towards a down payment on a
-              mortgage up to specified limits.
-            </CardContent>
-          </CardTextContainer>
-        </Card>
-        <Card>
-          <CardTextContainer>
-            <CardTitle>Redemption</CardTitle>
-            <CardContent>
-              Present information to consumers on how to redeem savings values
-              allocated by Client toward the down payment on a mortgage.
-            </CardContent>
-          </CardTextContainer>
-        </Card>
-      </CardContainer>
-    </Container>
+      <Container>
+        <CardContainer>
+          <Card>
+            <CardTextContainer>
+              <CardTitle>Savings Account</CardTitle>
+              <CardContent>
+                Display savings feature where customers can view and manage
+                their savings within the Company application.
+              </CardContent>
+            </CardTextContainer>
+          </Card>
+          <Card>
+            <CardTextContainer>
+              <CardTitle>Matching</CardTitle>
+              <CardContent>
+                Display Client matching for savings towards a down payment on a
+                mortgage up to specified limits.
+              </CardContent>
+            </CardTextContainer>
+          </Card>
+          <Card>
+            <CardTextContainer>
+              <CardTitle>Redemption</CardTitle>
+              <CardContent>
+                Present information to consumers on how to redeem savings values
+                allocated by Client toward the down payment on a mortgage.
+              </CardContent>
+            </CardTextContainer>
+          </Card>
+        </CardContainer>
+      </Container>
+    </Section>
 
-    <TextBox>
-      <H6 color="green">Savings Account</H6>
-      <H2>Customer Onboarding</H2>
-      <Para>
-        To get an understanding of how we can best work together, my initial
-        task was to do a light refresh of the onboarding process. Brendan
-        initiated a user flow in a Google Drawings doc, and we iterated together
-        to clean up the designs. We communicated with Slack conversations +
-        calls and Google Docs, while I made mockups in Figma. The goal was to
-        not reinvent the wheel, add minor visual design touchups that could
-        provide value, and try to reuse components that were already in the main
-        app.
-      </Para>
-    </TextBox>
-
-    <Carousel
-      color="green"
-      items={[
-        // {
-        //   src: "../../static/finance/001.png",
-        //   text: "Lo-Fidelity Flow from PM"
-        // },
-        {
-          src: "../../static/finance/003.png",
-          text: "Create Account (AFTER)"
-        },
-        {
-          src: "../../static/finance/002.png",
-          text: "Create Account (BEFORE)"
-        },
-        {
-          src: "../../static/finance/005.png",
-          text: "Down Payment Wallet (AFTER)"
-        },
-        {
-          src: "../../static/finance/004.png",
-          text: "Down Payment Wallet (BEFORE)"
-        },
-        {
-          src: "../../static/finance/006.png",
-          text: "Set up wallet transfers"
-        }
-      ]}
-    />
-
-    <TextBox>
-      <H6 color="green">Savings Account</H6>
-      <H2>Account Management</H2>
-      <Para>
-        After creating a new design aesthetic and getting a sense of how to work
-        together, we began the account management side of the app. Now with the
-        developer, Eric, we had weekly meetings to determine the best way to
-        approach the feature set which the Client had asked for. The two main
-        pages we worked on were the Account Dashboard and the Loan Details Page.
-        It was expected that a user could both view the savings match progress
-        and redeem those savings.
-      </Para>
-    </TextBox>
-
-    <Carousel
-      color="green"
-      items={[
-        {
-          src: "../../static/finance/011.png",
-          text: "Account Dashboard (PROPOSED)"
-        },
-        {
-          src: "../../static/finance/012.png",
-          text: "Account Dashboard (BEFORE)"
-        },
-        {
-          src: "../../static/finance/014.png",
-          text: "Loan Details I (PROPOSED)"
-        },
-        {
-          src: "../../static/finance/015.png",
-          text: "Loan Details I (BEFORE)"
-        },
-        {
-          src: "../../static/finance/017.png",
-          text: "Loan Details II (PROPOSED)"
-        },
-        {
-          src: "../../static/finance/018.png",
-          text: "Loan Details II (BEFORE)"
-        }
-      ]}
-    />
-
-    {/* <div
-      style={{
-        width: "100%",
-        height: 4,
-        backgroundColor: theme.colors.green[200],
-        marginTop: "4rem",
-        marginBottom: ".5rem"
-      }}
-    />
-    <div
-      style={{
-        width: "100%",
-        height: 1,
-        backgroundColor: theme.colors.green[200],
-        marginBottom: "4rem"
-      }}
-    />
-
-    <TextBox>
-      <H2>Bill Pay</H2>
-      <Para>
-        Proposed Design via Figma{" "}
-        <a href="https://www.figma.com/proto/0kxdK5rbkVHmZs4lGtk0aO5c/bill-pay?node-id=0%3A1&viewport=-1054%2C-516%2C0.20870602130889893&scaling=scale-down-width">
-          View Prototype
-        </a>{" "}
-        <ExternalLink size={12} />
-      </Para>
-    </TextBox>
-
-    <Embed
-      src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F0kxdK5rbkVHmZs4lGtk0aO5c%2Fbill-pay%3Fnode-id%3D70%253A476%26viewport%3D-1191%252C-719%252C0.15821421146392822%26scaling%3Dscale-down-width"
-      maxHeight={[384, 512]}
-      border="1px solid"
-      borderColor="green.100"
-    /> */}
-
-    <TextBox>
-      <H6 color="green">Savings Account</H6>
-      <H2>Personal Learnings</H2>
-      <Para>
-        Ultimately, the designs were scaled down a bit to better fit engineering
-        constraints. Although it achieved the scope, a good amount of the design
-        discussions did not make it into the final product.
-      </Para>
-      <Para>
-        This was my first experience working on a specific feature with a PM and
-        developer. One important thing I learned was to not only focus on
-        understanding the project scope, but to also understand the best process
-        and tools the team is using.
-      </Para>
-      <Para>
-        I was given creative freedom on the designs, but I did not get context
-        on what the constraints of the engineering system were. Because the
-        designs were all static mockups in Figma, it was hard to replicate into
-        the actual project.
-      </Para>
-    </TextBox>
-
-    <Carousel
-      color="green"
-      items={[
-        {
-          src: "../../static/finance/013.png",
-          text: "Account Dashboard (SCOPED)"
-        },
-        {
-          src: "../../static/finance/016.png",
-          text: "Loan Details I (SCOPED)"
-        },
-        {
-          src: "../../static/finance/019.png",
-          text: "Loan Details II (SCOPED)"
-        }
-      ]}
-    />
-
-    <Container>
-      <div
-        style={{
-          width: "100%",
-          height: 4,
-          backgroundColor: theme.colors.green[200],
-          marginTop: "4rem",
-          marginBottom: ".5rem"
-        }}
+    <Section bg={theme.colors.green[10]}>
+      <TextBox>
+        <H6 color="green">Savings Account</H6>
+        <H2>Customer Onboarding</H2>
+        <Para>
+          To get an understanding of how we can best work together, my initial
+          task was to do a light refresh of the onboarding process. Brendan
+          initiated a user flow in a Google Drawings doc, and we iterated
+          together to clean up the designs. We communicated with Slack
+          conversations + calls and Google Docs, while I made mockups in Figma.
+          The goal was to not reinvent the wheel, add minor visual design
+          touchups that could provide value, and try to reuse components that
+          were already in the main app.
+        </Para>
+      </TextBox>
+      {/* <ImagesTwo
+        images={[
+          {
+            src: "../../static/finance/003.png",
+            caption: "Create Account (AFTER)"
+          },
+          {
+            src: "../../static/finance/002.png",
+            caption: "Create Account (BEFORE)"
+          }
+        ]}
       />
-      <div
-        style={{
-          width: "100%",
-          height: 1,
-          backgroundColor: theme.colors.green[200],
-          marginBottom: "4rem"
-        }}
+      <ImagesTwo
+        images={[
+          {
+            src: "../../static/finance/005.png",
+            caption: "Down Payment Wallet (AFTER)"
+          },
+          {
+            src: "../../static/finance/004.png",
+            caption: "Down Payment Wallet (BEFORE)"
+          }
+        ]}
       />
-    </Container>
-
-    <TextBox>
-      <H2>Internal Customer Service Tool</H2>
-      <Para>
-        Keeping the lessons from the Savings Account project fresh in my mind, I
-        partnered with a new PM and developer, Paul and Zach respectively. They
-        were working on a refresh of their internal customer support tool. At
-        the time, they had two different platform that the support team used,
-        one an older legacy system and a more modern one that didn’t have all
-        the features of the legacy platform. Out goal was to unify both into one
-        consistent platform.
-      </Para>
-      <Para>
-        My personal goals for this project was to have more user research
-        opportunities and to use a framework and similar codebase to the one in
-        development to better handoff to Zach. After given some initial specs
-        and lo-fi wireframes in Google Docs, I started a repository using
-        Next.js, React Material UI Components, and Airtable Backend API.{" "}
-        <a href="https://5d126f9c73a1630007cf1344--inspiring-ride-bf5c15.netlify.com/loan/01">
-          View Prototype
-        </a>{" "}
-        <ExternalLink size={12} />
-      </Para>
-    </TextBox>
-
-    <Container>
-      <Embed
-        src="https://5d126f9c73a1630007cf1344--inspiring-ride-bf5c15.netlify.com/loan/01"
-        css={css`
-          -ms-zoom: 0.6;
-          -moz-transform: scale(0.6);
-          -moz-transform-origin: 0 0;
-          -o-transform: scale(0.6);
-          -o-transform-origin: 0 0;
-          -webkit-transform: scale(0.6);
-          -webkit-transform-origin: 0 0;
-          width: 166%;
-          margin-right: -66%;
-        `}
-        mb={[-140, -280]}
-        maxHeight={[640, 854]}
-        border="1px solid"
-        borderColor="green.100"
+      <Image
+        src="../../static/finance/006.png"
+        caption="Set up wallet transfers"
+      /> */}
+      <Carousel
+        color="green"
+        items={[
+          {
+            src: "../../static/finance/003.png",
+            text: "Create Account (AFTER)"
+          },
+          {
+            src: "../../static/finance/002.png",
+            text: "Create Account (BEFORE)"
+          },
+          {
+            src: "../../static/finance/005.png",
+            text: "Down Payment Wallet (AFTER)"
+          },
+          {
+            src: "../../static/finance/004.png",
+            text: "Down Payment Wallet (BEFORE)"
+          },
+          {
+            src: "../../static/finance/006.png",
+            text: "Set up wallet transfers"
+          }
+        ]}
       />
-    </Container>
+    </Section>
+
+    <Section>
+      <TextBox>
+        <H6 color="green">Savings Account</H6>
+        <H2>Account Management</H2>
+        <Para>
+          After creating a new design aesthetic and getting a sense of how to
+          work together, we began the account management side of the app. Now
+          with the developer, Eric, we had weekly meetings to determine the best
+          way to approach the feature set which the Client had asked for. The
+          two main pages we worked on were the Account Dashboard and the Loan
+          Details Page. It was expected that a user could both view the savings
+          match progress and redeem those savings.
+        </Para>
+      </TextBox>
+
+      <Carousel
+        color="green"
+        items={[
+          {
+            src: "../../static/finance/011.png",
+            text: "Account Dashboard (PROPOSED)"
+          },
+          {
+            src: "../../static/finance/012.png",
+            text: "Account Dashboard (BEFORE)"
+          },
+          {
+            src: "../../static/finance/014.png",
+            text: "Loan Details I (PROPOSED)"
+          },
+          {
+            src: "../../static/finance/015.png",
+            text: "Loan Details I (BEFORE)"
+          },
+          {
+            src: "../../static/finance/017.png",
+            text: "Loan Details II (PROPOSED)"
+          },
+          {
+            src: "../../static/finance/018.png",
+            text: "Loan Details II (BEFORE)"
+          }
+        ]}
+      />
+    </Section>
+
+    <Section bg={theme.colors.green[10]}>
+      <TextBox>
+        <H6 color="green">Savings Account</H6>
+        <H2>Personal Learnings</H2>
+        <Para>
+          Ultimately, the designs were scaled down a bit to better fit
+          engineering constraints. Although it achieved the scope, a good amount
+          of the design discussions did not make it into the final product.
+        </Para>
+        <Para>
+          This was my first experience working on a specific feature with a PM
+          and developer. One important thing I learned was to not only focus on
+          understanding the project scope, but to also understand the best
+          process and tools the team is using.
+        </Para>
+        <Para>
+          I was given creative freedom on the designs, but I did not get context
+          on what the constraints of the engineering system were. Because the
+          designs were all static mockups in Figma, it was hard to replicate
+          into the actual project.
+        </Para>
+      </TextBox>
+
+      <Carousel
+        color="green"
+        items={[
+          {
+            src: "../../static/finance/013.png",
+            text: "Account Dashboard (SCOPED)"
+          },
+          {
+            src: "../../static/finance/016.png",
+            text: "Loan Details I (SCOPED)"
+          },
+          {
+            src: "../../static/finance/019.png",
+            text: "Loan Details II (SCOPED)"
+          }
+        ]}
+      />
+    </Section>
+
+    <Section>
+      <TextBox>
+        <H2>Internal Customer Service Tool</H2>
+        <Para>
+          Keeping the lessons from the Savings Account project fresh in my mind,
+          I partnered with a new PM and developer, Paul and Zach respectively.
+          They were working on a refresh of their internal customer support
+          tool. At the time, they had two different platform that the support
+          team used, one an older legacy system and a more modern one that
+          didn’t have all the features of the legacy platform. Out goal was to
+          unify both into one consistent platform.
+        </Para>
+        <Para>
+          My personal goals for this project was to have more user research
+          opportunities and to use a framework and similar codebase to the one
+          in development to better handoff to Zach. After given some initial
+          specs and lo-fi wireframes in Google Docs, I started a repository
+          using Next.js, React Material UI Components, and Airtable Backend API.{" "}
+          <a href="https://5d126f9c73a1630007cf1344--inspiring-ride-bf5c15.netlify.com/loan/01">
+            View Prototype
+          </a>{" "}
+          <ExternalLink size={12} />
+        </Para>
+      </TextBox>
+
+      <Container>
+        <Embed
+          src="https://5d126f9c73a1630007cf1344--inspiring-ride-bf5c15.netlify.com/loan/01"
+          css={css`
+            -ms-zoom: 0.6;
+            -moz-transform: scale(0.6);
+            -moz-transform-origin: 0 0;
+            -o-transform: scale(0.6);
+            -o-transform-origin: 0 0;
+            -webkit-transform: scale(0.6);
+            -webkit-transform-origin: 0 0;
+            width: 166%;
+            margin-right: -66%;
+          `}
+          mb={[-140, -280]}
+          maxHeight={[640, 854]}
+          border="1px solid"
+          borderColor="green.100"
+        />
+      </Container>
+    </Section>
   </Layout>
 );

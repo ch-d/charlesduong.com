@@ -9,10 +9,10 @@ export const H2 = styled.h2`
 `;
 
 export const H6 = styled.h6`
-  color: ${props => theme.colors.neutral[200]};
+  color: ${theme.colors.neutral[200]};
   font-weight: 500;
   font-size: 0.75rem;
-  margin-bottom: 0;
+  margin: 0 auto;
   text-transform: uppercase;
   letter-spacing: 1px;
 `;

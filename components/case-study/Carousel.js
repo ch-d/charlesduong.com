@@ -55,7 +55,6 @@ const Thumbnails = styled.nav`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
   grid-gap: 16px;
-  margin-bottom: 4rem;
   padding: 8px 0;
   border-radius: 2px;
 `;

@@ -10,7 +10,6 @@ const Gradient = styled.div`
     ${props => theme.colors[props.color][40]},
     ${props => theme.colors[props.color][60]}
   );
-  margin-bottom: 4rem;
   border: 2px solid ${props => theme.colors[props.color][5]};
 `;
 

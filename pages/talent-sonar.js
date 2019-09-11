@@ -162,100 +162,98 @@ export default () => (
         while retaining context to the technology that powered it.
       </Para>
     </TextBox>
-    <Container>
-      <Grid>
-        <GridImage
-          column_l="1 / 2"
-          row_l="1 / 2"
-          column_m="3 / 4"
-          row_m="1 / 2"
-          column="2 / 3"
-          row="1 / 2"
-          image="url('../static/talent-sonar/008.png')"
-        />
-        <GridImage
-          column_l="2 / 3"
-          row_l="2 / 3"
-          column_m="2 / 3"
-          row_m="2 / 3"
-          column="1 / 2"
-          row="2 / 3"
-          image="url('../static/talent-sonar/009.png')"
-        />
-        <GridImage
-          column_l="3 / 4"
-          row_l="1 / 2"
-          column_m="3 / 4"
-          row_m="3 / 4"
-          column="2 / 3"
-          row="2 / 3"
-          image="url('../static/talent-sonar/010.png')"
-        />
-        <GridImage
-          column_l="3 / 4"
-          row_l="3 / 4"
-          column_m="1 / 2"
-          row_m="3 / 4"
-          column="1 / 2"
-          row="3 / 4"
-          image="url('../static/talent-sonar/011.png')"
-        />
-        <GridImage
-          column_l="4 / 5"
-          row_l="2 / 3"
-          column_m="2 / 3"
-          row_m="4 / 5"
-          column="2 / 3"
-          row="3 / 4"
-          image="url('../static/talent-sonar/012.png')"
-        />
-        <GridImage
-          column_l="2 / 3"
-          row_l="1 / 2"
-          column_m="3 / 4"
-          row_m="2 / 3"
-          column="1 / 2"
-          row="1 / 2"
-          image="url('../static/talent-sonar/017.png')"
-        />
-        <GridImage
-          column_l="4 / 5"
-          row_l="3 / 4"
-          column_m="1 / 2"
-          row_m="4 / 5"
-          column="2 / 3"
-          row="5 / 6"
-          image="url('../static/talent-sonar/018.png')"
-        />
-        <GridImage
-          column_l="1 / 2"
-          row_l="2 / 3"
-          column_m="2 / 3"
-          row_m="1 / 2"
-          column="1 / 2"
-          row="4 / 5"
-          image="url('../static/talent-sonar/013.png')"
-        />
-        <GridImage
-          column_l="2 / 3"
-          row_l="3 / 4"
-          column_m="1 / 2"
-          row_m="2 / 3"
-          column="2 / 3"
-          row="4 / 5"
-          image="url('../static/talent-sonar/014.png')"
-        />
-        <GridImage
-          column_l="3 / 4"
-          row_l="2 / 3"
-          column_m="2 / 3"
-          row_m="3 / 4"
-          column="1 / 2"
-          row="5 / 6"
-          image="url('../static/talent-sonar/015.png')"
-        />
-      </Grid>
-    </Container>
+    <Grid>
+      <GridImage
+        column_l="1 / 2"
+        row_l="1 / 2"
+        column_m="3 / 4"
+        row_m="1 / 2"
+        column="2 / 3"
+        row="1 / 2"
+        image="url('../static/talent-sonar/008.png')"
+      />
+      <GridImage
+        column_l="2 / 3"
+        row_l="2 / 3"
+        column_m="2 / 3"
+        row_m="2 / 3"
+        column="1 / 2"
+        row="2 / 3"
+        image="url('../static/talent-sonar/009.png')"
+      />
+      <GridImage
+        column_l="3 / 4"
+        row_l="1 / 2"
+        column_m="3 / 4"
+        row_m="3 / 4"
+        column="2 / 3"
+        row="2 / 3"
+        image="url('../static/talent-sonar/010.png')"
+      />
+      <GridImage
+        column_l="3 / 4"
+        row_l="3 / 4"
+        column_m="1 / 2"
+        row_m="3 / 4"
+        column="1 / 2"
+        row="3 / 4"
+        image="url('../static/talent-sonar/011.png')"
+      />
+      <GridImage
+        column_l="4 / 5"
+        row_l="2 / 3"
+        column_m="2 / 3"
+        row_m="4 / 5"
+        column="2 / 3"
+        row="3 / 4"
+        image="url('../static/talent-sonar/012.png')"
+      />
+      <GridImage
+        column_l="2 / 3"
+        row_l="1 / 2"
+        column_m="3 / 4"
+        row_m="2 / 3"
+        column="1 / 2"
+        row="1 / 2"
+        image="url('../static/talent-sonar/017.png')"
+      />
+      <GridImage
+        column_l="4 / 5"
+        row_l="3 / 4"
+        column_m="1 / 2"
+        row_m="4 / 5"
+        column="2 / 3"
+        row="5 / 6"
+        image="url('../static/talent-sonar/018.png')"
+      />
+      <GridImage
+        column_l="1 / 2"
+        row_l="2 / 3"
+        column_m="2 / 3"
+        row_m="1 / 2"
+        column="1 / 2"
+        row="4 / 5"
+        image="url('../static/talent-sonar/013.png')"
+      />
+      <GridImage
+        column_l="2 / 3"
+        row_l="3 / 4"
+        column_m="1 / 2"
+        row_m="2 / 3"
+        column="2 / 3"
+        row="4 / 5"
+        image="url('../static/talent-sonar/014.png')"
+      />
+      <GridImage
+        column_l="3 / 4"
+        row_l="2 / 3"
+        column_m="2 / 3"
+        row_m="3 / 4"
+        column="1 / 2"
+        row="5 / 6"
+        image="url('../static/talent-sonar/015.png')"
+      />
+    </Grid>
     <Image
       src="../static/talent-sonar/016.png"
       caption="Talent Sonar Platform Overview"

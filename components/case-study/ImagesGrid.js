@@ -14,9 +14,9 @@ export const Grid = styled.div`
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0.5rem;
   }
-  max-width: 100%;
+  max-width: 60rem;
   width: 100%;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem auto;
 `;
 
 export const GridImage = styled.div`

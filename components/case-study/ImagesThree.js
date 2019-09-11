@@ -3,6 +3,7 @@ import { space, layout } from "styled-system";
 import { theme } from "../../theme";
 import { Caption } from "./Typography";
 import Embed from "./Embed";
+import Container from "./Container";
 
 const Box = styled.div`
   ${space};
@@ -54,20 +55,22 @@ const r = new RegExp("^(?:[a-z]+:)?//", "i");
 const isUrl = text => r.test(text);
 
 export default ({ color, images }) => (
-  <ImagesThreeBg color={color}>
-    {images.map((image, i) => (
-      <Box m={2} key={i}>
-        <ImageContainer>
-          {isUrl(image.src) ? (
-            <Video src={image.src} border="0" m={0} />
-          ) : (
-            <Image src={image.src} />
-          )}
-        </ImageContainer>
-        <Caption mt={[2, 1]} mb={[3, 4]}>
-          {image.caption}
-        </Caption>
-      </Box>
-    ))}
-  </ImagesThreeBg>
+  <Container>
+    <ImagesThreeBg color={color}>
+      {images.map((image, i) => (
+        <Box m={2} key={i}>
+          <ImageContainer>
+            {isUrl(image.src) ? (
+              <Video src={image.src} border="0" m={0} />
+            ) : (
+              <Image src={image.src} />
+            )}
+          </ImageContainer>
+          <Caption mt={[2, 1]} mb={[3, 4]}>
+            {image.caption}
+          </Caption>
+        </Box>
+      ))}
+    </ImagesThreeBg>
+  </Container>
 );

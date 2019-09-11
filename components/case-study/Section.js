@@ -7,8 +7,8 @@ const Section = styled.section`
   ${layout}
 `;
 
-export default ({ children, bg }) => (
-  <Section bg={bg} py={[4, 5]} width="100%">
+export default ({ children, bg, py }) => (
+  <Section bg={bg} py={py ? py : [4, 5]} width="100%">
     {children}
   </Section>
 );

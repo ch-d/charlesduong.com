@@ -33,8 +33,7 @@ export default ({
   subTitleItem,
   intro,
   categories,
-  color,
-  hasContainer
+  color
 }) => (
   <div>
     <Head meta={title} titleCase={titleCase} desc={desc} />
@@ -82,17 +81,8 @@ export default ({
           </Container>
         </Main>
         <SlantBg color={color}>
-          {hasContainer ? (
-            <Container>
-              {image && <ImageHero src={image} color={color} />}
-              {children}
-            </Container>
-          ) : (
-            <React.Fragment>
-              {image && <ImageHero src={image} color={color} />}
-              {children}
-            </React.Fragment>
-          )}
+          {image && <ImageHero src={image} color={color} />}
+          {children}
         </SlantBg>
         <List color={color} />
         <Footer />

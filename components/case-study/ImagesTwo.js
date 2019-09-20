@@ -17,7 +17,7 @@ const Box = styled.div`
 
 export default ({ images }) => (
   <Container>
-    <Flex flexWrap={["wrap", "nowrap"]}>
+    <Flex flexWrap={["wrap", "nowrap"]} justifyContent="center">
       {images.map((image, i) => (
         <Box
           key={i}

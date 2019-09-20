@@ -385,5 +385,106 @@ export default () => (
         </Para>
       </TextBox>
     </Section>
+
+    <Section>
+      <TextBox>
+        <H6>Internal CS Tool</H6>
+        <H2>Lo-fidelity + Repository Setup</H2>
+        <Para>
+          Another personal goal for this project was to use a framework and
+          similar codebase to the one in development to better handoff to Zach.
+          After I received the initial specs and lo-fi wireframes in Google
+          Docs, I started a repository using Next.js, React Material UI
+          Components, and Airtable Backend API. For reviews, I walked through
+          prototypes with builds deployed on Netlify.
+        </Para>
+      </TextBox>
+
+      <ImagesTwo
+        images={[
+          {
+            src: "../static/finance/031.png",
+            caption: "Google Sheets - Information Architecture"
+          },
+          {
+            src: "../static/finance/033.png",
+            caption: "Next.js + Material-UI.js"
+          }
+        ]}
+      />
+      <ImagesTwo
+        images={[
+          {
+            src: "../static/finance/032.png",
+            caption: "Airtable - Back End Data"
+          },
+          {
+            src: "../static/finance/034.png",
+            caption: "Netlify - Deployment"
+          }
+        ]}
+      />
+    </Section>
+
+    <Section bg={theme.colors.green[10]}>
+      <TextBox>
+        <H6>Internal CS Tool</H6>
+        <H2>Search + Customer Page</H2>
+        <Para>
+          Another personal goal for this project was to use a framework and
+          similar codebase to the one in development to better handoff to Zach.
+          After I received the initial specs and lo-fi wireframes in Google
+          Docs, I started a repository using Next.js, React Material UI
+          Components, and Airtable Backend API. For reviews, I walked through
+          prototypes with builds deployed on Netlify.
+        </Para>
+      </TextBox>
+      <ImagesTwo
+        images={[
+          {
+            src: "../static/finance/041.gif",
+            caption: "Option 1"
+          },
+          {
+            src: "../static/finance/041.gif",
+            caption: "Option 2"
+          }
+        ]}
+      />
+      <Image src="../static/finance/041.gif" caption="Option 2" />
+      <Carousel
+        color="green"
+        items={[
+          {
+            src: "../static/finance/044.png",
+            text: "Project Lawyer Profile"
+          },
+          {
+            src: "../static/finance/044.png",
+            text: "Wireframe Exploration (1 of 2)"
+          },
+          {
+            src: "../static/finance/044.png",
+            text: "Wireframe Exploration (2 of 2)"
+          },
+          {
+            src: "../static/finance/044.png",
+            text: "Proposal Screen v1"
+          },
+          {
+            src: "../static/finance/044.png",
+            text: "Profile Wizard Screen v1"
+          },
+          {
+            src: "../static/finance/044.png",
+            text: "In-Person User Testing"
+          },
+          {
+            src: "../static/finance/044.png",
+            text: "Remote User Testing"
+          }
+        ]}
+      />
+    </Section>
   </Layout>
 );

@@ -341,7 +341,11 @@ export default () => (
         images={[
           {
             src: "../static/finance/021.png",
-            caption: "Four different search menus"
+            caption: "Four Different Search Experiences (OLD)"
+          },
+          {
+            src: "../static/finance/022.png",
+            caption: "Customer Page (OLD)"
           }
         ]}
       />
@@ -357,23 +361,11 @@ export default () => (
         images={[
           {
             src: "../static/finance/021.png",
-            caption: "Four different search menus"
-          }
-        ]}
-      />
-      <TextBox>
-        <Para>
-          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum
-          faucibus dolor auctor.
-        </Para>
-      </TextBox>
-
-      <ImagesTwo
-        images={[
+            caption: "Four Different Search Experiences (OLD)"
+          },
           {
-            src: "../static/finance/021.png",
-            caption: "Four different search menus"
+            src: "../static/finance/022.png",
+            caption: "Customer Page (OLD)"
           }
         ]}
       />
@@ -429,7 +421,7 @@ export default () => (
     <Section bg={theme.colors.green[10]}>
       <TextBox>
         <H6>Internal CS Tool</H6>
-        <H2>Search + Customer Page</H2>
+        <H2>Universal Search Tool</H2>
         <Para>
           Another personal goal for this project was to use a framework and
           similar codebase to the one in development to better handoff to Zach.
@@ -452,39 +444,164 @@ export default () => (
         ]}
       />
       <Image src="../static/finance/041.gif" caption="Option 2" />
+    </Section>
+
+    <Section>
+      <TextBox>
+        <H6>Internal CS Tool</H6>
+        <H2>Enhanced Customer Page</H2>
+        <Para>
+          Another personal goal for this project was to use a framework and
+          similar codebase to the one in development to better handoff to Zach.
+          After I received the initial specs and lo-fi wireframes in Google
+          Docs, I started a repository using Next.js, React Material UI
+          Components, and Airtable Backend API. For reviews, I walked through
+          prototypes with builds deployed on Netlify.
+        </Para>
+      </TextBox>
       <Carousel
         color="green"
         items={[
           {
-            src: "../static/finance/044.png",
-            text: "Project Lawyer Profile"
+            src: "../static/finance/056.gif",
+            text: "Finalized Iteration - Drawer + Tabs"
           },
           {
-            src: "../static/finance/044.png",
-            text: "Wireframe Exploration (1 of 2)"
+            src: "../static/finance/051.gif",
+            text: "Iteration I - Modal"
           },
           {
-            src: "../static/finance/044.png",
-            text: "Wireframe Exploration (2 of 2)"
+            src: "../static/finance/052.gif",
+            text: "Iteration II - Inline Edit"
           },
           {
-            src: "../static/finance/044.png",
-            text: "Proposal Screen v1"
+            src: "../static/finance/053.gif",
+            text: "Iteration III - Drawer"
           },
           {
-            src: "../static/finance/044.png",
-            text: "Profile Wizard Screen v1"
+            src: "../static/finance/054.gif",
+            text: "Iteration IV - Drawer + Dropdown"
           },
           {
-            src: "../static/finance/044.png",
-            text: "In-Person User Testing"
-          },
-          {
-            src: "../static/finance/044.png",
-            text: "Remote User Testing"
+            src: "../static/finance/055.gif",
+            text: "Iteration V - Drawer + Tabs"
           }
         ]}
       />
+    </Section>
+
+    <Section bg={theme.colors.green[10]}>
+      <TextBox>
+        <H6>Internal CS Tool</H6>
+        <H2>Enhanced Transaction Page</H2>
+        <Para>
+          Another personal goal for this project was to use a framework and
+          similar codebase to the one in development to better handoff to Zach.
+          After I received the initial specs and lo-fi wireframes in Google
+          Docs, I started a repository using Next.js, React Material UI
+          Components, and Airtable Backend API. For reviews, I walked through
+          prototypes with builds deployed on Netlify.
+        </Para>
+      </TextBox>
+      <Carousel
+        color="green"
+        items={[
+          {
+            src: "../static/finance/067.png",
+            text: "Finalized Iteration - Drawer + Tabs"
+          },
+          {
+            src: "../static/finance/061.png",
+            text: "Iteration I - Modal"
+          },
+          {
+            src: "../static/finance/062.png",
+            text: "Iteration II - Inline Edit"
+          },
+          {
+            src: "../static/finance/063.png",
+            text: "Iteration III - Drawer"
+          },
+          {
+            src: "../static/finance/064.png",
+            text: "Iteration IV - Drawer + Dropdown"
+          },
+          {
+            src: "../static/finance/065.png",
+            text: "Iteration V - Drawer + Tabs"
+          },
+          {
+            src: "../static/finance/066.png",
+            text: "Finalized Iteration - Drawer + Tabs"
+          }
+        ]}
+      />
+    </Section>
+
+    <Section>
+      <TextBox>
+        <H6>Internal CS Tool</H6>
+        <H2>Further Enhancements - Calculations</H2>
+        <Para>
+          Another personal goal for this project was to use a framework and
+          similar codebase to the one in development to better handoff to Zach.
+          After I received the initial specs and lo-fi wireframes in Google
+          Docs, I started a repository using Next.js, React Material UI
+          Components, and Airtable Backend API. For reviews, I walked through
+          prototypes with builds deployed on Netlify.
+        </Para>
+      </TextBox>
+      <ImagesTwo
+        images={[
+          {
+            src: "../static/finance/011.png",
+            caption: "Option 1"
+          },
+          {
+            src: "../static/finance/012.png",
+            caption: "Option 2"
+          }
+        ]}
+      />
+      <TextBox>
+        <H6>Internal CS Tool</H6>
+        <H2>Further Enhancements - Scheduling</H2>
+        <Para>
+          Another personal goal for this project was to use a framework and
+          similar codebase to the one in development to better handoff to Zach.
+          After I received the initial specs and lo-fi wireframes in Google
+          Docs, I started a repository using Next.js, React Material UI
+          Components, and Airtable Backend API. For reviews, I walked through
+          prototypes with builds deployed on Netlify.
+        </Para>
+      </TextBox>
+      <ImagesTwo
+        images={[
+          {
+            src: "../static/finance/011.png",
+            caption: "Option 1"
+          },
+          {
+            src: "../static/finance/012.png",
+            caption: "Option 2"
+          }
+        ]}
+      />
+    </Section>
+
+    <Section>
+      <TextBox>
+        <H6>Internal CS Tool</H6>
+        <H2>Results and Learnings</H2>
+        <Para>
+          Another personal goal for this project was to use a framework and
+          similar codebase to the one in development to better handoff to Zach.
+          After I received the initial specs and lo-fi wireframes in Google
+          Docs, I started a repository using Next.js, React Material UI
+          Components, and Airtable Backend API. For reviews, I walked through
+          prototypes with builds deployed on Netlify.
+        </Para>
+      </TextBox>
     </Section>
   </Layout>
 );

@@ -326,61 +326,6 @@ export default () => (
     <Section bg={theme.colors.green[10]}>
       <TextBox>
         <H6>Internal CS Tool</H6>
-        <H2>Team Interview + Current Workflow</H2>
-        <Para>
-          A personal goal for this project was to have more user research
-          opportunities. One thing Paul and I had an opportunity to do was to
-          interview the customer service team and run through how they use the
-          current environment. The team ranged from those employed for a few
-          months adjusting to how things work to a few years used to the quirks
-          of the platform flows.
-        </Para>
-      </TextBox>
-
-      <ImagesTwo
-        images={[
-          {
-            src: "../static/finance/021.png",
-            caption: "Four Different Search Experiences (OLD)"
-          },
-          {
-            src: "../static/finance/022.png",
-            caption: "Customer Page (OLD)"
-          }
-        ]}
-      />
-      <TextBox>
-        <Para>
-          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum
-          faucibus dolor auctor.
-        </Para>
-      </TextBox>
-
-      <ImagesTwo
-        images={[
-          {
-            src: "../static/finance/021.png",
-            caption: "Four Different Search Experiences (OLD)"
-          },
-          {
-            src: "../static/finance/022.png",
-            caption: "Customer Page (OLD)"
-          }
-        ]}
-      />
-      <TextBox>
-        <Para>
-          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum
-          faucibus dolor auctor.
-        </Para>
-      </TextBox>
-    </Section>
-
-    <Section>
-      <TextBox>
-        <H6>Internal CS Tool</H6>
         <H2>Lo-fidelity + Repository Setup</H2>
         <Para>
           Another personal goal for this project was to use a framework and
@@ -418,6 +363,70 @@ export default () => (
       />
     </Section>
 
+    <Section>
+      <TextBox>
+        <H6>Internal CS Tool</H6>
+        <H2>Team Interview + Current Workflow</H2>
+        <Para>
+          A personal goal for this project was to have more user research
+          opportunities. One thing Paul and I had an opportunity to do was to
+          interview the customer service team and run through how they use the
+          current environment. The team ranged from those employed for a few
+          months adjusting to how things work to a few years used to the quirks
+          of the platform flows.
+        </Para>
+      </TextBox>
+
+      <ImagesTwo
+        images={[
+          {
+            src: "../static/finance/021.png",
+            caption: "Four Different Search Experiences (OLD)"
+          },
+          {
+            src: "../static/finance/022.png",
+            caption: "Customer Page (OLD)"
+          }
+        ]}
+      />
+      <TextBox>
+        <Para>
+          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+          ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum
+          faucibus dolor auctor.
+        </Para>
+      </TextBox>
+
+      <Image src="../static/finance/023.png" caption="Finalized Iteration" />
+      {/* <ImagesTwo
+        images={[
+          {
+            src: "../static/finance/022.png",
+            caption: "Four Different Search Experiences (OLD)"
+          },
+          {
+            src: "../static/finance/022.png",
+            caption: "Customer Page (OLD)"
+          }
+        ]}
+      />
+      <ImagesTwo
+        images={[
+          {
+            src: "../static/finance/022.png",
+            caption: "Four Different Search Experiences (OLD)"
+          }
+        ]}
+      /> */}
+      <TextBox>
+        <Para>
+          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+          ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum
+          faucibus dolor auctor.
+        </Para>
+      </TextBox>
+    </Section>
+
     <Section bg={theme.colors.green[10]}>
       <TextBox>
         <H6>Internal CS Tool</H6>
@@ -435,15 +444,15 @@ export default () => (
         images={[
           {
             src: "../static/finance/041.gif",
-            caption: "Option 1"
+            caption: "Iteration I - Search Options Left Bar"
           },
           {
-            src: "../static/finance/041.gif",
-            caption: "Option 2"
+            src: "../static/finance/042.gif",
+            caption: "Iteration II - Search Options Inline Options"
           }
         ]}
       />
-      <Image src="../static/finance/041.gif" caption="Option 2" />
+      <Image src="../static/finance/043.gif" caption="Finalized Iteration" />
     </Section>
 
     <Section>
@@ -463,27 +472,31 @@ export default () => (
         color="green"
         items={[
           {
-            src: "../static/finance/056.gif",
+            src: "../static/finance/051.png",
+            text: "Finalized Iteration"
+          },
+          {
+            src: "../static/finance/052.png",
             text: "Finalized Iteration - Drawer + Tabs"
           },
           {
-            src: "../static/finance/051.gif",
+            src: "../static/finance/053.gif",
             text: "Iteration I - Modal"
           },
           {
-            src: "../static/finance/052.gif",
+            src: "../static/finance/054.gif",
             text: "Iteration II - Inline Edit"
           },
           {
-            src: "../static/finance/053.gif",
+            src: "../static/finance/055.gif",
             text: "Iteration III - Drawer"
           },
           {
-            src: "../static/finance/054.gif",
+            src: "../static/finance/056.gif",
             text: "Iteration IV - Drawer + Dropdown"
           },
           {
-            src: "../static/finance/055.gif",
+            src: "../static/finance/057.gif",
             text: "Iteration V - Drawer + Tabs"
           }
         ]}
@@ -508,31 +521,34 @@ export default () => (
         items={[
           {
             src: "../static/finance/067.png",
-            text: "Finalized Iteration - Drawer + Tabs"
+            text: "Finalized Iteration"
           },
           {
             src: "../static/finance/061.png",
-            text: "Iteration I - Modal"
+            text: "Iteration I - Separate Columns"
           },
           {
             src: "../static/finance/062.png",
-            text: "Iteration II - Inline Edit"
+            text: "Iteration II - Only Transaction Column"
           },
           {
             src: "../static/finance/063.png",
-            text: "Iteration III - Drawer"
+            text: "Iteration III - Consolidated Date Columns"
           },
           {
             src: "../static/finance/064.png",
-            text: "Iteration IV - Drawer + Dropdown"
+            text:
+              "Iteration IV - Group Rows by Pay Period + Highlight Selected I"
           },
           {
             src: "../static/finance/065.png",
-            text: "Iteration V - Drawer + Tabs"
+            text:
+              "Iteration V - Group Rows by Pay Period + Highlight Selected II"
           },
           {
             src: "../static/finance/066.png",
-            text: "Finalized Iteration - Drawer + Tabs"
+            text:
+              "Iteration VI - Group Rows by Pay Period + Highlight Selected III"
           }
         ]}
       />

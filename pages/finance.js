@@ -340,7 +340,7 @@ export default () => (
         images={[
           {
             src: "../static/finance/031.png",
-            caption: "Google Sheets - Information Architecture"
+            caption: "Google Sheets: Information Architecture"
           },
           {
             src: "../static/finance/033.png",
@@ -352,11 +352,11 @@ export default () => (
         images={[
           {
             src: "../static/finance/032.png",
-            caption: "Airtable - Back End Data"
+            caption: "Airtable: Back End Data"
           },
           {
             src: "../static/finance/034.png",
-            caption: "Netlify - Deployment"
+            caption: "Netlify: Deployment"
           }
         ]}
       />
@@ -380,11 +380,11 @@ export default () => (
         images={[
           {
             src: "../static/finance/021.png",
-            caption: "Four Different Search Experiences (OLD)"
+            caption: "Four Different Search Experiences"
           },
           {
             src: "../static/finance/022.png",
-            caption: "Customer Page (OLD)"
+            caption: "Customer Page"
           }
         ]}
       />
@@ -446,11 +446,11 @@ export default () => (
         images={[
           {
             src: "../static/finance/041.gif",
-            caption: "Iteration I - Search Options Left Bar"
+            caption: "Iteration I: Search Options Left Bar"
           },
           {
             src: "../static/finance/042.gif",
-            caption: "Iteration II - Search Options Inline Options"
+            caption: "Iteration II: Search Options Inline Options"
           }
         ]}
       />
@@ -479,27 +479,27 @@ export default () => (
           },
           {
             src: "../static/finance/052.png",
-            text: "Finalized Iteration - Drawer + Tabs"
+            text: "Finalized Iteration: Drawer + Tabs"
           },
           {
             src: "../static/finance/053.gif",
-            text: "Iteration I - Modal"
+            text: "Iteration I: Modal"
           },
           {
             src: "../static/finance/054.gif",
-            text: "Iteration II - Inline Edit"
+            text: "Iteration II: Inline Edit"
           },
           {
             src: "../static/finance/055.gif",
-            text: "Iteration III - Drawer"
+            text: "Iteration III: Drawer"
           },
           {
             src: "../static/finance/056.gif",
-            text: "Iteration IV - Drawer + Dropdown"
+            text: "Iteration IV: Drawer + Dropdown"
           },
           {
             src: "../static/finance/057.gif",
-            text: "Iteration V - Drawer + Tabs"
+            text: "Iteration V: Drawer + Tabs"
           }
         ]}
       />
@@ -527,30 +527,30 @@ export default () => (
           },
           {
             src: "../static/finance/061.png",
-            text: "Iteration I - Separate Columns"
+            text: "Iteration I: Separate Columns"
           },
           {
             src: "../static/finance/062.png",
-            text: "Iteration II - Only Transaction Column"
+            text: "Iteration II: Only Transaction Column"
           },
           {
             src: "../static/finance/063.png",
-            text: "Iteration III - Consolidated Date Columns"
+            text: "Iteration III: Consolidated Date Columns"
           },
           {
             src: "../static/finance/064.png",
             text:
-              "Iteration IV - Group Rows by Pay Period + Highlight Selected I"
+              "Iteration IV: Group Rows by Pay Period + Highlight Selected I"
           },
           {
             src: "../static/finance/065.png",
             text:
-              "Iteration V - Group Rows by Pay Period + Highlight Selected II"
+              "Iteration V: Group Rows by Pay Period + Highlight Selected II"
           },
           {
             src: "../static/finance/066.png",
             text:
-              "Iteration VI - Group Rows by Pay Period + Highlight Selected III"
+              "Iteration VI: Group Rows by Pay Period + Highlight Selected III"
           }
         ]}
       />
@@ -559,7 +559,7 @@ export default () => (
     <Section>
       <TextBox>
         <H6>Internal CS Tool</H6>
-        <H2>Further Enhancements - Calculators + Schedulers</H2>
+        <H2>Further Enhancements: Calculators + Schedulers</H2>
         <Para>
           Another personal goal for this project was to use a framework and
           similar codebase to the one in development to better handoff to Zach.
@@ -573,11 +573,11 @@ export default () => (
         images={[
           {
             src: "../static/finance/071.gif",
-            caption: "Step 1 - Edit Payment"
+            caption: "Step 1: Edit Payment"
           },
           {
             src: "../static/finance/072.png",
-            caption: "Step 1.5 - Edit Payment Changes Debit Date"
+            caption: "Step 1.5: Edit Payment Changes Debit Date"
           }
         ]}
       />
@@ -585,11 +585,11 @@ export default () => (
         images={[
           {
             src: "../static/finance/073.png",
-            caption: "Step 2 - Edit Debit"
+            caption: "Step 2: Edit Debit"
           },
           {
             src: "../static/finance/074.png",
-            caption: "Step 3 - Edit Loan Number"
+            caption: "Step 3: Edit Loan Number"
           }
         ]}
       />
@@ -597,7 +597,7 @@ export default () => (
         images={[
           {
             src: "../static/finance/075.gif",
-            caption: "Step 4 - Edit Loan Dates"
+            caption: "Step 4: Edit Loan Dates"
           }
         ]}
       />

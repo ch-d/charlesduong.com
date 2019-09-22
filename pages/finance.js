@@ -87,8 +87,7 @@ export default () => (
     subTitleItem=""
     intro={[
       "This Forbes Fintech 50 Company (“Company”) had an overall mission to get Americans out of debt, save on interest payments and change the paycheck-to-paycheck cycle. When I joined the team, they were growing several service offerings on their web platform along with client partnerships to further this mission.",
-      "Along with several one-off marketing and visual product design tasks, two main projects I worked on were a customer-facing Savings Account and an internal tool to help the customer service team better serve the Company’s users.",
-      "[Case Study WIP]"
+      "Along with several one-off marketing and visual product design tasks, two main projects I worked on were a customer-facing Savings Account and an internal tool to help the customer service team better serve the Company’s users."
     ]}
     categories={[
       { type: "label", text: "Team Members" },
@@ -397,7 +396,10 @@ export default () => (
         </Para>
       </TextBox>
 
-      <Image src="../static/finance/023.png" caption="Finalized Iteration" />
+      <Image
+        src="../static/finance/023.png"
+        caption="Three Different Pages to Reference Schedule Change"
+      />
       {/* <ImagesTwo
         images={[
           {
@@ -430,7 +432,7 @@ export default () => (
     <Section bg={theme.colors.green[10]}>
       <TextBox>
         <H6>Internal CS Tool</H6>
-        <H2>Universal Search Tool</H2>
+        <H2>Universal Search Component</H2>
         <Para>
           Another personal goal for this project was to use a framework and
           similar codebase to the one in development to better handoff to Zach.
@@ -557,7 +559,7 @@ export default () => (
     <Section>
       <TextBox>
         <H6>Internal CS Tool</H6>
-        <H2>Further Enhancements - Calculations</H2>
+        <H2>Further Enhancements - Calculators + Schedulers</H2>
         <Para>
           Another personal goal for this project was to use a framework and
           similar codebase to the one in development to better handoff to Zach.
@@ -570,18 +572,36 @@ export default () => (
       <ImagesTwo
         images={[
           {
-            src: "../static/finance/011.png",
-            caption: "Option 1"
+            src: "../static/finance/071.gif",
+            caption: "Step 1 - Edit Payment"
           },
           {
-            src: "../static/finance/012.png",
-            caption: "Option 2"
+            src: "../static/finance/072.png",
+            caption: "Step 1.5 - Edit Payment Changes Debit Date"
+          }
+        ]}
+      />
+      <ImagesTwo
+        images={[
+          {
+            src: "../static/finance/073.png",
+            caption: "Step 2 - Edit Debit"
+          },
+          {
+            src: "../static/finance/074.png",
+            caption: "Step 3 - Edit Loan Number"
+          }
+        ]}
+      />
+      <ImagesTwo
+        images={[
+          {
+            src: "../static/finance/075.gif",
+            caption: "Step 4 - Edit Loan Dates"
           }
         ]}
       />
       <TextBox>
-        <H6>Internal CS Tool</H6>
-        <H2>Further Enhancements - Scheduling</H2>
         <Para>
           Another personal goal for this project was to use a framework and
           similar codebase to the one in development to better handoff to Zach.
@@ -591,17 +611,23 @@ export default () => (
           prototypes with builds deployed on Netlify.
         </Para>
       </TextBox>
-      <ImagesTwo
-        images={[
-          {
-            src: "../static/finance/011.png",
-            caption: "Option 1"
-          },
-          {
-            src: "../static/finance/012.png",
-            caption: "Option 2"
-          }
-        ]}
+      <Image
+        src="../static/finance/076.gif"
+        caption="Edit Payment Calculator"
+      />
+      <TextBox>
+        <Para>
+          Another personal goal for this project was to use a framework and
+          similar codebase to the one in development to better handoff to Zach.
+          After I received the initial specs and lo-fi wireframes in Google
+          Docs, I started a repository using Next.js, React Material UI
+          Components, and Airtable Backend API. For reviews, I walked through
+          prototypes with builds deployed on Netlify.
+        </Para>
+      </TextBox>
+      <Image
+        src="../static/finance/077.gif"
+        caption="Change Schedule Calculator"
       />
     </Section>
 

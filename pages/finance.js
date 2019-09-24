@@ -459,6 +459,12 @@ export default () => (
       <TextBox center>
         <H6>Internal CS Tool</H6>
         <H2>Enhanced Customer Page</H2>
+        <Para>
+          <a href="https://5d879f99ea4e9c00080a2012--inspiring-ride-bf5c15.netlify.com/customer/00/">
+            View Prototype
+          </a>{" "}
+          <ExternalLink size={12} />
+        </Para>
       </TextBox>
       <Carousel
         color="green"
@@ -499,6 +505,12 @@ export default () => (
       <TextBox center>
         <H6>Internal CS Tool</H6>
         <H2>Enhanced Transaction Page</H2>
+        <Para>
+          <a href="https://5d879f99ea4e9c00080a2012--inspiring-ride-bf5c15.netlify.com/loan/01/">
+            View Prototype
+          </a>{" "}
+          <ExternalLink size={12} />
+        </Para>
       </TextBox>
       <Carousel
         color="green"
@@ -619,10 +631,9 @@ export default () => (
         <H2>Results and Learnings</H2>
         <Para>
           Overall, most of the designs proposed were implemented into a new
-          system and there was a 125% increase in the number of customers helped
-          in a week with a 50% increase in customer support representatives.
-          This occurred while we still continued to iterate and prioritize
-          designs based on feedback from the team.
+          system and there was an increase in the number of customers helped.
+          This occurred while we still continued to onboard new members and
+          iterate designs based on feedback from the team.
         </Para>
         <Para>
           And once my time was complete, the handoff process went smoothly—the
@@ -633,10 +644,10 @@ export default () => (
         </Para>
         <Para>
           Developing prototypes directly in Javascript worked well for this
-          particular project, but one frustration was how slightly slower it was
-          to iterate. For future projects, I’d create a more robust sandbox area
-          with React2Sketch or React2Figma to iterate UI designs and component
-          ideas quicker.
+          particular project, but one frustration was the slightly slower
+          iteration time. For future projects, I’d create a more robust sandbox
+          area with React2Sketch or React2Figma to experiment with UI designs
+          and component ideas quicker.
         </Para>
       </TextBox>
     </Section>

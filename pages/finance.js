@@ -367,13 +367,19 @@ export default () => (
         <H6>Internal CS Tool</H6>
         <H2>Team Interview + Current Workflow</H2>
         <Para>
-          A personal goal for this project was to have more user research
-          opportunities. One thing Paul and I had an opportunity to do was to
-          interview the customer service team and run through how they use the
-          current environment. The team ranged from those employed for a few
-          months adjusting to how things work to a few years used to the quirks
-          of the platform flows.
+          To kick off the project, Paul and I had an opportunity to interview
+          the customer service team and run through their current workflows.
         </Para>
+        <Para>
+          The team ranged from those employed a few months adjusting to how
+          things work to those employed a few years with their own hacks to
+          compensate for quirks in the software. Although we received feedback
+          from the latter persona, we decided to focus on the former persona
+          needs. Rather than force a new way of doing things, we wanted the new
+          system to be an extension of the current workflows the team{" "}
+          <i>could</i> use.
+        </Para>
+        <Para>Through the interviews, we noticed three main challenges:</Para>
       </TextBox>
 
       <ImagesTwo
@@ -390,9 +396,19 @@ export default () => (
       />
       <TextBox>
         <Para>
-          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum
-          faucibus dolor auctor.
+          <ol>
+            <li>
+              <b>Search Pages:</b> The search experience to reach customers,
+              loans, or transactions was spread out on multiple pages with
+              different experiences. It also took up a whole page, where other
+              content could be present.
+            </li>
+            <li>
+              <b>Customer Page:</b> The customer page had the bare minimum of
+              information. It also took an extra step to get to any other
+              page—actions were hidden in a dropdown menu on top of loans.
+            </li>
+          </ol>
         </Para>
       </TextBox>
 
@@ -400,47 +416,29 @@ export default () => (
         src="../static/finance/023.png"
         caption="Three Different Pages to Reference Schedule Change"
       />
-      {/* <ImagesTwo
-        images={[
-          {
-            src: "../static/finance/022.png",
-            caption: "Four Different Search Experiences (OLD)"
-          },
-          {
-            src: "../static/finance/022.png",
-            caption: "Customer Page (OLD)"
-          }
-        ]}
-      />
-      <ImagesTwo
-        images={[
-          {
-            src: "../static/finance/022.png",
-            caption: "Four Different Search Experiences (OLD)"
-          }
-        ]}
-      /> */}
       <TextBox>
         <Para>
-          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum
-          faucibus dolor auctor.
+          <ol start="3">
+            <li>
+              <b>Transactions Page:</b> The transactions page was the most
+              interfaced page for the team. Although it had all the information
+              the team needed to reference, there were some quirks others
+              compensated with hacks. For one, we noticed they would open edit
+              pages alongside the transaction table. They had to switch back and
+              forth between screens to get things done. We also noticed how
+              difficult it was to reference which transaction belonged to which
+              pay period they were editing. They would highlight the rows of
+              that period to quickly reference.
+            </li>
+          </ol>
         </Para>
       </TextBox>
     </Section>
 
     <Section bg={theme.colors.green[10]}>
-      <TextBox>
+      <TextBox center>
         <H6>Internal CS Tool</H6>
         <H2>Universal Search Component</H2>
-        <Para>
-          Another personal goal for this project was to use a framework and
-          similar codebase to the one in development to better handoff to Zach.
-          After I received the initial specs and lo-fi wireframes in Google
-          Docs, I started a repository using Next.js, React Material UI
-          Components, and Airtable Backend API. For reviews, I walked through
-          prototypes with builds deployed on Netlify.
-        </Para>
       </TextBox>
       <ImagesTwo
         images={[
@@ -458,17 +456,9 @@ export default () => (
     </Section>
 
     <Section>
-      <TextBox>
+      <TextBox center>
         <H6>Internal CS Tool</H6>
         <H2>Enhanced Customer Page</H2>
-        <Para>
-          Another personal goal for this project was to use a framework and
-          similar codebase to the one in development to better handoff to Zach.
-          After I received the initial specs and lo-fi wireframes in Google
-          Docs, I started a repository using Next.js, React Material UI
-          Components, and Airtable Backend API. For reviews, I walked through
-          prototypes with builds deployed on Netlify.
-        </Para>
       </TextBox>
       <Carousel
         color="green"
@@ -506,17 +496,9 @@ export default () => (
     </Section>
 
     <Section bg={theme.colors.green[10]}>
-      <TextBox>
+      <TextBox center>
         <H6>Internal CS Tool</H6>
         <H2>Enhanced Transaction Page</H2>
-        <Para>
-          Another personal goal for this project was to use a framework and
-          similar codebase to the one in development to better handoff to Zach.
-          After I received the initial specs and lo-fi wireframes in Google
-          Docs, I started a repository using Next.js, React Material UI
-          Components, and Airtable Backend API. For reviews, I walked through
-          prototypes with builds deployed on Netlify.
-        </Para>
       </TextBox>
       <Carousel
         color="green"
@@ -561,12 +543,21 @@ export default () => (
         <H6>Internal CS Tool</H6>
         <H2>Further Enhancements: Calculators + Schedulers</H2>
         <Para>
-          Another personal goal for this project was to use a framework and
-          similar codebase to the one in development to better handoff to Zach.
-          After I received the initial specs and lo-fi wireframes in Google
-          Docs, I started a repository using Next.js, React Material UI
-          Components, and Airtable Backend API. For reviews, I walked through
-          prototypes with builds deployed on Netlify.
+          As we were iterated and created a common UI pattern for the platform,
+          we noticed some other workflow quirks. We saw an opportunity to reduce
+          some of these steps in one drawer and save the customer success team
+          time making changes for customers.
+        </Para>
+        <Para>
+          A common use case was changing the payment amount. This is a two step
+          process because when changing a payment, a team member had to also
+          update the debit schedule associated with it.
+        </Para>
+        <Para>
+          Another common use case was editing the schedule of all payments and
+          debits. This was also a two step process where all the numerical
+          fields associated with a loan lived in the Edit Loan drawer, while all
+          the scheduling fields lived in the Change Schedule drawer.
         </Para>
       </TextBox>
       <ImagesTwo
@@ -586,44 +577,35 @@ export default () => (
           {
             src: "../static/finance/073.png",
             caption: "Step 2: Edit Debit"
-          },
-          {
-            src: "../static/finance/074.png",
-            caption: "Step 3: Edit Loan Number"
           }
         ]}
       />
       <ImagesTwo
         images={[
           {
+            src: "../static/finance/074.png",
+            caption: "Step 3: Edit Loan Number"
+          },
+          {
             src: "../static/finance/075.gif",
             caption: "Step 4: Edit Loan Dates"
           }
         ]}
       />
-      <TextBox>
-        <Para>
-          Another personal goal for this project was to use a framework and
-          similar codebase to the one in development to better handoff to Zach.
-          After I received the initial specs and lo-fi wireframes in Google
-          Docs, I started a repository using Next.js, React Material UI
-          Components, and Airtable Backend API. For reviews, I walked through
-          prototypes with builds deployed on Netlify.
-        </Para>
+    </Section>
+
+    <Section bg={theme.colors.green[10]}>
+      <TextBox center>
+        <H6>Internal CS Tool</H6>
+        <H2>Enhanced Edit Payment Flow</H2>
       </TextBox>
       <Image
         src="../static/finance/076.gif"
         caption="Edit Payment Calculator"
       />
-      <TextBox>
-        <Para>
-          Another personal goal for this project was to use a framework and
-          similar codebase to the one in development to better handoff to Zach.
-          After I received the initial specs and lo-fi wireframes in Google
-          Docs, I started a repository using Next.js, React Material UI
-          Components, and Airtable Backend API. For reviews, I walked through
-          prototypes with builds deployed on Netlify.
-        </Para>
+      <TextBox center>
+        <H6>Internal CS Tool</H6>
+        <H2>Enhanced Change Schedule Flow</H2>
       </TextBox>
       <Image
         src="../static/finance/077.gif"
@@ -636,12 +618,25 @@ export default () => (
         <H6>Internal CS Tool</H6>
         <H2>Results and Learnings</H2>
         <Para>
-          Another personal goal for this project was to use a framework and
-          similar codebase to the one in development to better handoff to Zach.
-          After I received the initial specs and lo-fi wireframes in Google
-          Docs, I started a repository using Next.js, React Material UI
-          Components, and Airtable Backend API. For reviews, I walked through
-          prototypes with builds deployed on Netlify.
+          Overall, most of the designs proposed were implemented into a new
+          system and there was a 125% increase in the number of customers helped
+          in a week with a 50% increase in customer support representatives.
+          This occurred while we still continued to iterate and prioritize
+          designs based on feedback from the team.
+        </Para>
+        <Para>
+          And once my time was complete, the handoff process went smoothly—the
+          designs fulfilled the requirement to scale with common UI components
+          and patterns. Form fields and new edit pages could easily be added to
+          the drawers / tabs. Information about loans or customers could be
+          added to table columns.
+        </Para>
+        <Para>
+          Developing prototypes directly in Javascript worked well for this
+          particular project, but one frustration was how slightly slower it was
+          to iterate. For future projects, I’d create a more robust sandbox area
+          with React2Sketch or React2Figma to iterate UI designs and component
+          ideas quicker.
         </Para>
       </TextBox>
     </Section>

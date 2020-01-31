@@ -1,79 +1,21 @@
-import styled from "styled-components";
 import { theme } from "../theme";
 
 import Layout from "../components/case-study/Layout";
 import Image from "../components/case-study/Image";
 import ImagesTwo from "../components/case-study/ImagesTwo";
+import {
+  CardContainer,
+  Card,
+  CardTextContainer,
+  CardTitle,
+  CardContent
+} from "../components/case-study/Cards";
 import { H2, H6, Para } from "../components/case-study/Typography";
 import TextBox from "../components/case-study/TextBox";
 import Container from "../components/case-study/Container";
 import Section from "../components/case-study/Section";
-import TwoColumn from "../components/case-study/TextTwoColumn";
 import Carousel from "../components/case-study/Carousel";
-import Embed from "../components/case-study/Embed";
 import { ExternalLink } from "react-feather";
-
-const CardContainer = styled.ol`
-  counter-reset: section;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-`;
-
-const Card = styled.li`
-  list-style-type: none;
-  display: flex;
-  flex: 1 1 240px;
-  background-color: ${theme.colors.green[10]};
-  border-radius: 4px;
-  padding: 16px;
-  margin: 8px;
-  position: relative;
-  &:before {
-    counter-increment: section;
-    content: counter(section);
-    font-size: 2rem;
-    font-weight: 700;
-    color: ${theme.colors.green[500]};
-    position: absolute;
-    top: 16px;
-    left: 32px;
-    z-index: 1;
-  }
-`;
-
-const CardTextContainer = styled.div`
-  margin-top: 32px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  &:before {
-    display: block;
-    content: " ";
-    background-color: ${theme.colors.green[50]};
-    position: absolute;
-    // pseudo top = margin top
-    top: -32px;
-    width: 24px;
-    height: 24px;
-    border-radius: 2px;
-  }
-`;
-
-const CardTitle = styled.h4`
-  color: ${theme.colors.green[500]};
-  font-size: 1rem;
-  font-weight: 700;
-  margin-bottom: 8px;
-`;
-
-const CardContent = styled.p`
-  color: ${theme.colors.green[800]};
-  font-size: 0.875rem;
-  line-height: 1.5;
-  font-weight: 400;
-  margin-top: 0;
-`;
 
 export default () => (
   <Layout
@@ -119,28 +61,28 @@ export default () => (
 
       <Container>
         <CardContainer>
-          <Card>
-            <CardTextContainer>
-              <CardTitle>Savings Account</CardTitle>
-              <CardContent>
+          <Card color="green">
+            <CardTextContainer color="green">
+              <CardTitle color="green">Savings Account</CardTitle>
+              <CardContent color="green">
                 Display savings feature where customers can view and manage
                 their savings within the Company application.
               </CardContent>
             </CardTextContainer>
           </Card>
-          <Card>
-            <CardTextContainer>
-              <CardTitle>Matching</CardTitle>
-              <CardContent>
+          <Card color="green">
+            <CardTextContainer color="green">
+              <CardTitle color="green">Matching</CardTitle>
+              <CardContent color="green">
                 Display Client matching for savings towards a down payment on a
                 mortgage up to specified limits.
               </CardContent>
             </CardTextContainer>
           </Card>
-          <Card>
-            <CardTextContainer>
-              <CardTitle>Redemption</CardTitle>
-              <CardContent>
+          <Card color="green">
+            <CardTextContainer color="green">
+              <CardTitle color="green">Redemption</CardTitle>
+              <CardContent color="green">
                 Present information to consumers on how to redeem savings values
                 allocated by Client toward the down payment on a mortgage.
               </CardContent>
@@ -291,28 +233,30 @@ export default () => (
       </TextBox>
       <Container>
         <CardContainer>
-          <Card>
-            <CardTextContainer>
-              <CardTitle>Make it magical ✨</CardTitle>
-              <CardContent>
+          <Card color="green">
+            <CardTextContainer color="green">
+              <CardTitle color="green">Make it magical ✨</CardTitle>
+              <CardContent color="green">
                 Improve the user experience for us and in turn for our
                 customers!
               </CardContent>
             </CardTextContainer>
           </Card>
-          <Card>
-            <CardTextContainer>
-              <CardTitle>Make it scale 📐</CardTitle>
-              <CardContent>
+          <Card color="green">
+            <CardTextContainer color="green">
+              <CardTitle color="green">Make it scale 📐</CardTitle>
+              <CardContent color="green">
                 Ensure new features can be added down the road to a larger
                 Happiness team and 500k+ accounts.
               </CardContent>
             </CardTextContainer>
           </Card>
-          <Card>
-            <CardTextContainer>
-              <CardTitle>Consolidate current platforms 🧹</CardTitle>
-              <CardContent>
+          <Card color="green">
+            <CardTextContainer color="green">
+              <CardTitle color="green">
+                Consolidate current platforms 🧹
+              </CardTitle>
+              <CardContent color="green">
                 Retire old legacy system and the current system UI for one new
                 central source of truth system.
               </CardContent>

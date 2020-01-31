@@ -99,7 +99,7 @@ export const Cta = styled.h4`
   margin-top: 1.5rem;
   padding-top: 1rem;
   letter-spacing: 1px;
-  &:hover {
+  ${Main}:hover & {
     text-decoration: underline;
   }
 `;

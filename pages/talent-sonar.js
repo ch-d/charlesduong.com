@@ -6,7 +6,7 @@ import ImagesTwo from "../components/case-study/ImagesTwo";
 import { H2, Para } from "../components/case-study/Typography";
 import TextBox from "../components/case-study/TextBox";
 import { Grid, GridImage } from "../components/case-study/ImagesGrid";
-import Embed from "../components/case-study/Embed";
+import ImagesThree from "../components/case-study/ImagesThree";
 
 export default () => (
   <Layout
@@ -67,7 +67,19 @@ export default () => (
           prototype with a toolbar that slid halfway over a resume so users
           could have both the survey and resume to reference when reviewing.
         </Para>
-        <Embed src="https://framer.cloud/gRnDc/" border={0} />
+        <ImagesThree
+          color="orange"
+          images={[
+            {
+              src: "https://player.vimeo.com/video/345118772",
+              caption: "Sterotype Recognition Game"
+            },
+            {
+              src: "https://player.vimeo.com/video/345118765",
+              caption: "Timed Association Game"
+            }
+          ]}
+        />
         <Para>
           After we tested our prototype, we found users needed proper
           affordances and swiping or tapping interactions confused them.
@@ -152,6 +164,10 @@ export default () => (
       />
       <ImagesTwo
         images={[
+          {
+            src: "../static/talent-sonar/006.png",
+            caption: "Abstract Version Control (1 of 2)"
+          },
           {
             src: "../static/talent-sonar/006.png",
             caption: "Abstract Version Control (1 of 2)"

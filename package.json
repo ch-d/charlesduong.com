@@ -4,7 +4,7 @@
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "babel-plugin-styled-components": "^1.5.1",
-    "next": "^8.1.0",
+    "next": "^9.3.3",
     "npm": "^6.2.0",
     "react": "^16.6.0",
     "react-alice-carousel": "^1.15.2",

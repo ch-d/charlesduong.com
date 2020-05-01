@@ -4,7 +4,7 @@ import Script from "./script";
 export default ({
   meta = "product designer",
   titleCase,
-  desc = "Product designer available for full-time or contract opportunities."
+  desc = "Product designer based in Chicago, IL.",
 }) => (
   <Head>
     <meta charSet="utf-8" />
@@ -144,7 +144,7 @@ export default ({
 
     <Script>
       {() => {
-        !(function() {
+        !(function () {
           var analytics = (window.analytics = window.analytics || []);
           if (!analytics.initialize)
             if (analytics.invoked)
@@ -169,10 +169,10 @@ export default ({
                 "page",
                 "once",
                 "off",
-                "on"
+                "on",
               ];
-              analytics.factory = function(t) {
-                return function() {
+              analytics.factory = function (t) {
+                return function () {
                   var e = Array.prototype.slice.call(arguments);
                   e.unshift(t);
                   analytics.push(e);
@@ -183,7 +183,7 @@ export default ({
                 var e = analytics.methods[t];
                 analytics[e] = analytics.factory(e);
               }
-              analytics.load = function(t, e) {
+              analytics.load = function (t, e) {
                 var n = document.createElement("script");
                 n.type = "text/javascript";
                 n.async = !0;
